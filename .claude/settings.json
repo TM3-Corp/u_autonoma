@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": ["bash .claude/hooks/check-git-branch.sh"]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)",
+      "Bash(git add:*)",
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "Bash(jupyter:*)",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep"
+    ]
+  }
+}
