@@ -1,0 +1,1062 @@
+{
+  "analysis_time": "2025-12-17T23:43:49.658881",
+  "dataset": {
+    "courses": [
+      84936,
+      84941
+    ],
+    "n_students": 77,
+    "pass_count": 44,
+    "fail_count": 33,
+    "pass_rate": 0.5714285714285714,
+    "target_mean": 54.90545454545454,
+    "target_std": 47.15687440943246
+  },
+  "models": {
+    "activity_only": {
+      "model_type": "ACTIVITY-ONLY",
+      "n_samples": 77,
+      "n_features": 5,
+      "features_used": [
+        "page_views",
+        "participations",
+        "total_activity_time",
+        "page_views_level",
+        "participations_level"
+      ],
+      "class_balance": {
+        "pass": 44,
+        "fail": 33,
+        "pass_rate": 0.5714285714285714
+      },
+      "regression": {
+        "linear": {
+          "r2_mean": 0.9711956509633379,
+          "r2_std": 0.026468439332957814,
+          "r2_scores": [
+            0.9954303960763892,
+            0.9816208818734625,
+            0.9690969943935396,
+            0.9212077296175414,
+            0.988622252855757
+          ],
+          "rmse": 7.295429016537403,
+          "mae": 4.444543159035995
+        },
+        "ridge": {
+          "r2_mean": 0.9725218918247034,
+          "r2_std": 0.022330249549338127,
+          "r2_scores": [
+            0.9958686479661111,
+            0.9847469789425501,
+            0.9666501045782477,
+            0.931950745080349,
+            0.9833929825562585
+          ],
+          "rmse": 7.0943807923396545,
+          "mae": 4.16843934332721
+        },
+        "random_forest": {
+          "r2_mean": 0.9708135083537535,
+          "r2_std": 0.026703184178088462,
+          "r2_scores": [
+            0.9890070282849696,
+            0.9793106809199716,
+            0.9773134889010068,
+            0.9183780129210297,
+            0.9900583307417896
+          ],
+          "rmse": 7.400734568056345,
+          "mae": 4.039001202221465
+        },
+        "feature_importance": [
+          {
+            "feature": "participations_level",
+            "importance": 0.49968575027007917
+          },
+          {
+            "feature": "participations",
+            "importance": 0.4836495391524988
+          },
+          {
+            "feature": "total_activity_time",
+            "importance": 0.009892570104151593
+          },
+          {
+            "feature": "page_views",
+            "importance": 0.005474178326166933
+          },
+          {
+            "feature": "page_views_level",
+            "importance": 0.0012979621471033947
+          }
+        ]
+      },
+      "classification": {
+        "logistic": {
+          "accuracy_mean": 0.9866666666666667,
+          "accuracy_std": 0.02666666666666666,
+          "f1_mean": 0.9894736842105264,
+          "f1_std": 0.02105263157894739,
+          "precision": 0.9777777777777777,
+          "recall": 1.0,
+          "confusion_matrix": [
+            [
+              32,
+              1
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        },
+        "random_forest": {
+          "accuracy_mean": 0.9866666666666667,
+          "accuracy_std": 0.02666666666666666,
+          "f1_mean": 0.9894736842105264,
+          "f1_std": 0.02105263157894739,
+          "precision": 0.9777777777777777,
+          "recall": 1.0,
+          "confusion_matrix": [
+            [
+              32,
+              1
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        },
+        "feature_importance": [
+          {
+            "feature": "participations_level",
+            "importance": 0.43957732711148323
+          },
+          {
+            "feature": "participations",
+            "importance": 0.41041668637690093
+          },
+          {
+            "feature": "page_views",
+            "importance": 0.07798909924435922
+          },
+          {
+            "feature": "total_activity_time",
+            "importance": 0.06274336411101286
+          },
+          {
+            "feature": "page_views_level",
+            "importance": 0.009273523156243605
+          }
+        ]
+      }
+    },
+    "all_data": {
+      "model_type": "ALL-DATA",
+      "n_samples": 77,
+      "n_features": 21,
+      "features_used": [
+        "page_views",
+        "participations",
+        "total_activity_time",
+        "page_views_level",
+        "participations_level",
+        "on_time",
+        "late",
+        "missing",
+        "floating",
+        "on_time_rate",
+        "late_rate",
+        "missing_rate",
+        "num_submissions",
+        "submission_rate",
+        "avg_score",
+        "min_score",
+        "max_score",
+        "score_std",
+        "first_score",
+        "num_graded",
+        "num_scores"
+      ],
+      "class_balance": {
+        "pass": 44,
+        "fail": 33,
+        "pass_rate": 0.5714285714285714
+      },
+      "regression": {
+        "linear": {
+          "r2_mean": 0.9976355127142712,
+          "r2_std": 0.0017773709383610936,
+          "r2_scores": [
+            0.9991489390794202,
+            0.9960205584010213,
+            0.9980885897226597,
+            0.9951543501127158,
+            0.9997651262555395
+          ],
+          "rmse": 2.110278073205088,
+          "mae": 1.2083315654590072
+        },
+        "ridge": {
+          "r2_mean": 0.9929037266857904,
+          "r2_std": 0.006581496481765929,
+          "r2_scores": [
+            0.9993912757777706,
+            0.9904265428893879,
+            0.9957249253957575,
+            0.981209616005881,
+            0.9977662733601558
+          ],
+          "rmse": 3.630971738503736,
+          "mae": 1.802687334571578
+        },
+        "random_forest": {
+          "r2_mean": 0.9918319186597813,
+          "r2_std": 0.01364369867911446,
+          "r2_scores": [
+            0.9982234201893359,
+            0.9991338530582851,
+            0.9973294714549632,
+            0.9645982140765085,
+            0.9998746345198133
+          ],
+          "rmse": 3.9377637582340204,
+          "mae": 1.2052431455118333
+        },
+        "feature_importance": [
+          {
+            "feature": "missing",
+            "importance": 0.09777424716070779
+          },
+          {
+            "feature": "num_scores",
+            "importance": 0.08852509422689023
+          },
+          {
+            "feature": "num_graded",
+            "importance": 0.0880720753512975
+          },
+          {
+            "feature": "max_score",
+            "importance": 0.08251177752259765
+          },
+          {
+            "feature": "num_submissions",
+            "importance": 0.07857655868130509
+          },
+          {
+            "feature": "missing_rate",
+            "importance": 0.07856527621257442
+          },
+          {
+            "feature": "submission_rate",
+            "importance": 0.07778578842281689
+          },
+          {
+            "feature": "participations",
+            "importance": 0.06879414309717789
+          },
+          {
+            "feature": "participations_level",
+            "importance": 0.06818390834910956
+          },
+          {
+            "feature": "avg_score",
+            "importance": 0.06539362289025884
+          },
+          {
+            "feature": "first_score",
+            "importance": 0.06341503048606291
+          },
+          {
+            "feature": "min_score",
+            "importance": 0.05370612415244005
+          },
+          {
+            "feature": "on_time_rate",
+            "importance": 0.04860228223416537
+          },
+          {
+            "feature": "on_time",
+            "importance": 0.03922291784157465
+          },
+          {
+            "feature": "total_activity_time",
+            "importance": 0.00044474674297177355
+          },
+          {
+            "feature": "page_views",
+            "importance": 0.0002414872102442063
+          },
+          {
+            "feature": "score_std",
+            "importance": 0.00017426379260530045
+          },
+          {
+            "feature": "page_views_level",
+            "importance": 1.0655625199855249e-05
+          },
+          {
+            "feature": "late",
+            "importance": 0.0
+          },
+          {
+            "feature": "floating",
+            "importance": 0.0
+          },
+          {
+            "feature": "late_rate",
+            "importance": 0.0
+          }
+        ]
+      },
+      "classification": {
+        "logistic": {
+          "accuracy_mean": 0.9866666666666667,
+          "accuracy_std": 0.02666666666666666,
+          "f1_mean": 0.9894736842105264,
+          "f1_std": 0.02105263157894739,
+          "precision": 0.9777777777777777,
+          "recall": 1.0,
+          "confusion_matrix": [
+            [
+              32,
+              1
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        },
+        "random_forest": {
+          "accuracy_mean": 0.9866666666666667,
+          "accuracy_std": 0.02666666666666666,
+          "f1_mean": 0.9894736842105264,
+          "f1_std": 0.02105263157894739,
+          "precision": 0.9777777777777777,
+          "recall": 1.0,
+          "confusion_matrix": [
+            [
+              32,
+              1
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        },
+        "feature_importance": [
+          {
+            "feature": "avg_score",
+            "importance": 0.16521123445701402
+          },
+          {
+            "feature": "max_score",
+            "importance": 0.13421836684396676
+          },
+          {
+            "feature": "missing",
+            "importance": 0.08595883592763222
+          },
+          {
+            "feature": "num_scores",
+            "importance": 0.0779112590988161
+          },
+          {
+            "feature": "num_submissions",
+            "importance": 0.07374467230761404
+          },
+          {
+            "feature": "first_score",
+            "importance": 0.07223339008040021
+          },
+          {
+            "feature": "min_score",
+            "importance": 0.06376417474445364
+          },
+          {
+            "feature": "missing_rate",
+            "importance": 0.05949375410913873
+          },
+          {
+            "feature": "num_graded",
+            "importance": 0.0593596274957815
+          },
+          {
+            "feature": "participations",
+            "importance": 0.0585374931581828
+          },
+          {
+            "feature": "submission_rate",
+            "importance": 0.055919796543518904
+          },
+          {
+            "feature": "participations_level",
+            "importance": 0.048
+          },
+          {
+            "feature": "on_time",
+            "importance": 0.0197741897713489
+          },
+          {
+            "feature": "on_time_rate",
+            "importance": 0.019471516815374054
+          },
+          {
+            "feature": "score_std",
+            "importance": 0.005393841855163075
+          },
+          {
+            "feature": "page_views",
+            "importance": 0.0004520581491128477
+          },
+          {
+            "feature": "total_activity_time",
+            "importance": 0.00037755492831448393
+          },
+          {
+            "feature": "page_views_level",
+            "importance": 0.00017823371416769213
+          },
+          {
+            "feature": "late",
+            "importance": 0.0
+          },
+          {
+            "feature": "floating",
+            "importance": 0.0
+          },
+          {
+            "feature": "late_rate",
+            "importance": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "activity_correlations": {
+    "high_correlation_pairs": [
+      {
+        "feature1": "page_views",
+        "feature2": "page_views_level",
+        "correlation": 0.7011352448517302
+      },
+      {
+        "feature1": "participations",
+        "feature2": "participations_level",
+        "correlation": 0.9157370929912604
+      }
+    ],
+    "target_correlations": [
+      {
+        "feature": "participations_level",
+        "correlation": 0.9882749286383395
+      },
+      {
+        "feature": "participations",
+        "correlation": 0.9284664802298468
+      },
+      {
+        "feature": "page_views_level",
+        "correlation": 0.4187093972671231
+      },
+      {
+        "feature": "page_views",
+        "correlation": 0.3323632165463262
+      },
+      {
+        "feature": "total_activity_time",
+        "correlation": 0.3004891049077385
+      }
+    ]
+  },
+  "all_data_correlations": {
+    "high_correlation_pairs": [
+      {
+        "feature1": "page_views",
+        "feature2": "page_views_level",
+        "correlation": 0.7011352448517302
+      },
+      {
+        "feature1": "participations",
+        "feature2": "participations_level",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "participations",
+        "feature2": "on_time",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "participations",
+        "feature2": "missing",
+        "correlation": -0.8311932968170531
+      },
+      {
+        "feature1": "participations",
+        "feature2": "on_time_rate",
+        "correlation": 0.9157370929912605
+      },
+      {
+        "feature1": "participations",
+        "feature2": "missing_rate",
+        "correlation": -0.9157370929912605
+      },
+      {
+        "feature1": "participations",
+        "feature2": "num_submissions",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "participations",
+        "feature2": "submission_rate",
+        "correlation": 0.9157370929912605
+      },
+      {
+        "feature1": "participations",
+        "feature2": "avg_score",
+        "correlation": 0.988482143075719
+      },
+      {
+        "feature1": "participations",
+        "feature2": "min_score",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "participations",
+        "feature2": "max_score",
+        "correlation": 0.9951115907912516
+      },
+      {
+        "feature1": "participations",
+        "feature2": "score_std",
+        "correlation": 0.8946278426811746
+      },
+      {
+        "feature1": "participations",
+        "feature2": "first_score",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "participations",
+        "feature2": "num_graded",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "participations",
+        "feature2": "num_scores",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "on_time",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "missing",
+        "correlation": -0.9076767810092259
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "on_time_rate",
+        "correlation": 1.0000000000000002
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "missing_rate",
+        "correlation": -1.0000000000000002
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "num_submissions",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "submission_rate",
+        "correlation": 1.0000000000000002
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "avg_score",
+        "correlation": 0.9451823088790852
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "min_score",
+        "correlation": 0.9756979850085798
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "max_score",
+        "correlation": 0.8956617639779388
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "first_score",
+        "correlation": 0.9756979850085798
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "num_graded",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "participations_level",
+        "feature2": "num_scores",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "missing",
+        "correlation": -0.8311932968170531
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "on_time_rate",
+        "correlation": 0.9157370929912605
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "missing_rate",
+        "correlation": -0.9157370929912605
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "num_submissions",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "submission_rate",
+        "correlation": 0.9157370929912605
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "avg_score",
+        "correlation": 0.988482143075719
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "min_score",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "max_score",
+        "correlation": 0.9951115907912516
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "score_std",
+        "correlation": 0.8946278426811746
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "first_score",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "num_graded",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "on_time",
+        "feature2": "num_scores",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "missing",
+        "feature2": "on_time_rate",
+        "correlation": -0.9076767810092262
+      },
+      {
+        "feature1": "missing",
+        "feature2": "missing_rate",
+        "correlation": 0.9076767810092262
+      },
+      {
+        "feature1": "missing",
+        "feature2": "num_submissions",
+        "correlation": -0.8311932968170531
+      },
+      {
+        "feature1": "missing",
+        "feature2": "submission_rate",
+        "correlation": -0.9076767810092262
+      },
+      {
+        "feature1": "missing",
+        "feature2": "avg_score",
+        "correlation": -0.8579200355902353
+      },
+      {
+        "feature1": "missing",
+        "feature2": "min_score",
+        "correlation": -0.8856184062697748
+      },
+      {
+        "feature1": "missing",
+        "feature2": "max_score",
+        "correlation": -0.8129713868005406
+      },
+      {
+        "feature1": "missing",
+        "feature2": "first_score",
+        "correlation": -0.8856184062697748
+      },
+      {
+        "feature1": "missing",
+        "feature2": "num_graded",
+        "correlation": -0.8311932968170531
+      },
+      {
+        "feature1": "missing",
+        "feature2": "num_scores",
+        "correlation": -0.8311932968170531
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "missing_rate",
+        "correlation": -1.0
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "num_submissions",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "submission_rate",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "avg_score",
+        "correlation": 0.9451823088790855
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "min_score",
+        "correlation": 0.9756979850085794
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "max_score",
+        "correlation": 0.8956617639779393
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "first_score",
+        "correlation": 0.9756979850085794
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "num_graded",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "on_time_rate",
+        "feature2": "num_scores",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "num_submissions",
+        "correlation": -0.9157370929912604
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "submission_rate",
+        "correlation": -1.0
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "avg_score",
+        "correlation": -0.9451823088790855
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "min_score",
+        "correlation": -0.9756979850085794
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "max_score",
+        "correlation": -0.8956617639779393
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "first_score",
+        "correlation": -0.9756979850085794
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "num_graded",
+        "correlation": -0.9157370929912604
+      },
+      {
+        "feature1": "missing_rate",
+        "feature2": "num_scores",
+        "correlation": -0.9157370929912604
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "submission_rate",
+        "correlation": 0.9157370929912605
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "avg_score",
+        "correlation": 0.988482143075719
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "min_score",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "max_score",
+        "correlation": 0.9951115907912516
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "score_std",
+        "correlation": 0.8946278426811746
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "first_score",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "num_graded",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "num_submissions",
+        "feature2": "num_scores",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "submission_rate",
+        "feature2": "avg_score",
+        "correlation": 0.9451823088790855
+      },
+      {
+        "feature1": "submission_rate",
+        "feature2": "min_score",
+        "correlation": 0.9756979850085794
+      },
+      {
+        "feature1": "submission_rate",
+        "feature2": "max_score",
+        "correlation": 0.8956617639779393
+      },
+      {
+        "feature1": "submission_rate",
+        "feature2": "first_score",
+        "correlation": 0.9756979850085794
+      },
+      {
+        "feature1": "submission_rate",
+        "feature2": "num_graded",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "submission_rate",
+        "feature2": "num_scores",
+        "correlation": 0.9157370929912604
+      },
+      {
+        "feature1": "avg_score",
+        "feature2": "min_score",
+        "correlation": 0.9566227810972522
+      },
+      {
+        "feature1": "avg_score",
+        "feature2": "max_score",
+        "correlation": 0.9878951877646505
+      },
+      {
+        "feature1": "avg_score",
+        "feature2": "score_std",
+        "correlation": 0.8390813446180282
+      },
+      {
+        "feature1": "avg_score",
+        "feature2": "first_score",
+        "correlation": 0.9566227810972522
+      },
+      {
+        "feature1": "avg_score",
+        "feature2": "num_graded",
+        "correlation": 0.988482143075719
+      },
+      {
+        "feature1": "avg_score",
+        "feature2": "num_scores",
+        "correlation": 0.988482143075719
+      },
+      {
+        "feature1": "min_score",
+        "feature2": "max_score",
+        "correlation": 0.8998511862795882
+      },
+      {
+        "feature1": "min_score",
+        "feature2": "first_score",
+        "correlation": 1.0
+      },
+      {
+        "feature1": "min_score",
+        "feature2": "num_graded",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "min_score",
+        "feature2": "num_scores",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "max_score",
+        "feature2": "score_std",
+        "correlation": 0.9133121781663834
+      },
+      {
+        "feature1": "max_score",
+        "feature2": "first_score",
+        "correlation": 0.8998511862795884
+      },
+      {
+        "feature1": "max_score",
+        "feature2": "num_graded",
+        "correlation": 0.9951115907912516
+      },
+      {
+        "feature1": "max_score",
+        "feature2": "num_scores",
+        "correlation": 0.9951115907912516
+      },
+      {
+        "feature1": "score_std",
+        "feature2": "num_graded",
+        "correlation": 0.8946278426811746
+      },
+      {
+        "feature1": "score_std",
+        "feature2": "num_scores",
+        "correlation": 0.8946278426811746
+      },
+      {
+        "feature1": "first_score",
+        "feature2": "num_graded",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "first_score",
+        "feature2": "num_scores",
+        "correlation": 0.9106823810304481
+      },
+      {
+        "feature1": "num_graded",
+        "feature2": "num_scores",
+        "correlation": 1.0
+      }
+    ],
+    "target_correlations": [
+      {
+        "feature": "late",
+        "correlation": NaN
+      },
+      {
+        "feature": "floating",
+        "correlation": NaN
+      },
+      {
+        "feature": "late_rate",
+        "correlation": NaN
+      },
+      {
+        "feature": "min_score",
+        "correlation": 0.9918211029140144
+      },
+      {
+        "feature": "first_score",
+        "correlation": 0.9918211029140144
+      },
+      {
+        "feature": "participations_level",
+        "correlation": 0.9882749286383395
+      },
+      {
+        "feature": "on_time_rate",
+        "correlation": 0.9882749286383393
+      },
+      {
+        "feature": "submission_rate",
+        "correlation": 0.9882749286383393
+      },
+      {
+        "feature": "missing_rate",
+        "correlation": -0.9882749286383392
+      },
+      {
+        "feature": "avg_score",
+        "correlation": 0.9677755064899706
+      },
+      {
+        "feature": "participations",
+        "correlation": 0.9284664802298468
+      },
+      {
+        "feature": "on_time",
+        "correlation": 0.9284664802298468
+      },
+      {
+        "feature": "num_submissions",
+        "correlation": 0.9284664802298468
+      },
+      {
+        "feature": "num_graded",
+        "correlation": 0.9284664802298468
+      },
+      {
+        "feature": "num_scores",
+        "correlation": 0.9284664802298468
+      },
+      {
+        "feature": "max_score",
+        "correlation": 0.9209047364604351
+      },
+      {
+        "feature": "missing",
+        "correlation": -0.8970342059785701
+      },
+      {
+        "feature": "score_std",
+        "correlation": 0.6887524125691328
+      },
+      {
+        "feature": "page_views_level",
+        "correlation": 0.4187093972671231
+      },
+      {
+        "feature": "page_views",
+        "correlation": 0.3323632165463262
+      },
+      {
+        "feature": "total_activity_time",
+        "correlation": 0.3004891049077385
+      }
+    ]
+  }
+}

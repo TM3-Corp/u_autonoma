@@ -1,0 +1,1849 @@
+{
+  "phase": "Phase 1 - Baseline",
+  "execution_time": "2025-12-17T22:00:45.647943",
+  "summary": {
+    "total_courses": 7,
+    "total_students": 302,
+    "total_with_targets": 252,
+    "all_data": {
+      "avg_r2": -0.09464362533486252,
+      "avg_f1": 1.0,
+      "n_courses": 7
+    },
+    "activity_only": {
+      "avg_r2": 0.42336557515202655,
+      "avg_f1": 1.0,
+      "n_courses": 7
+    }
+  },
+  "courses": [
+    {
+      "course_id": 84936,
+      "course_name": "FUNDAMENTOS DE MICROECONOM\u00cdA-P03",
+      "course_type": "completed",
+      "target_variable": "final_score",
+      "n_students": 41,
+      "n_with_target": 41,
+      "target_mean": 70.59536585365855,
+      "target_std": 43.500665000523895,
+      "pass_rate": 0.7317073170731707,
+      "extraction_time": "2025-12-17T21:58:43.617545",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 41,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 32,
+        "test_size": 9,
+        "regression": {
+          "linear": {
+            "r2": 0.9999999973554118,
+            "rmse": 0.0020907474573588986,
+            "mae": 0.0015518253837364506,
+            "feature_importance": [
+              {
+                "feature": "min_score",
+                "coefficient": 9.32087752600505
+              },
+              {
+                "feature": "first_score",
+                "coefficient": 9.32087752600505
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 9.127344038695385
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 8.891563621332256
+              },
+              {
+                "feature": "score_std",
+                "coefficient": 7.7918566432053415
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 0.0002702728579937183
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 0.00010896280644212998
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -8.89179325542651e-05
+              },
+              {
+                "feature": "participations",
+                "coefficient": -8.891793253873459e-05
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": -8.891793253518188e-05
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.999988826165114,
+            "rmse": 0.1359013204089626,
+            "mae": 0.07397777777780196,
+            "feature_importance": [
+              {
+                "feature": "num_scores",
+                "importance": 0.08909270267155567
+              },
+              {
+                "feature": "missing",
+                "importance": 0.08871054502481789
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.07937986966817602
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.07933506022086387
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.07909060850264217
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.07897009327463367
+              },
+              {
+                "feature": "participations",
+                "importance": 0.06957082266041635
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.0692694187520081
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.06912088902506794
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.06868205493102261
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ]
+          },
+          "random_forest": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "missing",
+                "importance": 0.09
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.09
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.08
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.08
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.08
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.08
+              },
+              {
+                "feature": "participations",
+                "importance": 0.07
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.07
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.07
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.06
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 30,
+          "fail": 11,
+          "pass_rate": 0.7317073170731707
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 41,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 32,
+        "test_size": 9,
+        "regression": {
+          "linear": {
+            "r2": 0.9903595447829887,
+            "rmse": 3.9918234243538278,
+            "mae": 3.1656251374143363,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "coefficient": 21.88014200265325
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 21.880142002653237
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": -1.8792185894962365
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 1.6760472569821079
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": -0.8558784505805823
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.9771358829712371,
+            "rmse": 6.147517429511679,
+            "mae": 4.910470987654339,
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.5045730439392803
+              },
+              {
+                "feature": "participations",
+                "importance": 0.4748111065992449
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.014524837690298024
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.004644827908692713
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.00144618386248414
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ]
+          },
+          "random_forest": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.42464305533073105
+              },
+              {
+                "feature": "participations",
+                "importance": 0.40712469068810725
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.08703427962818773
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.06441969833062838
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.016778276022345634
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 30,
+          "fail": 11,
+          "pass_rate": 0.7317073170731707
+        }
+      }
+    },
+    {
+      "course_id": 84941,
+      "course_name": "FUNDAMENTOS DE MICROECONOM\u00cdA-P01",
+      "course_type": "completed",
+      "target_variable": "final_score",
+      "n_students": 36,
+      "n_with_target": 36,
+      "target_mean": 37.03638888888889,
+      "target_std": 45.26942665248196,
+      "pass_rate": 0.3888888888888889,
+      "extraction_time": "2025-12-17T21:58:51.361867",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 36,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 28,
+        "test_size": 8,
+        "regression": {
+          "linear": {
+            "r2": 0.9999999991362154,
+            "rmse": 0.0012726052176495687,
+            "mae": 0.0009639251449851116,
+            "feature_importance": [
+              {
+                "feature": "first_score",
+                "coefficient": 11.239129686453879
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 11.239129686453877
+              },
+              {
+                "feature": "min_score",
+                "coefficient": 11.239129686453877
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 11.239129686453877
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -0.0007385541340159747
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.0004034038365437322
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 0.00035577795031291846
+              },
+              {
+                "feature": "participations",
+                "coefficient": -0.00018628043055279875
+              },
+              {
+                "feature": "on_time",
+                "coefficient": -0.0001862804304398993
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": -0.0001862804304398993
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.9998925915217425,
+            "rmse": 0.44875599856715337,
+            "mae": 0.29166250000000105,
+            "feature_importance": [
+              {
+                "feature": "num_submissions",
+                "importance": 0.09577221110845566
+              },
+              {
+                "feature": "participations",
+                "importance": 0.08699542830596314
+              },
+              {
+                "feature": "on_time_rate",
+                "importance": 0.08601593853584966
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.08451707552224798
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.07690700007437566
+              },
+              {
+                "feature": "missing",
+                "importance": 0.0766917357603739
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.07667785380946429
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.0760368085840779
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.07587923415173665
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.07123730134738782
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "random_forest": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "importance": 0.1649053690833876
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.1175361457714399
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.1084249352298888
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.08005421484833249
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.06470576808812104
+              },
+              {
+                "feature": "participations",
+                "importance": 0.06396485935804821
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.06285433520727639
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.06091936752617867
+              },
+              {
+                "feature": "missing",
+                "importance": 0.059710213591018545
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.04862745098039216
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 14,
+          "fail": 22,
+          "pass_rate": 0.3888888888888889
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 36,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 28,
+        "test_size": 8,
+        "regression": {
+          "linear": {
+            "r2": 0.9535169239358886,
+            "rmse": 9.33551788211969,
+            "mae": 5.175147039059204,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "coefficient": 22.55848705203089
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 22.558487052030877
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 4.6487547083058445
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": -4.638728950377004
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -0.4047407041528673
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.9931154505443404,
+            "rmse": 3.5927644692144796,
+            "mae": 2.1255874999999964,
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.49741480316930975
+              },
+              {
+                "feature": "participations",
+                "importance": 0.4408815093421705
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.031924410034811224
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.027086395734507707
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.0026928817192008593
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "random_forest": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.3535990151174363
+              },
+              {
+                "feature": "participations",
+                "importance": 0.3300415443867011
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.16284871482323013
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.11292246975483756
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.040588255917794996
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 14,
+          "fail": 22,
+          "pass_rate": 0.3888888888888889
+        }
+      }
+    },
+    {
+      "course_id": 86005,
+      "course_name": "TALL DE COMPETENCIAS DIGITALES-P01",
+      "course_type": "ongoing",
+      "target_variable": "current_score",
+      "n_students": 50,
+      "n_with_target": 48,
+      "target_mean": 85.95041666666667,
+      "target_std": 5.382575891425068,
+      "pass_rate": 1.0,
+      "extraction_time": "2025-12-17T21:58:57.047506",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 48,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 38,
+        "test_size": 10,
+        "regression": {
+          "linear": {
+            "r2": 0.35265120633410874,
+            "rmse": 4.342364755862797,
+            "mae": 3.1791916676364154,
+            "feature_importance": [
+              {
+                "feature": "missing",
+                "coefficient": 15.400992854245175
+              },
+              {
+                "feature": "on_time",
+                "coefficient": -14.82825394469912
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": 9.673024342918023
+              },
+              {
+                "feature": "missing_rate",
+                "coefficient": -9.554383690253479
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 5.890444399237695
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -2.9547066779722666
+              },
+              {
+                "feature": "min_score",
+                "coefficient": -2.1375706764599496
+              },
+              {
+                "feature": "floating",
+                "coefficient": -2.097192487478966
+              },
+              {
+                "feature": "submission_rate",
+                "coefficient": 1.76654083848157
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": 1.7665408384815633
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.3763937217680339,
+            "rmse": 4.261989437041553,
+            "mae": 3.6593331307024486,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "importance": 0.2577916279000668
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.10036994234602338
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.09831698322930063
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.07064251220487848
+              },
+              {
+                "feature": "late_rate",
+                "importance": 0.06917236585447051
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.062254312282928825
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.050592382056971946
+              },
+              {
+                "feature": "late",
+                "importance": 0.04967736406035843
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.046435123362040046
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.029768381612784348
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 48,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 48,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 38,
+        "test_size": 10,
+        "regression": {
+          "linear": {
+            "r2": 0.3748492798171196,
+            "rmse": 4.267263858587903,
+            "mae": 3.7694675435824765,
+            "feature_importance": [
+              {
+                "feature": "page_views_level",
+                "coefficient": 3.0200701559206466
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -1.5779179007787767
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -1.2285688796176175
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.4623506712098181
+              },
+              {
+                "feature": "participations",
+                "coefficient": 0.4535033972851066
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.30131514060043507,
+            "rmse": 4.511259354951969,
+            "mae": 3.6666371483568083,
+            "feature_importance": [
+              {
+                "feature": "page_views",
+                "importance": 0.3883131004345902
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.36348140330054723
+              },
+              {
+                "feature": "participations",
+                "importance": 0.19335231008935316
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.04083606721663539
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.014017118958874105
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 48,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      }
+    },
+    {
+      "course_id": 86020,
+      "course_name": "TALL DE COMPETENCIAS DIGITALES-P02",
+      "course_type": "ongoing",
+      "target_variable": "current_score",
+      "n_students": 51,
+      "n_with_target": 47,
+      "target_mean": 83.601914893617,
+      "target_std": 7.459410350370069,
+      "pass_rate": 1.0,
+      "extraction_time": "2025-12-17T21:59:20.966694",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 47,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 37,
+        "test_size": 10,
+        "regression": {
+          "linear": {
+            "r2": -0.6744623882930714,
+            "rmse": 7.300284877779349,
+            "mae": 6.490264270884739,
+            "feature_importance": [
+              {
+                "feature": "min_score",
+                "coefficient": -13.748378501732445
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -11.286719378854462
+              },
+              {
+                "feature": "missing_rate",
+                "coefficient": -7.990234990501998
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": 7.990234990501994
+              },
+              {
+                "feature": "participations",
+                "coefficient": -6.471882281741731
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 4.189269706598632
+              },
+              {
+                "feature": "num_scores",
+                "coefficient": -2.8967145079994814
+              },
+              {
+                "feature": "num_submissions",
+                "coefficient": -2.8967145079994707
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": -2.8967145079994694
+              },
+              {
+                "feature": "submission_rate",
+                "coefficient": -2.896714507999454
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.14122433015440017,
+            "rmse": 5.228077000216607,
+            "mae": 4.173875464990276,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "importance": 0.23193789304783552
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.22653467917910586
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.19766761174947695
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.15905360517098197
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.03997884414690844
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.03257614598688081
+              },
+              {
+                "feature": "participations",
+                "importance": 0.01752567820722091
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.016557614578678784
+              },
+              {
+                "feature": "missing",
+                "importance": 0.013211402974757156
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.012305006685652986
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 47,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 47,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 37,
+        "test_size": 10,
+        "regression": {
+          "linear": {
+            "r2": -0.4439599933280418,
+            "rmse": 6.779219404819953,
+            "mae": 5.8552488525200115,
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "coefficient": -1.8019976953306909
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 1.1442374416204464
+              },
+              {
+                "feature": "participations",
+                "coefficient": 0.9754167034259961
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 0.6754091474218906
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -0.3444528464220831
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.1758373201263712,
+            "rmse": 5.121634493972623,
+            "mae": 4.302737777200055,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.42776520780124555
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.35916951358480664
+              },
+              {
+                "feature": "participations",
+                "importance": 0.153730296416066
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.034029683946494534
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.025305298251387377
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 47,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      }
+    },
+    {
+      "course_id": 86676,
+      "course_name": "FUND DE BUSINESS ANALYTICS-P01",
+      "course_type": "ongoing",
+      "target_variable": "current_score",
+      "n_students": 40,
+      "n_with_target": 23,
+      "target_mean": 96.37913043478262,
+      "target_std": 5.8170368222407145,
+      "pass_rate": 1.0,
+      "extraction_time": "2025-12-17T21:59:47.278767",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 23,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 18,
+        "test_size": 5,
+        "regression": {
+          "linear": {
+            "r2": -27.226757652623224,
+            "rmse": 13.879007388337296,
+            "mae": 11.910505599489522,
+            "feature_importance": [
+              {
+                "feature": "min_score",
+                "coefficient": -23.8776214548242
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -11.606110981757919
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 9.30551785521696
+              },
+              {
+                "feature": "first_score",
+                "coefficient": 7.950183591697287
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 7.894292339866645
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 4.827079174087108
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": -2.263804281923234
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": -2.066737891767027
+              },
+              {
+                "feature": "submission_rate",
+                "coefficient": -2.0667378917670147
+              },
+              {
+                "feature": "num_scores",
+                "coefficient": -2.0667378917670147
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": -4.708602830832746,
+            "rmse": 6.2415553180877925,
+            "mae": 3.8168399999999933,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "importance": 0.4721864201169831
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.15362564208186505
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.13026012511164362
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.07185617593566082
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.042377759034484416
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.0299363594770111
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.020771768361275224
+              },
+              {
+                "feature": "participations",
+                "importance": 0.016773208173631846
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.01513110456900119
+              },
+              {
+                "feature": "on_time",
+                "importance": 0.010629179938120537
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 23,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 23,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 18,
+        "test_size": 5,
+        "regression": {
+          "linear": {
+            "r2": -10.867856201000574,
+            "rmse": 8.999410193432956,
+            "mae": 6.237570231409191,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "coefficient": 4.396902478094084
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 2.523925802489374
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -2.457557792743948
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 1.236722327019239
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.6349574885130785
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": -0.1552332274566326,
+            "rmse": 2.807777862605251,
+            "mae": 2.467675,
+            "feature_importance": [
+              {
+                "feature": "page_views",
+                "importance": 0.6094479101234559
+              },
+              {
+                "feature": "participations",
+                "importance": 0.16128472859882498
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.11206554259138668
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.09095619103220934
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.02624562765412314
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 23,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      }
+    },
+    {
+      "course_id": 86689,
+      "course_name": "GESTI\u00d3N DEL TALENTO-P01",
+      "course_type": "ongoing",
+      "target_variable": "current_score",
+      "n_students": 40,
+      "n_with_target": 40,
+      "target_mean": 80.30275,
+      "target_std": 7.776982800184077,
+      "pass_rate": 1.0,
+      "extraction_time": "2025-12-17T22:00:04.522217",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 40,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 32,
+        "test_size": 8,
+        "regression": {
+          "linear": {
+            "r2": 0.9180034883067834,
+            "rmse": 1.7968736707793125,
+            "mae": 1.4404679274168455,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "coefficient": 7.383915119409623
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -3.3259184287843886
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 3.1614395555884083
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": -3.1411510217240917
+              },
+              {
+                "feature": "missing_rate",
+                "coefficient": 3.141151021724087
+              },
+              {
+                "feature": "on_time",
+                "coefficient": 2.633378478566883
+              },
+              {
+                "feature": "floating",
+                "coefficient": -2.0821953888790845
+              },
+              {
+                "feature": "first_score",
+                "coefficient": -1.4364233895150496
+              },
+              {
+                "feature": "num_scores",
+                "coefficient": 1.4063526531020136
+              },
+              {
+                "feature": "num_submissions",
+                "coefficient": 1.406352653102013
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.5386935315196668,
+            "rmse": 4.262011613734851,
+            "mae": 3.440584538621092,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.2506665597427459
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.18645446602442586
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.12641868002555504
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.10636601999604547
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.10097787895209033
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.05631621735215358
+              },
+              {
+                "feature": "participations",
+                "importance": 0.032262536863451236
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.029054086851165048
+              },
+              {
+                "feature": "missing",
+                "importance": 0.01652861818428865
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.015847539376532292
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 40,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 40,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 32,
+        "test_size": 8,
+        "regression": {
+          "linear": {
+            "r2": -0.5655477579034465,
+            "rmse": 7.851506903805739,
+            "mae": 6.113782494778002,
+            "feature_importance": [
+              {
+                "feature": "page_views_level",
+                "coefficient": 3.1460725409229173
+              },
+              {
+                "feature": "participations",
+                "coefficient": 2.018778500556426
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -1.674121982334691
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 1.6596324997834024
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -0.6228456780342897
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": -0.16527085980280454,
+            "rmse": 6.773814504554919,
+            "mae": 5.3919023292793895,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.4235014587397231
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.34645122390938143
+              },
+              {
+                "feature": "participations",
+                "importance": 0.13770139396331302
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.05214901053199637
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.040196912855586124
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 40,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      }
+    },
+    {
+      "course_id": 76755,
+      "course_name": "PENSAMIENTO MATEM\u00c1TICO-P03",
+      "course_type": "ongoing",
+      "target_variable": "current_score",
+      "n_students": 44,
+      "n_with_target": 17,
+      "target_mean": 93.58823529411765,
+      "target_std": 2.8735610209592677,
+      "pass_rate": 1.0,
+      "extraction_time": "2025-12-17T22:00:28.536812",
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 17,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "train_size": 17,
+        "test_size": 17,
+        "regression": {
+          "linear": {
+            "r2": 1.0,
+            "rmse": 0.0,
+            "mae": 0.0,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "coefficient": 0.696940918298399
+              },
+              {
+                "feature": "min_score",
+                "coefficient": 0.696940918298399
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 0.696940918298399
+              },
+              {
+                "feature": "first_score",
+                "coefficient": 0.696940918298399
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -4.440892098500626e-16
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": -1.569076793700938e-16
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 1.212453393285866e-16
+              },
+              {
+                "feature": "participations",
+                "coefficient": -1.1102230246251565e-16
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 0.0
+              },
+              {
+                "feature": "on_time",
+                "coefficient": 0.0
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.9899044523597507,
+            "rmse": 0.28010502232093504,
+            "mae": 0.19764705882352937,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "importance": 0.295674597164996
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.26767151209109746
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.2143462012999223
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.19941595565974715
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.012650723686688814
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.006705800587968008
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.0035352095095804057
+              },
+              {
+                "feature": "participations",
+                "importance": 0.0
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.0
+              },
+              {
+                "feature": "on_time",
+                "importance": 0.0
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 17,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 17,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "train_size": 17,
+        "test_size": 17,
+        "regression": {
+          "linear": {
+            "r2": 0.04158676166217623,
+            "rmse": 2.7291811092364284,
+            "mae": 2.273858133660005,
+            "feature_importance": [
+              {
+                "feature": "page_views_level",
+                "coefficient": -0.8597515877754995
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.6683848171648707
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 0.5340804328379447
+              },
+              {
+                "feature": "participations",
+                "coefficient": -3.885780586188048e-16
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 0.0
+              }
+            ]
+          },
+          "random_forest": {
+            "r2": 0.8366593190812394,
+            "rmse": 1.1266866162746911,
+            "mae": 0.8835098039215661,
+            "feature_importance": [
+              {
+                "feature": "page_views",
+                "importance": 0.5273109944766315
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.4489279162131576
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.023761089310210953
+              },
+              {
+                "feature": "participations",
+                "importance": 0.0
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.0
+              }
+            ]
+          }
+        },
+        "classification": {
+          "status": "skipped_no_diversity"
+        },
+        "class_balance": {
+          "pass": 17,
+          "fail": 0,
+          "pass_rate": 1.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2229 @@
+{
+  "analysis_date": "2025-12-04T22:09:02.895922",
+  "courses_analyzed": 4,
+  "courses_total": 21,
+  "per_course_results": [
+    {
+      "course_id": 86005,
+      "course_name": "TALL DE COMPETENCIAS DIGITALES-P01",
+      "n_students": 50,
+      "correlations": {
+        "current_score": [
+          {
+            "feature": "avg_score",
+            "n_samples": 48,
+            "pearson_r": 0.5748059325944718,
+            "pearson_p": 1.930337335465104e-05,
+            "spearman_r": 0.5387830437291735,
+            "spearman_p": 7.794280884372649e-05,
+            "abs_pearson": 0.5748059325944718,
+            "significant": true
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 48,
+            "pearson_r": 0.46369561492635986,
+            "pearson_p": 0.0009022406862197518,
+            "spearman_r": 0.27281017206820246,
+            "spearman_p": 0.060652356920286435,
+            "abs_pearson": 0.46369561492635986,
+            "significant": true
+          },
+          {
+            "feature": "late",
+            "n_samples": 48,
+            "pearson_r": -0.34551637254458345,
+            "pearson_p": 0.016159122346391854,
+            "spearman_r": -0.2369066454121565,
+            "spearman_p": 0.10496506863044448,
+            "abs_pearson": 0.34551637254458345,
+            "significant": true
+          },
+          {
+            "feature": "late_rate",
+            "n_samples": 48,
+            "pearson_r": -0.34551637254458345,
+            "pearson_p": 0.016159122346391854,
+            "spearman_r": -0.2369066454121565,
+            "spearman_p": 0.10496506863044448,
+            "abs_pearson": 0.34551637254458345,
+            "significant": true
+          },
+          {
+            "feature": "exam_2_score",
+            "n_samples": 32,
+            "pearson_r": 0.3181998533366729,
+            "pearson_p": 0.07592230802781498,
+            "spearman_r": 0.14308360527325326,
+            "spearman_p": 0.4346656510405075,
+            "abs_pearson": 0.3181998533366729,
+            "significant": false
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 48,
+            "pearson_r": 0.29530143298553546,
+            "pearson_p": 0.04158305605386839,
+            "spearman_r": 0.09976118106817196,
+            "spearman_p": 0.4999091005136056,
+            "abs_pearson": 0.29530143298553546,
+            "significant": true
+          },
+          {
+            "feature": "exam_3_score",
+            "n_samples": 15,
+            "pearson_r": 0.26685027091415864,
+            "pearson_p": 0.3363333287400107,
+            "spearman_r": 0.2257008990652341,
+            "spearman_p": 0.4186196602180908,
+            "abs_pearson": 0.26685027091415864,
+            "significant": false
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 48,
+            "pearson_r": 0.2450235720901607,
+            "pearson_p": 0.09324560316191281,
+            "spearman_r": 0.19855076404304992,
+            "spearman_p": 0.17610259215698054,
+            "abs_pearson": 0.2450235720901607,
+            "significant": false
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 48,
+            "pearson_r": 0.23196016413714865,
+            "pearson_p": 0.11264220166222827,
+            "spearman_r": 0.09610324615472114,
+            "spearman_p": 0.5158352906078285,
+            "abs_pearson": 0.23196016413714865,
+            "significant": false
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 48,
+            "pearson_r": 0.23071857823242037,
+            "pearson_p": 0.11463475651148625,
+            "spearman_r": 0.1905318605785638,
+            "spearman_p": 0.19457341808279863,
+            "abs_pearson": 0.23071857823242037,
+            "significant": false
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 48,
+            "pearson_r": 0.2182154575504316,
+            "pearson_p": 0.13622115667397822,
+            "spearman_r": 0.13666956144159792,
+            "spearman_p": 0.3543048859659028,
+            "abs_pearson": 0.2182154575504316,
+            "significant": false
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 48,
+            "pearson_r": 0.19725354234214174,
+            "pearson_p": 0.1790015732180005,
+            "spearman_r": 0.06098142229228244,
+            "spearman_p": 0.6805311020843086,
+            "abs_pearson": 0.19725354234214174,
+            "significant": false
+          },
+          {
+            "feature": "exam_1_score",
+            "n_samples": 37,
+            "pearson_r": 0.1947701588271146,
+            "pearson_p": 0.24801602073883383,
+            "spearman_r": 0.1908048107112073,
+            "spearman_p": 0.25796426603617,
+            "abs_pearson": 0.1947701588271146,
+            "significant": false
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 48,
+            "pearson_r": 0.1860833808820283,
+            "pearson_p": 0.20539341369857367,
+            "spearman_r": 0.38255612017802304,
+            "spearman_p": 0.007285968055258746,
+            "abs_pearson": 0.1860833808820283,
+            "significant": false
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 48,
+            "pearson_r": 0.18484105088399377,
+            "pearson_p": 0.2084892172573502,
+            "spearman_r": 0.0320905764641781,
+            "spearman_p": 0.8285784082373182,
+            "abs_pearson": 0.18484105088399377,
+            "significant": false
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 48,
+            "pearson_r": 0.14824090266559756,
+            "pearson_p": 0.31463689153696583,
+            "spearman_r": 0.022404745813923283,
+            "spearman_p": 0.879855939656753,
+            "abs_pearson": 0.14824090266559756,
+            "significant": false
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 48,
+            "pearson_r": 0.14824090266559747,
+            "pearson_p": 0.31463689153696583,
+            "spearman_r": 0.022404745813923283,
+            "spearman_p": 0.879855939656753,
+            "abs_pearson": 0.14824090266559747,
+            "significant": false
+          },
+          {
+            "feature": "participations",
+            "n_samples": 48,
+            "pearson_r": 0.1417192123792138,
+            "pearson_p": 0.33663307372701634,
+            "spearman_r": 0.0217285956271331,
+            "spearman_p": 0.8834563177559869,
+            "abs_pearson": 0.1417192123792138,
+            "significant": false
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 48,
+            "pearson_r": 0.1380302716214038,
+            "pearson_p": 0.34948810249018375,
+            "spearman_r": -0.007587666777022407,
+            "spearman_p": 0.9591789862480353,
+            "abs_pearson": 0.1380302716214038,
+            "significant": false
+          },
+          {
+            "feature": "num_graded",
+            "n_samples": 48,
+            "pearson_r": 0.1380302716214038,
+            "pearson_p": 0.34948810249018375,
+            "spearman_r": -0.007587666777022407,
+            "spearman_p": 0.9591789862480353,
+            "abs_pearson": 0.1380302716214038,
+            "significant": false
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 48,
+            "pearson_r": -0.1367163138376896,
+            "pearson_p": 0.3541387174430178,
+            "spearman_r": 0.0007072154245162468,
+            "spearman_p": 0.9961936475597111,
+            "abs_pearson": 0.1367163138376896,
+            "significant": false
+          },
+          {
+            "feature": "missing",
+            "n_samples": 48,
+            "pearson_r": -0.1308793812493571,
+            "pearson_p": 0.37525145640046115,
+            "spearman_r": 0.014211886504239001,
+            "spearman_p": 0.9236221066078552,
+            "abs_pearson": 0.1308793812493571,
+            "significant": false
+          },
+          {
+            "feature": "exam_5_score",
+            "n_samples": 40,
+            "pearson_r": 0.0689772035279894,
+            "pearson_p": 0.6723528900679897,
+            "spearman_r": -0.02356505753917059,
+            "spearman_p": 0.8852379845044719,
+            "abs_pearson": 0.0689772035279894,
+            "significant": false
+          },
+          {
+            "feature": "floating",
+            "n_samples": 48,
+            "pearson_r": -0.05181926732586588,
+            "pearson_p": 0.726499271615922,
+            "spearman_r": -0.14806904491987294,
+            "spearman_p": 0.31520453057188824,
+            "abs_pearson": 0.05181926732586588,
+            "significant": false
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 48,
+            "pearson_r": 0.05030660614846008,
+            "pearson_p": 0.7341862169808777,
+            "spearman_r": -0.02638575660278963,
+            "spearman_p": 0.8587087783385877,
+            "abs_pearson": 0.05030660614846008,
+            "significant": false
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 48,
+            "pearson_r": 0.020578404067935083,
+            "pearson_p": 0.889586193970006,
+            "spearman_r": -0.13212463436891883,
+            "spearman_p": 0.3706853352824342,
+            "abs_pearson": 0.020578404067935083,
+            "significant": false
+          }
+        ],
+        "final_score": [
+          {
+            "feature": "activity_engagement",
+            "n_samples": 50,
+            "pearson_r": 0.6161981540195312,
+            "pearson_p": 1.8991380765185978e-06,
+            "spearman_r": 0.6411678553554054,
+            "spearman_p": 5.265791079336479e-07,
+            "abs_pearson": 0.6161981540195312,
+            "significant": true
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 50,
+            "pearson_r": 0.6082529096211833,
+            "pearson_p": 2.791726716382502e-06,
+            "spearman_r": 0.5889686124575374,
+            "spearman_p": 6.817787910116543e-06,
+            "abs_pearson": 0.6082529096211833,
+            "significant": true
+          },
+          {
+            "feature": "num_graded",
+            "n_samples": 50,
+            "pearson_r": 0.6082529096211833,
+            "pearson_p": 2.791726716382502e-06,
+            "spearman_r": 0.5889686124575374,
+            "spearman_p": 6.817787910116543e-06,
+            "abs_pearson": 0.6082529096211833,
+            "significant": true
+          },
+          {
+            "feature": "missing",
+            "n_samples": 50,
+            "pearson_r": -0.5977799119746979,
+            "pearson_p": 4.566599967816124e-06,
+            "spearman_r": -0.5726586580307584,
+            "spearman_p": 1.3888881310276544e-05,
+            "abs_pearson": 0.5977799119746979,
+            "significant": true
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 50,
+            "pearson_r": 0.5871020474619287,
+            "pearson_p": 7.4107183154791865e-06,
+            "spearman_r": 0.5595296080712795,
+            "spearman_p": 2.3972068031249515e-05,
+            "abs_pearson": 0.5871020474619287,
+            "significant": true
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 50,
+            "pearson_r": 0.5828213910648997,
+            "pearson_p": 8.955176107152337e-06,
+            "spearman_r": 0.5605313318032061,
+            "spearman_p": 2.3012996981816767e-05,
+            "abs_pearson": 0.5828213910648997,
+            "significant": true
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 50,
+            "pearson_r": -0.5799091272392174,
+            "pearson_p": 1.0170550362836397e-05,
+            "spearman_r": -0.5482579525032772,
+            "spearman_p": 3.761382133033554e-05,
+            "abs_pearson": 0.5799091272392174,
+            "significant": true
+          },
+          {
+            "feature": "participations",
+            "n_samples": 50,
+            "pearson_r": 0.5743072923894725,
+            "pearson_p": 1.2947303530218327e-05,
+            "spearman_r": 0.5296380836267436,
+            "spearman_p": 7.647880024542084e-05,
+            "abs_pearson": 0.5743072923894725,
+            "significant": true
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 50,
+            "pearson_r": 0.5504872456335769,
+            "pearson_p": 3.445181615718763e-05,
+            "spearman_r": 0.523464216269932,
+            "spearman_p": 9.58963634310084e-05,
+            "abs_pearson": 0.5504872456335769,
+            "significant": true
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 50,
+            "pearson_r": 0.5463722205853939,
+            "pearson_p": 4.0494362579502415e-05,
+            "spearman_r": 0.5040777988896704,
+            "spearman_p": 0.00018981940711649992,
+            "abs_pearson": 0.5463722205853939,
+            "significant": true
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 50,
+            "pearson_r": 0.5463722205853937,
+            "pearson_p": 4.0494362579502415e-05,
+            "spearman_r": 0.5040777988896704,
+            "spearman_p": 0.00018981940711649992,
+            "abs_pearson": 0.5463722205853937,
+            "significant": true
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 50,
+            "pearson_r": 0.5365772817296133,
+            "pearson_p": 5.8992991401395495e-05,
+            "spearman_r": 0.6217825585862468,
+            "spearman_p": 1.4393811666729935e-06,
+            "abs_pearson": 0.5365772817296133,
+            "significant": true
+          },
+          {
+            "feature": "exam_1_score",
+            "n_samples": 37,
+            "pearson_r": 0.48067705725370025,
+            "pearson_p": 0.002601207095341101,
+            "spearman_r": 0.34477930304104837,
+            "spearman_p": 0.03663688558498707,
+            "abs_pearson": 0.48067705725370025,
+            "significant": true
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 50,
+            "pearson_r": 0.46960335412763377,
+            "pearson_p": 0.0005805668252916384,
+            "spearman_r": 0.43814598196694243,
+            "spearman_p": 0.0014607509412541929,
+            "abs_pearson": 0.46960335412763377,
+            "significant": true
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 50,
+            "pearson_r": 0.45728225046436516,
+            "pearson_p": 0.0008421035607496168,
+            "spearman_r": 0.5545871451093152,
+            "spearman_p": 2.9265998290841307e-05,
+            "abs_pearson": 0.45728225046436516,
+            "significant": true
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 50,
+            "pearson_r": 0.27285351088025456,
+            "pearson_p": 0.05522292745666027,
+            "spearman_r": 0.3499534059078128,
+            "spearman_p": 0.01272813624293802,
+            "abs_pearson": 0.27285351088025456,
+            "significant": false
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 50,
+            "pearson_r": 0.23794516814883757,
+            "pearson_p": 0.09611943123182151,
+            "spearman_r": 0.2995175105563376,
+            "spearman_p": 0.03459049794685379,
+            "abs_pearson": 0.23794516814883757,
+            "significant": false
+          },
+          {
+            "feature": "floating",
+            "n_samples": 50,
+            "pearson_r": 0.2205618184176847,
+            "pearson_p": 0.12375916200999601,
+            "spearman_r": 0.21297980988034013,
+            "spearman_p": 0.1375435579659152,
+            "abs_pearson": 0.2205618184176847,
+            "significant": false
+          },
+          {
+            "feature": "avg_score",
+            "n_samples": 50,
+            "pearson_r": 0.19086877129001745,
+            "pearson_p": 0.18425940857317788,
+            "spearman_r": 0.3194784616852177,
+            "spearman_p": 0.023725601823389182,
+            "abs_pearson": 0.19086877129001745,
+            "significant": false
+          },
+          {
+            "feature": "exam_2_score",
+            "n_samples": 32,
+            "pearson_r": 0.13241640079133085,
+            "pearson_p": 0.4700184903188207,
+            "spearman_r": 0.1154256918828048,
+            "spearman_p": 0.5292990289478494,
+            "abs_pearson": 0.13241640079133085,
+            "significant": false
+          },
+          {
+            "feature": "exam_3_score",
+            "n_samples": 15,
+            "pearson_r": 0.1214010678562201,
+            "pearson_p": 0.666472642881115,
+            "spearman_r": 0.3840555621190678,
+            "spearman_p": 0.1575689018514699,
+            "abs_pearson": 0.1214010678562201,
+            "significant": false
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 50,
+            "pearson_r": 0.06452138613281588,
+            "pearson_p": 0.6562041605524006,
+            "spearman_r": 0.007420927669202779,
+            "spearman_p": 0.9592081164951334,
+            "abs_pearson": 0.06452138613281588,
+            "significant": false
+          },
+          {
+            "feature": "late",
+            "n_samples": 50,
+            "pearson_r": -0.05686027765360562,
+            "pearson_p": 0.6949022123991507,
+            "spearman_r": -0.13364528791059246,
+            "spearman_p": 0.35482408107847174,
+            "abs_pearson": 0.05686027765360562,
+            "significant": false
+          },
+          {
+            "feature": "late_rate",
+            "n_samples": 50,
+            "pearson_r": -0.05686027765360562,
+            "pearson_p": 0.6949022123991507,
+            "spearman_r": -0.13364528791059246,
+            "spearman_p": 0.35482408107847174,
+            "abs_pearson": 0.05686027765360562,
+            "significant": false
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 50,
+            "pearson_r": -0.030621302940341738,
+            "pearson_p": 0.8328106479181985,
+            "spearman_r": 0.0172066056880344,
+            "spearman_p": 0.9055919289885473,
+            "abs_pearson": 0.030621302940341738,
+            "significant": false
+          },
+          {
+            "feature": "exam_5_score",
+            "n_samples": 40,
+            "pearson_r": 0.010927228481199772,
+            "pearson_p": 0.9466451441464028,
+            "spearman_r": 0.10637940260539866,
+            "spearman_p": 0.5135463354930492,
+            "abs_pearson": 0.010927228481199772,
+            "significant": false
+          }
+        ],
+        "exam_1_score": [
+          {
+            "feature": "total_activity_time",
+            "n_samples": 37,
+            "pearson_r": 0.46712945933596806,
+            "pearson_p": 0.003558802265412644,
+            "spearman_r": 0.5347524614017087,
+            "spearman_p": 0.0006503243932976495,
+            "abs_pearson": 0.46712945933596806,
+            "significant": true
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 37,
+            "pearson_r": 0.2783608612099135,
+            "pearson_p": 0.09526742105687178,
+            "spearman_r": 0.265075196285646,
+            "spearman_p": 0.11283914757283015,
+            "abs_pearson": 0.2783608612099135,
+            "significant": false
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 37,
+            "pearson_r": 0.26544658597947546,
+            "pearson_p": 0.11231690670564565,
+            "spearman_r": 0.2845571339367728,
+            "spearman_p": 0.08782656520262538,
+            "abs_pearson": 0.26544658597947546,
+            "significant": false
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 37,
+            "pearson_r": 0.2573803692496668,
+            "pearson_p": 0.12407579732092879,
+            "spearman_r": 0.24973332012139338,
+            "spearman_p": 0.13604957506627555,
+            "abs_pearson": 0.2573803692496668,
+            "significant": false
+          },
+          {
+            "feature": "late_rate",
+            "n_samples": 37,
+            "pearson_r": -0.19808497993313998,
+            "pearson_p": 0.23989944346108968,
+            "spearman_r": -0.2033855183503668,
+            "spearman_p": 0.22729646064300882,
+            "abs_pearson": 0.19808497993313998,
+            "significant": false
+          },
+          {
+            "feature": "late",
+            "n_samples": 37,
+            "pearson_r": -0.19808497993313998,
+            "pearson_p": 0.23989944346108968,
+            "spearman_r": -0.2033855183503668,
+            "spearman_p": 0.22729646064300882,
+            "abs_pearson": 0.19808497993313998,
+            "significant": false
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 37,
+            "pearson_r": 0.18747168725737776,
+            "pearson_p": 0.2665283522552966,
+            "spearman_r": 0.21042835131937895,
+            "spearman_p": 0.21126040045524314,
+            "abs_pearson": 0.18747168725737776,
+            "significant": false
+          },
+          {
+            "feature": "participations",
+            "n_samples": 37,
+            "pearson_r": 0.1519564685593649,
+            "pearson_p": 0.3692816426960715,
+            "spearman_r": 0.1489798163380284,
+            "spearman_p": 0.3788424457890095,
+            "abs_pearson": 0.1519564685593649,
+            "significant": false
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 37,
+            "pearson_r": 0.14678244043615798,
+            "pearson_p": 0.38599280726482826,
+            "spearman_r": 0.1566163585367683,
+            "spearman_p": 0.3546057836504827,
+            "abs_pearson": 0.14678244043615798,
+            "significant": false
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 37,
+            "pearson_r": 0.14508709811987244,
+            "pearson_p": 0.39156299357767715,
+            "spearman_r": 0.16864317565019032,
+            "spearman_p": 0.31838716500295483,
+            "abs_pearson": 0.14508709811987244,
+            "significant": false
+          },
+          {
+            "feature": "missing",
+            "n_samples": 37,
+            "pearson_r": -0.12200804842866692,
+            "pearson_p": 0.4719142333887629,
+            "spearman_r": -0.16211281101839908,
+            "spearman_p": 0.33775544727357376,
+            "abs_pearson": 0.12200804842866692,
+            "significant": false
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 37,
+            "pearson_r": 0.11268013685590023,
+            "pearson_p": 0.5066894654095141,
+            "spearman_r": 0.12482154785628621,
+            "spearman_p": 0.46167818633203106,
+            "abs_pearson": 0.11268013685590023,
+            "significant": false
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 37,
+            "pearson_r": 0.11268013685590023,
+            "pearson_p": 0.5066894654095141,
+            "spearman_r": 0.12482154785628621,
+            "spearman_p": 0.46167818633203106,
+            "abs_pearson": 0.11268013685590023,
+            "significant": false
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 37,
+            "pearson_r": -0.11113086800418778,
+            "pearson_p": 0.5125873297476488,
+            "spearman_r": -0.14234631002764964,
+            "spearman_p": 0.4006660916265935,
+            "abs_pearson": 0.11113086800418778,
+            "significant": false
+          }
+        ]
+      },
+      "dataframe_stats": {
+        "columns": [
+          "user_id",
+          "current_score",
+          "final_score",
+          "total_activity_time",
+          "enrollment_state",
+          "last_activity_at",
+          "page_views",
+          "page_views_level",
+          "participations",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "num_submissions",
+          "num_graded",
+          "num_scores",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "exam_1_score",
+          "exam_2_score",
+          "exam_3_score",
+          "exam_5_score",
+          "submission_rate",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "activity_engagement"
+        ],
+        "n_features": 26,
+        "current_score_stats": {
+          "mean": 85.74166666666667,
+          "std": 5.316554368631053,
+          "min": 72.0,
+          "max": 95.66
+        },
+        "final_score_stats": {
+          "mean": 44.032599999999995,
+          "std": 13.17846462364773,
+          "min": 0.0,
+          "max": 60.6
+        }
+      }
+    },
+    {
+      "course_id": 86020,
+      "course_name": "TALL DE COMPETENCIAS DIGITALES-P02",
+      "n_students": 51,
+      "correlations": {
+        "current_score": [
+          {
+            "feature": "exam_2_score",
+            "n_samples": 25,
+            "pearson_r": 0.5150964256913632,
+            "pearson_p": 0.008414784150977872,
+            "spearman_r": 0.42065948927496377,
+            "spearman_p": 0.03626944532001099,
+            "abs_pearson": 0.5150964256913632,
+            "significant": true
+          },
+          {
+            "feature": "exam_1_score",
+            "n_samples": 37,
+            "pearson_r": 0.43057534691893445,
+            "pearson_p": 0.007808876187209298,
+            "spearman_r": 0.4055037479668768,
+            "spearman_p": 0.012776838873058709,
+            "abs_pearson": 0.43057534691893445,
+            "significant": true
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 47,
+            "pearson_r": -0.37418281141571447,
+            "pearson_p": 0.009567765415781726,
+            "spearman_r": -0.5320766737755568,
+            "spearman_p": 0.0001185047912955107,
+            "abs_pearson": 0.37418281141571447,
+            "significant": true
+          },
+          {
+            "feature": "avg_score",
+            "n_samples": 47,
+            "pearson_r": 0.3061227298469583,
+            "pearson_p": 0.03637678218032655,
+            "spearman_r": 0.46588017658286923,
+            "spearman_p": 0.0009661157282976778,
+            "abs_pearson": 0.3061227298469583,
+            "significant": true
+          },
+          {
+            "feature": "num_graded",
+            "n_samples": 47,
+            "pearson_r": 0.28610738703448235,
+            "pearson_p": 0.051223223650442955,
+            "spearman_r": 0.22940541389965816,
+            "spearman_p": 0.12086758170784703,
+            "abs_pearson": 0.28610738703448235,
+            "significant": false
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 47,
+            "pearson_r": 0.28610738703448235,
+            "pearson_p": 0.051223223650442955,
+            "spearman_r": 0.22940541389965816,
+            "spearman_p": 0.12086758170784703,
+            "abs_pearson": 0.28610738703448235,
+            "significant": false
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 47,
+            "pearson_r": 0.2282933326667822,
+            "pearson_p": 0.12272960767556439,
+            "spearman_r": 0.48392341822367285,
+            "spearman_p": 0.0005683804858032978,
+            "abs_pearson": 0.2282933326667822,
+            "significant": false
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 47,
+            "pearson_r": 0.2160832190389018,
+            "pearson_p": 0.14462042933056343,
+            "spearman_r": 0.12251253733662901,
+            "spearman_p": 0.41199719543214186,
+            "abs_pearson": 0.2160832190389018,
+            "significant": false
+          },
+          {
+            "feature": "missing",
+            "n_samples": 47,
+            "pearson_r": -0.21475782864553847,
+            "pearson_p": 0.14716019972003594,
+            "spearman_r": -0.19032133955790698,
+            "spearman_p": 0.2000558671837405,
+            "abs_pearson": 0.21475782864553847,
+            "significant": false
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 47,
+            "pearson_r": 0.2137099988121735,
+            "pearson_p": 0.14919130130362687,
+            "spearman_r": 0.1970624339454885,
+            "spearman_p": 0.18428551134398485,
+            "abs_pearson": 0.2137099988121735,
+            "significant": false
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 47,
+            "pearson_r": 0.2137099988121735,
+            "pearson_p": 0.14919130130362687,
+            "spearman_r": 0.1970624339454885,
+            "spearman_p": 0.18428551134398485,
+            "abs_pearson": 0.2137099988121735,
+            "significant": false
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 47,
+            "pearson_r": 0.21370999881217348,
+            "pearson_p": 0.14919130130362687,
+            "spearman_r": 0.1970624339454885,
+            "spearman_p": 0.18428551134398485,
+            "abs_pearson": 0.21370999881217348,
+            "significant": false
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 47,
+            "pearson_r": -0.21268208944267958,
+            "pearson_p": 0.15120380228848315,
+            "spearman_r": -0.18657072218664414,
+            "spearman_p": 0.20923126774475265,
+            "abs_pearson": 0.21268208944267958,
+            "significant": false
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 47,
+            "pearson_r": 0.21268208944267952,
+            "pearson_p": 0.15120380228848315,
+            "spearman_r": 0.18657072218664414,
+            "spearman_p": 0.20923126774475265,
+            "abs_pearson": 0.21268208944267952,
+            "significant": false
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 47,
+            "pearson_r": 0.18114778195927267,
+            "pearson_p": 0.2230122210773239,
+            "spearman_r": 0.16143860825704784,
+            "spearman_p": 0.2783226252767109,
+            "abs_pearson": 0.18114778195927267,
+            "significant": false
+          },
+          {
+            "feature": "participations",
+            "n_samples": 47,
+            "pearson_r": 0.17254174250887513,
+            "pearson_p": 0.24614757936258827,
+            "spearman_r": 0.1409875148057862,
+            "spearman_p": 0.34452234985873786,
+            "abs_pearson": 0.17254174250887513,
+            "significant": false
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 47,
+            "pearson_r": 0.13729621825120278,
+            "pearson_p": 0.35742749110751904,
+            "spearman_r": 0.10899418931394528,
+            "spearman_p": 0.4658289296055109,
+            "abs_pearson": 0.13729621825120278,
+            "significant": false
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 47,
+            "pearson_r": 0.08272540170442333,
+            "pearson_p": 0.5803906886259316,
+            "spearman_r": 0.07378886310979789,
+            "spearman_p": 0.6220677483993939,
+            "abs_pearson": 0.08272540170442333,
+            "significant": false
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 47,
+            "pearson_r": 0.08142372031166406,
+            "pearson_p": 0.5863820602437684,
+            "spearman_r": 0.20221450619354553,
+            "spearman_p": 0.17284705294453437,
+            "abs_pearson": 0.08142372031166406,
+            "significant": false
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 47,
+            "pearson_r": 0.06973840624640565,
+            "pearson_p": 0.6413614689520206,
+            "spearman_r": 0.010407933197087613,
+            "spearman_p": 0.9446444457132759,
+            "abs_pearson": 0.06973840624640565,
+            "significant": false
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 47,
+            "pearson_r": 0.03947920915344093,
+            "pearson_p": 0.7921880480369532,
+            "spearman_r": 0.023178794518457207,
+            "spearman_p": 0.8770991915959296,
+            "abs_pearson": 0.03947920915344093,
+            "significant": false
+          },
+          {
+            "feature": "exam_5_score",
+            "n_samples": 38,
+            "pearson_r": 0.03081750380698582,
+            "pearson_p": 0.8542728979377174,
+            "spearman_r": 0.1894961802334863,
+            "spearman_p": 0.2545061298082076,
+            "abs_pearson": 0.03081750380698582,
+            "significant": false
+          },
+          {
+            "feature": "exam_3_score",
+            "n_samples": 17,
+            "pearson_r": -0.018111384552570796,
+            "pearson_p": 0.9449958024977558,
+            "spearman_r": -0.29958583539703726,
+            "spearman_p": 0.24272034353566824,
+            "abs_pearson": 0.018111384552570796,
+            "significant": false
+          },
+          {
+            "feature": "floating",
+            "n_samples": 47,
+            "pearson_r": -0.01386830467920325,
+            "pearson_p": 0.9262844986531342,
+            "spearman_r": -0.10338431712686917,
+            "spearman_p": 0.4892273317935647,
+            "abs_pearson": 0.01386830467920325,
+            "significant": false
+          }
+        ],
+        "final_score": [
+          {
+            "feature": "num_graded",
+            "n_samples": 51,
+            "pearson_r": 0.7453323301001707,
+            "pearson_p": 3.5324360312960044e-10,
+            "spearman_r": 0.6351078818995118,
+            "spearman_p": 5.5574347919286e-07,
+            "abs_pearson": 0.7453323301001707,
+            "significant": true
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 51,
+            "pearson_r": 0.7453323301001707,
+            "pearson_p": 3.5324360312960044e-10,
+            "spearman_r": 0.6351078818995118,
+            "spearman_p": 5.5574347919286e-07,
+            "abs_pearson": 0.7453323301001707,
+            "significant": true
+          },
+          {
+            "feature": "missing",
+            "n_samples": 51,
+            "pearson_r": -0.7004560652763697,
+            "pearson_p": 1.0542288920268501e-08,
+            "spearman_r": -0.6074500279529578,
+            "spearman_p": 2.2822669147040527e-06,
+            "abs_pearson": 0.7004560652763697,
+            "significant": true
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 51,
+            "pearson_r": 0.6888623150114296,
+            "pearson_p": 2.2956655477255864e-08,
+            "spearman_r": 0.5852271330827872,
+            "spearman_p": 6.46864613254846e-06,
+            "abs_pearson": 0.6888623150114296,
+            "significant": true
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 51,
+            "pearson_r": -0.6888623150114294,
+            "pearson_p": 2.2956655477256533e-08,
+            "spearman_r": -0.5852271330827872,
+            "spearman_p": 6.46864613254846e-06,
+            "abs_pearson": 0.6888623150114294,
+            "significant": true
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 51,
+            "pearson_r": 0.677874792546673,
+            "pearson_p": 4.647035686207386e-08,
+            "spearman_r": 0.5667534637363276,
+            "spearman_p": 1.4530318490586138e-05,
+            "abs_pearson": 0.677874792546673,
+            "significant": true
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 51,
+            "pearson_r": 0.6778747925466729,
+            "pearson_p": 4.6470356862074505e-08,
+            "spearman_r": 0.5667534637363276,
+            "spearman_p": 1.4530318490586138e-05,
+            "abs_pearson": 0.6778747925466729,
+            "significant": true
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 51,
+            "pearson_r": 0.6778747925466729,
+            "pearson_p": 4.6470356862074505e-08,
+            "spearman_r": 0.5667534637363276,
+            "spearman_p": 1.4530318490586138e-05,
+            "abs_pearson": 0.6778747925466729,
+            "significant": true
+          },
+          {
+            "feature": "participations",
+            "n_samples": 51,
+            "pearson_r": 0.655575964950437,
+            "pearson_p": 1.7798281126463722e-07,
+            "spearman_r": 0.5296459964432704,
+            "spearman_p": 6.424641395442741e-05,
+            "abs_pearson": 0.655575964950437,
+            "significant": true
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 51,
+            "pearson_r": 0.643101860294959,
+            "pearson_p": 3.5983388450166587e-07,
+            "spearman_r": 0.530824653198968,
+            "spearman_p": 6.144586147625259e-05,
+            "abs_pearson": 0.643101860294959,
+            "significant": true
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 51,
+            "pearson_r": 0.5862850681330671,
+            "pearson_p": 6.166380954432263e-06,
+            "spearman_r": 0.488786315765256,
+            "spearman_p": 0.00027336411865633704,
+            "abs_pearson": 0.5862850681330671,
+            "significant": true
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 51,
+            "pearson_r": 0.4731164232277766,
+            "pearson_p": 0.0004546585462522855,
+            "spearman_r": 0.40365349316055804,
+            "spearman_p": 0.003310822580632825,
+            "abs_pearson": 0.4731164232277766,
+            "significant": true
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 51,
+            "pearson_r": 0.46630080099217996,
+            "pearson_p": 0.0005630385974548959,
+            "spearman_r": 0.5408415113450452,
+            "spearman_p": 4.1788351379242306e-05,
+            "abs_pearson": 0.46630080099217996,
+            "significant": true
+          },
+          {
+            "feature": "exam_3_score",
+            "n_samples": 17,
+            "pearson_r": 0.4568168834187033,
+            "pearson_p": 0.06527220301560681,
+            "spearman_r": 0.16533160210707865,
+            "spearman_p": 0.5259867261521056,
+            "abs_pearson": 0.4568168834187033,
+            "significant": false
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 51,
+            "pearson_r": 0.367872407651547,
+            "pearson_p": 0.007910974814482509,
+            "spearman_r": 0.3715119992407835,
+            "spearman_p": 0.007271117550916128,
+            "abs_pearson": 0.367872407651547,
+            "significant": true
+          },
+          {
+            "feature": "exam_2_score",
+            "n_samples": 25,
+            "pearson_r": 0.2854544224680384,
+            "pearson_p": 0.1666096818596233,
+            "spearman_r": 0.23012091987089806,
+            "spearman_p": 0.26845287643623483,
+            "abs_pearson": 0.2854544224680384,
+            "significant": false
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 51,
+            "pearson_r": 0.2513414313509624,
+            "pearson_p": 0.07522010154618526,
+            "spearman_r": -0.06908572349949695,
+            "spearman_p": 0.6300078863071341,
+            "abs_pearson": 0.2513414313509624,
+            "significant": false
+          },
+          {
+            "feature": "floating",
+            "n_samples": 51,
+            "pearson_r": 0.1661045566584281,
+            "pearson_p": 0.24404734569587305,
+            "spearman_r": 0.22818747031865716,
+            "spearman_p": 0.10728595532743178,
+            "abs_pearson": 0.1661045566584281,
+            "significant": false
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 47,
+            "pearson_r": 0.05665160006193038,
+            "pearson_p": 0.7052600692063847,
+            "spearman_r": 0.13858649869427211,
+            "spearman_p": 0.3528835102963863,
+            "abs_pearson": 0.05665160006193038,
+            "significant": false
+          },
+          {
+            "feature": "exam_1_score",
+            "n_samples": 37,
+            "pearson_r": 0.039056591277045194,
+            "pearson_p": 0.8184761673918882,
+            "spearman_r": 0.003571671297418175,
+            "spearman_p": 0.9832616203092601,
+            "abs_pearson": 0.039056591277045194,
+            "significant": false
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 47,
+            "pearson_r": -0.03236527691962011,
+            "pearson_p": 0.8290136123265265,
+            "spearman_r": 0.015554962014888117,
+            "spearman_p": 0.9173486188725879,
+            "abs_pearson": 0.03236527691962011,
+            "significant": false
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 47,
+            "pearson_r": 0.025139413927944363,
+            "pearson_p": 0.8667936052421178,
+            "spearman_r": 0.21605340039050508,
+            "spearman_p": 0.1446772099146391,
+            "abs_pearson": 0.025139413927944363,
+            "significant": false
+          },
+          {
+            "feature": "exam_5_score",
+            "n_samples": 38,
+            "pearson_r": -0.024323228499415497,
+            "pearson_p": 0.8847495307769974,
+            "spearman_r": 0.01149801793715436,
+            "spearman_p": 0.9453772606308436,
+            "abs_pearson": 0.024323228499415497,
+            "significant": false
+          },
+          {
+            "feature": "avg_score",
+            "n_samples": 47,
+            "pearson_r": -0.0028058673013854254,
+            "pearson_p": 0.9850659914975023,
+            "spearman_r": 0.1962757347718791,
+            "spearman_p": 0.1860786615036872,
+            "abs_pearson": 0.0028058673013854254,
+            "significant": false
+          }
+        ],
+        "exam_1_score": [
+          {
+            "feature": "submission_rate",
+            "n_samples": 37,
+            "pearson_r": 0.2787822199075236,
+            "pearson_p": 0.09474661435266371,
+            "spearman_r": 0.24841137730795057,
+            "spearman_p": 0.1382031011577863,
+            "abs_pearson": 0.2787822199075236,
+            "significant": false
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 37,
+            "pearson_r": 0.2787822199075235,
+            "pearson_p": 0.09474661435266399,
+            "spearman_r": 0.24841137730795057,
+            "spearman_p": 0.1382031011577863,
+            "abs_pearson": 0.2787822199075235,
+            "significant": false
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 37,
+            "pearson_r": 0.2787822199075235,
+            "pearson_p": 0.09474661435266399,
+            "spearman_r": 0.24841137730795057,
+            "spearman_p": 0.1382031011577863,
+            "abs_pearson": 0.2787822199075235,
+            "significant": false
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 37,
+            "pearson_r": 0.26411664587785516,
+            "pearson_p": 0.1141954983700518,
+            "spearman_r": 0.1967362104914589,
+            "spearman_p": 0.2431801166637938,
+            "abs_pearson": 0.26411664587785516,
+            "significant": false
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 37,
+            "pearson_r": 0.2535979869611007,
+            "pearson_p": 0.12989594866908172,
+            "spearman_r": 0.24197310498337038,
+            "spearman_p": 0.14905156371674658,
+            "abs_pearson": 0.2535979869611007,
+            "significant": false
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 37,
+            "pearson_r": -0.25359798696110064,
+            "pearson_p": 0.12989594866908172,
+            "spearman_r": -0.24197310498337038,
+            "spearman_p": 0.14905156371674658,
+            "abs_pearson": 0.25359798696110064,
+            "significant": false
+          },
+          {
+            "feature": "participations",
+            "n_samples": 37,
+            "pearson_r": 0.22634780556401396,
+            "pearson_p": 0.177940340528825,
+            "spearman_r": 0.18540871172394013,
+            "spearman_p": 0.2719215929501352,
+            "abs_pearson": 0.22634780556401396,
+            "significant": false
+          },
+          {
+            "feature": "missing",
+            "n_samples": 37,
+            "pearson_r": -0.21461705710647216,
+            "pearson_p": 0.20210308728787565,
+            "spearman_r": -0.20967854771117747,
+            "spearman_p": 0.21292940448779307,
+            "abs_pearson": 0.21461705710647216,
+            "significant": false
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 37,
+            "pearson_r": 0.12751691503641172,
+            "pearson_p": 0.4519842652641999,
+            "spearman_r": 0.09630465137601563,
+            "spearman_p": 0.5707054215367708,
+            "abs_pearson": 0.12751691503641172,
+            "significant": false
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 37,
+            "pearson_r": 0.04644886761944115,
+            "pearson_p": 0.7848629527931286,
+            "spearman_r": -0.016969264763516866,
+            "spearman_p": 0.9205949750170374,
+            "abs_pearson": 0.04644886761944115,
+            "significant": false
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 37,
+            "pearson_r": -0.012146313874120164,
+            "pearson_p": 0.9431193435151105,
+            "spearman_r": -0.10773264461717444,
+            "spearman_p": 0.5256426831302164,
+            "abs_pearson": 0.012146313874120164,
+            "significant": false
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 37,
+            "pearson_r": -0.0031710948287425877,
+            "pearson_p": 0.9851386722507482,
+            "spearman_r": -0.09118586273674655,
+            "spearman_p": 0.5914438094664438,
+            "abs_pearson": 0.0031710948287425877,
+            "significant": false
+          }
+        ]
+      },
+      "dataframe_stats": {
+        "columns": [
+          "user_id",
+          "current_score",
+          "final_score",
+          "total_activity_time",
+          "enrollment_state",
+          "last_activity_at",
+          "page_views",
+          "page_views_level",
+          "participations",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "num_submissions",
+          "num_graded",
+          "num_scores",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "exam_5_score",
+          "exam_1_score",
+          "exam_2_score",
+          "exam_3_score",
+          "submission_rate",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "activity_engagement"
+        ],
+        "n_features": 26,
+        "current_score_stats": {
+          "mean": 83.4631914893617,
+          "std": 7.285257629171686,
+          "min": 64.36,
+          "max": 95.0
+        },
+        "final_score_stats": {
+          "mean": 39.01470588235294,
+          "std": 17.47154765359282,
+          "min": 0.0,
+          "max": 59.75
+        }
+      }
+    },
+    {
+      "course_id": 86676,
+      "course_name": "FUND DE BUSINESS ANALYTICS-P01",
+      "n_students": 40,
+      "correlations": {
+        "current_score": [
+          {
+            "feature": "avg_score",
+            "n_samples": 29,
+            "pearson_r": 0.5869456663530962,
+            "pearson_p": 0.0008170604989240472,
+            "spearman_r": 0.5163522617979595,
+            "spearman_p": 0.0041365806083508375,
+            "abs_pearson": 0.5869456663530962,
+            "significant": true
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 29,
+            "pearson_r": 0.5213097964303477,
+            "pearson_p": 0.003732405594752285,
+            "spearman_r": 0.6932500866562662,
+            "spearman_p": 3.059820703583286e-05,
+            "abs_pearson": 0.5213097964303477,
+            "significant": true
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 29,
+            "pearson_r": -0.4402695445994325,
+            "pearson_p": 0.016840762286631988,
+            "spearman_r": -0.2906340207191099,
+            "spearman_p": 0.12614071893348902,
+            "abs_pearson": 0.4402695445994325,
+            "significant": true
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 29,
+            "pearson_r": 0.4402695445994324,
+            "pearson_p": 0.016840762286631988,
+            "spearman_r": 0.2906340207191099,
+            "spearman_p": 0.12614071893348902,
+            "abs_pearson": 0.4402695445994324,
+            "significant": true
+          },
+          {
+            "feature": "missing",
+            "n_samples": 29,
+            "pearson_r": -0.43618316870801965,
+            "pearson_p": 0.01800848365481941,
+            "spearman_r": -0.2993731909226381,
+            "spearman_p": 0.11463694469420746,
+            "abs_pearson": 0.43618316870801965,
+            "significant": true
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 29,
+            "pearson_r": 0.43379483031465915,
+            "pearson_p": 0.018721385628782648,
+            "spearman_r": 0.28850601358960015,
+            "spearman_p": 0.1290659136498693,
+            "abs_pearson": 0.43379483031465915,
+            "significant": true
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 29,
+            "pearson_r": 0.43379483031465915,
+            "pearson_p": 0.018721385628782648,
+            "spearman_r": 0.28850601358960015,
+            "spearman_p": 0.1290659136498693,
+            "abs_pearson": 0.43379483031465915,
+            "significant": true
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 29,
+            "pearson_r": 0.43379483031465915,
+            "pearson_p": 0.018721385628782648,
+            "spearman_r": 0.28850601358960015,
+            "spearman_p": 0.1290659136498693,
+            "abs_pearson": 0.43379483031465915,
+            "significant": true
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 29,
+            "pearson_r": 0.4278973249005829,
+            "pearson_p": 0.02058190869314114,
+            "spearman_r": 0.3380711577131426,
+            "spearman_p": 0.07285752723106123,
+            "abs_pearson": 0.4278973249005829,
+            "significant": true
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 29,
+            "pearson_r": 0.3834816906523628,
+            "pearson_p": 0.040020908968130445,
+            "spearman_r": 0.32463484912872953,
+            "spearman_p": 0.085760106534011,
+            "abs_pearson": 0.3834816906523628,
+            "significant": true
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 29,
+            "pearson_r": 0.33303855365267615,
+            "pearson_p": 0.07750193058558565,
+            "spearman_r": 0.1070565725348814,
+            "spearman_p": 0.5804342366326005,
+            "abs_pearson": 0.33303855365267615,
+            "significant": false
+          },
+          {
+            "feature": "participations",
+            "n_samples": 29,
+            "pearson_r": 0.3274667352423994,
+            "pearson_p": 0.0829056329501997,
+            "spearman_r": 0.1986715182314805,
+            "spearman_p": 0.30152796627987444,
+            "abs_pearson": 0.3274667352423994,
+            "significant": false
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 29,
+            "pearson_r": 0.22504687044743207,
+            "pearson_p": 0.24050039600360051,
+            "spearman_r": 0.17415484184241628,
+            "spearman_p": 0.3662441721911909,
+            "abs_pearson": 0.22504687044743207,
+            "significant": false
+          },
+          {
+            "feature": "floating",
+            "n_samples": 29,
+            "pearson_r": -0.14053044181409538,
+            "pearson_p": 0.46715784688348816,
+            "spearman_r": -0.050572173742417355,
+            "spearman_p": 0.7944576199838784,
+            "abs_pearson": 0.14053044181409538,
+            "significant": false
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 29,
+            "pearson_r": 0.1280772613415863,
+            "pearson_p": 0.5078983875457346,
+            "spearman_r": -0.04791725288261607,
+            "spearman_p": 0.8050372239678021,
+            "abs_pearson": 0.1280772613415863,
+            "significant": false
+          },
+          {
+            "feature": "num_graded",
+            "n_samples": 29,
+            "pearson_r": 0.1280772613415863,
+            "pearson_p": 0.5078983875457346,
+            "spearman_r": -0.04791725288261607,
+            "spearman_p": 0.8050372239678021,
+            "abs_pearson": 0.1280772613415863,
+            "significant": false
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 29,
+            "pearson_r": 0.10202411665412611,
+            "pearson_p": 0.5984527121178181,
+            "spearman_r": -0.056811194846030394,
+            "spearman_p": 0.7697387166678062,
+            "abs_pearson": 0.10202411665412611,
+            "significant": false
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 29,
+            "pearson_r": 0.06524048692792009,
+            "pearson_p": 0.7366935269291601,
+            "spearman_r": -0.02307874395695723,
+            "spearman_p": 0.9054088155812671,
+            "abs_pearson": 0.06524048692792009,
+            "significant": false
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 29,
+            "pearson_r": 0.04686298901274475,
+            "pearson_p": 0.8092478327404307,
+            "spearman_r": -0.20809363557937324,
+            "spearman_p": 0.27870254472000744,
+            "abs_pearson": 0.04686298901274475,
+            "significant": false
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 29,
+            "pearson_r": -0.01471732201279704,
+            "pearson_p": 0.9395997724846661,
+            "spearman_r": -0.07020772114160087,
+            "spearman_p": 0.7174293697112608,
+            "abs_pearson": 0.01471732201279704,
+            "significant": false
+          }
+        ],
+        "final_score": [
+          {
+            "feature": "num_graded",
+            "n_samples": 40,
+            "pearson_r": 0.9871069466722945,
+            "pearson_p": 7.542330129443803e-32,
+            "spearman_r": 0.9860065478049965,
+            "spearman_p": 3.5416618758778238e-31,
+            "abs_pearson": 0.9871069466722945,
+            "significant": true
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 40,
+            "pearson_r": 0.9871069466722945,
+            "pearson_p": 7.542330129443803e-32,
+            "spearman_r": 0.9860065478049965,
+            "spearman_p": 3.5416618758778238e-31,
+            "abs_pearson": 0.9871069466722945,
+            "significant": true
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 29,
+            "pearson_r": 0.8257144440616161,
+            "pearson_p": 3.507795820476531e-08,
+            "spearman_r": 0.859450797628057,
+            "spearman_p": 2.3726662163570283e-09,
+            "abs_pearson": 0.8257144440616161,
+            "significant": true
+          },
+          {
+            "feature": "missing",
+            "n_samples": 40,
+            "pearson_r": -0.7877017558081271,
+            "pearson_p": 1.629299271416761e-09,
+            "spearman_r": -0.7863585718577125,
+            "spearman_p": 1.8135367162763348e-09,
+            "abs_pearson": 0.7877017558081271,
+            "significant": true
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 40,
+            "pearson_r": 0.7862045087221665,
+            "pearson_p": 1.8358688867058014e-09,
+            "spearman_r": 0.8051324809576601,
+            "spearman_p": 3.7699231109832877e-10,
+            "abs_pearson": 0.7862045087221665,
+            "significant": true
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 40,
+            "pearson_r": 0.7764831691479483,
+            "pearson_p": 3.8969355101966275e-09,
+            "spearman_r": 0.7699994123732935,
+            "spearman_p": 6.307628935038252e-09,
+            "abs_pearson": 0.7764831691479483,
+            "significant": true
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 40,
+            "pearson_r": -0.776483169147948,
+            "pearson_p": 3.896935510196758e-09,
+            "spearman_r": -0.7699994123732935,
+            "spearman_p": 6.307628935038252e-09,
+            "abs_pearson": 0.776483169147948,
+            "significant": true
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 40,
+            "pearson_r": 0.7633792594780132,
+            "pearson_p": 1.0152050689659609e-08,
+            "spearman_r": 0.7547241356271532,
+            "spearman_p": 1.8490422117907692e-08,
+            "abs_pearson": 0.7633792594780132,
+            "significant": true
+          },
+          {
+            "feature": "participations",
+            "n_samples": 40,
+            "pearson_r": 0.7503336414521222,
+            "pearson_p": 2.4831430287158506e-08,
+            "spearman_r": 0.749879406254346,
+            "spearman_p": 2.5591788333668192e-08,
+            "abs_pearson": 0.7503336414521222,
+            "significant": true
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 40,
+            "pearson_r": 0.7344214064523324,
+            "pearson_p": 6.886641272578999e-08,
+            "spearman_r": 0.7340110525334383,
+            "spearman_p": 7.063453981859059e-08,
+            "abs_pearson": 0.7344214064523324,
+            "significant": true
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 40,
+            "pearson_r": 0.7344214064523324,
+            "pearson_p": 6.886641272578999e-08,
+            "spearman_r": 0.7340110525334383,
+            "spearman_p": 7.063453981859059e-08,
+            "abs_pearson": 0.7344214064523324,
+            "significant": true
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 40,
+            "pearson_r": 0.7344214064523324,
+            "pearson_p": 6.886641272578999e-08,
+            "spearman_r": 0.7340110525334383,
+            "spearman_p": 7.063453981859059e-08,
+            "abs_pearson": 0.7344214064523324,
+            "significant": true
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 40,
+            "pearson_r": 0.705317091817574,
+            "pearson_p": 3.7365459225145337e-07,
+            "spearman_r": 0.7175853047140854,
+            "spearman_p": 1.8789374421050325e-07,
+            "abs_pearson": 0.705317091817574,
+            "significant": true
+          },
+          {
+            "feature": "avg_score",
+            "n_samples": 29,
+            "pearson_r": 0.6292892325831873,
+            "pearson_p": 0.0002551443648503391,
+            "spearman_r": 0.66041070286125,
+            "spearman_p": 9.672493389861091e-05,
+            "abs_pearson": 0.6292892325831873,
+            "significant": true
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 40,
+            "pearson_r": 0.4979211928729348,
+            "pearson_p": 0.001077847240483747,
+            "spearman_r": 0.4750210954135726,
+            "spearman_p": 0.0019529316815078601,
+            "abs_pearson": 0.4979211928729348,
+            "significant": true
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 40,
+            "pearson_r": 0.4891320963658547,
+            "pearson_p": 0.0013606170458112159,
+            "spearman_r": 0.568804637818625,
+            "spearman_p": 0.00012836391834588772,
+            "abs_pearson": 0.4891320963658547,
+            "significant": true
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 40,
+            "pearson_r": 0.4561656151718954,
+            "pearson_p": 0.0030927349842798002,
+            "spearman_r": 0.49819145551468647,
+            "spearman_p": 0.001070047898265569,
+            "abs_pearson": 0.4561656151718954,
+            "significant": true
+          },
+          {
+            "feature": "floating",
+            "n_samples": 40,
+            "pearson_r": -0.24128805887443197,
+            "pearson_p": 0.13363763378217253,
+            "spearman_r": -0.2827300914036799,
+            "spearman_p": 0.07711024138944438,
+            "abs_pearson": 0.24128805887443197,
+            "significant": false
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 29,
+            "pearson_r": 0.13219955735702837,
+            "pearson_p": 0.4942208333593191,
+            "spearman_r": 0.3277160541563265,
+            "spearman_p": 0.08265784622174799,
+            "abs_pearson": 0.13219955735702837,
+            "significant": false
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 29,
+            "pearson_r": -0.007313618253662082,
+            "pearson_p": 0.969964344146628,
+            "spearman_r": 0.0827041703459324,
+            "spearman_p": 0.6697313590723636,
+            "abs_pearson": 0.007313618253662082,
+            "significant": false
+          }
+        ]
+      },
+      "dataframe_stats": {
+        "columns": [
+          "user_id",
+          "current_score",
+          "final_score",
+          "total_activity_time",
+          "enrollment_state",
+          "last_activity_at",
+          "page_views",
+          "page_views_level",
+          "participations",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "num_submissions",
+          "num_graded",
+          "num_scores",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "submission_rate",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "activity_engagement"
+        ],
+        "n_features": 22,
+        "current_score_stats": {
+          "mean": 94.51068965517241,
+          "std": 5.789419494113182,
+          "min": 75.38,
+          "max": 100.0
+        },
+        "final_score_stats": {
+          "mean": 29.020249999999997,
+          "std": 26.18043754776279,
+          "min": 0.0,
+          "max": 73.89
+        }
+      }
+    },
+    {
+      "course_id": 86689,
+      "course_name": "GESTI\u00d3N DEL TALENTO-P01",
+      "n_students": 40,
+      "correlations": {
+        "current_score": [
+          {
+            "feature": "avg_score",
+            "n_samples": 40,
+            "pearson_r": 0.46832057515154424,
+            "pearson_p": 0.002306347984342922,
+            "spearman_r": 0.4506460351170338,
+            "spearman_p": 0.0035212933037493213,
+            "abs_pearson": 0.46832057515154424,
+            "significant": true
+          },
+          {
+            "feature": "min_score",
+            "n_samples": 40,
+            "pearson_r": 0.41226117142523766,
+            "pearson_p": 0.008207704981341062,
+            "spearman_r": 0.3957616090307135,
+            "spearman_p": 0.011478054413721014,
+            "abs_pearson": 0.41226117142523766,
+            "significant": true
+          },
+          {
+            "feature": "page_views_level",
+            "n_samples": 40,
+            "pearson_r": 0.40083000397273194,
+            "pearson_p": 0.010372371174210937,
+            "spearman_r": 0.44303481334505007,
+            "spearman_p": 0.004196849223546299,
+            "abs_pearson": 0.40083000397273194,
+            "significant": true
+          },
+          {
+            "feature": "missing",
+            "n_samples": 40,
+            "pearson_r": -0.366937158444541,
+            "pearson_p": 0.01985793871280888,
+            "spearman_r": -0.3473960888027346,
+            "spearman_p": 0.02806565975422958,
+            "abs_pearson": 0.366937158444541,
+            "significant": true
+          },
+          {
+            "feature": "num_graded",
+            "n_samples": 40,
+            "pearson_r": 0.3566313563542079,
+            "pearson_p": 0.02389206472398768,
+            "spearman_r": 0.34059674367052,
+            "spearman_p": 0.031509488771925026,
+            "abs_pearson": 0.3566313563542079,
+            "significant": true
+          },
+          {
+            "feature": "num_scores",
+            "n_samples": 40,
+            "pearson_r": 0.3566313563542079,
+            "pearson_p": 0.02389206472398768,
+            "spearman_r": 0.34059674367052,
+            "spearman_p": 0.031509488771925026,
+            "abs_pearson": 0.3566313563542079,
+            "significant": true
+          },
+          {
+            "feature": "max_score",
+            "n_samples": 40,
+            "pearson_r": 0.3239601731256335,
+            "pearson_p": 0.04142049651219864,
+            "spearman_r": 0.40517692572373587,
+            "spearman_p": 0.009497812461077592,
+            "abs_pearson": 0.3239601731256335,
+            "significant": true
+          },
+          {
+            "feature": "activity_engagement",
+            "n_samples": 40,
+            "pearson_r": 0.3194638381461088,
+            "pearson_p": 0.04449513450079263,
+            "spearman_r": 0.3328013795417284,
+            "spearman_p": 0.03587824085325885,
+            "abs_pearson": 0.3194638381461088,
+            "significant": true
+          },
+          {
+            "feature": "page_views",
+            "n_samples": 40,
+            "pearson_r": 0.30473638952297016,
+            "pearson_p": 0.05588136173281207,
+            "spearman_r": 0.4170346858196433,
+            "spearman_p": 0.007425894783504297,
+            "abs_pearson": 0.30473638952297016,
+            "significant": false
+          },
+          {
+            "feature": "total_activity_time",
+            "n_samples": 40,
+            "pearson_r": 0.28115810905172384,
+            "pearson_p": 0.07883973201276126,
+            "spearman_r": 0.39177408449438234,
+            "spearman_p": 0.012417068107462098,
+            "abs_pearson": 0.28115810905172384,
+            "significant": false
+          },
+          {
+            "feature": "on_time_rate",
+            "n_samples": 40,
+            "pearson_r": 0.2702204495680684,
+            "pearson_p": 0.09172542022777339,
+            "spearman_r": 0.2132943777306765,
+            "spearman_p": 0.18634061265877794,
+            "abs_pearson": 0.2702204495680684,
+            "significant": false
+          },
+          {
+            "feature": "missing_rate",
+            "n_samples": 40,
+            "pearson_r": -0.2702204495680684,
+            "pearson_p": 0.09172542022777339,
+            "spearman_r": -0.2132943777306765,
+            "spearman_p": 0.18634061265877794,
+            "abs_pearson": 0.2702204495680684,
+            "significant": false
+          },
+          {
+            "feature": "submission_rate",
+            "n_samples": 40,
+            "pearson_r": 0.2600301414402466,
+            "pearson_p": 0.10513822583214051,
+            "spearman_r": 0.2060644097234079,
+            "spearman_p": 0.20206797974567156,
+            "abs_pearson": 0.2600301414402466,
+            "significant": false
+          },
+          {
+            "feature": "num_submissions",
+            "n_samples": 40,
+            "pearson_r": 0.2600301414402466,
+            "pearson_p": 0.10513822583214051,
+            "spearman_r": 0.2060644097234079,
+            "spearman_p": 0.20206797974567156,
+            "abs_pearson": 0.2600301414402466,
+            "significant": false
+          },
+          {
+            "feature": "on_time",
+            "n_samples": 40,
+            "pearson_r": 0.2600301414402466,
+            "pearson_p": 0.10513822583214051,
+            "spearman_r": 0.2060644097234079,
+            "spearman_p": 0.20206797974567156,
+            "abs_pearson": 0.2600301414402466,
+            "significant": false
+          },
+          {
+            "feature": "participations",
+            "n_samples": 40,
+            "pearson_r": 0.2533661124522525,
+            "pearson_p": 0.11468566018253504,
+            "spearman_r": 0.22319792441086206,
+            "spearman_p": 0.16623561208063528,
+            "abs_pearson": 0.2533661124522525,
+            "significant": false
+          },
+          {
+            "feature": "participations_level",
+            "n_samples": 40,
+            "pearson_r": 0.23697720533959787,
+            "pearson_p": 0.14093613090031723,
+            "spearman_r": 0.2502562201058603,
+            "spearman_p": 0.11935902715098506,
+            "abs_pearson": 0.23697720533959787,
+            "significant": false
+          },
+          {
+            "feature": "score_std",
+            "n_samples": 40,
+            "pearson_r": -0.1833588344831832,
+            "pearson_p": 0.25741410486545785,
+            "spearman_r": -0.033820289080700325,
+            "spearman_p": 0.8358734075847594,
+            "abs_pearson": 0.1833588344831832,
+            "significant": false
+          },
+          {
+            "feature": "first_score",
+            "n_samples": 40,
+            "pearson_r": -0.18038254493218148,
+            "pearson_p": 0.26535200441532203,
+            "spearman_r": 0.04387650247489458,
+            "spearman_p": 0.7880610542897927,
+            "abs_pearson": 0.18038254493218148,
+            "significant": false
+          },
+          {
+            "feature": "floating",
+            "n_samples": 40,
+            "pearson_r": -0.0606888726518584,
+            "pearson_p": 0.7098912841187592,
+            "spearman_r": -0.039745148271885404,
+            "spearman_p": 0.8076215208665334,
+            "abs_pearson": 0.0606888726518584,
+            "significant": false
+          }
+        ]
+      },
+      "dataframe_stats": {
+        "columns": [
+          "user_id",
+          "current_score",
+          "final_score",
+          "total_activity_time",
+          "enrollment_state",
+          "last_activity_at",
+          "page_views",
+          "page_views_level",
+          "participations",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "num_submissions",
+          "num_graded",
+          "num_scores",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "submission_rate",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "activity_engagement"
+        ],
+        "n_features": 22,
+        "current_score_stats": {
+          "mean": 80.30275,
+          "std": 7.776982800184077,
+          "min": 60.0,
+          "max": 92.25
+        },
+        "final_score_stats": {
+          "mean": 31.07,
+          "std": 3.6701184218999297,
+          "min": 22.95,
+          "max": 37.11
+        }
+      }
+    }
+  ],
+  "global_summary": {
+    "current_score": [
+      {
+        "feature": "avg_score",
+        "avg_r": 0.48404872598651766,
+        "n_courses": 4,
+        "total_n": 164,
+        "abs_avg_r": 0.48404872598651766
+      },
+      {
+        "feature": "min_score",
+        "avg_r": 0.4667854839277927,
+        "n_courses": 2,
+        "total_n": 69,
+        "abs_avg_r": 0.4667854839277927
+      },
+      {
+        "feature": "max_score",
+        "avg_r": 0.4051843709841921,
+        "n_courses": 3,
+        "total_n": 117,
+        "abs_avg_r": 0.4051843709841921
+      },
+      {
+        "feature": "missing",
+        "avg_r": -0.4015601635762803,
+        "n_courses": 2,
+        "total_n": 69,
+        "abs_avg_r": 0.4015601635762803
+      }
+    ],
+    "final_score": [
+      {
+        "feature": "num_scores",
+        "avg_r": 0.7802307287978829,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.7802307287978829
+      },
+      {
+        "feature": "num_graded",
+        "avg_r": 0.7802307287978829,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.7802307287978829
+      },
+      {
+        "feature": "missing",
+        "avg_r": -0.6953125776863982,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6953125776863982
+      },
+      {
+        "feature": "on_time_rate",
+        "avg_r": 0.6827222917414258,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6827222917414258
+      },
+      {
+        "feature": "missing_rate",
+        "avg_r": -0.681751537132865,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.681751537132865
+      },
+      {
+        "feature": "participations",
+        "avg_r": 0.6600722995973439,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6600722995973439
+      },
+      {
+        "feature": "activity_engagement",
+        "avg_r": 0.6552874938768705,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6552874938768705
+      },
+      {
+        "feature": "on_time",
+        "avg_r": 0.6542611482108608,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6542611482108608
+      },
+      {
+        "feature": "submission_rate",
+        "avg_r": 0.6528894731947998,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6528894731947998
+      },
+      {
+        "feature": "num_submissions",
+        "avg_r": 0.6528894731947997,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6528894731947997
+      },
+      {
+        "feature": "participations_level",
+        "avg_r": 0.6060074354133889,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.6060074354133889
+      },
+      {
+        "feature": "page_views_level",
+        "avg_r": 0.5054613619538669,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.5054613619538669
+      },
+      {
+        "feature": "total_activity_time",
+        "avg_r": 0.4709050492741333,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.4709050492741333
+      },
+      {
+        "feature": "page_views",
+        "avg_r": 0.467456960751365,
+        "n_courses": 3,
+        "total_n": 141,
+        "abs_avg_r": 0.467456960751365
+      }
+    ]
+  }
+}

@@ -1,0 +1,1799 @@
+{
+  "timestamp": "2025-12-09T19:30:47.529736",
+  "pass_threshold": 57.0,
+  "activity_only_features": [
+    "page_views",
+    "participations",
+    "total_activity_time",
+    "page_views_level",
+    "participations_level"
+  ],
+  "all_features": [
+    "page_views",
+    "participations",
+    "total_activity_time",
+    "page_views_level",
+    "participations_level",
+    "on_time",
+    "late",
+    "missing",
+    "floating",
+    "on_time_rate",
+    "late_rate",
+    "missing_rate",
+    "num_submissions",
+    "submission_rate",
+    "avg_score",
+    "min_score",
+    "max_score",
+    "score_std",
+    "first_score",
+    "num_graded",
+    "num_scores"
+  ],
+  "courses_analyzed": 6,
+  "summary": {
+    "all_data": {
+      "avg_r2": 0.7561789900198997,
+      "avg_f1": 1.0
+    },
+    "activity_only": {
+      "avg_r2": 0.49057193152076706,
+      "avg_f1": 0.9333333333333332
+    }
+  },
+  "results": [
+    {
+      "course_id": 86005,
+      "course_name": "TALL DE COMPETENCIAS DIGITALES-P01",
+      "n_students": 50,
+      "n_with_grades": "50",
+      "grade_mean": 43.230999999999995,
+      "grade_std": 12.855506602230813,
+      "pass_rate": 0.02,
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 50,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 250.62739735918802,
+            "rmse": 15.831215915373905,
+            "mae": 12.027667987146444,
+            "r2": -0.10325455929396976,
+            "feature_importance": [
+              {
+                "feature": "missing_rate",
+                "coefficient": 23.96651864698658
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": -23.582844490266467
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -12.901477979182172
+              },
+              {
+                "feature": "missing",
+                "coefficient": -11.789144686613241
+              },
+              {
+                "feature": "num_submissions",
+                "coefficient": 11.132610044593614
+              },
+              {
+                "feature": "submission_rate",
+                "coefficient": 11.13261004459357
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 11.097019794009086
+              },
+              {
+                "feature": "on_time",
+                "coefficient": 11.024847144155205
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 8.014280838085243
+              },
+              {
+                "feature": "first_score",
+                "coefficient": -6.857001049713575
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 143.68935944803366,
+            "rmse": 11.987049655692331,
+            "mae": 7.793932337327848,
+            "r2": 0.36748359276188447,
+            "feature_importance": [
+              {
+                "feature": "page_views",
+                "importance": 0.2323295951759506
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.1901625443767283
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.1401339709798033
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.07375891718155239
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.06519152707202476
+              },
+              {
+                "feature": "missing",
+                "importance": 0.05582404203503011
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.038805049561092354
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.03228693544076772
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.030055357458417007
+              },
+              {
+                "feature": "on_time_rate",
+                "importance": 0.02945697032842938
+              }
+            ]
+          }
+        },
+        "classification": {
+          "note": "Insufficient class diversity for classification"
+        },
+        "class_balance": {
+          "pass": 1,
+          "fail": 49,
+          "pass_rate": 0.02
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 50,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 190.86330434835594,
+            "rmse": 13.815328600809897,
+            "mae": 11.053545330828833,
+            "r2": 0.15982525077872667,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "coefficient": 3.7074934885840696
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 3.372910503753317
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 2.2486270128657444
+              },
+              {
+                "feature": "participations",
+                "coefficient": 0.8443480484647727
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": -0.2485202001996416
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 153.6860528734209,
+            "rmse": 12.397017902440123,
+            "mae": 8.48797448843477,
+            "r2": 0.3234784372376607,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.36591164105296214
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.3305262686618126
+              },
+              {
+                "feature": "participations",
+                "importance": 0.2600929148660902
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.028324233815137788
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.015144941603997153
+              }
+            ]
+          }
+        },
+        "classification": {
+          "note": "Insufficient class diversity for classification"
+        },
+        "class_balance": {
+          "pass": 1,
+          "fail": 49,
+          "pass_rate": 0.02
+        }
+      }
+    },
+    {
+      "course_id": 86020,
+      "course_name": "FORMACI\u00d3N INTEGRAL II-P01",
+      "n_students": 51,
+      "n_with_grades": "51",
+      "grade_mean": 37.825294117647054,
+      "grade_std": 16.744380353174158,
+      "pass_rate": 0.0,
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 51,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 87.11688743696116,
+            "rmse": 9.333642774231354,
+            "mae": 6.719120981980476,
+            "r2": 0.7039252007466483,
+            "feature_importance": [
+              {
+                "feature": "max_score",
+                "coefficient": 28.215821669413767
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": -10.68383555106512
+              },
+              {
+                "feature": "missing_rate",
+                "coefficient": 10.6838355510651
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": -8.83573673835965
+              },
+              {
+                "feature": "min_score",
+                "coefficient": -8.654569633648725
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -8.598429981336196
+              },
+              {
+                "feature": "missing",
+                "coefficient": -7.098444056778429
+              },
+              {
+                "feature": "on_time",
+                "coefficient": 6.630516353062711
+              },
+              {
+                "feature": "num_submissions",
+                "coefficient": 6.6305163530626965
+              },
+              {
+                "feature": "submission_rate",
+                "coefficient": 6.630516353062654
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 217.18443216544435,
+            "rmse": 14.737178568689611,
+            "mae": 11.127159442126343,
+            "r2": 0.26187862025181474,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.467835157537835
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.22322358670888967
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.06397520283329888
+              },
+              {
+                "feature": "missing",
+                "importance": 0.04923328468349443
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.02251532648844881
+              },
+              {
+                "feature": "on_time_rate",
+                "importance": 0.022240809280422415
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.02114460049551491
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.02012542182820787
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.017659221198683343
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.017602810015977088
+              }
+            ]
+          }
+        },
+        "classification": {
+          "note": "Insufficient class diversity for classification"
+        },
+        "class_balance": {
+          "pass": 0,
+          "fail": 51,
+          "pass_rate": 0.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 51,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 170.08417066975863,
+            "rmse": 13.041632208805716,
+            "mae": 11.140496939396296,
+            "r2": 0.42195321517127193,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "coefficient": 5.061884061163909
+              },
+              {
+                "feature": "participations",
+                "coefficient": 4.173563544170381
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 3.6177359384068004
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 1.9802882024226325
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -1.65063920819422
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 217.41827239800185,
+            "rmse": 14.745110118205352,
+            "mae": 11.764302644025607,
+            "r2": 0.26108389259396625,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.7390936178564073
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.12890530667342193
+              },
+              {
+                "feature": "participations",
+                "importance": 0.0871889390416326
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.027963176562494994
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.016848959866043175
+              }
+            ]
+          }
+        },
+        "classification": {
+          "note": "Insufficient class diversity for classification"
+        },
+        "class_balance": {
+          "pass": 0,
+          "fail": 51,
+          "pass_rate": 0.0
+        }
+      }
+    },
+    {
+      "course_id": 86676,
+      "course_name": "TALLER PENSAMIENTO ANAL\u00cdTICO-P01",
+      "n_students": 40,
+      "n_with_grades": "40",
+      "grade_mean": 22.85725,
+      "grade_std": 24.60415140992601,
+      "pass_rate": 0.225,
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 40,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 5.214665636196736,
+            "rmse": 2.2835642395598894,
+            "mae": 1.4534428216326765,
+            "r2": 0.9909070681710155,
+            "feature_importance": [
+              {
+                "feature": "min_score",
+                "coefficient": -119.56892099496478
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 57.92261785005454
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 39.4412546068188
+              },
+              {
+                "feature": "first_score",
+                "coefficient": 37.812801158006216
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -17.786334301082587
+              },
+              {
+                "feature": "num_scores",
+                "coefficient": 8.296842089173744
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": 8.296842089173744
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 0.6616061752034834
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -0.3387314616883929
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.3112360432963013
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 0.9067286666406357,
+            "rmse": 0.9522230130807781,
+            "mae": 0.7336031250000105,
+            "r2": 0.9984189164697503,
+            "feature_importance": [
+              {
+                "feature": "score_std",
+                "importance": 0.3476814562921842
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.2949311462948575
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.24328966908441257
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.023537842961356123
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.021772403203569886
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.0211490982936465
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.008432459370088349
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.007641295902797862
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.006496618698161496
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.006094323353127635
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "model": "Logistic Regression",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                6,
+                0
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                6,
+                0
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "num_graded",
+                "importance": 0.20496298301944832
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.18244500228639285
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.08157124920972748
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.08119882181097961
+              },
+              {
+                "feature": "participations",
+                "importance": 0.06151235032581834
+              },
+              {
+                "feature": "missing",
+                "importance": 0.06102040522270407
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.05871186794165648
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.05426056259619478
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.05011119267206223
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.04373674953219466
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 9,
+          "fail": 31,
+          "pass_rate": 0.225
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 40,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 142.53327570545994,
+            "rmse": 11.938730070885258,
+            "mae": 9.471129505422198,
+            "r2": 0.7514614646900246,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "coefficient": 18.186619087097064
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 4.046613364714721
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 2.8180838041687846
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -2.1157517187873207
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 1.0966245022377983
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 258.75853071431834,
+            "rmse": 16.085973104363887,
+            "mae": 10.461031964285707,
+            "r2": 0.5487968272363615,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "importance": 0.5454496085518544
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.1796497279781244
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.14013520120830386
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.10658694625459258
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.028178516007124857
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "model": "Logistic Regression",
+            "accuracy": 0.875,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "accuracy": 0.875,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "auc": 0.9166666666666667,
+            "confusion_matrix": [
+              [
+                5,
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "importance": 0.32621605476228027
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.3003932634508716
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.1873664283057313
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.12840372559893468
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.057620527882182214
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 9,
+          "fail": 31,
+          "pass_rate": 0.225
+        }
+      }
+    },
+    {
+      "course_id": 86689,
+      "course_name": "INTROD A LA ING EN CONTROL DE GEST-P01",
+      "n_students": 40,
+      "n_with_grades": "40",
+      "grade_mean": 43.350750000000005,
+      "grade_std": 5.1208364638741966,
+      "pass_rate": 0.0,
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 40,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 1.1550025905125478,
+            "rmse": 1.0747104682250694,
+            "mae": 0.8667680605312311,
+            "r2": 0.9454962340040779,
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "coefficient": 3.8308631032112217
+              },
+              {
+                "feature": "score_std",
+                "coefficient": -1.908781229724112
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 1.8105010345064392
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": 1.7248731518184324
+              },
+              {
+                "feature": "missing",
+                "coefficient": -1.7248731518184315
+              },
+              {
+                "feature": "num_scores",
+                "coefficient": 1.7248731518184313
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": -1.6671596511140117
+              },
+              {
+                "feature": "missing_rate",
+                "coefficient": 1.6671596511140103
+              },
+              {
+                "feature": "submission_rate",
+                "coefficient": 0.9153067879610968
+              },
+              {
+                "feature": "on_time",
+                "coefficient": 0.9153067879610951
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 8.698418505936955,
+            "rmse": 2.9493081402147445,
+            "mae": 2.3654321962412403,
+            "r2": 0.5895277026419483,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.2380714011472425
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.15840277003690165
+              },
+              {
+                "feature": "score_std",
+                "importance": 0.15445706356810648
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.12472470254475039
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.07139606332708648
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.05707633672634088
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.03920079964238238
+              },
+              {
+                "feature": "missing",
+                "importance": 0.03612033582401739
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.02818895347227497
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.023474657167031395
+              }
+            ]
+          }
+        },
+        "classification": {
+          "note": "Insufficient class diversity for classification"
+        },
+        "class_balance": {
+          "pass": 0,
+          "fail": 40,
+          "pass_rate": 0.0
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 40,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 28.26243989934751,
+            "rmse": 5.3162430248576396,
+            "mae": 4.517494787837402,
+            "r2": -0.33368481023429797,
+            "feature_importance": [
+              {
+                "feature": "page_views_level",
+                "coefficient": 1.8118608359879578
+              },
+              {
+                "feature": "participations",
+                "coefficient": 1.320187372105771
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.6056222279615537
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -0.5907953431896759
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -0.08450859471392413
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 23.424119018755693,
+            "rmse": 4.8398470036516335,
+            "mae": 3.978930658716285,
+            "r2": -0.10536782527244015,
+            "feature_importance": [
+              {
+                "feature": "total_activity_time",
+                "importance": 0.4337524974802932
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.34100970537321446
+              },
+              {
+                "feature": "participations",
+                "importance": 0.12798015890992817
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.06546963842917555
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.03178799980738858
+              }
+            ]
+          }
+        },
+        "classification": {
+          "note": "Insufficient class diversity for classification"
+        },
+        "class_balance": {
+          "pass": 0,
+          "fail": 40,
+          "pass_rate": 0.0
+        }
+      }
+    },
+    {
+      "course_id": 84936,
+      "course_name": "FUNDAMENTOS DE MICROECONOM\u00cdA-P03",
+      "n_students": 41,
+      "n_with_grades": "41",
+      "grade_mean": 70.59536585365855,
+      "grade_std": 43.500665000523895,
+      "pass_rate": 0.7317073170731707,
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 41,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 4.371224930417696e-06,
+            "rmse": 0.0020907474573505277,
+            "mae": 0.0015518253837269766,
+            "r2": 0.9999999973554118,
+            "feature_importance": [
+              {
+                "feature": "first_score",
+                "coefficient": 9.320877526005052
+              },
+              {
+                "feature": "min_score",
+                "coefficient": 9.320877526005052
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 9.127344038695385
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 8.891563621332258
+              },
+              {
+                "feature": "score_std",
+                "coefficient": 7.7918566432053495
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 0.0002702728579926951
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 0.00010896280644170616
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": -8.89179325615455e-05
+              },
+              {
+                "feature": "num_graded",
+                "coefficient": -8.891793254339753e-05
+              },
+              {
+                "feature": "on_time_rate",
+                "coefficient": -8.891793252646245e-05
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 0.018469168888899518,
+            "rmse": 0.1359013204089626,
+            "mae": 0.07397777777780196,
+            "r2": 0.999988826165114,
+            "feature_importance": [
+              {
+                "feature": "num_scores",
+                "importance": 0.08909270267155567
+              },
+              {
+                "feature": "missing",
+                "importance": 0.08871054502481789
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.07937986966817602
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.07933506022086387
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.07909060850264217
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.07897009327463367
+              },
+              {
+                "feature": "participations",
+                "importance": 0.06957082266041635
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.0692694187520081
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.06912088902506794
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.06868205493102261
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "model": "Logistic Regression",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "missing",
+                "importance": 0.09
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.09
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.08
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.08
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.08
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.08
+              },
+              {
+                "feature": "participations",
+                "importance": 0.07
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.07
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.07
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.06
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 30,
+          "fail": 11,
+          "pass_rate": 0.7317073170731707
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 41,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 15.93465425121992,
+            "rmse": 3.9918234243538278,
+            "mae": 3.1656251374143363,
+            "r2": 0.9903595447829887,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "coefficient": 21.88014200265325
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 21.880142002653237
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": -1.8792185894962365
+              },
+              {
+                "feature": "page_views",
+                "coefficient": 1.6760472569821079
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": -0.8558784505805823
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 37.791970546149884,
+            "rmse": 6.147517429511679,
+            "mae": 4.910470987654339,
+            "r2": 0.9771358829712371,
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.5045730439392803
+              },
+              {
+                "feature": "participations",
+                "importance": 0.4748111065992449
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.014524837690298024
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.004644827908692713
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.00144618386248414
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "model": "Logistic Regression",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                7
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.42464305533073105
+              },
+              {
+                "feature": "participations",
+                "importance": 0.40712469068810725
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.08703427962818773
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.06441969833062838
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.016778276022345634
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 30,
+          "fail": 11,
+          "pass_rate": 0.7317073170731707
+        }
+      }
+    },
+    {
+      "course_id": 84941,
+      "course_name": "FUNDAMENTOS DE MICROECONOM\u00cdA-P01",
+      "n_students": 36,
+      "n_with_grades": "36",
+      "grade_mean": 37.03638888888889,
+      "grade_std": 45.26942665248196,
+      "pass_rate": 0.3888888888888889,
+      "all_data_model": {
+        "feature_type": "all_data",
+        "n_samples": 36,
+        "n_features": 21,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level",
+          "on_time",
+          "late",
+          "missing",
+          "floating",
+          "on_time_rate",
+          "late_rate",
+          "missing_rate",
+          "num_submissions",
+          "submission_rate",
+          "avg_score",
+          "min_score",
+          "max_score",
+          "score_std",
+          "first_score",
+          "num_graded",
+          "num_scores"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 1.6195240399889063e-06,
+            "rmse": 0.0012726052176495687,
+            "mae": 0.0009639251449851116,
+            "r2": 0.9999999991362154,
+            "feature_importance": [
+              {
+                "feature": "first_score",
+                "coefficient": 11.239129686453879
+              },
+              {
+                "feature": "max_score",
+                "coefficient": 11.239129686453877
+              },
+              {
+                "feature": "avg_score",
+                "coefficient": 11.239129686453877
+              },
+              {
+                "feature": "min_score",
+                "coefficient": 11.239129686453877
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -0.0007385541340159747
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 0.0004034038365437322
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": 0.00035577795031291846
+              },
+              {
+                "feature": "participations",
+                "coefficient": -0.00018628043055279875
+              },
+              {
+                "feature": "on_time",
+                "coefficient": -0.0001862804304398993
+              },
+              {
+                "feature": "num_submissions",
+                "coefficient": -0.0001862804304398993
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 0.20138194625000294,
+            "rmse": 0.44875599856715337,
+            "mae": 0.29166250000000105,
+            "r2": 0.9998925915217425,
+            "feature_importance": [
+              {
+                "feature": "num_submissions",
+                "importance": 0.09577221110845566
+              },
+              {
+                "feature": "participations",
+                "importance": 0.08699542830596314
+              },
+              {
+                "feature": "on_time_rate",
+                "importance": 0.08601593853584966
+              },
+              {
+                "feature": "participations_level",
+                "importance": 0.08451707552224798
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.07690700007437566
+              },
+              {
+                "feature": "missing",
+                "importance": 0.0766917357603739
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.07667785380946429
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.0760368085840779
+              },
+              {
+                "feature": "num_graded",
+                "importance": 0.07587923415173665
+              },
+              {
+                "feature": "avg_score",
+                "importance": 0.07123730134738782
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "model": "Logistic Regression",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "avg_score",
+                "importance": 0.1649053690833876
+              },
+              {
+                "feature": "max_score",
+                "importance": 0.1175361457714399
+              },
+              {
+                "feature": "first_score",
+                "importance": 0.1084249352298888
+              },
+              {
+                "feature": "min_score",
+                "importance": 0.08005421484833249
+              },
+              {
+                "feature": "missing_rate",
+                "importance": 0.06470576808812104
+              },
+              {
+                "feature": "participations",
+                "importance": 0.06396485935804821
+              },
+              {
+                "feature": "num_scores",
+                "importance": 0.06285433520727639
+              },
+              {
+                "feature": "submission_rate",
+                "importance": 0.06091936752617867
+              },
+              {
+                "feature": "missing",
+                "importance": 0.059710213591018545
+              },
+              {
+                "feature": "num_submissions",
+                "importance": 0.04862745098039216
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 14,
+          "fail": 22,
+          "pass_rate": 0.3888888888888889
+        }
+      },
+      "activity_only_model": {
+        "feature_type": "activity_only",
+        "n_samples": 36,
+        "n_features": 5,
+        "features_used": [
+          "page_views",
+          "participations",
+          "total_activity_time",
+          "page_views_level",
+          "participations_level"
+        ],
+        "regression": {
+          "linear": {
+            "model": "Linear Regression",
+            "mse": 87.15189412737651,
+            "rmse": 9.33551788211969,
+            "mae": 5.175147039059204,
+            "r2": 0.9535169239358886,
+            "feature_importance": [
+              {
+                "feature": "participations",
+                "coefficient": 22.55848705203089
+              },
+              {
+                "feature": "participations_level",
+                "coefficient": 22.558487052030877
+              },
+              {
+                "feature": "total_activity_time",
+                "coefficient": 4.6487547083058445
+              },
+              {
+                "feature": "page_views_level",
+                "coefficient": -4.638728950377004
+              },
+              {
+                "feature": "page_views",
+                "coefficient": -0.4047407041528673
+              }
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "mse": 12.90795653125,
+            "rmse": 3.5927644692144796,
+            "mae": 2.1255874999999964,
+            "r2": 0.9931154505443404,
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.49741480316930975
+              },
+              {
+                "feature": "participations",
+                "importance": 0.4408815093421705
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.031924410034811224
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.027086395734507707
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.0026928817192008593
+              }
+            ]
+          }
+        },
+        "classification": {
+          "logistic": {
+            "model": "Logistic Regression",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "random_forest": {
+            "model": "Random Forest",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "confusion_matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "feature_importance": [
+              {
+                "feature": "participations_level",
+                "importance": 0.3535990151174363
+              },
+              {
+                "feature": "participations",
+                "importance": 0.3300415443867011
+              },
+              {
+                "feature": "total_activity_time",
+                "importance": 0.16284871482323013
+              },
+              {
+                "feature": "page_views",
+                "importance": 0.11292246975483756
+              },
+              {
+                "feature": "page_views_level",
+                "importance": 0.040588255917794996
+              }
+            ]
+          }
+        },
+        "class_balance": {
+          "pass": 14,
+          "fail": 22,
+          "pass_rate": 0.3888888888888889
+        }
+      }
+    }
+  ]
+}

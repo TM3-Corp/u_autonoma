@@ -1,0 +1,103 @@
+{
+  "total_records": 753,
+  "model_records": 181,
+  "courses": 21,
+  "students": 160,
+  "best_model": "Ridge Regression",
+  "best_r2": 0.5753127694238875,
+  "feature_importance": [
+    {
+      "Feature": "missing_pct",
+      "Importance": 0.3819641248496658
+    },
+    {
+      "Feature": "total_activity_time",
+      "Importance": 0.21971881763815296
+    },
+    {
+      "Feature": "page_views",
+      "Importance": 0.1410504158244914
+    },
+    {
+      "Feature": "participations",
+      "Importance": 0.09586152066768111
+    },
+    {
+      "Feature": "tardiness_on_time",
+      "Importance": 0.055700651061748783
+    },
+    {
+      "Feature": "tardiness_missing",
+      "Importance": 0.027417909339263632
+    },
+    {
+      "Feature": "submission_count",
+      "Importance": 0.02508639391415879
+    },
+    {
+      "Feature": "participations_level",
+      "Importance": 0.020142265080296706
+    },
+    {
+      "Feature": "missing_count",
+      "Importance": 0.01990649323643114
+    },
+    {
+      "Feature": "page_views_level",
+      "Importance": 0.013151408388109732
+    },
+    {
+      "Feature": "tardiness_late",
+      "Importance": 0.0
+    },
+    {
+      "Feature": "late_count",
+      "Importance": 0.0
+    },
+    {
+      "Feature": "late_pct",
+      "Importance": 0.0
+    }
+  ],
+  "correlations": {
+    "participations_level": 0.30575016100237074,
+    "total_activity_time": 0.28532841798745195,
+    "page_views_level": 0.27929967280596757,
+    "page_views": 0.1439760125631324,
+    "tardiness_on_time": -0.0017893449207131873,
+    "participations": -0.073855059245414,
+    "late_pct": -0.11784758030909859,
+    "late_count": -0.11784758030909862,
+    "tardiness_late": -0.11784758030909862,
+    "submission_count": -0.17326285376846168,
+    "missing_pct": -0.412535799932056,
+    "tardiness_missing": -0.5365986597275936,
+    "missing_count": -0.5365986597275936
+  },
+  "all_results": [
+    {
+      "Model": "Linear Regression",
+      "RMSE": 4.97144321397751,
+      "MAE": 3.625413335294566,
+      "R2": 0.5544184481597516
+    },
+    {
+      "Model": "Ridge Regression",
+      "RMSE": 4.853482674694941,
+      "MAE": 3.488888726271146,
+      "R2": 0.5753127694238875
+    },
+    {
+      "Model": "Random Forest",
+      "RMSE": 5.508119351411282,
+      "MAE": 4.361593500246391,
+      "R2": 0.4530231828814618
+    },
+    {
+      "Model": "Gradient Boosting",
+      "RMSE": 5.3847079428104765,
+      "MAE": 4.407801927225799,
+      "R2": 0.4772590276859976
+    }
+  ]
+}
