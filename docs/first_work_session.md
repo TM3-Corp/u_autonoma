@@ -17,7 +17,7 @@ Genial. Hay alguna manera de ver a que Facultad o Carrera pertenece un curso?
       import requests
 
       API_URL = 'https://uautonoma.beta.instructure.com'
-      API_TOKEN = '15510~wxwcFT87BBVDwwuuFFN3vv46yrfQaHz3Y6ARLCA42hGnHeZcTNMX46xyFZ3vQ2ZF'
+      API_TOKEN = os.getenv('CANVAS_API_TOKEN')  # Load from .env file
       headers = {'Authorization': f'Bearer {API_TOKEN}'}
 
       # 1. Ver la estructura de sub-accounts
@@ -144,7 +144,7 @@ Genial. Hay alguna manera de ver a que Facultad o Carrera pertenece un curso?
       import requests
 
       API_URL = 'https://uautonoma.beta.instructure.com'
-      API_TOKEN = '15510~wxwcFT87BBVDwwuuFFN3vv46yrfQaHz3Y6ARLCA42hGnHeZcTNMX46xyFZ3vQ2ZF'
+      API_TOKEN = os.getenv('CANVAS_API_TOKEN')  # Load from .env file
       headers = {'Authorization': f'Bearer {API_TOKEN}'}
 
       def get_account_hierarchy(account_id):
@@ -285,7 +285,7 @@ Genial. Hay alguna manera de ver a que Facultad o Carrera pertenece un curso?
   import requests
 
   API_URL = "https://uautonoma.beta.instructure.com"
-  API_TOKEN = "15510~wxwcFT87BBVDwwuuFFN3vv46yrfQaHz3Y6ARLCA42hGnHeZcTNMX46xyFZ3vQ2ZF"
+  API_TOKEN = os.getenv('CANVAS_API_TOKEN')  # Load from .env file
   headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
   def get_course_hierarchy(course_id):
@@ -371,7 +371,7 @@ ultrathink
       import requests
 
       API_URL = 'https://uautonoma.beta.instructure.com'
-      API_TOKEN = '15510~wxwcFT87BBVDwwuuFFN3vv46yrfQaHz3Y6ARLCA42hGnHeZcTNMX46xyFZ3vQ2ZF'
+      API_TOKEN = os.getenv('CANVAS_API_TOKEN')  # Load from .env file
       headers = {'Authorization': f'Bearer {API_TOKEN}'}
 
       # Get all courses for 'Ing. en Control de Gestión' (account_id = 719)

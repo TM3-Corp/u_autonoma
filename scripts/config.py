@@ -1,10 +1,19 @@
 """
 Canvas API Configuration for Universidad Autónoma de Chile
 """
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Canvas API Configuration - TEST Environment (Updated Dec 2025)
-API_URL = "https://uautonoma.test.instructure.com"
-API_TOKEN = "15510~XY8ufNG9TzxBE8MZDLRT6F9TCTreCuxFMAK76xFu8Ftn8aHwcvuDkeTMvHEBrXUD"
+# Credentials loaded from .env file (never commit secrets!)
+API_URL = os.getenv('CANVAS_API_URL', 'https://uautonoma.test.instructure.com')
+API_TOKEN = os.getenv('CANVAS_API_TOKEN')
+
+if not API_TOKEN:
+    raise ValueError("CANVAS_API_TOKEN not found! Copy .env.example to .env and add your token.")
 
 # Account hierarchy
 ACCOUNT_ID_UNIVERSIDAD = 1

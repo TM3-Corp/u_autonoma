@@ -347,8 +347,12 @@ For **completed courses**, `current_score ≈ final_score` (within 10-15%).
 
 ### Authentication
 ```python
-API_URL = "https://uautonoma.test.instructure.com"
-API_TOKEN = "15510~XY8ufNG9TzxBE8MZDLRT6F9TCTreCuxFMAK76xFu8Ftn8aHwcvuDkeTMvHEBrXUD"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+API_URL = os.getenv('CANVAS_API_URL')
+API_TOKEN = os.getenv('CANVAS_API_TOKEN')  # From .env file
 headers = {'Authorization': f'Bearer {API_TOKEN}'}
 ```
 

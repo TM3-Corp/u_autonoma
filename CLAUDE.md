@@ -12,13 +12,22 @@
 
 ### Environment: TEST (as of December 2025)
 
+**Credentials are stored in `.env` file (not committed to Git).**
+
 ```python
-API_URL = "https://uautonoma.test.instructure.com"
-API_TOKEN = "15510~XY8ufNG9TzxBE8MZDLRT6F9TCTreCuxFMAK76xFu8Ftn8aHwcvuDkeTMvHEBrXUD"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_URL = os.getenv('CANVAS_API_URL')
+API_TOKEN = os.getenv('CANVAS_API_TOKEN')
 
 # Standard headers for all requests
 headers = {'Authorization': f'Bearer {API_TOKEN}'}
 ```
+
+**Setup:** Copy `.env.example` to `.env` and add your credentials.
 
 ### Account Hierarchy (Full Access Discovered)
 ```
@@ -78,8 +87,12 @@ GET /api/v1/courses/{course_id}/enrollments
 **Example Request:**
 ```python
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-API_URL = "https://uautonoma.test.instructure.com"
+API_URL = os.getenv('CANVAS_API_URL')
+API_TOKEN = os.getenv('CANVAS_API_TOKEN')
 headers = {'Authorization': f'Bearer {API_TOKEN}'}
 
 response = requests.get(
@@ -734,9 +747,12 @@ ACTIVITY_ONLY_FEATURES = [
 ```python
 import requests
 import json
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-API_URL = "https://uautonoma.test.instructure.com"
-API_TOKEN = "YOUR_TOKEN_HERE"
+API_URL = os.getenv('CANVAS_API_URL')
+API_TOKEN = os.getenv('CANVAS_API_TOKEN')
 headers = {'Authorization': f'Bearer {API_TOKEN}'}
 
 def get_course_data(course_id):
