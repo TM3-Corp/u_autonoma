@@ -1,0 +1,54 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+81891,Ciencia Materiales para Electr-P01,248,336,Segundo Semestre - 2025-Periodo Completo,62,62,52.44532258064516,32.55233824007028,0.6774193548387096,18,11,HIGH POTENTIAL
+87302,Álgebra Lineal-P01,248,336,Segundo Semestre - 2025-Periodo Completo,44,44,62.397499999999994,32.20481331366759,0.6590909090909091,10,10,HIGH POTENTIAL
+86667,Cálculo I-P01,248,336,Segundo Semestre - 2025-Periodo Completo,50,50,61.9574,26.32777657228198,0.72,30,20,HIGH POTENTIAL
+81890,Programación Orientada a Objet-P04,248,336,Segundo Semestre - 2025-Periodo Completo,31,31,60.74129032258065,16.700978673648088,0.7741935483870968,10,13,HIGH POTENTIAL
+86668,Álgebra-P01,248,336,Segundo Semestre - 2025-Periodo Completo,50,50,48.1454,15.231687655673614,0.2,30,22,HIGH POTENTIAL
+87314,Cálculo II-P01,248,336,Segundo Semestre - 2025-Periodo Completo,37,37,71.7391891891892,29.835316310416182,0.7837837837837838,3,10,MEDIUM POTENTIAL
+81872,Arquitectura de Software-P01,248,336,Segundo Semestre - 2025-Periodo Completo,36,36,114.17527777777777,28.396341165535855,0.9722222222222222,14,10,MEDIUM POTENTIAL
+87303,Física Mecánica-P01,248,336,Segundo Semestre - 2025-Periodo Completo,23,23,12.785217391304345,21.248736815563618,0.08695652173913043,3,11,MEDIUM POTENTIAL
+81868,Bases de Datos II-P04,248,336,Segundo Semestre - 2025-Periodo Completo,26,26,33.08538461538462,18.938543569777973,0.07692307692307693,5,4,MEDIUM POTENTIAL
+81875,Desarrollo de Aplicaciones Web-P01,248,336,Segundo Semestre - 2025-Periodo Completo,26,26,70.86769230769231,18.229348338007103,0.8846153846153846,9,3,MEDIUM POTENTIAL
+81874,Bases de Datos II-P01,248,336,Segundo Semestre - 2025-Periodo Completo,52,52,28.124423076923076,17.209469487807436,0.07692307692307693,6,4,MEDIUM POTENTIAL
+86707,Cálculo III-P01,248,336,Segundo Semestre - 2025-Periodo Completo,47,47,43.08510638297872,12.314720109351303,0.0,24,22,MEDIUM POTENTIAL
+82664,Redes y Comunicaciones-P07,248,336,Segundo Semestre - 2025-Periodo Completo,33,33,29.880303030303033,11.070779032797155,0.0,8,10,MEDIUM POTENTIAL
+81866,Desarrollo de Aplicaciones Web-P02,248,336,Segundo Semestre - 2025-Periodo Completo,29,29,83.33034482758622,10.91176792235973,0.9655172413793104,9,3,MEDIUM POTENTIAL
+81860,Programación Orientada a Objet-P03,248,336,Segundo Semestre - 2025-Periodo Completo,31,31,62.84258064516128,16.27910019066441,0.7741935483870968,2,10,LOW - Few assignments
+85808,Cálculo I-P04,248,336,Segundo Semestre - 2025-Periodo Completo,50,50,7.389599999999998,9.647808032916078,0.0,33,13,LOW - Low grade variance
+82673,ADMIN. Y DIREC. PROY. INFOR.-P01,248,336,Segundo Semestre - 2025-Periodo Completo,23,23,85.07652173913043,6.5472182003176655,1.0,18,17,LOW - Low grade variance
+86702,Inglés I-P03,248,336,Segundo Semestre - 2025-Periodo Completo,27,27,1.2344444444444445,6.294456310668425,0.0,31,2,LOW - Low grade variance
+81857,Gestión de Proyectos Complejos-P01,248,336,Segundo Semestre - 2025-Periodo Completo,24,24,70.1125,5.767071216541953,1.0,3,10,LOW - Low grade variance
+85817,Electricidad y Electromagnetis-P01,248,336,Segundo Semestre - 2025-Periodo Completo,59,59,0.026610169491525424,0.10202376209577188,0.0,50,21,LOW - Low grade variance
+81873,Big Data-P04,248,336,Segundo Semestre - 2025-Periodo Completo,26,26,0.0,0.0,0.0,1,3,LOW - Low grade variance
+82662,Fundamentos de IoT (Ev. Ciclo)-P02,248,336,Segundo Semestre - 2025-Periodo Completo,25,25,0.0,0.0,0.0,1,10,LOW - Low grade variance
+82681,Fundamentos de IoT (Ev. Ciclo)-P04,248,336,Segundo Semestre - 2025-Periodo Completo,27,27,0.0,0.0,0.0,1,10,LOW - Low grade variance
+82684,ESPECIALIDAD III-P01,248,336,Segundo Semestre - 2025-Periodo Completo,30,30,0.0,0.0,0.0,1,3,LOW - Low grade variance
+82685,Fundamentos de IoT (Ev. Ciclo)-P01,248,336,Segundo Semestre - 2025-Periodo Completo,27,27,0.0,0.0,0.0,1,10,LOW - Low grade variance
+85819,Álgebra-P04,248,336,Segundo Semestre - 2025-Periodo Completo,50,50,0.0,0.0,0.0,25,20,LOW - Low grade variance
+86231,Inglés I-P02,248,336,Segundo Semestre - 2025-Periodo Completo,27,27,0.0,0.0,0.0,61,2,LOW - Low grade variance
+86701,Inglés I-P04,248,336,Segundo Semestre - 2025-Periodo Completo,31,31,0.0,0.0,0.0,31,19,LOW - Low grade variance
+86715,Inglés I-P01,248,336,Segundo Semestre - 2025-Periodo Completo,34,34,0.0,0.0,0.0,31,19,LOW - Low grade variance
+87317,Introducción a las Matemáticas-P01,248,336,Segundo Semestre - 2025-Periodo Completo,20,20,0.0,0.0,0.0,2,10,LOW - Low grade variance
+87933,Cálculo I-P07,248,336,Segundo Semestre - 2025-Periodo Completo,39,39,0.0,0.0,0.0,31,20,LOW - Low grade variance
+81842,Consultoría Informática (Ev. C-P01,248,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,5,SKIP - No grades
+81859,Programación Orientada a Objet-P02,248,336,Segundo Semestre - 2025-Periodo Completo,29,0,0.0,0.0,,0,4,SKIP - No grades
+81862,Desarrollo de Aplicaciones Web-P03,248,336,Segundo Semestre - 2025-Periodo Completo,25,0,0.0,0.0,,0,5,SKIP - No grades
+81864,Gestión de Proyectos Complejos-P04,248,336,Segundo Semestre - 2025-Periodo Completo,25,0,0.0,0.0,,1,9,SKIP - No grades
+81867,Procesos Termodinámicos-P03,248,336,Segundo Semestre - 2025-Periodo Completo,29,0,0.0,0.0,,0,10,SKIP - No grades
+81870,Programación Orientada a Objet-P01,248,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,3,SKIP - No grades
+81880,Machine Learning-P01,248,336,Segundo Semestre - 2025-Periodo Completo,35,0,0.0,0.0,,0,10,SKIP - No grades
+81882,Inglés III-P01,248,336,Segundo Semestre - 2025-Periodo Completo,25,0,0.0,0.0,,0,10,SKIP - No grades
+81886,Procesos Termodinámicos-P01,248,336,Segundo Semestre - 2025-Periodo Completo,46,0,0.0,0.0,,1,11,SKIP - No grades
+81892,Ccia. Datos e Inteligencia Neg-P01,248,336,Segundo Semestre - 2025-Periodo Completo,49,0,0.0,0.0,,0,10,SKIP - No grades
+81893,Big Data-P01,248,336,Segundo Semestre - 2025-Periodo Completo,37,0,0.0,0.0,,0,10,SKIP - No grades
+82663,Probabilidad y Estadística Com-P01,248,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,13,10,SKIP - No grades
+82668,Redes y Comunicaciones-P01,248,336,Segundo Semestre - 2025-Periodo Completo,25,0,0.0,0.0,,0,13,SKIP - No grades
+82680,AUDITORÍA DE SISTEMAS-P01,248,336,Segundo Semestre - 2025-Periodo Completo,29,0,0.0,0.0,,0,10,SKIP - No grades
+82683,DCHO EMPRESA Y AMBIENTAL (A S)-P01,248,336,Segundo Semestre - 2025-Periodo Completo,26,0,0.0,0.0,,0,10,SKIP - No grades
+82695,Probabilidad y Estadística Com-P03,248,336,Segundo Semestre - 2025-Periodo Completo,24,0,0.0,0.0,,0,10,SKIP - No grades
+82696,INTELIGENCIA ARTIFICIAL-P01,248,336,Segundo Semestre - 2025-Periodo Completo,32,0,0.0,0.0,,0,10,SKIP - No grades
+82697,Redes y Comunicaciones-P04,248,336,Segundo Semestre - 2025-Periodo Completo,50,0,0.0,0.0,,0,12,SKIP - No grades
+87315,Ecuaciones Diferenciales-P01,248,336,Segundo Semestre - 2025-Periodo Completo,25,0,0.0,0.0,,0,10,SKIP - No grades
+87382,Química y Medio Ambiente-P01,248,336,Segundo Semestre - 2025-Periodo Completo,44,0,0.0,0.0,,0,12,SKIP - No grades
+87384,Química y Medio Ambiente-P06,248,336,Segundo Semestre - 2025-Periodo Completo,48,0,0.0,0.0,,0,16,SKIP - No grades
+87385,Química y Medio Ambiente-P11,248,336,Segundo Semestre - 2025-Periodo Completo,45,0,0.0,0.0,,1,9,SKIP - No grades
