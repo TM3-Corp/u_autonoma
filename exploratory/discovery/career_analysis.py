@@ -453,6 +453,10 @@ def analyze_career(account_id: int, career_name: str = None) -> CareerMetrics:
 
 def generate_course_csv(metrics: CareerMetrics, output_path: str):
     """Generate CSV with all course details."""
+    if not metrics.courses:
+        print(f"\nNo courses to save - skipping CSV generation")
+        return None
+
     rows = []
     for c in metrics.courses:
         rows.append({
@@ -490,176 +494,128 @@ def generate_course_csv(metrics: CareerMetrics, output_path: str):
     return df
 
 
-def generate_markdown_report(metrics: CareerMetrics, output_path: str):
-    """Generate detailed markdown report."""
-    lines = [
-        f"# Career Analysis: {metrics.career_name}",
-        f"",
-        f"**Account ID:** {metrics.account_id}",
-        f"**Career Potential Score (CPS):** {metrics.career_potential_score:.1f}/100",
-        f"**Analysis Date:** {pd.Timestamp.now().strftime('%Y-%m-%d')}",
-        f"",
-        "---",
-        "",
-        "## Summary",
-        "",
-        "### Course Distribution",
-        "",
-        "| Tier | Count | % |",
-        "|------|-------|---|",
-        f"| HIGH POTENTIAL | {metrics.n_high_potential} | {metrics.n_high_potential/max(metrics.n_total_courses,1)*100:.0f}% |",
-        f"| MEDIUM POTENTIAL | {metrics.n_medium_potential} | {metrics.n_medium_potential/max(metrics.n_total_courses,1)*100:.0f}% |",
-        f"| LOW | {metrics.n_low_potential} | {metrics.n_low_potential/max(metrics.n_total_courses,1)*100:.0f}% |",
-        f"| SKIP (No grades) | {metrics.n_skip} | {metrics.n_skip/max(metrics.n_total_courses,1)*100:.0f}% |",
-        f"| **TOTAL** | **{metrics.n_total_courses}** | 100% |",
-        "",
-        "### Student Coverage",
-        "",
-        f"- **Total students:** {metrics.total_students}",
-        f"- **Analyzable students (HIGH+MEDIUM):** {metrics.analyzable_students} ({metrics.analyzable_students/max(metrics.total_students,1)*100:.0f}%)",
-        f"- **Students with grades:** {metrics.students_with_grades}",
-        "",
-        "---",
-        "",
-        "## CPS Component Scores",
-        "",
-        "| Component | Score | Weight | Contribution |",
-        "|-----------|-------|--------|--------------|",
-        f"| HP Score | {metrics.hp_score:.1f} | 30% | {metrics.hp_score*0.30:.1f} |",
-        f"| Quality Score | {metrics.quality_score:.1f} | 25% | {metrics.quality_score*0.25:.1f} |",
-        f"| Coverage Score | {metrics.coverage_score:.1f} | 20% | {metrics.coverage_score*0.20:.1f} |",
-        f"| Data Score | {metrics.data_score:.1f} | 15% | {metrics.data_score*0.15:.1f} |",
-        f"| Diversity Score | {metrics.diversity_score:.1f} | 10% | {metrics.diversity_score*0.10:.1f} |",
-        f"| **CPS Total** | | | **{metrics.career_potential_score:.1f}** |",
-        "",
-    ]
+def update_centralized_report(metrics: CareerMetrics, report_path: str = 'exploratory/data/career_potential_score.md'):
+    """Update the centralized CPS report with new career data."""
+    import re
 
-    if metrics.flags:
-        lines.extend([
-            "### Flags",
-            "",
-            *[f"- {flag}" for flag in metrics.flags],
-            "",
-        ])
-
-    lines.extend([
-        "---",
-        "",
-        "## Quality Metrics",
-        "",
-        f"- **Avg grade variance:** {metrics.avg_grade_variance:.1f}",
-        f"- **Avg pass rate:** {metrics.avg_pass_rate:.0%}" if metrics.avg_pass_rate else "- **Avg pass rate:** N/A",
-        f"- **Pass rate std dev:** {metrics.pass_rate_std:.2f}",
-        f"- **Avg assignments:** {metrics.avg_assignments:.1f}",
-        f"- **Avg grade completeness:** {metrics.avg_grade_completeness:.0%}",
-        f"- **Courses with grades:** {metrics.courses_with_grades}/{metrics.n_total_courses}",
-        "",
-        "---",
-        "",
-        "## HIGH POTENTIAL Courses",
-        "",
-    ])
-
-    high_courses = [c for c in metrics.courses if 'HIGH' in c.recommendation]
-    if high_courses:
-        lines.append("| Course ID | Name | Students | Variance | Pass Rate | Assignments |")
-        lines.append("|-----------|------|----------|----------|-----------|-------------|")
-        for c in sorted(high_courses, key=lambda x: x.grade_variance, reverse=True):
-            pass_str = f"{c.pass_rate:.0%}" if c.pass_rate is not None else "N/A"
-            lines.append(f"| {c.course_id} | {c.name[:40]} | {c.total_students} | {c.grade_variance:.1f} | {pass_str} | {c.n_assignments} |")
-    else:
-        lines.append("*No HIGH potential courses found.*")
-
-    lines.extend([
-        "",
-        "## MEDIUM POTENTIAL Courses",
-        "",
-    ])
-
-    medium_courses = [c for c in metrics.courses if 'MEDIUM' in c.recommendation]
-    if medium_courses:
-        lines.append("| Course ID | Name | Students | Variance | Pass Rate | Assignments |")
-        lines.append("|-----------|------|----------|----------|-----------|-------------|")
-        for c in sorted(medium_courses, key=lambda x: x.grade_variance, reverse=True):
-            pass_str = f"{c.pass_rate:.0%}" if c.pass_rate is not None else "N/A"
-            lines.append(f"| {c.course_id} | {c.name[:40]} | {c.total_students} | {c.grade_variance:.1f} | {pass_str} | {c.n_assignments} |")
-    else:
-        lines.append("*No MEDIUM potential courses found.*")
-
-    lines.extend([
-        "",
-        "## LOW Potential Courses",
-        "",
-    ])
-
-    low_courses = [c for c in metrics.courses if 'LOW' in c.recommendation]
-    if low_courses:
-        lines.append("| Course ID | Name | Students | Variance | Pass Rate | Issue |")
-        lines.append("|-----------|------|----------|----------|-----------|-------|")
-        for c in sorted(low_courses, key=lambda x: x.grade_variance, reverse=True):
-            pass_str = f"{c.pass_rate:.0%}" if c.pass_rate is not None else "N/A"
-            issue = "Few assignments" if "Few" in c.recommendation else "Low variance"
-            lines.append(f"| {c.course_id} | {c.name[:40]} | {c.total_students} | {c.grade_variance:.1f} | {pass_str} | {issue} |")
-    else:
-        lines.append("*No LOW potential courses.*")
-
-    lines.extend([
-        "",
-        "## SKIP Courses (No Grades)",
-        "",
-    ])
-
-    skip_courses = [c for c in metrics.courses if 'SKIP' in c.recommendation]
-    if skip_courses:
-        lines.append("| Course ID | Name | Students | Assignments | Modules |")
-        lines.append("|-----------|------|----------|-------------|---------|")
-        for c in sorted(skip_courses, key=lambda x: x.total_students, reverse=True):
-            lines.append(f"| {c.course_id} | {c.name[:40]} | {c.total_students} | {c.n_assignments} | {c.n_modules} |")
-    else:
-        lines.append("*No SKIP courses.*")
-
-    lines.extend([
-        "",
-        "---",
-        "",
-        "## CPS Interpretation",
-        "",
-        "| Range | Interpretation |",
-        "|-------|----------------|",
-        "| 80-100 | Excellent - Prioritize for pilot |",
-        "| 60-79 | Good - Strong candidate |",
-        "| 40-59 | Moderate - Investigate specific courses |",
-        "| 20-39 | Weak - May need curriculum changes |",
-        "| 0-19 | Poor - Likely external grading |",
-        "",
-    ])
-
-    with open(output_path, 'w') as f:
-        f.write('\n'.join(lines))
-
-    print(f"Markdown report saved to: {output_path}")
-
-
-def main():
-    """Main entry point - analyze career 248."""
-    print("=" * 60)
-    print("CAREER ANALYSIS SYSTEM")
-    print("=" * 60)
-
-    # Test connection
-    r = requests.get(f'{API_URL}/api/v1/users/self', headers=headers)
-    if r.status_code == 200:
-        user = r.json()
-        print(f"Connected as: {user.get('name', 'Unknown')}")
-        print(f"Rate Limit: {r.headers.get('X-Rate-Limit-Remaining', 'N/A')}")
-    else:
-        print(f"Connection failed: {r.status_code}")
+    if metrics.n_total_courses == 0:
+        print(f"\nNo courses found - skipping report update")
         return
 
-    # Analyze career 248 (Ingeniería Civil Informática)
-    metrics = analyze_career(248, "Ingeniería Civil Informática")
+    # Read existing report
+    with open(report_path, 'r') as f:
+        content = f.read()
 
-    # Print summary
+    # Update last updated date
+    content = re.sub(
+        r'\*\*Last Updated:\*\* \d{4}-\d{2}-\d{2}',
+        f'**Last Updated:** {pd.Timestamp.now().strftime("%Y-%m-%d")}',
+        content
+    )
+
+    # Find the ranking table and parse existing entries
+    ranking_pattern = r'(\| Rank \| Account ID \| Career \| CPS \| HIGH \| MEDIUM \| LOW \| SKIP \| Total \| Analyzable Students \|\n\|[-\s|]+\n)((?:\|[^\n]+\n)*)'
+    ranking_match = re.search(ranking_pattern, content)
+
+    if ranking_match:
+        header = ranking_match.group(1)
+        existing_rows = ranking_match.group(2)
+
+        # Parse existing rows into list of tuples (account_id, row_data)
+        careers = []
+        for row in existing_rows.strip().split('\n'):
+            if row.strip():
+                parts = [p.strip() for p in row.split('|')[1:-1]]
+                if len(parts) >= 10:
+                    acc_id = int(parts[1])
+                    cps = float(parts[3])
+                    careers.append((acc_id, cps, row))
+
+        # Check if this career already exists
+        existing_ids = [c[0] for c in careers]
+        analyzable_pct = metrics.analyzable_students / max(metrics.total_students, 1) * 100
+        new_row = f"| - | {metrics.account_id} | {metrics.career_name} | {metrics.career_potential_score:.1f} | {metrics.n_high_potential} | {metrics.n_medium_potential} | {metrics.n_low_potential} | {metrics.n_skip} | {metrics.n_total_courses} | {metrics.analyzable_students}/{metrics.total_students} ({analyzable_pct:.0f}%) |"
+
+        if metrics.account_id in existing_ids:
+            # Update existing entry
+            careers = [(acc_id, cps, row) if acc_id != metrics.account_id else (metrics.account_id, metrics.career_potential_score, new_row)
+                       for acc_id, cps, row in careers]
+        else:
+            # Add new entry
+            careers.append((metrics.account_id, metrics.career_potential_score, new_row))
+
+        # Sort by CPS descending and assign ranks
+        careers.sort(key=lambda x: x[1], reverse=True)
+        ranked_rows = []
+        for i, (acc_id, cps, row) in enumerate(careers):
+            # Update rank in row
+            parts = row.split('|')
+            parts[1] = f' {i+1} '
+            ranked_rows.append('|'.join(parts))
+
+        new_table = header + '\n'.join(ranked_rows) + '\n'
+        content = content[:ranking_match.start()] + new_table + content[ranking_match.end():]
+
+    # Find and update/add the detailed breakdown section for this career
+    breakdown_header = "### Detailed Breakdown"
+    breakdown_pos = content.find(breakdown_header)
+
+    if breakdown_pos != -1:
+        # Find the section for this career or the next section
+        career_section_pattern = rf'#### {metrics.account_id} - [^\n]+\n(.*?)(?=\n#### \d|---|\Z)'
+        career_match = re.search(career_section_pattern, content, re.DOTALL)
+
+        # Build new career section
+        high_courses = [c for c in metrics.courses if 'HIGH' in c.recommendation]
+        career_section = f"""#### {metrics.account_id} - {metrics.career_name}
+
+**CPS: {metrics.career_potential_score:.1f}/100** ({'Excellent' if metrics.career_potential_score >= 80 else 'Good' if metrics.career_potential_score >= 60 else 'Moderate' if metrics.career_potential_score >= 40 else 'Weak' if metrics.career_potential_score >= 20 else 'Poor'})
+
+| Component | Score | Contribution |
+|-----------|-------|--------------|
+| HP Score | {metrics.hp_score:.1f} | {metrics.hp_score*0.30:.1f} |
+| Quality Score | {metrics.quality_score:.1f} | {metrics.quality_score*0.25:.1f} |
+| Coverage Score | {metrics.coverage_score:.1f} | {metrics.coverage_score*0.20:.1f} |
+| Data Score | {metrics.data_score:.1f} | {metrics.data_score*0.15:.1f} |
+| Diversity Score | {metrics.diversity_score:.1f} | {metrics.diversity_score*0.10:.1f} |
+
+**Quality Metrics:**
+- Avg grade variance: {metrics.avg_grade_variance:.1f}
+- Avg pass rate: {metrics.avg_pass_rate:.0%}
+- Pass rate std: {metrics.pass_rate_std:.2f}
+- Avg assignments: {metrics.avg_assignments:.1f}
+- Courses with grades: {metrics.courses_with_grades}/{metrics.n_total_courses}
+
+**Top HIGH POTENTIAL Courses:**
+
+"""
+        if high_courses:
+            career_section += "| Course ID | Name | Students | Variance | Pass Rate |\n"
+            career_section += "|-----------|------|----------|----------|-----------|\n"
+            for c in sorted(high_courses, key=lambda x: x.grade_variance, reverse=True)[:5]:
+                pass_str = f"{c.pass_rate:.0%}" if c.pass_rate is not None else "N/A"
+                career_section += f"| {c.course_id} | {c.name[:40]} | {c.total_students} | {c.grade_variance:.1f} | {pass_str} |\n"
+        else:
+            career_section += "*No HIGH potential courses found.*\n"
+
+        if career_match:
+            # Replace existing section
+            content = content[:career_match.start()] + career_section + content[career_match.end():]
+        else:
+            # Add new section before "---\n\n## Analysis Configuration"
+            config_pos = content.find("---\n\n## Analysis Configuration")
+            if config_pos != -1:
+                content = content[:config_pos] + career_section + "\n" + content[config_pos:]
+
+    # Write updated report
+    with open(report_path, 'w') as f:
+        f.write(content)
+
+    print(f"Centralized report updated: {report_path}")
+
+
+def print_summary(metrics: CareerMetrics):
+    """Print analysis summary to console."""
     print("\n" + "=" * 60)
     print("CAREER ANALYSIS SUMMARY")
     print("=" * 60)
@@ -687,16 +643,53 @@ def main():
     if metrics.flags:
         print(f"\nFlags: {', '.join(metrics.flags)}")
 
-    # Generate outputs
-    csv_path = 'exploratory/data/career_248_full_analysis.csv'
-    md_path = 'exploratory/data/career_248_report.md'
 
+def run_analysis(account_id: int, career_name: str = None):
+    """Run analysis for a single career."""
+    print("=" * 60)
+    print("CAREER ANALYSIS SYSTEM")
+    print("=" * 60)
+
+    # Test connection
+    r = requests.get(f'{API_URL}/api/v1/users/self', headers=headers)
+    if r.status_code == 200:
+        user = r.json()
+        print(f"Connected as: {user.get('name', 'Unknown')}")
+        print(f"Rate Limit: {r.headers.get('X-Rate-Limit-Remaining', 'N/A')}")
+    else:
+        print(f"Connection failed: {r.status_code}")
+        return None
+
+    # Analyze career
+    metrics = analyze_career(account_id, career_name)
+
+    # Print summary
+    print_summary(metrics)
+
+    # Generate outputs
+    csv_path = f'exploratory/data/career_{account_id}_courses.csv'
     generate_course_csv(metrics, csv_path)
-    generate_markdown_report(metrics, md_path)
+    update_centralized_report(metrics)
 
     print("\n" + "=" * 60)
     print("ANALYSIS COMPLETE")
     print("=" * 60)
+
+    return metrics
+
+
+def main():
+    """Main entry point - analyze career from command line args or default to 248."""
+    import sys
+
+    if len(sys.argv) >= 2:
+        account_id = int(sys.argv[1])
+        career_name = sys.argv[2] if len(sys.argv) >= 3 else None
+    else:
+        account_id = 248
+        career_name = "Ingeniería Civil Informática"
+
+    run_analysis(account_id, career_name)
 
 
 if __name__ == '__main__':
