@@ -1,0 +1,13 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+81879,QUÍMICA ORGÁNICA-P01,251,336,Segundo Semestre - 2025-Periodo Completo,40,40,65.26124999999999,28.46233407395641,0.625,17,27,HIGH POTENTIAL
+81887,PROGRAMACIÓN-P07,251,336,Segundo Semestre - 2025-Periodo Completo,51,51,47.540000000000006,16.84061488794045,0.37254901960784315,6,10,HIGH POTENTIAL
+81888,ÁLGEBRA-P07,251,336,Segundo Semestre - 2025-Periodo Completo,57,57,9.97578947368421,14.86902537508096,0.0,27,20,MEDIUM POTENTIAL
+82716,FUNDAMENTOS DE ECONOMÍA-P01,251,336,Segundo Semestre - 2025-Periodo Completo,25,25,23.5,33.60059523282288,0.32,1,11,LOW - Few assignments
+82713,PROBABILIDAD Y ESTADÍSTICA-P01,251,336,Segundo Semestre - 2025-Periodo Completo,37,37,0.9008108108108107,5.404864864864864,0.0,22,20,LOW - Low grade variance
+82715,TRANSFERENCIA DE MASA-P01,251,336,Segundo Semestre - 2025-Periodo Completo,20,20,16.182499999999997,2.5610190842709466,0.0,6,9,LOW - Low grade variance
+81877,CÁLCULO I-P07,251,336,Segundo Semestre - 2025-Periodo Completo,51,51,0.0,0.0,0.0,28,21,LOW - Low grade variance
+82700,INGLÉS TÉCNICO I-P03,251,336,Segundo Semestre - 2025-Periodo Completo,26,0,0.0,0.0,,0,10,SKIP - No grades
+82711,OPERACIONES UNITARIAS-P01,251,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+82719,INGLÉS TÉCNICO III-P01,251,336,Segundo Semestre - 2025-Periodo Completo,20,0,0.0,0.0,,0,10,SKIP - No grades
+85953,CONTROL PROC. (EV. CICLO)-P01,251,336,Segundo Semestre - 2025-Periodo Completo,21,0,0.0,0.0,,18,20,SKIP - No grades
+87328,QUÍMICA Y MEDIO AMBIENTE-P13,251,336,Segundo Semestre - 2025-Periodo Completo,25,0,0.0,0.0,,0,15,SKIP - No grades

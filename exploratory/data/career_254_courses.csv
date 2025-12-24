@@ -1,0 +1,34 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+80667,BIOFÍSICA-P06,254,336,Segundo Semestre - 2025-Periodo Completo,35,35,48.45571428571429,30.4537145081998,0.5428571428571428,39,19,HIGH POTENTIAL
+83844,SALUD FAMILIAR Y COMUNITARIA-P01,254,336,Segundo Semestre - 2025-Periodo Completo,59,59,46.016949152542374,20.805386790585967,0.2033898305084746,7,12,HIGH POTENTIAL
+83100,METOD. DE LA INVEST.-P02,254,336,Segundo Semestre - 2025-Periodo Completo,28,28,45.09178571428572,19.842624764015223,0.21428571428571427,9,12,HIGH POTENTIAL
+80671,BIOFÍSICA-P01,254,336,Segundo Semestre - 2025-Periodo Completo,50,50,20.944200000000002,8.556196138471817,0.0,39,19,LOW - Low grade variance
+80657,NEUROCIENCIAS-P02,254,336,Segundo Semestre - 2025-Periodo Completo,42,42,0.0,0.0,0.0,22,20,LOW - Low grade variance
+80664,NEUROCIENCIAS-P01,254,336,Segundo Semestre - 2025-Periodo Completo,33,33,0.0,0.0,0.0,23,20,LOW - Low grade variance
+80668,BIOQUÍMICA-P01,254,336,Segundo Semestre - 2025-Periodo Completo,47,47,0.0,0.0,0.0,53,20,LOW - Low grade variance
+83102,METOD. DE LA INVEST.-P01,254,336,Segundo Semestre - 2025-Periodo Completo,36,36,0.0,0.0,0.0,7,10,LOW - Low grade variance
+80658,ANATOMÍA Y CINESIOLOGÍA-P05,254,336,Segundo Semestre - 2025-Periodo Completo,39,0,0.0,0.0,,0,16,SKIP - No grades
+80660,ANATOMÍA Y CINESIOLOGÍA-P01,254,336,Segundo Semestre - 2025-Periodo Completo,37,0,0.0,0.0,,0,17,SKIP - No grades
+80669,FISIOPATOLOGÍA-P04,254,336,Segundo Semestre - 2025-Periodo Completo,28,0,0.0,0.0,,0,10,SKIP - No grades
+80672,FISIOPATOLOGÍA-P03,254,336,Segundo Semestre - 2025-Periodo Completo,32,0,0.0,0.0,,0,10,SKIP - No grades
+83097,NEURODRLLO. Y CONTROL MOTOR-P08,254,336,Segundo Semestre - 2025-Periodo Completo,35,0,0.0,0.0,,0,10,SKIP - No grades
+83099,ANÁLISIS MOV FUNC Y DISFUNC-P01,254,336,Segundo Semestre - 2025-Periodo Completo,41,0,0.0,0.0,,0,20,SKIP - No grades
+83103,DIAG E INTERV KINESIOLÓGICA II-P01,254,336,Segundo Semestre - 2025-Periodo Completo,37,0,0.0,0.0,,0,5,SKIP - No grades
+83105,DISFUNCIÓN DEL SIST. LOCOMOTOR-P02,254,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+83106,NEURODRLLO. Y CONTROL MOTOR-P01,254,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+83107,FISIOLOGÍA DEL EJERCICIO-P05,254,336,Segundo Semestre - 2025-Periodo Completo,32,0,0.0,0.0,,0,12,SKIP - No grades
+83109,ANÁLISIS MOV FUNC Y DISFUNC-P05,254,336,Segundo Semestre - 2025-Periodo Completo,34,0,0.0,0.0,,0,18,SKIP - No grades
+83110,FISIOLOGÍA DEL EJERCICIO-P01,254,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,12,SKIP - No grades
+83111,KINESIOLOGÍA CICLO VITAL-P02,254,336,Segundo Semestre - 2025-Periodo Completo,27,0,0.0,0.0,,0,10,SKIP - No grades
+83113,KINESIOLOGÍA CICLO VITAL-P01,254,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+83114,DISFUNCIÓN DEL SIST. LOCOMOTOR-P01,254,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+83115,DIAG E INTERV KINESIOLÓGICA II-P11,254,336,Segundo Semestre - 2025-Periodo Completo,26,0,0.0,0.0,,0,10,SKIP - No grades
+83837,TERAPIA POR AGENTES FÍSICOS I-P08,254,336,Segundo Semestre - 2025-Periodo Completo,32,0,0.0,0.0,,0,11,SKIP - No grades
+83839,PROYECT DE INVESTIGACIÓN II-P24,254,336,Segundo Semestre - 2025-Periodo Completo,20,0,0.0,0.0,,2,10,SKIP - No grades
+83841,INT. KINES. EN EL ADULTO MAYOR-P05,254,336,Segundo Semestre - 2025-Periodo Completo,38,0,0.0,0.0,,0,10,SKIP - No grades
+83845,TERAPIA POR AGENTES FÍSICOS I-P01,254,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,0,11,SKIP - No grades
+83853,PROYECT DE INVESTIGACIÓN II-P01,254,336,Segundo Semestre - 2025-Periodo Completo,21,0,0.0,0.0,,4,11,SKIP - No grades
+83857,INT. KINES. EN EL ADULTO MAYOR-P01,254,336,Segundo Semestre - 2025-Periodo Completo,28,0,0.0,0.0,,0,10,SKIP - No grades
+83858,PROYECT DE INVESTIGACIÓN II-P13,254,336,Segundo Semestre - 2025-Periodo Completo,21,0,0.0,0.0,,2,10,SKIP - No grades
+86421,PRÁCT. PROF. III (EV. CICLO)-P01,254,336,Segundo Semestre - 2025-Periodo Completo,32,0,0.0,0.0,,2,19,SKIP - No grades
+86422,PRÁCT. PROF. IV (EV. DE CICLO)-P01,254,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,2,19,SKIP - No grades

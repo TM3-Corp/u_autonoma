@@ -1,0 +1,40 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+83168,MICROBIOLOGÍA Y PARASITOLOGÍA-P32,262,336,Segundo Semestre - 2025-Periodo Completo,56,56,47.0225,16.715018081482462,0.39285714285714285,28,19,HIGH POTENTIAL
+83182,MICROBIOLOGÍA Y PARASITOLOGÍA-P26,262,336,Segundo Semestre - 2025-Periodo Completo,54,54,43.88407407407408,16.099558369663956,0.25925925925925924,28,19,HIGH POTENTIAL
+83194,SALUD PÚBLICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,37,37,56.91729729729729,12.906285216932233,0.5675675675675675,6,14,HIGH POTENTIAL
+83169,METOD. DE INVEST. FARMACÉUTICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,47,47,86.35340425531915,14.384133734940827,0.9787234042553191,4,10,MEDIUM POTENTIAL
+83160,FARMACOGNOSIA Y FITOTERAPIA-P05,262,336,Segundo Semestre - 2025-Periodo Completo,50,50,24.0,42.708313008125245,0.24,1,12,LOW - Few assignments
+83173,FARMACOGNOSIA Y FITOTERAPIA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,46,46,23.91304347826087,42.65525406597518,0.2391304347826087,1,13,LOW - Few assignments
+85862,QUÍMICA INORGÁNICA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,29,29,19.70413793103448,31.480123615982308,0.20689655172413793,2,18,LOW - Few assignments
+85863,QUÍMICA INORGÁNICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,51,51,10.36392156862745,24.99701653401245,0.13725490196078433,2,18,LOW - Few assignments
+83189,SALUD PÚBLICA-P02,262,336,Segundo Semestre - 2025-Periodo Completo,28,28,68.41107142857142,9.573961092196791,0.9285714285714286,6,13,LOW - Low grade variance
+83181,METOD. DE INVEST. FARMACÉUTICA-P02,262,336,Segundo Semestre - 2025-Periodo Completo,23,23,55.13173913043478,8.624004745185996,0.5217391304347826,4,10,LOW - Low grade variance
+83167,PRÁ III: FARM CLÍN  (EV.CICLO)-P01,262,336,Segundo Semestre - 2025-Periodo Completo,29,29,28.303793103448278,7.038198443955964,0.0,15,10,LOW - Low grade variance
+83203,TECNOLOGÍA COSMÉTICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,59,59,82.76237288135593,6.064601748625713,1.0,17,10,LOW - Low grade variance
+81109,EVOLUCIÓN DE LOS MEDICAMENTOS-P01,262,336,Segundo Semestre - 2025-Periodo Completo,61,61,19.14950819672131,4.470434543087638,0.0,4,11,LOW - Low grade variance
+81093,BIOQUÍMICA-P13,262,336,Segundo Semestre - 2025-Periodo Completo,28,28,0.0,0.0,0.0,52,20,LOW - Low grade variance
+81095,BIOQUÍMICA-P09,262,336,Segundo Semestre - 2025-Periodo Completo,42,42,0.0,0.0,0.0,52,20,LOW - Low grade variance
+81097,EVOLUCIÓN DE LOS MEDICAMENTOS-P02,262,336,Segundo Semestre - 2025-Periodo Completo,61,61,0.0,0.0,0.0,5,8,LOW - Low grade variance
+81102,CÁLCULO-P01,262,336,Segundo Semestre - 2025-Periodo Completo,44,44,0.0,0.0,0.0,25,18,LOW - Low grade variance
+81103,CÁLCULO-P03,262,336,Segundo Semestre - 2025-Periodo Completo,45,45,0.0,0.0,0.0,25,18,LOW - Low grade variance
+81105,CÁLCULO-P05,262,336,Segundo Semestre - 2025-Periodo Completo,42,42,0.0,0.0,0.0,26,18,LOW - Low grade variance
+85416,FISICOQUÍMICA FARMACÉUTICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,26,26,0.0,0.0,0.0,87,25,LOW - Low grade variance
+87253,PRÁC. II: FARM. ASIST. (A S)-P01,262,336,Segundo Semestre - 2025-Periodo Completo,21,21,0.0,0.0,0.0,3,6,LOW - Low grade variance
+81092,FARMACIA PRIVADA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,0,10,SKIP - No grades
+81107,FARMACIA PRIVADA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,57,0,0.0,0.0,,0,10,SKIP - No grades
+83162,TALL INTEG DE BIOCS (EV CICLO)-P02,262,336,Segundo Semestre - 2025-Periodo Completo,50,0,0.0,0.0,,3,10,SKIP - No grades
+83164,QUÍMICA ORGÁNICA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,60,0,0.0,0.0,,0,13,SKIP - No grades
+83171,TOXICOLOGÍA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,49,0,0.0,0.0,,0,10,SKIP - No grades
+83177,ANÁLISIS QUÍMICO E INSTRUMEN.-P01,262,336,Segundo Semestre - 2025-Periodo Completo,49,0,0.0,0.0,,7,10,SKIP - No grades
+83179,FARMACIA CLÍNICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,41,0,0.0,0.0,,1,10,SKIP - No grades
+83180,QUÍMICA ORGÁNICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,51,0,0.0,0.0,,0,10,SKIP - No grades
+83185,FISIOPATOLOGÍA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,3,10,SKIP - No grades
+83187,TALL INTEG DE BIOCS (EV CICLO)-P01,262,336,Segundo Semestre - 2025-Periodo Completo,43,0,0.0,0.0,,3,10,SKIP - No grades
+83192,FARMACOQUÍMICA II-P02,262,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,2,8,SKIP - No grades
+83195,ANÁLISIS QUÍMICO E INSTRUMEN.-P05,262,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,11,10,SKIP - No grades
+83197,FARMACOLOGÍA DE SISTEMAS-P01,262,336,Segundo Semestre - 2025-Periodo Completo,49,0,0.0,0.0,,0,10,SKIP - No grades
+83198,FARMACOQUÍMICA II-P01,262,336,Segundo Semestre - 2025-Periodo Completo,44,0,0.0,0.0,,2,8,SKIP - No grades
+83199,TECNOLOGÍA FARMACÉUTICA I-P01,262,336,Segundo Semestre - 2025-Periodo Completo,50,0,0.0,0.0,,0,10,SKIP - No grades
+83201,FISIOPATOLOGÍA-P05,262,336,Segundo Semestre - 2025-Periodo Completo,59,0,0.0,0.0,,2,10,SKIP - No grades
+83223,FARMACOVIGILANCIA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,1,10,SKIP - No grades
+83226,TALL INTEGR FARMACOLOGÍA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,47,0,0.0,0.0,,2,10,SKIP - No grades

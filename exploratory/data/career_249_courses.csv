@@ -1,0 +1,21 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+82198,NEUROCIENCIAS-P01,249,336,Segundo Semestre - 2025-Periodo Completo,56,56,45.52892857142857,29.549401775342464,0.48214285714285715,8,9,HIGH POTENTIAL
+82202,PATOLOGÍA Y ANAT PATOLÓGICA-P01,249,336,Segundo Semestre - 2025-Periodo Completo,56,56,203.8542857142857,58.13700929261666,1.0,42,14,MEDIUM POTENTIAL
+82180,MICROBIOLOGÍA APLIC. CLIN.-P01,249,336,Segundo Semestre - 2025-Periodo Completo,52,52,86.46499999999999,7.874301556328664,1.0,13,10,LOW - Low grade variance
+80715,BASES CIENTÍFICAS DE MED. II-P01,249,336,Segundo Semestre - 2025-Periodo Completo,60,60,71.0,2.920244852747796,1.0,15,10,LOW - Low grade variance
+80712,PSICOLOGÍA DE LA SALUD-P01,249,336,Segundo Semestre - 2025-Periodo Completo,62,0,0.0,0.0,,0,10,SKIP - No grades
+80713,INGLÉS TÉCNICO PARA MED. II-P01,249,336,Segundo Semestre - 2025-Periodo Completo,62,0,0.0,0.0,,1,10,SKIP - No grades
+80719,INTEGRADO DE MORFOLOGÍA I-P01,249,336,Segundo Semestre - 2025-Periodo Completo,61,0,0.0,0.0,,1,9,SKIP - No grades
+82183,PEDIATRÍA Y CIRUGÍA INFANTIL-P01,249,336,Segundo Semestre - 2025-Periodo Completo,34,0,0.0,0.0,,0,10,SKIP - No grades
+82184,MEDICINA BASADA EN EVIDENCIA-P01,249,336,Segundo Semestre - 2025-Periodo Completo,52,0,0.0,0.0,,0,10,SKIP - No grades
+82187,GEST. Y ADM. EN SALUD-P01,249,336,Segundo Semestre - 2025-Periodo Completo,36,0,0.0,0.0,,1,10,SKIP - No grades
+82194,SALUD COMUNIT. Y FAM. IV (A S)-P01,249,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,0,10,SKIP - No grades
+82195,FARM.LOGÍA APLIC. CLIN.-P01,249,336,Segundo Semestre - 2025-Periodo Completo,52,0,0.0,0.0,,0,10,SKIP - No grades
+82196,FUND. DIAG. CLÍNICO-P01,249,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,0,4,SKIP - No grades
+82197,SALUD COMUNITARIA Y FAMILIAR I-P01,249,336,Segundo Semestre - 2025-Periodo Completo,52,0,0.0,0.0,,0,10,SKIP - No grades
+82199,RAZONAMIENTO INTEGRACIÓN CLIN.-P02,249,336,Segundo Semestre - 2025-Periodo Completo,20,0,0.0,0.0,,8,10,SKIP - No grades
+82200,ONCOLOGÍA Y CUIDADOS PALIAT-P01,249,336,Segundo Semestre - 2025-Periodo Completo,59,0,0.0,0.0,,0,10,SKIP - No grades
+82203,BASES CIENTÍFICAS DE MED. IV-P01,249,336,Segundo Semestre - 2025-Periodo Completo,57,0,0.0,0.0,,2,7,SKIP - No grades
+82205,SUBESPECIALIDADES MÉDICAS-P01,249,336,Segundo Semestre - 2025-Periodo Completo,38,0,0.0,0.0,,1,8,SKIP - No grades
+85142,GINECOLOGÍA Y OBSTETRICIA-P01,249,336,Segundo Semestre - 2025-Periodo Completo,20,0,0.0,0.0,,0,10,SKIP - No grades
+85143,ESPECIALIDADES QUIRÚRGICAS-P01,249,336,Segundo Semestre - 2025-Periodo Completo,26,0,0.0,0.0,,0,10,SKIP - No grades
