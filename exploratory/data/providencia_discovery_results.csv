@@ -1,0 +1,51 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+81891,Ciencia Materiales para Electr-P01,248,336,Segundo Semestre - 2025-Periodo Completo,62,62,52.44532258064516,32.55233824007028,0.6774193548387096,18,11,HIGH POTENTIAL
+82198,NEUROCIENCIAS-P01,249,336,Segundo Semestre - 2025-Periodo Completo,56,56,45.52892857142857,29.549401775342464,0.48214285714285715,8,9,HIGH POTENTIAL
+81837,ÁLGEBRA-P01,263,336,Segundo Semestre - 2025-Periodo Completo,55,55,39.80672727272728,26.656137826675316,0.34545454545454546,28,20,HIGH POTENTIAL
+83844,SALUD FAMILIAR Y COMUNITARIA-P01,254,336,Segundo Semestre - 2025-Periodo Completo,59,59,46.016949152542374,20.805386790585967,0.2033898305084746,7,12,HIGH POTENTIAL
+80699,MICROBIOLOGÍA Y PARASITOLOGÍA-P11,260,336,Segundo Semestre - 2025-Periodo Completo,56,56,56.95660714285714,17.445104642521365,0.6428571428571429,28,19,HIGH POTENTIAL
+83168,MICROBIOLOGÍA Y PARASITOLOGÍA-P32,262,336,Segundo Semestre - 2025-Periodo Completo,56,56,47.0225,16.715018081482462,0.39285714285714285,28,19,HIGH POTENTIAL
+82202,PATOLOGÍA Y ANAT PATOLÓGICA-P01,249,336,Segundo Semestre - 2025-Periodo Completo,56,56,203.8542857142857,58.13700929261666,1.0,42,14,MEDIUM POTENTIAL
+80693,QUÍMICA ORGÁNICA-P05,260,336,Segundo Semestre - 2025-Periodo Completo,55,55,8.448727272727274,15.573436948219404,0.0,24,19,MEDIUM POTENTIAL
+81888,ÁLGEBRA-P07,251,336,Segundo Semestre - 2025-Periodo Completo,57,57,9.97578947368421,14.86902537508096,0.0,27,20,MEDIUM POTENTIAL
+80620,BIOFÍSICA-P01,258,336,Segundo Semestre - 2025-Periodo Completo,55,55,74.94654545454546,9.997262937821224,0.9818181818181818,36,19,LOW - Low grade variance
+83203,TECNOLOGÍA COSMÉTICA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,59,59,82.76237288135593,6.064601748625713,1.0,17,10,LOW - Low grade variance
+81109,EVOLUCIÓN DE LOS MEDICAMENTOS-P01,262,336,Segundo Semestre - 2025-Periodo Completo,61,61,19.14950819672131,4.470434543087638,0.0,4,11,LOW - Low grade variance
+80715,BASES CIENTÍFICAS DE MED. II-P01,249,336,Segundo Semestre - 2025-Periodo Completo,60,60,71.0,2.920244852747796,1.0,15,10,LOW - Low grade variance
+85817,Electricidad y Electromagnetis-P01,248,336,Segundo Semestre - 2025-Periodo Completo,59,59,0.026610169491525424,0.10202376209577188,0.0,50,21,LOW - Low grade variance
+82778,CARIOLOG Y ODONTO PREVEN (A S)-P01,244,336,Segundo Semestre - 2025-Periodo Completo,61,61,0.0,0.0,0.0,1,7,LOW - Low grade variance
+81097,EVOLUCIÓN DE LOS MEDICAMENTOS-P02,262,336,Segundo Semestre - 2025-Periodo Completo,61,61,0.0,0.0,0.0,5,8,LOW - Low grade variance
+82737,DIRECCIÓN DE PERSONAS-P02,311,336,Segundo Semestre - 2025-Periodo Completo,55,55,0.0,0.0,0.0,1,10,LOW - Low grade variance
+82727,CÁLCULO II-P01,311,336,Segundo Semestre - 2025-Periodo Completo,55,55,0.0,0.0,0.0,2,12,LOW - Low grade variance
+86662,TEORÍA DE LA LEY Y LAS PERSONA-P01,253,336,Segundo Semestre - 2025-Periodo Completo,54,54,0.0,0.0,0.0,20,19,LOW - Low grade variance
+80955,INTEGRADO CLÍNICO-P06,259,336,Segundo Semestre - 2025-Periodo Completo,101,0,0.0,0.0,,0,10,SKIP - No grades
+85807,RECREACIÓN Y DEPORTE INCLUSIVO-P07,259,336,Segundo Semestre - 2025-Periodo Completo,87,0,0.0,0.0,,0,10,SKIP - No grades
+85407,INTEGR T.OCUP CICLO INICIAL-P13,259,336,Segundo Semestre - 2025-Periodo Completo,85,0,0.0,0.0,,0,10,SKIP - No grades
+84384,INTEGRADO DE TERAPIA OCUP. I-P05,259,336,Segundo Semestre - 2025-Periodo Completo,76,0,0.0,0.0,,0,10,SKIP - No grades
+84397,PRÁCT. PROF. III (EV. CICLO)-P01,259,336,Segundo Semestre - 2025-Periodo Completo,73,0,0.0,0.0,,15,10,SKIP - No grades
+84383,INTEGR T.OCUP CICLO INTERM-P21,259,336,Segundo Semestre - 2025-Periodo Completo,69,0,0.0,0.0,,0,10,SKIP - No grades
+83132,DIETOTERAPIA DEL ADULTO II-P09,260,336,Segundo Semestre - 2025-Periodo Completo,65,0,0.0,0.0,,0,10,SKIP - No grades
+86190,INTERNADO CLÍNICO II-P01,244,336,Segundo Semestre - 2025-Periodo Completo,63,0,0.0,0.0,,2,12,SKIP - No grades
+80712,PSICOLOGÍA DE LA SALUD-P01,249,336,Segundo Semestre - 2025-Periodo Completo,62,0,0.0,0.0,,0,10,SKIP - No grades
+80713,INGLÉS TÉCNICO PARA MED. II-P01,249,336,Segundo Semestre - 2025-Periodo Completo,62,0,0.0,0.0,,1,10,SKIP - No grades
+80719,INTEGRADO DE MORFOLOGÍA I-P01,249,336,Segundo Semestre - 2025-Periodo Completo,61,0,0.0,0.0,,1,9,SKIP - No grades
+83164,QUÍMICA ORGÁNICA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,60,0,0.0,0.0,,0,13,SKIP - No grades
+82200,ONCOLOGÍA Y CUIDADOS PALIAT-P01,249,336,Segundo Semestre - 2025-Periodo Completo,59,0,0.0,0.0,,0,10,SKIP - No grades
+82723,PREP Y EVAL DE PROY (EV CICLO)-P01,311,336,Segundo Semestre - 2025-Periodo Completo,59,0,0.0,0.0,,7,10,SKIP - No grades
+82655,CIENCIA RESISTENCIA MATERIALES-P01,263,336,Segundo Semestre - 2025-Periodo Completo,59,0,0.0,0.0,,0,10,SKIP - No grades
+83201,FISIOPATOLOGÍA-P05,262,336,Segundo Semestre - 2025-Periodo Completo,59,0,0.0,0.0,,2,10,SKIP - No grades
+82194,SALUD COMUNIT. Y FAM. IV (A S)-P01,249,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,0,10,SKIP - No grades
+82196,FUND. DIAG. CLÍNICO-P01,249,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,0,4,SKIP - No grades
+84946,PENSAMIENTO MATEMÁTICO-P01,311,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,5,10,SKIP - No grades
+81092,FARMACIA PRIVADA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,0,10,SKIP - No grades
+83185,FISIOPATOLOGÍA-P06,262,336,Segundo Semestre - 2025-Periodo Completo,58,0,0.0,0.0,,3,10,SKIP - No grades
+81107,FARMACIA PRIVADA-P01,262,336,Segundo Semestre - 2025-Periodo Completo,57,0,0.0,0.0,,0,10,SKIP - No grades
+82203,BASES CIENTÍFICAS DE MED. IV-P01,249,336,Segundo Semestre - 2025-Periodo Completo,57,0,0.0,0.0,,2,7,SKIP - No grades
+81836,DERECHO COLECTIVO DEL TRABAJO-P01,253,336,Segundo Semestre - 2025-Periodo Completo,56,0,0.0,0.0,,0,10,SKIP - No grades
+82741,CÁLCULO II-P03,311,336,Segundo Semestre - 2025-Periodo Completo,56,0,0.0,0.0,,25,5,SKIP - No grades
+82813,OPTATIVO DE ESPECIALIDAD IV-P03,247,336,Segundo Semestre - 2025-Periodo Completo,56,0,0.0,0.0,,0,10,SKIP - No grades
+80447,INT DE CICLO INIC. (EV CICLO)-P01,256,336,Segundo Semestre - 2025-Periodo Completo,55,0,0.0,0.0,,0,10,SKIP - No grades
+82829,PSICOLOGÍA DE LA SALUD-P04,247,336,Segundo Semestre - 2025-Periodo Completo,55,0,0.0,0.0,,0,10,SKIP - No grades
+80448,CLÍN. ENFERM MÉDICO QUIRÚRGICO-P06,256,336,Segundo Semestre - 2025-Periodo Completo,55,0,0.0,0.0,,0,10,SKIP - No grades
+82646,SIMULACIÓN DE PROCESOS-P01,263,336,Segundo Semestre - 2025-Periodo Completo,55,0,0.0,0.0,,0,10,SKIP - No grades
+82782,INTERV PSICOED CONTEX ESC A S-P11,247,336,Segundo Semestre - 2025-Periodo Completo,54,0,0.0,0.0,,0,10,SKIP - No grades

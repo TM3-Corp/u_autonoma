@@ -1,0 +1,101 @@
+course_id,name,account_id,term_id,term_name,total_students,n_students_with_grades,grade_mean,grade_variance,pass_rate,n_assignments,n_modules,recommendation
+82620,OPTATIVO DE ESPECIALIDAD II-P01,253,336,Segundo Semestre - 2025-Periodo Completo,19,19,58.136842105263156,19.814943603949544,0.631578947368421,7,6,HIGH POTENTIAL
+82859,PSIC DEL DES II: ADOLES Y ADUL-P01,247,336,Segundo Semestre - 2025-Periodo Completo,50,50,19.2,21.52725017274617,0.02,4,10,MEDIUM POTENTIAL
+81939,TALLER DE HABILID. PROF. II-P02,247,336,Segundo Semestre - 2025-Periodo Completo,32,32,35.225625,15.639635133511748,0.15625,11,9,MEDIUM POTENTIAL
+82816,INTERVENCIÓN CLÍNICA ADULTO-P06,247,336,Segundo Semestre - 2025-Periodo Completo,54,54,98.88888888888889,75.81663727477181,0.7037037037037037,2,10,LOW - Few assignments
+82863,PSICOPAT Y PSICOF INF JUVENIL-P07,247,336,Segundo Semestre - 2025-Periodo Completo,38,38,2.296578947368421,4.484116574565567,0.0,2,2,LOW - Low grade variance
+81945,INTRODUCCIÓN A LA NEUROCIENCIA-P05,247,336,Segundo Semestre - 2025-Periodo Completo,50,50,1.5714,3.605495810564755,0.0,26,19,LOW - Low grade variance
+81941,INTRODUCCIÓN A LA NEUROCIENCIA-P09,247,336,Segundo Semestre - 2025-Periodo Completo,54,54,1.4022222222222223,3.381352822995591,0.0,26,19,LOW - Low grade variance
+81950,INTRODUCCIÓN A LA NEUROCIENCIA-P01,247,336,Segundo Semestre - 2025-Periodo Completo,51,51,1.1903921568627451,2.897476901587414,0.0,26,19,LOW - Low grade variance
+86662,TEORÍA DE LA LEY Y LAS PERSONA-P01,253,336,Segundo Semestre - 2025-Periodo Completo,54,54,0.0,0.0,0.0,20,19,LOW - Low grade variance
+86659,TEORÍA DE LA LEY Y LAS PERSONA-P03,253,336,Segundo Semestre - 2025-Periodo Completo,53,53,0.0,0.0,0.0,20,20,LOW - Low grade variance
+85785,TEORÍA CONSTITUCIONAL-P05,253,336,Segundo Semestre - 2025-Periodo Completo,52,52,0.0,0.0,0.0,24,19,LOW - Low grade variance
+85787,FUNDAMENTOS FILOSÓFICOS DEL DE-P01,253,336,Segundo Semestre - 2025-Periodo Completo,52,52,0.0,0.0,0.0,30,19,LOW - Low grade variance
+86664,TEORÍA CONSTITUCIONAL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,52,52,0.0,0.0,0.0,24,19,LOW - Low grade variance
+86665,ARGUMENTACIÓN JURÍDICA Y DEBAT-P03,253,336,Segundo Semestre - 2025-Periodo Completo,51,51,0.0,0.0,0.0,20,19,LOW - Low grade variance
+85781,HISTORIA INSTITUCIONAL DE CHIL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,51,51,0.0,0.0,0.0,20,19,LOW - Low grade variance
+86666,HISTORIA INSTITUCIONAL DE CHIL-P03,253,336,Segundo Semestre - 2025-Periodo Completo,50,50,0.0,0.0,0.0,20,19,LOW - Low grade variance
+86663,FUNDAMENTOS FILOSÓFICOS DEL DE-P05,253,336,Segundo Semestre - 2025-Periodo Completo,50,50,0.0,0.0,0.0,30,19,LOW - Low grade variance
+86658,TEORÍA CONSTITUCIONAL-P03,253,336,Segundo Semestre - 2025-Periodo Completo,49,49,0.0,0.0,0.0,24,19,LOW - Low grade variance
+86657,ARGUMENTACIÓN JURÍDICA Y DEBAT-P02,253,336,Segundo Semestre - 2025-Periodo Completo,49,49,0.0,0.0,0.0,20,19,LOW - Low grade variance
+81847,DERECHO Y GARANTÍAS CONSTITUCI-P03,253,336,Segundo Semestre - 2025-Periodo Completo,47,47,0.0,0.0,0.0,5,11,LOW - Low grade variance
+86660,FUNDAMENTOS FILOSÓFICOS DEL DE-P03,253,336,Segundo Semestre - 2025-Periodo Completo,45,45,0.0,0.0,0.0,30,19,LOW - Low grade variance
+86661,HISTORIA INSTITUCIONAL DE CHIL-P05,253,336,Segundo Semestre - 2025-Periodo Completo,42,42,0.0,0.0,0.0,20,19,LOW - Low grade variance
+81779,TEORÍA DEL PROCESO-P01,253,336,Segundo Semestre - 2025-Periodo Completo,41,41,0.0,0.0,0.0,3,14,LOW - Low grade variance
+85784,TEORÍA DE LA LEY Y LAS PERSONA-P05,253,336,Segundo Semestre - 2025-Periodo Completo,39,39,0.0,0.0,0.0,20,19,LOW - Low grade variance
+85782,ARGUMENTACIÓN JURÍDICA Y DEBAT-P01,253,336,Segundo Semestre - 2025-Periodo Completo,37,37,0.0,0.0,0.0,20,19,LOW - Low grade variance
+82813,OPTATIVO DE ESPECIALIDAD IV-P03,247,336,Segundo Semestre - 2025-Periodo Completo,56,0,0.0,0.0,,0,10,SKIP - No grades
+81836,DERECHO COLECTIVO DEL TRABAJO-P01,253,336,Segundo Semestre - 2025-Periodo Completo,56,0,0.0,0.0,,0,10,SKIP - No grades
+82829,PSICOLOGÍA DE LA SALUD-P04,247,336,Segundo Semestre - 2025-Periodo Completo,55,0,0.0,0.0,,0,10,SKIP - No grades
+82782,INTERV PSICOED CONTEX ESC A S-P11,247,336,Segundo Semestre - 2025-Periodo Completo,54,0,0.0,0.0,,0,10,SKIP - No grades
+82860,INTERV. PSICOSOCIAL GRUPOS-P06,247,336,Segundo Semestre - 2025-Periodo Completo,52,0,0.0,0.0,,3,10,SKIP - No grades
+82805,PSIC DEL DES II: ADOLES Y ADUL-P07,247,336,Segundo Semestre - 2025-Periodo Completo,52,0,0.0,0.0,,0,10,SKIP - No grades
+82783,INTERV. PSICOSOCIAL GRUPOS-P11,247,336,Segundo Semestre - 2025-Periodo Completo,51,0,0.0,0.0,,3,10,SKIP - No grades
+82818,TEORÍA PSICOLÓGICAS II-P01,247,336,Segundo Semestre - 2025-Periodo Completo,51,0,0.0,0.0,,0,10,SKIP - No grades
+81772,BIENES-P01,253,336,Segundo Semestre - 2025-Periodo Completo,50,0,0.0,0.0,,0,10,SKIP - No grades
+81819,DERECHO INTERNACIONAL PÚBLICO-P01,253,336,Segundo Semestre - 2025-Periodo Completo,48,0,0.0,0.0,,0,10,SKIP - No grades
+81797,DERECHO Y GARANTÍAS CONSTITUCI-P02,253,336,Segundo Semestre - 2025-Periodo Completo,48,0,0.0,0.0,,0,10,SKIP - No grades
+82810,EVALUACIÓN PSICOMÉTRICA-P01,247,336,Segundo Semestre - 2025-Periodo Completo,48,0,0.0,0.0,,0,10,SKIP - No grades
+81787,TEORÍA DEL PROCESO-P03,253,336,Segundo Semestre - 2025-Periodo Completo,47,0,0.0,0.0,,0,10,SKIP - No grades
+82841,INTERV PSICOED CONTEX ESC A S-P06,247,336,Segundo Semestre - 2025-Periodo Completo,47,0,0.0,0.0,,0,10,SKIP - No grades
+82828,PSICOLOGÍA JURÍDICA-P04,247,336,Segundo Semestre - 2025-Periodo Completo,46,0,0.0,0.0,,0,10,SKIP - No grades
+81778,TEORÍA DE LA REACCIÓN PENAL-P03,253,336,Segundo Semestre - 2025-Periodo Completo,46,0,0.0,0.0,,0,10,SKIP - No grades
+81774,DERECHO COLECTIVO DEL TRABAJO-P03,253,336,Segundo Semestre - 2025-Periodo Completo,46,0,0.0,0.0,,0,10,SKIP - No grades
+81835,BIENES-P02,253,336,Segundo Semestre - 2025-Periodo Completo,46,0,0.0,0.0,,0,4,SKIP - No grades
+81777,TEORÍA DEL PROCESO-P02,253,336,Segundo Semestre - 2025-Periodo Completo,45,0,0.0,0.0,,0,10,SKIP - No grades
+81802,DERECHO COLECTIVO DEL TRABAJO-P02,253,336,Segundo Semestre - 2025-Periodo Completo,45,0,0.0,0.0,,0,10,SKIP - No grades
+81825,FUENTE DE LAS OBLIGACIONES-P01,253,336,Segundo Semestre - 2025-Periodo Completo,44,0,0.0,0.0,,0,10,SKIP - No grades
+81799,DERECHO Y GARANTÍAS CONSTITUCI-P01,253,336,Segundo Semestre - 2025-Periodo Completo,44,0,0.0,0.0,,0,10,SKIP - No grades
+81815,FUENTE DE LAS OBLIGACIONES-P03,253,336,Segundo Semestre - 2025-Periodo Completo,43,0,0.0,0.0,,0,10,SKIP - No grades
+81789,DERECHO INTERNACIONAL PÚBLICO-P02,253,336,Segundo Semestre - 2025-Periodo Completo,43,0,0.0,0.0,,0,10,SKIP - No grades
+81814,TEORÍA DE LA REACCIÓN PENAL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,42,0,0.0,0.0,,0,8,SKIP - No grades
+81775,PROCEDIMIENTOS DE EJECUCIÓN Y-P01,253,336,Segundo Semestre - 2025-Periodo Completo,42,0,0.0,0.0,,0,10,SKIP - No grades
+81786,DERECHO INTERNACIONAL PÚBLICO-P03,253,336,Segundo Semestre - 2025-Periodo Completo,42,0,0.0,0.0,,0,10,SKIP - No grades
+82835,TEORÍAS PSICOLÓGICAS IV-P03,247,336,Segundo Semestre - 2025-Periodo Completo,41,0,0.0,0.0,,0,10,SKIP - No grades
+81804,DERECHO TRIBUTARIO I-P03,253,336,Segundo Semestre - 2025-Periodo Completo,41,0,0.0,0.0,,0,10,SKIP - No grades
+81806,DERECHO TRIBUTARIO I-P01,253,336,Segundo Semestre - 2025-Periodo Completo,41,0,0.0,0.0,,0,10,SKIP - No grades
+81812,CONTRATACIÓN MERCANTIL-P02,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81846,DELITOS EN PARTICULAR II-P02,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81849,TEORÍA DE LA REACCIÓN PENAL-P02,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81807,OPTATIVO DE ESPECIALIZACIÓN I-P01,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81811,PROCEDIMIENTOS ESPECIALES ORAL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81808,OPTATIVO DE ESPECIALIZACIÓN I-P02,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81780,PROCEDIMIENTOS DE EJECUCIÓN Y-P02,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81792,PROCEDIMIENTOS ESPECIALES ORAL-P05,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81795,FUENTE DE LAS OBLIGACIONES-P02,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81801,DERECHO ADMINISTRATIVO II-P03,253,336,Segundo Semestre - 2025-Periodo Completo,40,0,0.0,0.0,,0,10,SKIP - No grades
+81831,DERECHO SUCESORIO-P03,253,336,Segundo Semestre - 2025-Periodo Completo,39,0,0.0,0.0,,1,9,SKIP - No grades
+81798,DERECHO SUCESORIO-P02,253,336,Segundo Semestre - 2025-Periodo Completo,39,0,0.0,0.0,,0,10,SKIP - No grades
+81783,DERECHO TRIBUTARIO I-P02,253,336,Segundo Semestre - 2025-Periodo Completo,39,0,0.0,0.0,,0,10,SKIP - No grades
+81851,DELITOS EN PARTICULAR II-P03,253,336,Segundo Semestre - 2025-Periodo Completo,38,0,0.0,0.0,,0,10,SKIP - No grades
+81800,DERECHO ADMINISTRATIVO II-P01,253,336,Segundo Semestre - 2025-Periodo Completo,38,0,0.0,0.0,,0,10,SKIP - No grades
+81820,DERECHO MERCANTIL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,37,0,0.0,0.0,,0,20,SKIP - No grades
+81817,OPTATIVO DE ESPECIALIZACIÓN I-P03,253,336,Segundo Semestre - 2025-Periodo Completo,36,0,0.0,0.0,,0,10,SKIP - No grades
+81824,DELITOS EN PARTICULAR II-P01,253,336,Segundo Semestre - 2025-Periodo Completo,36,0,0.0,0.0,,0,10,SKIP - No grades
+81791,DERECHO MERCANTIL-P03,253,336,Segundo Semestre - 2025-Periodo Completo,35,0,0.0,0.0,,0,10,SKIP - No grades
+81823,PROCEDIMIENTOS DE EJECUCIÓN Y-P03,253,336,Segundo Semestre - 2025-Periodo Completo,35,0,0.0,0.0,,0,10,SKIP - No grades
+81822,DERECHO SUCESORIO-P01,253,336,Segundo Semestre - 2025-Periodo Completo,33,0,0.0,0.0,,0,10,SKIP - No grades
+81940,TALLER DE HABILID. PROF. II-P03,247,336,Segundo Semestre - 2025-Periodo Completo,33,0,0.0,0.0,,0,10,SKIP - No grades
+81818,BIENES-P03,253,336,Segundo Semestre - 2025-Periodo Completo,33,0,0.0,0.0,,0,3,SKIP - No grades
+81937,TALLER DE HABILID. PROF. II-P01,247,336,Segundo Semestre - 2025-Periodo Completo,32,0,0.0,0.0,,0,10,SKIP - No grades
+81946,TALLER DE HABILID. PROF. II-P05,247,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,0,10,SKIP - No grades
+81855,DERECHO MERCANTIL-P02,253,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,0,10,SKIP - No grades
+81853,TALLER DE INTEGRACIÓN I (EV.CI-P02,253,336,Segundo Semestre - 2025-Periodo Completo,31,0,0.0,0.0,,0,10,SKIP - No grades
+81856,TALLER DE INTEGRACIÓN II (EV.C-P01,253,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,13,SKIP - No grades
+81844,TALLER DE INTEGRACIÓN III (EV.-P02,253,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,9,SKIP - No grades
+81790,TALLER DE INTEGRACIÓN I (EV.CI-P03,253,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+81805,TALLER DE INTEGRACIÓN II (EV.C-P05,253,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,10,SKIP - No grades
+81813,TALLER DE INTEGRACIÓN II (EV.C-P03,253,336,Segundo Semestre - 2025-Periodo Completo,30,0,0.0,0.0,,0,13,SKIP - No grades
+81776,CONTRATACIÓN MERCANTIL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,29,0,0.0,0.0,,0,10,SKIP - No grades
+81773,DERECHO ADMINISTRATIVO II-P02,253,336,Segundo Semestre - 2025-Periodo Completo,29,0,0.0,0.0,,0,10,SKIP - No grades
+82622,REORGA Y LIQUID. PATRIMONIAL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,29,0,0.0,0.0,,0,10,SKIP - No grades
+81816,CONTRATACIÓN MERCANTIL-P03,253,336,Segundo Semestre - 2025-Periodo Completo,27,0,0.0,0.0,,0,10,SKIP - No grades
+82639,TALL DE LITIG AVANZ (EV CICLO)-P01,253,336,Segundo Semestre - 2025-Periodo Completo,27,0,0.0,0.0,,0,10,SKIP - No grades
+87359,ACTO JURÍDICO-P01,253,336,Segundo Semestre - 2025-Periodo Completo,27,0,0.0,0.0,,0,11,SKIP - No grades
+87374,RESPONSABILIDAD CIVIL-P01,253,336,Segundo Semestre - 2025-Periodo Completo,27,0,0.0,0.0,,0,10,SKIP - No grades
+81826,PROCEDIMIENTOS ESPECIALES ORAL-P03,253,336,Segundo Semestre - 2025-Periodo Completo,24,0,0.0,0.0,,0,10,SKIP - No grades
+82627,DERECHO TRIBUTARIO II-P01,253,336,Segundo Semestre - 2025-Periodo Completo,24,0,0.0,0.0,,0,10,SKIP - No grades
+81794,TALLER DE INTEGRACIÓN I (EV.CI-P04,253,336,Segundo Semestre - 2025-Periodo Completo,22,0,0.0,0.0,,0,11,SKIP - No grades
+81949,TALLER DE HABILID. PROF. II-P04,247,336,Segundo Semestre - 2025-Periodo Completo,22,0,0.0,0.0,,0,10,SKIP - No grades
+81796,TALLER DE INTEGRACIÓN III (EV.-P01,253,336,Segundo Semestre - 2025-Periodo Completo,21,0,0.0,0.0,,0,10,SKIP - No grades
+82628,OPTATIVO DE ESPECIALIDAD I-P01,253,336,Segundo Semestre - 2025-Periodo Completo,17,0,0.0,0.0,,0,10,SKIP - No grades
