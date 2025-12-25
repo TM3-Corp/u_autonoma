@@ -1,0 +1,151 @@
+[
+  {
+    "course_id": 86005,
+    "course_name": "TALL DE COMPETENCIAS DIGITALES-P01",
+    "n_students": 50,
+    "grade_range": "27-91%",
+    "grade_mean": 72.44080000000001,
+    "grade_std": 13.916607439036458,
+    "fail_rate": 0.12,
+    "pure_activity": {
+      "page_views": 0.389,
+      "page_views_level": 0.323,
+      "total_activity_time": 0.338,
+      "morning_activity": 0.159,
+      "afternoon_activity": 0.495,
+      "evening_activity": 0.398,
+      "night_activity": 0.108,
+      "is_morning_studier": -0.147,
+      "is_evening_studier": -0.111,
+      "time_concentration": 0.026,
+      "activity_span_days": 0.417,
+      "unique_active_hours": 0.505,
+      "avg_gap_hours": -0.339,
+      "gap_std_hours": -0.382
+    },
+    "submission_related": {
+      "participations": 0.463,
+      "participations_level": 0.353,
+      "on_time": 0.49,
+      "late": -0.029,
+      "missing": -0.543
+    }
+  },
+  {
+    "course_id": 86020,
+    "course_name": "TALL DE COMPETENCIAS DIGITALES-P02",
+    "n_students": 47,
+    "grade_range": "6-92%",
+    "grade_mean": 64.09297872340426,
+    "grade_std": 18.570487680011272,
+    "fail_rate": 0.3191489361702128,
+    "pure_activity": {
+      "page_views": 0.27,
+      "page_views_level": 0.267,
+      "total_activity_time": 0.362,
+      "morning_activity": 0.241,
+      "afternoon_activity": 0.336,
+      "evening_activity": 0.199,
+      "night_activity": 0.135,
+      "is_morning_studier": -0.469,
+      "is_evening_studier": 0.079,
+      "time_concentration": -0.111,
+      "activity_span_days": -0.036,
+      "unique_active_hours": 0.428,
+      "avg_gap_hours": -0.525,
+      "gap_std_hours": -0.328
+    },
+    "submission_related": {
+      "participations": 0.324,
+      "participations_level": 0.262,
+      "on_time": 0.27,
+      "missing": -0.326
+    }
+  },
+  {
+    "course_id": 84944,
+    "course_name": "FUNDAMENTOS DE MACROECONOM\u00cdA-P03",
+    "n_students": 38,
+    "grade_range": "24-88%",
+    "grade_mean": 59.132368421052625,
+    "grade_std": 21.361382741230827,
+    "fail_rate": 0.42105263157894735,
+    "pure_activity": {
+      "page_views": 0.187,
+      "page_views_level": 0.406,
+      "total_activity_time": 0.214,
+      "morning_activity": 0.319,
+      "afternoon_activity": 0.079,
+      "evening_activity": 0.099,
+      "night_activity": -0.13,
+      "is_morning_studier": 0.208,
+      "time_concentration": -0.126,
+      "activity_span_days": -0.181,
+      "unique_active_hours": 0.246,
+      "avg_gap_hours": -0.428,
+      "gap_std_hours": -0.416
+    },
+    "submission_related": {
+      "participations": 0.797,
+      "participations_level": 0.782,
+      "on_time": 0.95,
+      "missing": -0.95
+    }
+  },
+  {
+    "course_id": 86676,
+    "course_name": "FUND DE BUSINESS ANALYTICS-P01",
+    "n_students": 36,
+    "grade_range": "15-82%",
+    "grade_mean": 43.1263888888889,
+    "grade_std": 24.62865255322145,
+    "fail_rate": 0.6944444444444444,
+    "pure_activity": {
+      "page_views": 0.352,
+      "page_views_level": 0.279,
+      "total_activity_time": 0.457,
+      "morning_activity": 0.279,
+      "afternoon_activity": 0.39,
+      "evening_activity": 0.169,
+      "night_activity": 0.294,
+      "is_morning_studier": 0.126,
+      "is_evening_studier": -0.258,
+      "time_concentration": -0.202,
+      "activity_span_days": 0.191,
+      "unique_active_hours": 0.534,
+      "avg_gap_hours": -0.445,
+      "gap_std_hours": -0.449
+    },
+    "submission_related": {
+      "participations": 0.785,
+      "participations_level": 0.672,
+      "on_time": 0.782,
+      "missing": -0.816
+    }
+  },
+  {
+    "course_id": 84941,
+    "course_name": "FUNDAMENTOS DE MICROECONOM\u00cdA-P01",
+    "n_students": 15,
+    "grade_range": "50-100%",
+    "grade_mean": 88.88733333333333,
+    "grade_std": 13.608956854464145,
+    "fail_rate": 0.06666666666666667,
+    "pure_activity": {
+      "page_views": -0.136,
+      "page_views_level": -0.319,
+      "total_activity_time": 0.418,
+      "morning_activity": -0.178,
+      "afternoon_activity": -0.181,
+      "evening_activity": 0.101,
+      "night_activity": -0.201,
+      "is_evening_studier": 0.083,
+      "time_concentration": 0.171,
+      "activity_span_days": 0.056,
+      "unique_active_hours": 0.095,
+      "avg_gap_hours": -0.018,
+      "gap_std_hours": 0.122
+    },
+    "submission_related": {}
+  }
+]
