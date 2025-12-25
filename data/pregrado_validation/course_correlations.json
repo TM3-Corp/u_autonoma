@@ -1,0 +1,71 @@
+[
+  {
+    "course_id": 81837,
+    "course_name": "ÁLGEBRA-P01",
+    "career": "Ing. Civil Industrial",
+    "n_students": 55,
+    "grade_mean": 39.8,
+    "grade_std": 26.9,
+    "fail_rate": 0.655,
+    "correlations": {
+      "page_views": 0.459,
+      "page_views_level": 0.456,
+      "total_activity_time": 0.198,
+      "morning_activity": -0.006,
+      "afternoon_activity": 0.004,
+      "evening_activity": 0.05,
+      "night_activity": -0.097,
+      "time_concentration": -0.372,
+      "activity_span_days": 0.468,
+      "unique_active_hours": 0.554,
+      "avg_gap_hours": -0.473,
+      "gap_std_hours": -0.415
+    }
+  },
+  {
+    "course_id": 82198,
+    "course_name": "NEUROCIENCIAS-P01",
+    "career": "Medicina",
+    "n_students": 46,
+    "grade_mean": 55.4,
+    "grade_std": 22.9,
+    "fail_rate": 0.413,
+    "correlations": {
+      "page_views": 0.15,
+      "page_views_level": 0.168,
+      "total_activity_time": -0.219,
+      "morning_activity": -0.093,
+      "afternoon_activity": -0.099,
+      "evening_activity": 0.153,
+      "night_activity": 0.068,
+      "time_concentration": 0.072,
+      "activity_span_days": -0.276,
+      "unique_active_hours": -0.078,
+      "avg_gap_hours": -0.054,
+      "gap_std_hours": -0.093
+    }
+  },
+  {
+    "course_id": 83844,
+    "course_name": "SALUD FAM. Y COMUNITARIA-P01",
+    "career": "Kinesiología",
+    "n_students": 59,
+    "grade_mean": 46.0,
+    "grade_std": 21.0,
+    "fail_rate": 0.797,
+    "correlations": {
+      "page_views": 0.075,
+      "page_views_level": -0.007,
+      "total_activity_time": 0.087,
+      "morning_activity": -0.009,
+      "afternoon_activity": -0.034,
+      "evening_activity": 0.179,
+      "night_activity": -0.089,
+      "time_concentration": -0.073,
+      "activity_span_days": -0.042,
+      "unique_active_hours": -0.064,
+      "avg_gap_hours": 0.117,
+      "gap_std_hours": 0.184
+    }
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "page_views": {
+    "mean": 0.21239999999999998,
+    "std": 0.18762792969065134,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "page_views_level": {
+    "mean": 0.19120000000000004,
+    "std": 0.25971861696844145,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "total_activity_time": {
+    "mean": 0.3578,
+    "std": 0.08312977805816638,
+    "count": 5,
+    "consistency": "consistent"
+  },
+  "morning_activity": {
+    "mean": 0.164,
+    "std": 0.17897932841532285,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "afternoon_activity": {
+    "mean": 0.22379999999999994,
+    "std": 0.2443729935979015,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "evening_activity": {
+    "mean": 0.19319999999999998,
+    "std": 0.10948680285769605,
+    "count": 5,
+    "consistency": "consistent"
+  },
+  "night_activity": {
+    "mean": 0.041199999999999994,
+    "std": 0.18173541206930474,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "is_morning_studier": {
+    "mean": -0.07050000000000001,
+    "std": 0.2649665073174344,
+    "count": 4,
+    "consistency": "mixed"
+  },
+  "is_evening_studier": {
+    "mean": -0.051750000000000004,
+    "std": 0.14256818544121266,
+    "count": 4,
+    "consistency": "mixed"
+  },
+  "time_concentration": {
+    "mean": -0.048400000000000006,
+    "std": 0.13206452968151594,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "activity_span_days": {
+    "mean": 0.08940000000000001,
+    "std": 0.20376515894529174,
+    "count": 5,
+    "consistency": "mixed"
+  },
+  "unique_active_hours": {
+    "mean": 0.36160000000000003,
+    "std": 0.16681318892701502,
+    "count": 5,
+    "consistency": "consistent"
+  },
+  "avg_gap_hours": {
+    "mean": -0.35100000000000003,
+    "std": 0.1766771066097699,
+    "count": 5,
+    "consistency": "consistent"
+  },
+  "gap_std_hours": {
+    "mean": -0.29059999999999997,
+    "std": 0.21014623479853262,
+    "count": 5,
+    "consistency": "mixed"
+  }
+}
