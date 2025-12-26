@@ -607,6 +607,194 @@ GET /api/v1/courses/{course_id}/users
 
 ---
 
+### 17. DEPARTMENT ANALYTICS APIs ✅ (NEW - Account-Level Aggregates)
+
+**Purpose:** Get aggregated analytics at the account/program level.
+
+#### 17a. Department Activity by Category
+
+**Endpoint:**
+```
+GET /api/v1/accounts/{account_id}/analytics/terms/{term_id}/activity
+GET /api/v1/accounts/{account_id}/analytics/current/activity
+GET /api/v1/accounts/{account_id}/analytics/completed/activity
+```
+
+**Returns:**
+```json
+{
+  "by_date": [{"date": "2025-11-24", "views": 2709, "participations": 19}],
+  "by_category": [
+    {"category": "announcements", "views": 4559},
+    {"category": "assignments", "views": 6273},
+    {"category": "discussions", "views": 24549},
+    {"category": "files", "views": 15450},
+    {"category": "grades", "views": 515},
+    {"category": "modules", "views": 5587},
+    {"category": "pages", "views": 2555},
+    {"category": "quizzes", "views": 6342}
+  ]
+}
+```
+
+**Use Case:** Understand HOW students engage (content vs assessments vs grade-checking).
+
+#### 17b. Department Grade Distribution
+
+**Endpoint:**
+```
+GET /api/v1/accounts/{account_id}/analytics/terms/{term_id}/grades
+```
+
+**Returns:** Grade distribution binned 0-100:
+```json
+{"0": 834, "57": 12, "70": 45, "85": 89, "100": 23}
+```
+
+**Use Case:** Quick overview of grade distribution across all courses in an account.
+
+#### 17c. Department Statistics
+
+**Endpoint:**
+```
+GET /api/v1/accounts/{account_id}/analytics/terms/{term_id}/statistics
+```
+
+**Returns:**
+```json
+{
+  "courses": 29,
+  "teachers": 29,
+  "students": 159,
+  "discussion_topics": 2720,
+  "attachments": 3272,
+  "assignments": 397
+}
+```
+
+---
+
+### 18. COURSE ASSIGNMENTS ANALYTICS ✅ (NEW - Assignment Statistics)
+
+**Purpose:** Get per-assignment statistics with quartiles and tardiness breakdown.
+
+**Endpoint:**
+```
+GET /api/v1/courses/{course_id}/analytics/assignments
+```
+
+**Parameters:**
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| `async` | `true/false` | Enable async processing for large courses |
+
+**Returns:**
+```json
+{
+  "assignment_id": 475337,
+  "title": "TAREA 01",
+  "due_at": "2025-08-22T03:59:59Z",
+  "points_possible": 80.0,
+  "max_score": 80.0,
+  "min_score": 45.0,
+  "first_quartile": 65.0,
+  "median": 72.0,
+  "third_quartile": 78.0,
+  "tardiness_breakdown": {
+    "missing": 0.425,
+    "late": 0.0,
+    "on_time": 0.575,
+    "total": 40
+  }
+}
+```
+
+**Use Case:** More efficient than fetching all submissions - gives statistical summary directly.
+
+---
+
+### 19. USER ASSIGNMENTS ANALYTICS ✅ (NEW - Per-Student Assignment Status)
+
+**Purpose:** Get assignment data for a specific student with submission status.
+
+**Endpoint:**
+```
+GET /api/v1/courses/{course_id}/analytics/users/{student_id}/assignments
+```
+
+**Returns:**
+```json
+{
+  "assignment_id": 481087,
+  "title": "TAREA 02",
+  "points_possible": 80.0,
+  "due_at": "2025-09-26T02:59:00Z",
+  "status": "on_time",
+  "excused": false,
+  "submission": {
+    "posted_at": "2025-10-01T20:09:10Z",
+    "score": 79.0,
+    "submitted_at": "2025-09-26T02:23:50Z"
+  }
+}
+```
+
+**Use Case:** Track individual student progress and submission patterns.
+
+---
+
+### 20. RECENT STUDENTS API ✅ (NEW - Activity Recency)
+
+**Purpose:** Get students ordered by last login time.
+
+**Endpoint:**
+```
+GET /api/v1/courses/{course_id}/recent_students
+```
+
+**Returns:**
+```json
+{
+  "id": 117656,
+  "name": "Student Name",
+  "last_login": "2025-12-18T17:08:47Z"
+}
+```
+
+**Use Case:** Quickly identify inactive students for early intervention.
+
+---
+
+### 21. USER COMMUNICATION API ✅ (Tested - Limited Data)
+
+**Purpose:** Get message counts between instructor and student.
+
+**Endpoint:**
+```
+GET /api/v1/courses/{course_id}/analytics/users/{student_id}/communication
+```
+
+**Note:** Returns empty `{}` if no messaging occurred. Data availability depends on course communication patterns.
+
+---
+
+### 22. USER/BULK PROGRESS API ⚠️ (Requires Module Completion)
+
+**Purpose:** Get module completion progress for students.
+
+**Endpoints:**
+```
+GET /api/v1/courses/{course_id}/users/{user_id}/progress
+GET /api/v1/courses/{course_id}/bulk_user_progress
+```
+
+**Limitation:** Only works for courses with module completion requirements enabled. Returns error otherwise:
+```json
+{"error": {"message": "no progress available because this course is not module based"}}
+```
+
+---
+
 ## APIs with Limitations
 
 | API | Limitation | Workaround |
@@ -627,8 +815,10 @@ GET /api/v1/courses/{course_id}/users
 | **Course grades** | Enrollments | `current_score`, `final_score`, `current_grade`, `final_grade` | ✅ Verified |
 | **Assignment grades** | Submissions | `score`, `grade`, `submitted_at`, `graded_at` | ✅ Verified |
 | **Assignment metadata** | Assignments | `name`, `points_possible`, `due_at`, `grading_type` | ✅ Verified |
+| **Assignment statistics** | Course Assignments Analytics | `min_score`, `max_score`, `median`, `quartiles`, `tardiness_breakdown` | ✅ NEW |
 | **Grade weights** | Assignment Groups | `group_weight`, `name` | ✅ Verified |
 | **Activity metrics** | Student Summaries | `page_views`, `participations`, `tardiness_breakdown` | ✅ Verified |
+| **Activity by category** | Department Activity | `by_category` (announcements, assignments, files, etc.) | ✅ NEW |
 | **Daily activity** | Course Activity | `date`, `views`, `participations` | ✅ Verified |
 | **User hourly activity** | User Activity | Page views by hour | ✅ Verified |
 | **Grade history** | Gradebook History | `previous_grade`, `new_grade`, timestamps | ✅ Verified |
@@ -637,6 +827,10 @@ GET /api/v1/courses/{course_id}/users
 | **Course structure** | Modules | `name`, module items | ✅ Verified |
 | **Academic terms** | Enrollment Terms | `name`, `start_at`, `end_at` | ✅ Verified |
 | **GraphQL grades** | GraphQL | `currentScore`, `finalScore` via query | ✅ Verified |
+| **Department grades** | Department Analytics | Grade distribution binned 0-100 | ✅ NEW |
+| **Department stats** | Department Statistics | `courses`, `students`, `teachers`, `assignments` counts | ✅ NEW |
+| **Recent logins** | Recent Students | `last_login` per student | ✅ NEW |
+| **User assignment status** | User Assignments Analytics | `status` (on_time/late/missing), `submission` | ✅ NEW |
 
 ### Sample Data Available (Course 86005)
 
