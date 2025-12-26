@@ -61,3 +61,4 @@ Thumbs.db
 
 # API test notebook (contains sensitive exploration)
 API test.ipynb
+/exploratory/data/careers
