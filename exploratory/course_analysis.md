@@ -35,6 +35,7 @@ The disconnect:
   Only 5 of 35 active courses have grades IN Canvas - the rest use the external gradebook.
   The Endpoints We Use
   For Design Quality (Radiografía):
+
   /api/v1/courses/{id}/modules # Structure
   /api/v1/courses/{id}/assignments # Activities
   /api/v1/courses/{id}/quizzes # Assessments
@@ -43,5 +44,8 @@ The disconnect:
   /api/v1/courses/{id}/discussion_topics # Interaction
   For Prediction Potential:
   /api/v1/courses/{id}/enrollments?include[]=grades # final_score
+
+  /api/v1/courses/{id}/analytics/activity
+  /api/v1/courses/{id}/analytics/users/{user_id}/activity
 
 # Then check: N > 10, StdDev > 15, fail_rate 10-90%
