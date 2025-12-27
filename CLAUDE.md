@@ -1,10 +1,94 @@
-# Canvas LMS Data Extraction - Universidad Autónoma de Chile
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-**Objective:** Extract student activity and grade data from Canvas LMS to build early failure prediction models.
+Early warning system to predict student failure in courses at Universidad Autónoma de Chile using Canvas LMS activity data. Goal: identify at-risk students BEFORE first exams when intervention can still help.
 
-**Goal:** Predict which students will FAIL each course (grade < 4.0 on Chilean 1-7 scale, or < 57% on percentage scale) using LMS activity data, enabling early intervention BEFORE first exams.
+**Failure threshold:** < 4.0 on Chilean 1-7 scale (= < 57% on percentage scale)
+
+---
+
+## Development Commands
+
+```bash
+# Environment setup
+python -m venv venv
+source venv/bin/activate
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter requests python-dotenv
+
+# Run early warning system
+python scripts/early_warning_system.py
+
+# Run baseline model training
+python scripts/train_baseline_models.py
+
+# Run correlation analysis
+python scripts/correlation_analysis.py
+
+# Start Jupyter notebooks
+jupyter notebook notebooks/
+
+# Test pagination utility
+python scripts/utils/pagination.py
+```
+
+---
+
+## Code Architecture
+
+### Core Scripts (`scripts/`)
+- `config.py` - API configuration, account IDs, course lists (loads from `.env`)
+- `early_warning_system.py` - Main `EarlyWarningSystem` class for prediction
+- `prediction_models.py` - ALL-DATA vs ACTIVITY-ONLY model comparison
+- `train_baseline_models.py` - Model training pipeline
+- `utils/pagination.py` - **Critical**: Canvas bookmark-based pagination
+
+### Key Class: EarlyWarningSystem
+Located in `scripts/early_warning_system.py`, provides:
+- `extract_comprehensive_features()` - Pulls from Canvas APIs
+- `calculate_early_access_scores()` - Ranks students by module timing
+- `train_early_warning_models()` - Trains classifiers (LogReg, RF, GradBoost)
+- `generate_risk_report()` - Outputs risk levels (Low/Medium/High/Critical)
+
+### Pagination Warning
+Canvas uses **bookmark-based pagination**, NOT page numbers. Always use:
+```python
+from utils.pagination import paginate_canvas
+results = paginate_canvas(url, headers, params={...})
+```
+
+### Feature Sets
+**ACTIVITY-ONLY** (early warning before grades):
+- `page_views`, `participations`, `total_activity_time`
+- `morning_activity`, `evening_activity` (time patterns)
+- `early_access_score` (module access timing)
+
+**ALL-DATA** (includes grades):
+- Activity features + `avg_score`, `submission_rate`, etc.
+
+---
+
+## Branch Workflow
+
+| Branch | Purpose |
+|--------|---------|
+| `main` | Protected - merged via PR only |
+| `develop` | Integration branch |
+| `feature/eda-{name}` | Individual EDA work branches |
+
+Claude Code hooks in `.claude/hooks/check-git-branch.sh` enforce restrictions based on `git config user.allowed-branch`.
+
+---
+
+## Data Flow
+
+1. **Extract**: Canvas APIs → raw JSON
+2. **Transform**: Feature engineering in `early_warning_system.py`
+3. **Save**: `data/early_warning/student_features.csv`
+4. **Train**: Models → `data/early_warning/model_results.json`
+5. **Visualize**: Notebooks → `data/early_warning/viz_*.png`
 
 ---
 
