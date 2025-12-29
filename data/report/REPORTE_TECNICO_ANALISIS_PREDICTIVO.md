@@ -229,6 +229,44 @@ El análisis comparativo revela patrones significativos:
 
 ![Diseño vs Engagement](visualizations/design_vs_engagement.png)
 
+### Patrones Temporales de Conexión
+
+El análisis de los momentos de conexión estudiantil revela patrones distintivos por curso. Los heatmaps de 24 horas x 7 días muestran la distribución de interacciones según la hora del día y el día de la semana, donde colores más oscuros indican mayor actividad.
+
+![Patrones de Actividad por Curso](visualizations/hourly_heatmaps_combined.png)
+
+**Hallazgos sobre Patrones Temporales:**
+
+1. **Concentración Vespertina**: La mayoría de los cursos muestran picos de actividad entre las 18:00 y 22:00 horas, coincidiendo con horarios post-laborales típicos de estudiantes de programas vespertinos.
+
+2. **Actividad de Fin de Semana**: Los cursos con mayor engagement (Competencias Digitales, Business Analytics) presentan actividad significativa los sábados y domingos, indicando compromiso estudiantil fuera del horario académico formal.
+
+3. **Diferencias Disciplinarias**:
+   - **Cursos prácticos** (Competencias Digitales): Distribución más uniforme durante el día
+   - **Cursos teóricos** (Economía, Matemáticas): Concentración en horarios específicos con menor dispersión
+
+4. **Madrugada como Indicador**: La actividad entre 00:00 y 06:00 es mínima en todos los cursos, sugiriendo hábitos de estudio saludables en la población estudiantil.
+
+5. **Lunes vs. Viernes**: Se observa mayor actividad los lunes y martes en comparación con viernes, posiblemente debido a ciclos semanales de entrega de tareas.
+
+**Heatmaps Individuales por Curso:**
+
+| Curso | Heatmap |
+|-------|---------|
+| TALL DE COMPETENCIAS DIGITALES-P01 | ![](visualizations/hourly_heatmap_86005.png) |
+| TALL DE COMPETENCIAS DIGITALES-P02 | ![](visualizations/hourly_heatmap_86020.png) |
+| FUND DE BUSINESS ANALYTICS-P01 | ![](visualizations/hourly_heatmap_86676.png) |
+| FUND. DE BUSINESS ANALYTICS-P01 | ![](visualizations/hourly_heatmap_79913.png) |
+| FUNDAMENTOS DE MICROECONOMÍA-P03 | ![](visualizations/hourly_heatmap_84936.png) |
+| FUNDAMENTOS DE MICROECONOMÍA-P01 | ![](visualizations/hourly_heatmap_84941.png) |
+| FUNDAMENTOS DE MACROECONOMÍA-P03 | ![](visualizations/hourly_heatmap_84944.png) |
+| FUNDAMENTOS DE MACROECONOMÍA-P01 | ![](visualizations/hourly_heatmap_89736.png) |
+| FUNDAMENTOS TRIBUTARIOS-P01 | ![](visualizations/hourly_heatmap_79804.png) |
+| TALLER DE COMP DIGITALES-P01 (79875) | ![](visualizations/hourly_heatmap_79875.png) |
+| TALLER DE COMP DIGITALES-P01 (89099) | ![](visualizations/hourly_heatmap_89099.png) |
+| MATEMÁTICAS PARA LOS NEGOCIOS-P01 | ![](visualizations/hourly_heatmap_88381.png) |
+| GESTIÓN DEL TALENTO-P01 | ![](visualizations/hourly_heatmap_89390.png) |
+
 ---
 
 ## 5. Fuentes de Datos (Canvas API)
