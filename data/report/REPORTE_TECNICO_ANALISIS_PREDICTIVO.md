@@ -56,6 +56,28 @@ Implementar el modelo en producción para monitoreo continuo de estudiantes en r
 
 ## 2. Metodología de Selección de Cursos
 
+### Tabla de Referencia de Cursos
+
+Para facilitar la navegación transversal del documento, todos los gráficos utilizan el formato **"NombreCorto (ID)"** o solo **"Curso ID"**. La siguiente tabla proporciona el mapeo completo:
+
+| ID | Nombre Completo | Abreviatura |
+|----|-----------------|-------------|
+| 79804 | FUNDAMENTOS TRIBUTARIOS-P01 | Tributarios |
+| 79875 | TALLER DE COMP DIGITALES-P01 | Comp.Dig. |
+| 79913 | FUND. DE BUSINESS ANALYTICS-P01 | Bus.Analytics |
+| 84936 | FUNDAMENTOS DE MICROECONOMÍA-P03 | Microecon. |
+| 84941 | FUNDAMENTOS DE MICROECONOMÍA-P01 | Microecon. |
+| 84944 | FUNDAMENTOS DE MACROECONOMÍA-P03 | Macroecon. |
+| 86005 | TALL DE COMPETENCIAS DIGITALES-P01 | Comp.Dig. |
+| 86020 | TALL DE COMPETENCIAS DIGITALES-P02 | Comp.Dig. |
+| 86676 | FUND DE BUSINESS ANALYTICS-P01 | Bus.Analytics |
+| 88381 | MATEMÁTICAS PARA LOS NEGOCIOS-P01 | Mat.Negocios |
+| 89099 | TALLER DE COMP DIGITALES-P01 | Comp.Dig. |
+| 89390 | GESTIÓN DEL TALENTO-P01 | Gest.Talento |
+| 89736 | FUNDAMENTOS DE MACROECONOMÍA-P01 | Macroecon. |
+
+*Nota: Cursos con el mismo nombre pero diferentes IDs corresponden a secciones paralelas distintas.*
+
 # METODOLOGÍA DE SELECCIÓN DE CURSOS
 
 ## Criterios de Inclusión
@@ -251,21 +273,23 @@ El análisis de los momentos de conexión estudiantil revela patrones distintivo
 
 **Heatmaps Individuales por Curso:**
 
-| Curso | Heatmap |
-|-------|---------|
-| TALL DE COMPETENCIAS DIGITALES-P01 | ![](visualizations/hourly_heatmap_86005.png) |
-| TALL DE COMPETENCIAS DIGITALES-P02 | ![](visualizations/hourly_heatmap_86020.png) |
-| FUND DE BUSINESS ANALYTICS-P01 | ![](visualizations/hourly_heatmap_86676.png) |
-| FUND. DE BUSINESS ANALYTICS-P01 | ![](visualizations/hourly_heatmap_79913.png) |
-| FUNDAMENTOS DE MICROECONOMÍA-P03 | ![](visualizations/hourly_heatmap_84936.png) |
-| FUNDAMENTOS DE MICROECONOMÍA-P01 | ![](visualizations/hourly_heatmap_84941.png) |
-| FUNDAMENTOS DE MACROECONOMÍA-P03 | ![](visualizations/hourly_heatmap_84944.png) |
-| FUNDAMENTOS DE MACROECONOMÍA-P01 | ![](visualizations/hourly_heatmap_89736.png) |
-| FUNDAMENTOS TRIBUTARIOS-P01 | ![](visualizations/hourly_heatmap_79804.png) |
-| TALLER DE COMP DIGITALES-P01 (79875) | ![](visualizations/hourly_heatmap_79875.png) |
-| TALLER DE COMP DIGITALES-P01 (89099) | ![](visualizations/hourly_heatmap_89099.png) |
-| MATEMÁTICAS PARA LOS NEGOCIOS-P01 | ![](visualizations/hourly_heatmap_88381.png) |
-| GESTIÓN DEL TALENTO-P01 | ![](visualizations/hourly_heatmap_89390.png) |
+| Curso ID | Heatmap |
+|----------|---------|
+| 86005 | ![](visualizations/hourly_heatmap_86005.png) |
+| 86020 | ![](visualizations/hourly_heatmap_86020.png) |
+| 86676 | ![](visualizations/hourly_heatmap_86676.png) |
+| 79913 | ![](visualizations/hourly_heatmap_79913.png) |
+| 84936 | ![](visualizations/hourly_heatmap_84936.png) |
+| 84941 | ![](visualizations/hourly_heatmap_84941.png) |
+| 84944 | ![](visualizations/hourly_heatmap_84944.png) |
+| 89736 | ![](visualizations/hourly_heatmap_89736.png) |
+| 79804 | ![](visualizations/hourly_heatmap_79804.png) |
+| 79875 | ![](visualizations/hourly_heatmap_79875.png) |
+| 89099 | ![](visualizations/hourly_heatmap_89099.png) |
+| 88381 | ![](visualizations/hourly_heatmap_88381.png) |
+| 89390 | ![](visualizations/hourly_heatmap_89390.png) |
+
+*Consulte la Tabla de Referencia de Cursos (Sección 2) para el mapeo completo de IDs a nombres.*
 
 ---
 
