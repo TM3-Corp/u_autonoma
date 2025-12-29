@@ -205,46 +205,55 @@ def create_pass_rate_bars(data):
 def create_correlation_heatmap(data):
     """Heatmap de correlaciones de los top features por curso.
 
-    Muestra NaN (gris) para features que no están en el top 5 de un curso,
-    en lugar de 0 que sería engañoso.
+    Calcula TODAS las correlaciones para los features que aparecen en el
+    top 5 de cualquier curso, mostrando el panorama completo.
     """
-    fig, ax = plt.subplots(figsize=(14, 8))
+    from scipy import stats
 
-    # Extraer top 5 features por curso
-    courses = []
+    fig, ax = plt.subplots(figsize=(16, 9))
+
+    # Extraer top 5 features por curso (unión de todos)
+    good_courses = []
     all_features = set()
 
     for c in data["per_course"]:
         if c.get("class_diversity") == "GOOD":
-            courses.append(c["course_id"])
+            good_courses.append(c["course_id"])
             for feat, _ in c.get("top_correlations", [])[:5]:
                 all_features.add(feat)
 
-    # Crear matriz con NaN por defecto (se mostrará gris)
-    features = sorted(list(all_features))[:15]  # Top 15 features
-    matrix = np.full((len(courses), len(features)), np.nan)
+    # Calcular TODAS las correlaciones desde datos crudos
+    df = data["student_features"]
+    features = sorted(list(all_features))
+    matrix = np.zeros((len(good_courses), len(features)))
 
-    for i, c in enumerate(data["per_course"]):
-        if c["course_id"] not in courses:
-            continue
-        idx = courses.index(c["course_id"])
-        corr_dict = {f: v["r"] for f, v in c.get("top_correlations", [])}
+    for i, course_id in enumerate(good_courses):
+        course_df = df[df["course_id"].astype(str) == str(course_id)]
         for j, feat in enumerate(features):
-            if feat in corr_dict:
-                matrix[idx, j] = corr_dict[feat]
+            if feat in course_df.columns and "final_score" in course_df.columns:
+                valid = course_df[[feat, "final_score"]].dropna()
+                if len(valid) >= 5:
+                    with np.errstate(invalid='ignore'):
+                        r, _ = stats.pearsonr(valid[feat], valid["final_score"])
+                    matrix[i, j] = r if not np.isnan(r) else 0
+                else:
+                    matrix[i, j] = np.nan
 
     # Crear heatmap con máscara para NaN
+    mask = np.isnan(matrix)
     sns.heatmap(matrix, annot=True, fmt=".2f", cmap="RdYlGn",
-                xticklabels=features, yticklabels=[str(c)[-5:] for c in courses],
+                xticklabels=features,
+                yticklabels=[str(c) for c in good_courses],
                 center=0, vmin=-0.8, vmax=0.8, ax=ax,
-                mask=np.isnan(matrix), cbar_kws={"label": "Correlación (r)"})
+                mask=mask, cbar_kws={"label": "Correlación (r)"})
 
-    ax.set_xlabel("Feature")
+    ax.set_xlabel("Feature (de Top 5 de cualquier curso)")
     ax.set_ylabel("Curso")
-    ax.set_title("Correlaciones Feature-Nota por Curso (Top 5 por curso, gris = no en top 5)")
+    ax.set_title("Correlaciones Feature-Nota: Todas las correlaciones para Features en Top 5")
 
+    plt.xticks(rotation=45, ha="right")
     plt.tight_layout()
-    plt.savefig(VIZ_DIR / "correlation_heatmap.png")
+    plt.savefig(VIZ_DIR / "correlation_heatmap.png", dpi=150)
     plt.close()
 
 
