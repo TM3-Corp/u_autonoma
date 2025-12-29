@@ -1,0 +1,678 @@
+[
+  {
+    "course_id": "86005",
+    "n_students": 50,
+    "grade_mean": 72.4,
+    "grade_std": 13.8,
+    "r2_mean": -0.177,
+    "r2_std": 0.566,
+    "top_correlations": [
+      [
+        "session_count",
+        {
+          "r": 0.568,
+          "p": 0.0
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.568,
+          "p": 0.0
+        }
+      ],
+      [
+        "unique_active_hours",
+        {
+          "r": 0.568,
+          "p": 0.0
+        }
+      ],
+      [
+        "trend_reversals",
+        {
+          "r": 0.55,
+          "p": 0.0
+        }
+      ],
+      [
+        "session_gap_mean",
+        {
+          "r": -0.546,
+          "p": 0.0
+        }
+      ]
+    ],
+    "top_importances": [
+      "('first_module_day', 0.17848139379820524)",
+      "('early_engagement_ratio', 0.09648202684685002)",
+      "('engagement_velocity', 0.07106625857911907)",
+      "('weekday_morning_pct', 0.058853584403206136)",
+      "('weekend_afternoon_pct', 0.05112357927273013)"
+    ]
+  },
+  {
+    "course_id": "86676",
+    "n_students": 40,
+    "grade_mean": 38.8,
+    "grade_std": 26.4,
+    "r2_mean": 0.325,
+    "r2_std": 0.704,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.801,
+          "p": 0.0
+        }
+      ],
+      [
+        "session_count",
+        {
+          "r": 0.621,
+          "p": 0.0
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.621,
+          "p": 0.0
+        }
+      ],
+      [
+        "unique_active_hours",
+        {
+          "r": 0.621,
+          "p": 0.0
+        }
+      ],
+      [
+        "session_gap_mean",
+        {
+          "r": -0.589,
+          "p": 0.0001
+        }
+      ]
+    ],
+    "top_importances": [
+      "('total_participations', 0.5598160899632691)",
+      "('dct_coef_2', 0.0609287678742977)",
+      "('dct_coef_10', 0.0276284186640348)",
+      "('dct_coef_9', 0.024837023178528508)",
+      "('sessions_per_week', 0.02415178589637255)"
+    ]
+  },
+  {
+    "course_id": "84936",
+    "n_students": 42,
+    "grade_mean": 68.9,
+    "grade_std": 43.8,
+    "r2_mean": 0.839,
+    "r2_std": 0.21,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.777,
+          "p": 0.0
+        }
+      ],
+      [
+        "dct_coef_3",
+        {
+          "r": 0.435,
+          "p": 0.004
+        }
+      ],
+      [
+        "activity_span_days",
+        {
+          "r": 0.425,
+          "p": 0.005
+        }
+      ],
+      [
+        "dct_coef_6",
+        {
+          "r": -0.409,
+          "p": 0.0072
+        }
+      ],
+      [
+        "weekly_range",
+        {
+          "r": 0.409,
+          "p": 0.0072
+        }
+      ]
+    ],
+    "top_importances": [
+      "('total_participations', 0.8129928534331191)",
+      "('session_gap_max', 0.058427726904655135)",
+      "('dct_coef_4', 0.01874675178701322)",
+      "('dct_coef_2', 0.016729088159037033)",
+      "('slope_std', 0.013608744435334962)"
+    ]
+  },
+  {
+    "course_id": "84941",
+    "n_students": 38,
+    "grade_mean": 35.1,
+    "grade_std": 44.2,
+    "r2_mean": 0.952,
+    "r2_std": 0.064,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.967,
+          "p": 0.0
+        }
+      ],
+      [
+        "weekly_range",
+        {
+          "r": 0.542,
+          "p": 0.0004
+        }
+      ],
+      [
+        "max_negative_slope",
+        {
+          "r": -0.52,
+          "p": 0.0008
+        }
+      ],
+      [
+        "total_page_views",
+        {
+          "r": 0.491,
+          "p": 0.0017
+        }
+      ],
+      [
+        "slope_std",
+        {
+          "r": 0.469,
+          "p": 0.003
+        }
+      ]
+    ],
+    "top_importances": [
+      "('total_participations', 0.9666711434730968)",
+      "('dct_coef_5', 0.00471889757754606)",
+      "('weekday_evening_pct', 0.003556351667713543)",
+      "('weekday_afternoon_sd', 0.003340675808044426)",
+      "('dct_coef_6', 0.0029691216364007224)"
+    ]
+  },
+  {
+    "course_id": "84944",
+    "n_students": 40,
+    "grade_mean": 56.2,
+    "grade_std": 24.3,
+    "r2_mean": 0.826,
+    "r2_std": 0.059,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.851,
+          "p": 0.0
+        }
+      ],
+      [
+        "max_positive_slope",
+        {
+          "r": 0.444,
+          "p": 0.0042
+        }
+      ],
+      [
+        "slope_std",
+        {
+          "r": 0.42,
+          "p": 0.0069
+        }
+      ],
+      [
+        "weekly_range",
+        {
+          "r": 0.382,
+          "p": 0.0151
+        }
+      ],
+      [
+        "session_gap_mean",
+        {
+          "r": -0.379,
+          "p": 0.0158
+        }
+      ]
+    ],
+    "top_importances": [
+      "('total_participations', 0.8461593562143204)",
+      "('dct_coef_2', 0.018381234510729646)",
+      "('dct_coef_11', 0.016503435140312755)",
+      "('dct_coef_3', 0.015490946386474674)",
+      "('dct_coef_10', 0.013668383268254588)"
+    ]
+  },
+  {
+    "course_id": "86020",
+    "n_students": 51,
+    "grade_mean": 59.1,
+    "grade_std": 24.7,
+    "r2_mean": 0.245,
+    "r2_std": 0.553,
+    "top_correlations": [
+      [
+        "session_count",
+        {
+          "r": 0.527,
+          "p": 0.0001
+        }
+      ],
+      [
+        "session_gap_mean",
+        {
+          "r": -0.527,
+          "p": 0.0001
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.527,
+          "p": 0.0001
+        }
+      ],
+      [
+        "unique_active_hours",
+        {
+          "r": 0.527,
+          "p": 0.0001
+        }
+      ],
+      [
+        "session_gap_min",
+        {
+          "r": -0.465,
+          "p": 0.0006
+        }
+      ]
+    ],
+    "top_importances": [
+      "('session_gap_mean', 0.18498853469740165)",
+      "('weekend_afternoon_pct', 0.07720443233657193)",
+      "('weekday_morning_pct', 0.05674296763451323)",
+      "('dct_coef_2', 0.05315696051713235)",
+      "('access_time_pct', 0.04529003263696405)"
+    ]
+  },
+  {
+    "course_id": "79804",
+    "n_students": 24,
+    "grade_mean": 69.8,
+    "grade_std": 20.1,
+    "r2_mean": -0.6,
+    "r2_std": 0.982,
+    "top_correlations": [
+      [
+        "dct_coef_8",
+        {
+          "r": 0.564,
+          "p": 0.0041
+        }
+      ],
+      [
+        "peak_count_type2",
+        {
+          "r": 0.531,
+          "p": 0.0075
+        }
+      ],
+      [
+        "weekend_evening_pct",
+        {
+          "r": 0.459,
+          "p": 0.024
+        }
+      ],
+      [
+        "session_regularity",
+        {
+          "r": -0.453,
+          "p": 0.0264
+        }
+      ],
+      [
+        "weekday_night_pct",
+        {
+          "r": -0.401,
+          "p": 0.0522
+        }
+      ]
+    ],
+    "top_importances": [
+      "('dct_coef_6', 0.13085170207546937)",
+      "('session_gap_mean', 0.10290578814274737)",
+      "('session_regularity', 0.09926399333564617)",
+      "('dct_coef_3', 0.06429242423901214)",
+      "('weekday_night_pct', 0.0634033493490352)"
+    ]
+  },
+  {
+    "course_id": "79875",
+    "n_students": 32,
+    "grade_mean": 58.8,
+    "grade_std": 35.5,
+    "r2_mean": 0.523,
+    "r2_std": 0.409,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.852,
+          "p": 0.0
+        }
+      ],
+      [
+        "session_count",
+        {
+          "r": 0.798,
+          "p": 0.0
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.798,
+          "p": 0.0
+        }
+      ],
+      [
+        "unique_active_hours",
+        {
+          "r": 0.798,
+          "p": 0.0
+        }
+      ],
+      [
+        "total_page_views",
+        {
+          "r": 0.723,
+          "p": 0.0
+        }
+      ]
+    ],
+    "top_importances": [
+      "('total_participations', 0.44248660687909896)",
+      "('session_count', 0.07732957748175727)",
+      "('weekday_morning_pct', 0.058764277269112576)",
+      "('weekday_morning_sd', 0.05843815275280661)",
+      "('weekday_afternoon_pct', 0.04101680546413016)"
+    ]
+  },
+  {
+    "course_id": "79913",
+    "n_students": 41,
+    "grade_mean": 65.4,
+    "grade_std": 22.4,
+    "r2_mean": -0.055,
+    "r2_std": 0.286,
+    "top_correlations": [
+      [
+        "session_count",
+        {
+          "r": 0.418,
+          "p": 0.0065
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.418,
+          "p": 0.0065
+        }
+      ],
+      [
+        "unique_active_hours",
+        {
+          "r": 0.418,
+          "p": 0.0065
+        }
+      ],
+      [
+        "session_regularity",
+        {
+          "r": -0.387,
+          "p": 0.0124
+        }
+      ],
+      [
+        "total_participations",
+        {
+          "r": 0.385,
+          "p": 0.013
+        }
+      ]
+    ],
+    "top_importances": [
+      "('weekday_evening_pct', 0.17301617649247433)",
+      "('weekend_afternoon_pct', 0.06940993614694947)",
+      "('max_negative_slope', 0.059240393746997945)",
+      "('first_module_day', 0.058840675500625175)",
+      "('weekday_afternoon_pct', 0.05168005399187358)"
+    ]
+  },
+  {
+    "course_id": "88381",
+    "n_students": 21,
+    "grade_mean": 68.5,
+    "grade_std": 32.9,
+    "r2_mean": -0.03,
+    "r2_std": 0.581,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.824,
+          "p": 0.0
+        }
+      ],
+      [
+        "session_count",
+        {
+          "r": 0.759,
+          "p": 0.0001
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.759,
+          "p": 0.0001
+        }
+      ],
+      [
+        "unique_active_hours",
+        {
+          "r": 0.759,
+          "p": 0.0001
+        }
+      ],
+      [
+        "session_gap_mean",
+        {
+          "r": -0.702,
+          "p": 0.0004
+        }
+      ]
+    ],
+    "top_importances": [
+      "('unique_active_hours', 0.11479420561053016)",
+      "('session_count', 0.0929749929211827)",
+      "('sessions_per_week', 0.09141652157102692)",
+      "('session_gap_mean', 0.09111541527661247)",
+      "('activity_span_days', 0.04677305159220623)"
+    ]
+  },
+  {
+    "course_id": "89099",
+    "n_students": 35,
+    "grade_mean": 61.1,
+    "grade_std": 26.4,
+    "r2_mean": 0.268,
+    "r2_std": 0.305,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.701,
+          "p": 0.0
+        }
+      ],
+      [
+        "weekday_night_pct",
+        {
+          "r": -0.488,
+          "p": 0.0029
+        }
+      ],
+      [
+        "dct_coef_1",
+        {
+          "r": -0.461,
+          "p": 0.0054
+        }
+      ],
+      [
+        "dct_coef_11",
+        {
+          "r": -0.454,
+          "p": 0.0062
+        }
+      ],
+      [
+        "peak_count_type2",
+        {
+          "r": 0.433,
+          "p": 0.0093
+        }
+      ]
+    ],
+    "top_importances": [
+      "('total_participations', 0.4797714128572253)",
+      "('session_count', 0.06030928480083356)",
+      "('weekday_night_pct', 0.036866395481047205)",
+      "('slope_std', 0.03022197596030712)",
+      "('sessions_per_week', 0.029835430877984473)"
+    ]
+  },
+  {
+    "course_id": "89390",
+    "n_students": 33,
+    "grade_mean": 76.0,
+    "grade_std": 34.3,
+    "r2_mean": -0.237,
+    "r2_std": 0.244,
+    "top_correlations": [
+      [
+        "dct_coef_1",
+        {
+          "r": -0.427,
+          "p": 0.0132
+        }
+      ],
+      [
+        "peak_count_type1",
+        {
+          "r": 0.419,
+          "p": 0.0153
+        }
+      ],
+      [
+        "weekend_evening_pct",
+        {
+          "r": 0.409,
+          "p": 0.018
+        }
+      ],
+      [
+        "session_count",
+        {
+          "r": 0.363,
+          "p": 0.0378
+        }
+      ],
+      [
+        "sessions_per_week",
+        {
+          "r": 0.363,
+          "p": 0.0378
+        }
+      ]
+    ],
+    "top_importances": [
+      "('unique_active_hours', 0.10671215428082041)",
+      "('session_count', 0.08425243701188107)",
+      "('session_gap_std', 0.0717737859148637)",
+      "('dct_coef_8', 0.06745441660052408)",
+      "('weekend_morning_pct', 0.05208858709601104)"
+    ]
+  },
+  {
+    "course_id": "89736",
+    "n_students": 28,
+    "grade_mean": 17.5,
+    "grade_std": 9.9,
+    "r2_mean": 0.124,
+    "r2_std": 0.199,
+    "top_correlations": [
+      [
+        "total_participations",
+        {
+          "r": 0.577,
+          "p": 0.0013
+        }
+      ],
+      [
+        "weekly_cv",
+        {
+          "r": 0.391,
+          "p": 0.0398
+        }
+      ],
+      [
+        "max_negative_slope",
+        {
+          "r": -0.371,
+          "p": 0.052
+        }
+      ],
+      [
+        "weekday_morning_pct",
+        {
+          "r": 0.322,
+          "p": 0.0945
+        }
+      ],
+      [
+        "session_count",
+        {
+          "r": 0.316,
+          "p": 0.1012
+        }
+      ]
+    ],
+    "top_importances": [
+      "('weekly_cv', 0.10547235445849124)",
+      "('total_participations', 0.10395571437672188)",
+      "('engagement_acceleration', 0.0759250561345843)",
+      "('unique_active_hours', 0.07013022118717743)",
+      "('weekday_evening_pct', 0.06650644660594086)"
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "n_clusters": 8,
+  "cluster_mapping": {
+    "0": [
+      "session_count",
+      "sessions_per_week",
+      "trend_reversals",
+      "max_positive_slope",
+      "slope_std",
+      "positive_slope_sum",
+      "weekly_range",
+      "total_page_views",
+      "total_participations",
+      "unique_active_hours"
+    ],
+    "5": [
+      "session_gap_min",
+      "session_regularity",
+      "weekday_night_pct",
+      "early_engagement_ratio",
+      "first_access_day",
+      "first_module_day",
+      "access_time_pct"
+    ],
+    "6": [
+      "session_gap_max",
+      "session_gap_mean",
+      "session_gap_std"
+    ],
+    "2": [
+      "weekday_morning_pct",
+      "weekday_morning_sd",
+      "dct_coef_3",
+      "dct_coef_4",
+      "peak_count_type3",
+      "peak_ratio",
+      "activity_span_days"
+    ],
+    "1": [
+      "weekday_afternoon_pct",
+      "dct_coef_1",
+      "dct_coef_5",
+      "dct_coef_10",
+      "dct_coef_11",
+      "engagement_velocity",
+      "engagement_acceleration",
+      "max_negative_slope",
+      "negative_slope_sum"
+    ],
+    "3": [
+      "weekday_evening_pct",
+      "weekend_night_pct",
+      "dct_coef_7",
+      "dct_coef_8",
+      "dct_coef_9",
+      "peak_count_type2",
+      "first_assignment_day"
+    ],
+    "4": [
+      "weekend_morning_pct",
+      "weekend_afternoon_pct",
+      "weekend_evening_pct",
+      "weekend_total_sd",
+      "dct_coef_2",
+      "dct_coef_6",
+      "peak_count_type1"
+    ],
+    "7": [
+      "weekday_afternoon_sd",
+      "dct_coef_0",
+      "weekly_cv",
+      "late_surge"
+    ]
+  },
+  "cluster_names": {
+    "0": "WORKLOAD_DYNAMICS",
+    "5": "TIME_TO_ACCESS",
+    "6": "SESSION_REGULARITY",
+    "2": "TIME_BLOCKS",
+    "1": "DCT_COEFFICIENTS",
+    "3": "DCT_COEFFICIENTS",
+    "4": "TIME_BLOCKS",
+    "7": "ENGAGEMENT_TRAJECTORY"
+  }
+}

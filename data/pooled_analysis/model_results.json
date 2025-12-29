@@ -1,0 +1,325 @@
+{
+  "logistic_regression": {
+    "metrics": {
+      "accuracy": 0.6514745308310992,
+      "precision": 0.5590062111801242,
+      "recall": 0.6040268456375839,
+      "f1": 0.5806451612903226,
+      "roc_auc": 0.7066155321188878,
+      "confusion_matrix": [
+        [
+          153,
+          71
+        ],
+        [
+          59,
+          90
+        ]
+      ]
+    },
+    "top_features": [
+      {
+        "feature": "dct_coef_0",
+        "coefficient": -1.7054785577119926,
+        "odds_ratio": 0.18168541840934332
+      },
+      {
+        "feature": "first_access_day",
+        "coefficient": -0.978895167643651,
+        "odds_ratio": 0.3757259838440869
+      },
+      {
+        "feature": "dct_coef_1",
+        "coefficient": 0.9311909140754655,
+        "odds_ratio": 2.5375293583027663
+      },
+      {
+        "feature": "weekend_evening_pct",
+        "coefficient": 0.8837234530934435,
+        "odds_ratio": 2.4198933116299397
+      },
+      {
+        "feature": "dct_coef_2",
+        "coefficient": -0.785724999287733,
+        "odds_ratio": 0.45578913517148306
+      },
+      {
+        "feature": "access_time_pct",
+        "coefficient": 0.7665495782487795,
+        "odds_ratio": 2.1523269910029827
+      },
+      {
+        "feature": "slope_std",
+        "coefficient": -0.7257306879943614,
+        "odds_ratio": 0.4839708080676089
+      },
+      {
+        "feature": "session_gap_mean",
+        "coefficient": 0.6415207614745109,
+        "odds_ratio": 1.8993671684857762
+      },
+      {
+        "feature": "positive_slope_sum",
+        "coefficient": 0.5953395815174407,
+        "odds_ratio": 1.8136467213068288
+      },
+      {
+        "feature": "activity_span_days",
+        "coefficient": -0.5778496528095269,
+        "odds_ratio": 0.561103637856333
+      },
+      {
+        "feature": "engagement_velocity",
+        "coefficient": -0.5315140337386944,
+        "odds_ratio": 0.5877144761842025
+      },
+      {
+        "feature": "session_gap_std",
+        "coefficient": 0.5157034793976396,
+        "odds_ratio": 1.674816286227609
+      },
+      {
+        "feature": "negative_slope_sum",
+        "coefficient": 0.4827248127569984,
+        "odds_ratio": 1.6204839071496908
+      },
+      {
+        "feature": "weekday_afternoon_pct",
+        "coefficient": -0.47045995057745216,
+        "odds_ratio": 0.6247148642293922
+      },
+      {
+        "feature": "weekday_evening_pct",
+        "coefficient": -0.46157059360169006,
+        "odds_ratio": 0.6302929336589403
+      },
+      {
+        "feature": "max_positive_slope",
+        "coefficient": 0.4237782457418922,
+        "odds_ratio": 1.5277227771873845
+      },
+      {
+        "feature": "first_module_day",
+        "coefficient": 0.40905445248614525,
+        "odds_ratio": 1.505393690682884
+      },
+      {
+        "feature": "weekday_morning_sd",
+        "coefficient": -0.40038241789254153,
+        "odds_ratio": 0.6700637526650148
+      },
+      {
+        "feature": "dct_coef_6",
+        "coefficient": 0.379766729739643,
+        "odds_ratio": 1.4619435217093562
+      },
+      {
+        "feature": "weekend_morning_pct",
+        "coefficient": 0.3651859974971369,
+        "odds_ratio": 1.4407819650682092
+      }
+    ]
+  },
+  "random_forest": {
+    "metrics": {
+      "accuracy": 0.7292225201072386,
+      "precision": 0.7033898305084746,
+      "recall": 0.5570469798657718,
+      "f1": 0.6217228464419475,
+      "roc_auc": 0.7796919942473635,
+      "confusion_matrix": [
+        [
+          189,
+          35
+        ],
+        [
+          66,
+          83
+        ]
+      ]
+    },
+    "top_features": [
+      {
+        "feature": "session_count",
+        "importance": 0.06823663982823375
+      },
+      {
+        "feature": "unique_active_hours",
+        "importance": 0.058391922584233084
+      },
+      {
+        "feature": "sessions_per_week",
+        "importance": 0.052259766670184817
+      },
+      {
+        "feature": "weekly_range",
+        "importance": 0.0401551402915554
+      },
+      {
+        "feature": "slope_std",
+        "importance": 0.03315433783553411
+      },
+      {
+        "feature": "positive_slope_sum",
+        "importance": 0.03270532956608383
+      },
+      {
+        "feature": "negative_slope_sum",
+        "importance": 0.03253650788556726
+      },
+      {
+        "feature": "total_page_views",
+        "importance": 0.03155254607628523
+      },
+      {
+        "feature": "max_positive_slope",
+        "importance": 0.03086912130840978
+      },
+      {
+        "feature": "engagement_velocity",
+        "importance": 0.026228331626208017
+      },
+      {
+        "feature": "weekday_evening_pct",
+        "importance": 0.02371568999170047
+      },
+      {
+        "feature": "session_gap_mean",
+        "importance": 0.022835722494552367
+      },
+      {
+        "feature": "weekday_morning_sd",
+        "importance": 0.022399628700538753
+      },
+      {
+        "feature": "max_negative_slope",
+        "importance": 0.02047275744810955
+      },
+      {
+        "feature": "late_surge",
+        "importance": 0.019883581300012568
+      },
+      {
+        "feature": "dct_coef_2",
+        "importance": 0.019589273387976183
+      },
+      {
+        "feature": "trend_reversals",
+        "importance": 0.019204057609855368
+      },
+      {
+        "feature": "engagement_acceleration",
+        "importance": 0.019152739903689694
+      },
+      {
+        "feature": "activity_span_days",
+        "importance": 0.017986923347966154
+      },
+      {
+        "feature": "dct_coef_3",
+        "importance": 0.01666822159171732
+      }
+    ]
+  },
+  "xgboost": {
+    "metrics": {
+      "accuracy": 0.739946380697051,
+      "precision": 0.696969696969697,
+      "recall": 0.6174496644295302,
+      "f1": 0.6548042704626335,
+      "roc_auc": 0.7866730584851389,
+      "confusion_matrix": [
+        [
+          184,
+          40
+        ],
+        [
+          57,
+          92
+        ]
+      ]
+    },
+    "top_features": [
+      {
+        "feature": "session_count",
+        "importance": 0.08695146441459656
+      },
+      {
+        "feature": "peak_ratio",
+        "importance": 0.04138053208589554
+      },
+      {
+        "feature": "dct_coef_8",
+        "importance": 0.040027376264333725
+      },
+      {
+        "feature": "weekday_night_pct",
+        "importance": 0.03289666026830673
+      },
+      {
+        "feature": "slope_std",
+        "importance": 0.03278398513793945
+      },
+      {
+        "feature": "negative_slope_sum",
+        "importance": 0.029210852459073067
+      },
+      {
+        "feature": "weekday_evening_pct",
+        "importance": 0.026074552908539772
+      },
+      {
+        "feature": "first_access_day",
+        "importance": 0.025041284039616585
+      },
+      {
+        "feature": "dct_coef_7",
+        "importance": 0.02498791739344597
+      },
+      {
+        "feature": "weekend_night_pct",
+        "importance": 0.024673283100128174
+      },
+      {
+        "feature": "dct_coef_3",
+        "importance": 0.02430855855345726
+      },
+      {
+        "feature": "session_regularity",
+        "importance": 0.02359372191131115
+      },
+      {
+        "feature": "trend_reversals",
+        "importance": 0.02275664731860161
+      },
+      {
+        "feature": "engagement_velocity",
+        "importance": 0.022744396701455116
+      },
+      {
+        "feature": "engagement_acceleration",
+        "importance": 0.021563708782196045
+      },
+      {
+        "feature": "session_gap_std",
+        "importance": 0.01999719627201557
+      },
+      {
+        "feature": "peak_count_type3",
+        "importance": 0.019789254292845726
+      },
+      {
+        "feature": "activity_span_days",
+        "importance": 0.019707106053829193
+      },
+      {
+        "feature": "dct_coef_4",
+        "importance": 0.019163087010383606
+      },
+      {
+        "feature": "weekly_range",
+        "importance": 0.019032301381230354
+      }
+    ]
+  }
+}

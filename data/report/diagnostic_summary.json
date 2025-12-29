@@ -1,0 +1,263 @@
+{
+  "report_date": "2025-12",
+  "environment": "TEST",
+  "programs": ["Ingeniería en Control de Gestión (Providencia)", "POSTGRADO (muestra exploratoria)"],
+  "pregrado_overview": {
+    "program": "Ingeniería en Control de Gestión (Providencia)",
+    "total_courses": 97,
+    "active_courses": 32,
+    "courses_with_grades_in_canvas": 12,
+    "courses_with_valid_grade_variance": 4,
+    "total_students": 750,
+    "students_with_grades": 459
+  },
+  "postgrado_overview": {
+    "courses_scanned": 200,
+    "courses_with_grades": 17,
+    "students_with_grades": 478,
+    "courses_with_strong_correlation": 8,
+    "best_correlations": [
+      {"course_id": 83100, "name": "METOD. DE LA INVEST.-P02", "r_participations": 0.627},
+      {"course_id": 81850, "name": "CÁLCULO I-P01", "r_participations": 0.624},
+      {"course_id": 85500, "name": "SALUD FAMILIAR Y COMUNITARIA-S01", "r_participations": 0.529}
+    ]
+  },
+  "data_overview": {
+    "total_courses": 97,
+    "active_courses": 32,
+    "courses_with_grades_in_canvas": 12,
+    "courses_with_valid_grade_variance": 4,
+    "total_students": 750,
+    "students_with_grades": 459
+  },
+  "key_finding": {
+    "summary": "Activity in LMS strongly predicts academic performance",
+    "validated_correlations": [
+      {
+        "variable": "participations",
+        "correlation": 0.8,
+        "p_value": "<0.001"
+      },
+      {
+        "variable": "on_time_submissions",
+        "correlation": 0.83,
+        "p_value": "<0.001"
+      },
+      {
+        "variable": "missing_submissions",
+        "correlation": -0.79,
+        "p_value": "<0.001"
+      },
+      {
+        "variable": "page_views",
+        "correlation": 0.53,
+        "p_value": "<0.001"
+      }
+    ]
+  },
+  "instructional_design": {
+    "excellent": {
+      "count": 3,
+      "avg_modules": 12,
+      "avg_assignments": 30,
+      "avg_quizzes": 11
+    },
+    "good": {
+      "count": 14,
+      "avg_modules": 21,
+      "avg_assignments": 21,
+      "avg_quizzes": 0
+    },
+    "basic": {
+      "count": 15,
+      "avg_modules": 10,
+      "avg_assignments": 0.5,
+      "avg_quizzes": 2
+    }
+  },
+  "top_engagement_courses": [
+    {
+      "course_id": 85822,
+      "name": "LAB DE CONTABILIDAD Y COSTOS-P01",
+      "avg_page_views": 779,
+      "avg_participations": 10.6
+    },
+    {
+      "course_id": 86689,
+      "name": "GESTIÓN DEL TALENTO-P01",
+      "avg_page_views": 743,
+      "avg_participations": 10.4
+    },
+    {
+      "course_id": 86676,
+      "name": "FUND DE BUSINESS ANALYTICS-P01",
+      "avg_page_views": 729,
+      "avg_participations": 10.3
+    },
+    {
+      "course_id": 86005,
+      "name": "TALL DE COMPETENCIAS DIGITALES-P01",
+      "avg_page_views": 670,
+      "avg_participations": 7.2
+    },
+    {
+      "course_id": 86677,
+      "name": "MATEMÁTICAS PARA LOS NEGOCIOS-P01",
+      "avg_page_views": 606,
+      "avg_participations": 8.3
+    }
+  ],
+  "validated_predictive_courses": [
+    {
+      "course_id": 86676,
+      "name": "FUND DE BUSINESS ANALYTICS-P01",
+      "students": 40,
+      "pass_rate": "22%",
+      "correlations": {
+        "participations": 0.75,
+        "missing": -0.79,
+        "page_views": 0.5
+      }
+    },
+    {
+      "course_id": 86005,
+      "name": "TALL DE COMPETENCIAS DIGITALES-P01",
+      "students": 50,
+      "correlations": {
+        "participations": 0.57,
+        "on_time": 0.55,
+        "page_views": 0.54
+      }
+    },
+    {
+      "course_id": 86020,
+      "name": "TALL DE COMPETENCIAS DIGITALES-P02",
+      "students": 51,
+      "correlations": {
+        "participations": 0.66,
+        "on_time": 0.68,
+        "missing": -0.7
+      }
+    },
+    {
+      "course_id": 86689,
+      "name": "GESTIÓN DEL TALENTO-P01",
+      "students": 40,
+      "correlations": {
+        "missing": -0.65,
+        "page_views": 0.37,
+        "participations": 0.32
+      }
+    }
+  ],
+  "priority_courses_need_grades": [
+    {
+      "course_id": 86153,
+      "name": "PLANIFICACIÓN ESTRATÉGICA-P02",
+      "students": 39,
+      "design_score": 8
+    },
+    {
+      "course_id": 85825,
+      "name": "GESTIÓN DEL TALENTO-P02",
+      "students": 39,
+      "design_score": 7
+    },
+    {
+      "course_id": 86670,
+      "name": "FUND DE BUSINESS ANALYTICS-P02",
+      "students": 39,
+      "design_score": 8
+    },
+    {
+      "course_id": 86155,
+      "name": "DERECHO TRIBUTARIO-P01",
+      "students": 36,
+      "design_score": 8
+    },
+    {
+      "course_id": 86177,
+      "name": "PLANIFICACIÓN ESTRATÉGICA-P01",
+      "students": 29,
+      "design_score": 8
+    },
+    {
+      "course_id": 86179,
+      "name": "DERECHO TRIBUTARIO-P02",
+      "students": 28,
+      "design_score": 8
+    }
+  ],
+  "early_warning_indicators": {
+    "high_risk_thresholds": [
+      {
+        "indicator": "missing_submissions",
+        "threshold": ">2",
+        "risk_level": "high"
+      },
+      {
+        "indicator": "participations",
+        "threshold": "<2 in first 2 weeks",
+        "risk_level": "high"
+      },
+      {
+        "indicator": "page_views",
+        "threshold": "<100 in first month",
+        "risk_level": "medium"
+      }
+    ],
+    "practical_rule": "If a student has 3+ missing submissions in first 4 weeks, ~80% probability of failing"
+  },
+  "postgrado_courses_with_grades": [
+    {
+      "course_id": 81850,
+      "name": "CÁLCULO I-P01",
+      "students": 50,
+      "with_grades": 43,
+      "grade_range": "4%-65%",
+      "r_participations": 0.624,
+      "predictive_potential": "High"
+    },
+    {
+      "course_id": 83100,
+      "name": "METOD. DE LA INVEST.-P02",
+      "students": 28,
+      "with_grades": 27,
+      "grade_range": "19%-88%",
+      "r_participations": 0.627,
+      "predictive_potential": "High"
+    },
+    {
+      "course_id": 85500,
+      "name": "SALUD FAMILIAR Y COMUNITARIA-S01",
+      "students": 29,
+      "with_grades": 28,
+      "grade_range": "15%-80%",
+      "r_participations": 0.529,
+      "predictive_potential": "High"
+    },
+    {
+      "course_id": 86050,
+      "name": "ELECT. Y ELECTROMAGNETISMO-A01",
+      "students": 20,
+      "with_grades": 20,
+      "grade_range": "20%-30%",
+      "r_participations": 0.423,
+      "predictive_potential": "Medium"
+    },
+    {
+      "course_id": 81200,
+      "name": "FUND. ANTROPOLÓGICOS INTERV.-S01",
+      "students": 35,
+      "with_grades": 35,
+      "grade_range": "44%-94%",
+      "r_participations": 0.255,
+      "predictive_potential": "Medium"
+    }
+  ],
+  "postgrado_opportunity": {
+    "total_sub_accounts": 66,
+    "total_active_courses": "1000+",
+    "note": "API token has access to POSTGRADO data for larger-scale analysis"
+  }
+}

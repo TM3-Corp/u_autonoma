@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "total_courses": 32,
+    "with_grades": 12,
+    "without_grades": 20,
+    "design_distribution": {
+      "Basic": 15,
+      "Good": 14,
+      "Excellent": 3
+    }
+  },
+  "priority_courses": [
+    {
+      "course_id": 86153,
+      "name": "PLANIFICACI\u00d3N ESTRAT\u00c9GICA-P02",
+      "students": 39,
+      "design_score": 8,
+      "modules": 26,
+      "assignments": 24,
+      "quizzes": 0
+    },
+    {
+      "course_id": 85825,
+      "name": "GESTI\u00d3N DEL TALENTO-P02",
+      "students": 39,
+      "design_score": 7,
+      "modules": 13,
+      "assignments": 12,
+      "quizzes": 0
+    },
+    {
+      "course_id": 86670,
+      "name": "FUND DE BUSINESS ANALYTICS-P02",
+      "students": 39,
+      "design_score": 8,
+      "modules": 14,
+      "assignments": 18,
+      "quizzes": 0
+    },
+    {
+      "course_id": 86155,
+      "name": "DERECHO TRIBUTARIO-P01",
+      "students": 36,
+      "design_score": 8,
+      "modules": 26,
+      "assignments": 24,
+      "quizzes": 0
+    },
+    {
+      "course_id": 86177,
+      "name": "PLANIFICACI\u00d3N ESTRAT\u00c9GICA-P01",
+      "students": 29,
+      "design_score": 8,
+      "modules": 26,
+      "assignments": 24,
+      "quizzes": 0
+    },
+    {
+      "course_id": 86179,
+      "name": "DERECHO TRIBUTARIO-P02",
+      "students": 28,
+      "design_score": 8,
+      "modules": 26,
+      "assignments": 24,
+      "quizzes": 0
+    }
+  ]
+}
