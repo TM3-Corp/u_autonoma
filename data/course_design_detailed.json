@@ -1,0 +1,145 @@
+[
+  {
+    "course_id": "86005",
+    "modules": 4,
+    "assignments": 18,
+    "quizzes": 14,
+    "files": 356,
+    "discussions": 87,
+    "pages": 160,
+    "announcements": 0,
+    "name": "TALL DE COMPETENCIAS DIGITALES-P01"
+  },
+  {
+    "course_id": "86676",
+    "modules": 15,
+    "assignments": 24,
+    "quizzes": 0,
+    "files": 125,
+    "discussions": 86,
+    "pages": 109,
+    "announcements": 0,
+    "name": "FUND DE BUSINESS ANALYTICS-P01"
+  },
+  {
+    "course_id": "84936",
+    "modules": 9,
+    "assignments": 2,
+    "quizzes": 4,
+    "files": 22,
+    "discussions": 0,
+    "pages": 2,
+    "announcements": 0,
+    "name": "FUNDAMENTOS DE MICROECONOMÍA-P03"
+  },
+  {
+    "course_id": "84941",
+    "modules": 11,
+    "assignments": 1,
+    "quizzes": 3,
+    "files": 25,
+    "discussions": 0,
+    "pages": 2,
+    "announcements": 0,
+    "name": "FUNDAMENTOS DE MICROECONOMÍA-P01"
+  },
+  {
+    "course_id": "84944",
+    "modules": 9,
+    "assignments": 2,
+    "quizzes": 4,
+    "files": 17,
+    "discussions": 0,
+    "pages": 2,
+    "announcements": 0,
+    "name": "FUNDAMENTOS DE MACROECONOMÍA-P03"
+  },
+  {
+    "course_id": "86020",
+    "modules": 4,
+    "assignments": 18,
+    "quizzes": 14,
+    "files": 356,
+    "discussions": 87,
+    "pages": 160,
+    "announcements": 0,
+    "name": "TALL DE COMPETENCIAS DIGITALES-P02"
+  },
+  {
+    "course_id": "79804",
+    "modules": 13,
+    "assignments": 15,
+    "quizzes": 3,
+    "files": 94,
+    "discussions": 91,
+    "pages": 128,
+    "announcements": 0,
+    "name": "FUNDAMENTOS TRIBUTARIOS-P01"
+  },
+  {
+    "course_id": "79875",
+    "modules": 4,
+    "assignments": 12,
+    "quizzes": 7,
+    "files": 170,
+    "discussions": 34,
+    "pages": 47,
+    "announcements": 0,
+    "name": "TALLER DE COMP DIGITALES-P01"
+  },
+  {
+    "course_id": "79913",
+    "modules": 4,
+    "assignments": 18,
+    "quizzes": 7,
+    "files": 179,
+    "discussions": 33,
+    "pages": 76,
+    "announcements": 0,
+    "name": "FUND. DE BUSINESS ANALYTICS-P01"
+  },
+  {
+    "course_id": "88381",
+    "modules": 10,
+    "assignments": 9,
+    "quizzes": 2,
+    "files": 26,
+    "discussions": 0,
+    "pages": 2,
+    "announcements": 0,
+    "name": "MATEMÁTICAS PARA LOS NEGOCIOS-P01"
+  },
+  {
+    "course_id": "89099",
+    "modules": 4,
+    "assignments": 12,
+    "quizzes": 7,
+    "files": 172,
+    "discussions": 34,
+    "pages": 47,
+    "announcements": 0,
+    "name": "TALLER DE COMP DIGITALES-P01"
+  },
+  {
+    "course_id": "89390",
+    "modules": 13,
+    "assignments": 35,
+    "quizzes": 5,
+    "files": 320,
+    "discussions": 245,
+    "pages": 401,
+    "announcements": 0,
+    "name": "GESTIÓN DEL TALENTO-P01"
+  },
+  {
+    "course_id": "89736",
+    "modules": 11,
+    "assignments": 4,
+    "quizzes": 5,
+    "files": 22,
+    "discussions": 0,
+    "pages": 2,
+    "announcements": 0,
+    "name": "FUNDAMENTOS DE MACROECONOMÍA-P01"
+  }
+]
