@@ -1,0 +1,11 @@
+INSIGHTS DEL ANÁLISIS DE ACTIVIDAD
+==================================================
+
+1. De 601 cursos, solo 71 (11.8%) tienen datos de notas suficientes.
+
+2. Diferencia significativa en engagement entre campus (p=0.0046)
+
+3. El 71.9% de cursos tiene muy baja participación (<1 promedio)
+
+4. 110 cursos identificados como alto riesgo por múltiples indicadores
+
