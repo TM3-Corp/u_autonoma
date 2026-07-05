@@ -90,6 +90,7 @@ Chronological; every row links its artifact. ✅ adopted · 🔬 tested→null (
 | q10 | mRMR selection | 🔬 null (loses to ExtraTrees) | `q10_mrmr.json` |
 | q11 | survival / time-to-disengagement | 🔬 null (Δ−0.001; disengagement rare) | `q11_survival.json` |
 | q12 | temporal cascade (wk2 risk → wk4 model …) | 🔬 null AUC (+0.005); risk feature ranks #2–3 but redundant | `q12_cascade.json` |
+| q13 | feature importance (gain/ExtraTrees/permutation/**SHAP**) + top-N per cohort | 📊 SHAP≈gain for ranking; SHAP adds direction+per-student (deploy); PUC/UA top features diverge | `q13_importance.json` |
 | audit | full results audit → the ledger | ✅ | `RESULTS_LEDGER.md` |
 | audit | pipeline review (7 stages + roadmap) | ✅ | `PIPELINE_REVIEW.md` |
 
