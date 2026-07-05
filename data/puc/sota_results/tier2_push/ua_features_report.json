@@ -1,0 +1,153 @@
+{
+  "arms": {
+    "KEEP": 373,
+    "DROP_A": 322,
+    "A_plus": 286
+  },
+  "arm_fails": {
+    "KEEP": 149,
+    "DROP_A": 98,
+    "A_plus": 73
+  },
+  "n_active_zero": 51,
+  "fail_threshold": 57,
+  "leak_note": "pre_assessment_features are FULL-HORIZON; included ONLY in the `full` cutoff to avoid leaking post-cutoff info. Temporal cutoffs {2,4,6,8} exclude them. U5 (pre_assessment value) is a full-cutoff-only comparison.",
+  "residual_note": "jaccard_to_passing graph feature reused as-is (built with >=60 passing set in legacy code); not recomputed here (would require regenerating graph features). Optional cross-course xc feature not added (time budget).",
+  "cutoffs": {
+    "2": {
+      "n_feature_rows": 373,
+      "n_active_students": 303,
+      "n_zero_filled": 70,
+      "n_features": 396,
+      "n_base_features": 396,
+      "pre_assessment_included": false,
+      "pre_assessment_cols_present": false,
+      "n_pre_assessment": 0,
+      "arm_sizes": {
+        "KEEP": {
+          "n_joined": 373,
+          "n_fail": 149,
+          "prevalence": 0.3995
+        },
+        "DROP_A": {
+          "n_joined": 322,
+          "n_fail": 98,
+          "prevalence": 0.3043
+        },
+        "A_plus": {
+          "n_joined": 286,
+          "n_fail": 73,
+          "prevalence": 0.2552
+        }
+      }
+    },
+    "4": {
+      "n_feature_rows": 373,
+      "n_active_students": 343,
+      "n_zero_filled": 30,
+      "n_features": 396,
+      "n_base_features": 396,
+      "pre_assessment_included": false,
+      "pre_assessment_cols_present": false,
+      "n_pre_assessment": 0,
+      "arm_sizes": {
+        "KEEP": {
+          "n_joined": 373,
+          "n_fail": 149,
+          "prevalence": 0.3995
+        },
+        "DROP_A": {
+          "n_joined": 322,
+          "n_fail": 98,
+          "prevalence": 0.3043
+        },
+        "A_plus": {
+          "n_joined": 286,
+          "n_fail": 73,
+          "prevalence": 0.2552
+        }
+      }
+    },
+    "6": {
+      "n_feature_rows": 373,
+      "n_active_students": 351,
+      "n_zero_filled": 22,
+      "n_features": 396,
+      "n_base_features": 396,
+      "pre_assessment_included": false,
+      "pre_assessment_cols_present": false,
+      "n_pre_assessment": 0,
+      "arm_sizes": {
+        "KEEP": {
+          "n_joined": 373,
+          "n_fail": 149,
+          "prevalence": 0.3995
+        },
+        "DROP_A": {
+          "n_joined": 322,
+          "n_fail": 98,
+          "prevalence": 0.3043
+        },
+        "A_plus": {
+          "n_joined": 286,
+          "n_fail": 73,
+          "prevalence": 0.2552
+        }
+      }
+    },
+    "8": {
+      "n_feature_rows": 373,
+      "n_active_students": 356,
+      "n_zero_filled": 17,
+      "n_features": 396,
+      "n_base_features": 396,
+      "pre_assessment_included": false,
+      "pre_assessment_cols_present": false,
+      "n_pre_assessment": 0,
+      "arm_sizes": {
+        "KEEP": {
+          "n_joined": 373,
+          "n_fail": 149,
+          "prevalence": 0.3995
+        },
+        "DROP_A": {
+          "n_joined": 322,
+          "n_fail": 98,
+          "prevalence": 0.3043
+        },
+        "A_plus": {
+          "n_joined": 286,
+          "n_fail": 73,
+          "prevalence": 0.2552
+        }
+      }
+    },
+    "full": {
+      "n_feature_rows": 373,
+      "n_active_students": 373,
+      "n_zero_filled": 0,
+      "n_features": 278,
+      "n_base_features": 244,
+      "pre_assessment_included": true,
+      "pre_assessment_cols_present": true,
+      "n_pre_assessment": 34,
+      "arm_sizes": {
+        "KEEP": {
+          "n_joined": 373,
+          "n_fail": 149,
+          "prevalence": 0.3995
+        },
+        "DROP_A": {
+          "n_joined": 322,
+          "n_fail": 98,
+          "prevalence": 0.3043
+        },
+        "A_plus": {
+          "n_joined": 286,
+          "n_fail": 73,
+          "prevalence": 0.2552
+        }
+      }
+    }
+  }
+}

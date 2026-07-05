@@ -1,0 +1,39 @@
+{
+  "framing": "time-to-disengagement (event=silent >2wk before course end); Cox PH per institution",
+  "sets": {
+    "PUC": {
+      "n": 560,
+      "disengagement_rate": 0.007,
+      "cox_concordance": 0.9982,
+      "logrank_p_fail_vs_pass": 0.0,
+      "auc_survrisk_predicts_fail": 0.7555,
+      "clf_covars_only": 0.7297,
+      "clf_covars_plus_survrisk": 0.7284,
+      "delta_adding_survrisk": -0.0013,
+      "top_cox_coefs": {
+        "n_active_weeks": -0.326,
+        "active_days": -0.163,
+        "weekend_share": -0.101,
+        "total_events": -0.064,
+        "session_regularity": -0.051
+      }
+    },
+    "UA": {
+      "n": 310,
+      "disengagement_rate": 0.023,
+      "cox_concordance": 0.9845,
+      "logrank_p_fail_vs_pass": 4e-05,
+      "auc_survrisk_predicts_fail": 0.636,
+      "clf_covars_only": 0.5689,
+      "clf_covars_plus_survrisk": 0.5679,
+      "delta_adding_survrisk": -0.001,
+      "top_cox_coefs": {
+        "n_active_weeks": -0.386,
+        "active_days": -0.252,
+        "total_events": -0.161,
+        "share_evening": -0.114,
+        "first_event_day": -0.099
+      }
+    }
+  }
+}

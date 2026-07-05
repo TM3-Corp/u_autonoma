@@ -1,0 +1,534 @@
+{
+  "winner": "cat_full",
+  "kind": "cat",
+  "N": null,
+  "is_full": true,
+  "scope": "R2-pooled (10 courses, ~400 pairs, ~91 fails, ~23% prevalence)",
+  "protocol": "nested LOCO5 outer seed42, inner 3-fold Optuna150 F2, 5-seed bag, Platt sigmoid",
+  "weeks": {
+    "2": {
+      "n_eval": 400,
+      "prevalence": 0.2275,
+      "roc_auc_raw_bagged": 0.6902,
+      "roc_auc_raw_ci95": [
+        0.6275,
+        0.7477
+      ],
+      "pr_auc_raw": 0.4063,
+      "roc_auc_calibrated": 0.627,
+      "brier_calibrated": 0.1677,
+      "ece_calibrated": 0.0593,
+      "capacity_curve": {
+        "0.05": 0.1319,
+        "0.1": 0.2308,
+        "0.15": 0.2967,
+        "0.2": 0.3626,
+        "0.25": 0.4505
+      },
+      "per_course_auc": {
+        "54570": 0.7059,
+        "55410": 0.7664,
+        "79875": 0.7293,
+        "79913": 0.6909,
+        "84941": 0.5804,
+        "84944": 0.473,
+        "86020": 0.7757,
+        "88381": 0.8,
+        "89099": 0.655,
+        "89390": 0.6538
+      },
+      "params_per_fold": [
+        {
+          "depth": 4,
+          "learning_rate": 0.01709685796177715,
+          "l2_leaf_reg": 6.250013450655521,
+          "iterations": 248
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010550337830025217,
+          "l2_leaf_reg": 5.439832377065957,
+          "iterations": 135
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.017511840281004273,
+          "l2_leaf_reg": 6.31906212720258,
+          "iterations": 113
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.01348522664628836,
+          "l2_leaf_reg": 6.7017607131706125,
+          "iterations": 117
+        },
+        {
+          "depth": 6,
+          "learning_rate": 0.02341497343741597,
+          "l2_leaf_reg": 9.047471699708844,
+          "iterations": 408
+        }
+      ],
+      "stageB_mean_auc": 0.6331,
+      "nested_minus_stageB": 0.0571,
+      "leak_flag": true
+    },
+    "4": {
+      "n_eval": 400,
+      "prevalence": 0.2275,
+      "roc_auc_raw_bagged": 0.6155,
+      "roc_auc_raw_ci95": [
+        0.5437,
+        0.6851
+      ],
+      "pr_auc_raw": 0.4048,
+      "roc_auc_calibrated": 0.5841,
+      "brier_calibrated": 0.1719,
+      "ece_calibrated": 0.0487,
+      "capacity_curve": {
+        "0.05": 0.1209,
+        "0.1": 0.2198,
+        "0.15": 0.3297,
+        "0.2": 0.3736,
+        "0.25": 0.3956
+      },
+      "per_course_auc": {
+        "54570": 0.7059,
+        "55410": 0.7394,
+        "79875": 0.7218,
+        "79913": 0.6242,
+        "84941": 0.6696,
+        "84944": 0.429,
+        "86020": 0.6654,
+        "88381": 0.9667,
+        "89099": 0.66,
+        "89390": 0.7019
+      },
+      "params_per_fold": [
+        {
+          "depth": 5,
+          "learning_rate": 0.01217785745317921,
+          "l2_leaf_reg": 8.393405022469462,
+          "iterations": 224
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010121821929213825,
+          "l2_leaf_reg": 3.659718273034107,
+          "iterations": 281
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010152555361896045,
+          "l2_leaf_reg": 1.4955348273703293,
+          "iterations": 224
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.032253352081789574,
+          "l2_leaf_reg": 9.583238499776948,
+          "iterations": 120
+        },
+        {
+          "depth": 6,
+          "learning_rate": 0.011068130355655709,
+          "l2_leaf_reg": 6.073834326231756,
+          "iterations": 147
+        }
+      ],
+      "stageB_mean_auc": 0.6331,
+      "nested_minus_stageB": -0.0176,
+      "leak_flag": false
+    },
+    "6": {
+      "n_eval": 400,
+      "prevalence": 0.2275,
+      "roc_auc_raw_bagged": 0.679,
+      "roc_auc_raw_ci95": [
+        0.6141,
+        0.7421
+      ],
+      "pr_auc_raw": 0.4155,
+      "roc_auc_calibrated": 0.5991,
+      "brier_calibrated": 0.1717,
+      "ece_calibrated": 0.0406,
+      "capacity_curve": {
+        "0.05": 0.1319,
+        "0.1": 0.2308,
+        "0.15": 0.3297,
+        "0.2": 0.3516,
+        "0.25": 0.4286
+      },
+      "per_course_auc": {
+        "54570": 0.6353,
+        "55410": 0.7817,
+        "79875": 0.8271,
+        "79913": 0.6788,
+        "84941": 0.6339,
+        "84944": 0.4801,
+        "86020": 0.6893,
+        "88381": 0.9833,
+        "89099": 0.695,
+        "89390": 0.6875
+      },
+      "params_per_fold": [
+        {
+          "depth": 4,
+          "learning_rate": 0.03958298070791024,
+          "l2_leaf_reg": 7.215812173304532,
+          "iterations": 100
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.011965400901440706,
+          "l2_leaf_reg": 6.8857460445270995,
+          "iterations": 101
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.024662716509399777,
+          "l2_leaf_reg": 9.87139819958824,
+          "iterations": 121
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.011388725772324217,
+          "l2_leaf_reg": 9.96935596921006,
+          "iterations": 174
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.010862799832857636,
+          "l2_leaf_reg": 8.330487665989512,
+          "iterations": 108
+        }
+      ],
+      "stageB_mean_auc": 0.6331,
+      "nested_minus_stageB": 0.0459,
+      "leak_flag": true
+    },
+    "8": {
+      "n_eval": 400,
+      "prevalence": 0.2275,
+      "roc_auc_raw_bagged": 0.7128,
+      "roc_auc_raw_ci95": [
+        0.6518,
+        0.7714
+      ],
+      "pr_auc_raw": 0.4884,
+      "roc_auc_calibrated": 0.6626,
+      "brier_calibrated": 0.1645,
+      "ece_calibrated": 0.0311,
+      "capacity_curve": {
+        "0.05": 0.1648,
+        "0.1": 0.2637,
+        "0.15": 0.3077,
+        "0.2": 0.3846,
+        "0.25": 0.4396
+      },
+      "per_course_auc": {
+        "54570": 0.7176,
+        "55410": 0.7529,
+        "79875": 0.782,
+        "79913": 0.6848,
+        "84941": 0.6429,
+        "84944": 0.5767,
+        "86020": 0.7243,
+        "88381": 0.9667,
+        "89099": 0.795,
+        "89390": 0.7596
+      },
+      "params_per_fold": [
+        {
+          "depth": 6,
+          "learning_rate": 0.0111982600550265,
+          "l2_leaf_reg": 9.771621257168146,
+          "iterations": 135
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010740056444268694,
+          "l2_leaf_reg": 9.397040423554937,
+          "iterations": 104
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010026349351119327,
+          "l2_leaf_reg": 5.872581570562797,
+          "iterations": 130
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010942912552247613,
+          "l2_leaf_reg": 6.9778970552367685,
+          "iterations": 106
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.014206539737370258,
+          "l2_leaf_reg": 7.5706643386149945,
+          "iterations": 129
+        }
+      ],
+      "stageB_mean_auc": 0.6331,
+      "nested_minus_stageB": 0.0797,
+      "leak_flag": true
+    },
+    "full": {
+      "n_eval": 400,
+      "prevalence": 0.2275,
+      "roc_auc_raw_bagged": 0.7084,
+      "roc_auc_raw_ci95": [
+        0.6439,
+        0.7689
+      ],
+      "pr_auc_raw": 0.4893,
+      "roc_auc_calibrated": 0.6823,
+      "brier_calibrated": 0.1595,
+      "ece_calibrated": 0.0399,
+      "capacity_curve": {
+        "0.05": 0.1538,
+        "0.1": 0.2637,
+        "0.15": 0.3516,
+        "0.2": 0.4066,
+        "0.25": 0.4615
+      },
+      "per_course_auc": {
+        "54570": 0.6941,
+        "55410": 0.767,
+        "79875": 0.7368,
+        "79913": 0.7303,
+        "84941": 0.625,
+        "84944": 0.6847,
+        "86020": 0.739,
+        "88381": 0.9833,
+        "89099": 0.82,
+        "89390": 0.7019
+      },
+      "params_per_fold": [
+        {
+          "depth": 4,
+          "learning_rate": 0.010031679312178536,
+          "l2_leaf_reg": 7.743557470647074,
+          "iterations": 171
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.016259841905064427,
+          "l2_leaf_reg": 9.78187311081612,
+          "iterations": 125
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.014788433172143366,
+          "l2_leaf_reg": 8.082862872231976,
+          "iterations": 132
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.010144611108111875,
+          "l2_leaf_reg": 9.481495583006899,
+          "iterations": 241
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.010403166981612911,
+          "l2_leaf_reg": 7.09561053882015,
+          "iterations": 145
+        }
+      ],
+      "stageB_mean_auc": 0.6331,
+      "nested_minus_stageB": 0.0753,
+      "leak_flag": true
+    }
+  },
+  "leak_flags": [
+    "2",
+    "6",
+    "8",
+    "full"
+  ],
+  "transfer": {
+    "2": {
+      "train_UA_test_PUC": {
+        "direction": "train_UA_test_PUC",
+        "n_train": 254,
+        "n_test": 146,
+        "test_prevalence": 0.137,
+        "roc_auc": 0.7083,
+        "roc_auc_ci95": [
+          0.582,
+          0.825
+        ],
+        "pr_auc": 0.4057,
+        "recall20": 0.35
+      },
+      "train_PUC_test_UA": {
+        "direction": "train_PUC_test_UA",
+        "n_train": 146,
+        "n_test": 254,
+        "test_prevalence": 0.2795,
+        "roc_auc": 0.6654,
+        "roc_auc_ci95": [
+          0.5849,
+          0.7404
+        ],
+        "pr_auc": 0.4676,
+        "recall20": 0.3099
+      }
+    },
+    "4": {
+      "train_UA_test_PUC": {
+        "direction": "train_UA_test_PUC",
+        "n_train": 254,
+        "n_test": 146,
+        "test_prevalence": 0.137,
+        "roc_auc": 0.7413,
+        "roc_auc_ci95": [
+          0.6087,
+          0.8568
+        ],
+        "pr_auc": 0.3688,
+        "recall20": 0.5
+      },
+      "train_PUC_test_UA": {
+        "direction": "train_PUC_test_UA",
+        "n_train": 146,
+        "n_test": 254,
+        "test_prevalence": 0.2795,
+        "roc_auc": 0.661,
+        "roc_auc_ci95": [
+          0.5831,
+          0.7331
+        ],
+        "pr_auc": 0.5095,
+        "recall20": 0.3521
+      }
+    },
+    "6": {
+      "train_UA_test_PUC": {
+        "direction": "train_UA_test_PUC",
+        "n_train": 254,
+        "n_test": 146,
+        "test_prevalence": 0.137,
+        "roc_auc": 0.7187,
+        "roc_auc_ci95": [
+          0.5928,
+          0.839
+        ],
+        "pr_auc": 0.3659,
+        "recall20": 0.45
+      },
+      "train_PUC_test_UA": {
+        "direction": "train_PUC_test_UA",
+        "n_train": 146,
+        "n_test": 254,
+        "test_prevalence": 0.2795,
+        "roc_auc": 0.6279,
+        "roc_auc_ci95": [
+          0.5475,
+          0.7103
+        ],
+        "pr_auc": 0.4097,
+        "recall20": 0.3099
+      }
+    },
+    "8": {
+      "train_UA_test_PUC": {
+        "direction": "train_UA_test_PUC",
+        "n_train": 254,
+        "n_test": 146,
+        "test_prevalence": 0.137,
+        "roc_auc": 0.6996,
+        "roc_auc_ci95": [
+          0.5742,
+          0.8153
+        ],
+        "pr_auc": 0.2924,
+        "recall20": 0.35
+      },
+      "train_PUC_test_UA": {
+        "direction": "train_PUC_test_UA",
+        "n_train": 146,
+        "n_test": 254,
+        "test_prevalence": 0.2795,
+        "roc_auc": 0.695,
+        "roc_auc_ci95": [
+          0.6208,
+          0.7661
+        ],
+        "pr_auc": 0.5133,
+        "recall20": 0.3803
+      }
+    },
+    "full": {
+      "train_UA_test_PUC": {
+        "direction": "train_UA_test_PUC",
+        "n_train": 254,
+        "n_test": 146,
+        "test_prevalence": 0.137,
+        "roc_auc": 0.7266,
+        "roc_auc_ci95": [
+          0.59,
+          0.851
+        ],
+        "pr_auc": 0.3809,
+        "recall20": 0.45
+      },
+      "train_PUC_test_UA": {
+        "direction": "train_PUC_test_UA",
+        "n_train": 146,
+        "n_test": 254,
+        "test_prevalence": 0.2795,
+        "roc_auc": 0.686,
+        "roc_auc_ci95": [
+          0.6086,
+          0.7621
+        ],
+        "pr_auc": 0.4714,
+        "recall20": 0.3521
+      }
+    }
+  },
+  "r3_max_map": {
+    "quotable": false,
+    "procedure": "greedy forward course-subset by pooled LOCO AUC, seeded by top-2 G3 per-course AUC, CatBoost Balanced top-40, seed 42, week 8; stop after 3 non-improving steps",
+    "max_auc": 0.9384,
+    "peak_subset": [
+      84936,
+      54503,
+      55010
+    ],
+    "peak_subset_size": 3,
+    "trace": [
+      {
+        "added": [
+          84936,
+          54503
+        ],
+        "auc": 0.9358974358974359
+      },
+      {
+        "added": 55010,
+        "auc": 0.9384319384319384,
+        "subset_size": 3
+      },
+      {
+        "added": 88381,
+        "auc": 0.9186274509803922,
+        "subset_size": 4
+      },
+      {
+        "added": 55183,
+        "auc": 0.908344733242134,
+        "subset_size": 5
+      },
+      {
+        "added": 54529,
+        "auc": 0.8871698113207548,
+        "subset_size": 6
+      }
+    ]
+  },
+  "transfer_note": "Asymmetry expected: PUC test labels are pristine official actas; UA test labels are Canvas-recorded (DROP-A). train-UA\u2192test-PUC is the pristine-label transfer test."
+}

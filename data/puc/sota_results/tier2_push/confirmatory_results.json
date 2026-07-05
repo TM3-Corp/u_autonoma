@@ -1,0 +1,313 @@
+{
+  "winner": "C2",
+  "winner_desc": "CatBoost Balanced 40 clean",
+  "featureset": "clean",
+  "n_feat": 40,
+  "members": [
+    "cat"
+  ],
+  "protocol": "nested LOCO5 outer, inner 3-fold Optuna30 on CatBoost, 5-seed bagging, Platt sigmoid; seed 42",
+  "weeks": {
+    "2": {
+      "n_eval": 560,
+      "prevalence": 0.0732,
+      "roc_auc_raw_bagged": 0.7794,
+      "roc_auc_raw_ci95": [
+        0.6935,
+        0.8497
+      ],
+      "pr_auc_raw_bagged": 0.2967,
+      "pr_auc_raw_ci95": [
+        0.1823,
+        0.4612
+      ],
+      "roc_auc_calibrated": 0.7981,
+      "pr_auc_calibrated": 0.325,
+      "brier_calibrated": 0.0594,
+      "ece_calibrated": 0.0166,
+      "capacity_curve": {
+        "0.05": 0.2683,
+        "0.1": 0.3902,
+        "0.15": 0.5122,
+        "0.2": 0.6098,
+        "0.25": 0.6829
+      },
+      "catboost_params_per_fold": [
+        {
+          "depth": 8,
+          "learning_rate": 0.03445639818969485,
+          "l2_leaf_reg": 4.318558954489876,
+          "iterations": 107
+        },
+        {
+          "depth": 8,
+          "learning_rate": 0.015325756774448926,
+          "l2_leaf_reg": 6.99882075376947,
+          "iterations": 138
+        },
+        {
+          "depth": 7,
+          "learning_rate": 0.010220730230610087,
+          "l2_leaf_reg": 6.974676095374279,
+          "iterations": 129
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.010220760452470883,
+          "l2_leaf_reg": 8.911420834787794,
+          "iterations": 131
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.012457125083491546,
+          "l2_leaf_reg": 8.12894982907417,
+          "iterations": 103
+        }
+      ],
+      "bakeoff_seed_mean_auc": 0.7706,
+      "nested_minus_bakeoff": 0.0088,
+      "leak_flag": false
+    },
+    "4": {
+      "n_eval": 560,
+      "prevalence": 0.0732,
+      "roc_auc_raw_bagged": 0.8058,
+      "roc_auc_raw_ci95": [
+        0.7344,
+        0.8691
+      ],
+      "pr_auc_raw_bagged": 0.3158,
+      "pr_auc_raw_ci95": [
+        0.1964,
+        0.4821
+      ],
+      "roc_auc_calibrated": 0.8298,
+      "pr_auc_calibrated": 0.3246,
+      "brier_calibrated": 0.0585,
+      "ece_calibrated": 0.0129,
+      "capacity_curve": {
+        "0.05": 0.2683,
+        "0.1": 0.439,
+        "0.15": 0.5366,
+        "0.2": 0.6585,
+        "0.25": 0.6829
+      },
+      "catboost_params_per_fold": [
+        {
+          "depth": 6,
+          "learning_rate": 0.010068202039756943,
+          "l2_leaf_reg": 9.465124288529152,
+          "iterations": 173
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.03149399362932799,
+          "l2_leaf_reg": 8.825560401560475,
+          "iterations": 129
+        },
+        {
+          "depth": 6,
+          "learning_rate": 0.018203009631330456,
+          "l2_leaf_reg": 5.637467241975869,
+          "iterations": 140
+        },
+        {
+          "depth": 7,
+          "learning_rate": 0.013094417441210945,
+          "l2_leaf_reg": 5.783686837892425,
+          "iterations": 135
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.01122762408187051,
+          "l2_leaf_reg": 7.6878249427006295,
+          "iterations": 104
+        }
+      ],
+      "bakeoff_seed_mean_auc": 0.8168,
+      "nested_minus_bakeoff": -0.011,
+      "leak_flag": false
+    },
+    "6": {
+      "n_eval": 560,
+      "prevalence": 0.0732,
+      "roc_auc_raw_bagged": 0.8233,
+      "roc_auc_raw_ci95": [
+        0.7506,
+        0.8873
+      ],
+      "pr_auc_raw_bagged": 0.2832,
+      "pr_auc_raw_ci95": [
+        0.1897,
+        0.4328
+      ],
+      "roc_auc_calibrated": 0.8178,
+      "pr_auc_calibrated": 0.2725,
+      "brier_calibrated": 0.06,
+      "ece_calibrated": 0.0164,
+      "capacity_curve": {
+        "0.05": 0.2683,
+        "0.1": 0.439,
+        "0.15": 0.561,
+        "0.2": 0.6829,
+        "0.25": 0.7561
+      },
+      "catboost_params_per_fold": [
+        {
+          "depth": 6,
+          "learning_rate": 0.010136113837289837,
+          "l2_leaf_reg": 8.853019373832264,
+          "iterations": 103
+        },
+        {
+          "depth": 7,
+          "learning_rate": 0.01037507989335575,
+          "l2_leaf_reg": 8.603510840766026,
+          "iterations": 194
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.03220579752389848,
+          "l2_leaf_reg": 8.862945406528919,
+          "iterations": 109
+        },
+        {
+          "depth": 7,
+          "learning_rate": 0.012804710011789334,
+          "l2_leaf_reg": 9.201372859457726,
+          "iterations": 134
+        },
+        {
+          "depth": 6,
+          "learning_rate": 0.010136113837289837,
+          "l2_leaf_reg": 8.853019373832264,
+          "iterations": 103
+        }
+      ],
+      "bakeoff_seed_mean_auc": 0.8361,
+      "nested_minus_bakeoff": -0.0128,
+      "leak_flag": false
+    },
+    "8": {
+      "n_eval": 560,
+      "prevalence": 0.0732,
+      "roc_auc_raw_bagged": 0.8357,
+      "roc_auc_raw_ci95": [
+        0.7685,
+        0.8941
+      ],
+      "pr_auc_raw_bagged": 0.3727,
+      "pr_auc_raw_ci95": [
+        0.244,
+        0.5308
+      ],
+      "roc_auc_calibrated": 0.8376,
+      "pr_auc_calibrated": 0.3355,
+      "brier_calibrated": 0.057,
+      "ece_calibrated": 0.0173,
+      "capacity_curve": {
+        "0.05": 0.3415,
+        "0.1": 0.4878,
+        "0.15": 0.6341,
+        "0.2": 0.6585,
+        "0.25": 0.7073
+      },
+      "catboost_params_per_fold": [
+        {
+          "depth": 6,
+          "learning_rate": 0.03445639818969485,
+          "l2_leaf_reg": 6.215107140682328,
+          "iterations": 107
+        },
+        {
+          "depth": 7,
+          "learning_rate": 0.010572243288953552,
+          "l2_leaf_reg": 8.895476874638625,
+          "iterations": 100
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.018227228676185675,
+          "l2_leaf_reg": 9.213505471914463,
+          "iterations": 107
+        },
+        {
+          "depth": 6,
+          "learning_rate": 0.03445639818969485,
+          "l2_leaf_reg": 6.215107140682328,
+          "iterations": 107
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.03916873402841411,
+          "l2_leaf_reg": 6.284799908642851,
+          "iterations": 100
+        }
+      ],
+      "bakeoff_seed_mean_auc": 0.8571,
+      "nested_minus_bakeoff": -0.0214,
+      "leak_flag": false
+    },
+    "full": {
+      "n_eval": 560,
+      "prevalence": 0.0732,
+      "roc_auc_raw_bagged": 0.7931,
+      "roc_auc_raw_ci95": [
+        0.6967,
+        0.8755
+      ],
+      "pr_auc_raw_bagged": 0.4306,
+      "pr_auc_raw_ci95": [
+        0.287,
+        0.5881
+      ],
+      "roc_auc_calibrated": 0.8304,
+      "pr_auc_calibrated": 0.4707,
+      "brier_calibrated": 0.0529,
+      "ece_calibrated": 0.0137,
+      "capacity_curve": {
+        "0.05": 0.3171,
+        "0.1": 0.5366,
+        "0.15": 0.6098,
+        "0.2": 0.6585,
+        "0.25": 0.7317
+      },
+      "catboost_params_per_fold": [
+        {
+          "depth": 4,
+          "learning_rate": 0.07683107460533689,
+          "l2_leaf_reg": 6.435049586860535,
+          "iterations": 132
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.016380068454145844,
+          "l2_leaf_reg": 7.185260188789535,
+          "iterations": 141
+        },
+        {
+          "depth": 5,
+          "learning_rate": 0.2933375092612729,
+          "l2_leaf_reg": 9.304632292836567,
+          "iterations": 396
+        },
+        {
+          "depth": 4,
+          "learning_rate": 0.2521267904777921,
+          "l2_leaf_reg": 9.690688297671034,
+          "iterations": 424
+        },
+        {
+          "depth": 7,
+          "learning_rate": 0.03481125139918301,
+          "l2_leaf_reg": 5.441110832014282,
+          "iterations": 103
+        }
+      ],
+      "bakeoff_seed_mean_auc": 0.8349,
+      "nested_minus_bakeoff": -0.0418,
+      "leak_flag": false
+    }
+  },
+  "leak_flags": []
+}

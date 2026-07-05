@@ -20,6 +20,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from scipy import stats
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -32,6 +33,18 @@ REPORT_FILE = OUTPUT_DIR / "REPORTE_TECNICO_ANALISIS_PREDICTIVO.md"
 # API de Claude
 CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
 client = anthropic.Anthropic(api_key=CLAUDE_API_KEY)
+
+
+# =============================================================================
+# HELPER FUNCTIONS
+# =============================================================================
+
+def calculate_cohens_d(group1, group2):
+    """Calculate Cohen's d effect size."""
+    n1, n2 = len(group1), len(group2)
+    var1, var2 = group1.var(), group2.var()
+    pooled_std = np.sqrt(((n1-1)*var1 + (n2-1)*var2) / (n1+n2-2))
+    return (group1.mean() - group2.mean()) / pooled_std if pooled_std > 0 else 0
 
 
 # =============================================================================
@@ -289,13 +302,31 @@ def create_pass_fail_comparison(data):
         bp["boxes"][0].set_facecolor("#6bcb77")  # Verde para aprobados
         bp["boxes"][1].set_facecolor("#ff6b6b")  # Rojo para reprobados
 
+        # Style median line
+        for median in bp['medians']:
+            median.set_color('#d35400')
+            median.set_linewidth(2)
+
         ax.set_xticklabels(["Aprobados", "Reprobados"])
-        ax.set_title(label)
+        ax.set_title(label, fontweight='bold')
         ax.set_ylabel("Valor")
+
+        # Calculate and display Cohen's d
+        d = calculate_cohens_d(passed, failed)
+        _, p = stats.mannwhitneyu(passed, failed, alternative='two-sided')
+        sig = '***' if p < 0.001 else '**' if p < 0.01 else '*' if p < 0.05 else ''
+        effect_label = f'd={d:.2f}{sig}'
+        ax.text(0.5, 0.95, effect_label, transform=ax.transAxes,
+                ha='center', va='top', fontsize=9, fontweight='bold',
+                color='#2c3e50', bbox=dict(boxstyle='round,pad=0.2',
+                facecolor='white', edgecolor='none', alpha=0.8))
 
     plt.suptitle("Comparación de Features: Aprobados vs Reprobados", fontsize=14)
     plt.tight_layout()
-    plt.savefig(VIZ_DIR / "pass_fail_comparison.png")
+    # Save to analysis folder where report references it
+    output_path = OUTPUT_DIR / "analysis" / "pass_fail_comparisons" / "pass_fail_comparison.png"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    plt.savefig(output_path, dpi=150, bbox_inches='tight', facecolor='white')
     plt.close()
 
 

@@ -1,0 +1,242 @@
+{
+  "design_decision": "Institution toggle repurposed as CV-scheme toggle (LOCO vs estratificada), both PUC real OOF. UA DROP-A moved to technical annex as segunda institución. Every interactive metric traces to a persisted OOF vector or confirmatory JSON.",
+  "forbidden_removed": [
+    "0.903 / 0.9033 / 0.90 / 0.89 (UA KEEP strat header family)",
+    "ua_best 0.8605 / 0.86 hold-out (UA KEEP)",
+    "UA without_assessment full 0.8485 & all ua_weeks KEEP AUCs (0.7428..0.9033)",
+    "UA LOCO 0.745/0.7454 (KEEP)",
+    "UA per_course_auc KEEP (0.692..0.944)",
+    "PUC old non-nested benchmark AUCs (0.8308/0.8716/0.8632/0.8632/0.8537) as headline",
+    "PUC best_models 0.872/0.863/0.88 (old non-nested)"
+  ],
+  "best_defensible_table": {
+    "2": {
+      "loco_cursos_nunca_vistos": {
+        "auc": "0.80",
+        "ci95": [
+          0.72,
+          0.86
+        ],
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      },
+      "estratificada_cursos_conocidos": {
+        "auc": "0.80",
+        "ci95": [
+          0.72,
+          0.86
+        ],
+        "source": "tier2_push/stratified_nested_results.json"
+      },
+      "best_per_week_loco_cross_model": {
+        "week": "2",
+        "auc": 0.7981,
+        "model": "CatBoost calibrado",
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      }
+    },
+    "4": {
+      "loco_cursos_nunca_vistos": {
+        "auc": "0.83",
+        "ci95": [
+          0.77,
+          0.89
+        ],
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      },
+      "estratificada_cursos_conocidos": {
+        "auc": "0.79",
+        "ci95": [
+          0.72,
+          0.86
+        ],
+        "source": "tier2_push/stratified_nested_results.json"
+      },
+      "best_per_week_loco_cross_model": {
+        "week": "4",
+        "auc": 0.8298,
+        "model": "CatBoost calibrado",
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      }
+    },
+    "6": {
+      "loco_cursos_nunca_vistos": {
+        "auc": "0.82",
+        "ci95": [
+          0.75,
+          0.88
+        ],
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      },
+      "estratificada_cursos_conocidos": {
+        "auc": "0.80",
+        "ci95": [
+          0.73,
+          0.86
+        ],
+        "source": "tier2_push/stratified_nested_results.json"
+      },
+      "best_per_week_loco_cross_model": {
+        "week": "6",
+        "auc": 0.8178,
+        "model": "CatBoost calibrado",
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      }
+    },
+    "8": {
+      "loco_cursos_nunca_vistos": {
+        "auc": "0.84",
+        "ci95": [
+          0.77,
+          0.9
+        ],
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      },
+      "estratificada_cursos_conocidos": {
+        "auc": "0.83",
+        "ci95": [
+          0.76,
+          0.9
+        ],
+        "source": "tier2_push/stratified_nested_results.json"
+      },
+      "best_per_week_loco_cross_model": {
+        "week": "8",
+        "auc": 0.8481,
+        "model": "XGBoost tuned (nested)",
+        "source": "tier1_clean/nested_cv_results.json"
+      }
+    },
+    "full": {
+      "loco_cursos_nunca_vistos": {
+        "auc": "0.83",
+        "ci95": [
+          0.76,
+          0.89
+        ],
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      },
+      "estratificada_cursos_conocidos": {
+        "auc": "0.81",
+        "ci95": [
+          0.73,
+          0.89
+        ],
+        "source": "tier2_push/stratified_nested_results.json"
+      },
+      "best_per_week_loco_cross_model": {
+        "week": "full",
+        "auc": 0.8304,
+        "model": "CatBoost calibrado",
+        "source": "tier2_push/confirmatory_calibrated_ci.json"
+      }
+    }
+  },
+  "ua_dropA_summary": [
+    {
+      "label": "Sem 2",
+      "key": "2",
+      "strat_auc": 0.665,
+      "strat_auc_raw": 0.6794,
+      "strat_ci": [
+        0.615,
+        0.742
+      ],
+      "loco_auc": 0.4295,
+      "loco_auc_raw": 0.4761,
+      "prevalence": 0.3043,
+      "n": 322
+    },
+    {
+      "label": "Sem 4",
+      "key": "4",
+      "strat_auc": 0.6926,
+      "strat_auc_raw": 0.6584,
+      "strat_ci": [
+        0.592,
+        0.724
+      ],
+      "loco_auc": 0.4854,
+      "loco_auc_raw": 0.5256,
+      "prevalence": 0.3043,
+      "n": 322
+    },
+    {
+      "label": "Sem 8",
+      "key": "8",
+      "strat_auc": 0.7902,
+      "strat_auc_raw": 0.7559,
+      "strat_ci": [
+        0.693,
+        0.817
+      ],
+      "loco_auc": 0.6146,
+      "loco_auc_raw": 0.6277,
+      "prevalence": 0.3043,
+      "n": 322
+    },
+    {
+      "label": "Semestre",
+      "key": "full",
+      "strat_auc": 0.8045,
+      "strat_auc_raw": 0.8091,
+      "strat_ci": [
+        0.758,
+        0.857
+      ],
+      "loco_auc": 0.6352,
+      "loco_auc_raw": 0.6048,
+      "prevalence": 0.3043,
+      "n": 322
+    }
+  ],
+  "per_course_loco": [
+    {
+      "cid": "54581",
+      "n": 16,
+      "nfail": 2,
+      "auc": 0.5357142857142857
+    },
+    {
+      "cid": "54529",
+      "n": 131,
+      "nfail": 8,
+      "auc": 0.782520325203252
+    },
+    {
+      "cid": "55183",
+      "n": 99,
+      "nfail": 2,
+      "auc": 0.8298969072164949
+    },
+    {
+      "cid": "55410",
+      "n": 124,
+      "nfail": 15,
+      "auc": 0.8330275229357799
+    },
+    {
+      "cid": "54570",
+      "n": 22,
+      "nfail": 5,
+      "auc": 0.8352941176470587
+    },
+    {
+      "cid": "55010",
+      "n": 117,
+      "nfail": 6,
+      "auc": 0.9114114114114114
+    },
+    {
+      "cid": "54503",
+      "n": 51,
+      "nfail": 3,
+      "auc": 0.951388888888889
+    }
+  ],
+  "sources_exist": {
+    "confirmatory_calibrated_ci.json": true,
+    "stratified_nested_results.json": true,
+    "ua_confirmatory.json": true,
+    "nested_cv_results.json": true
+  }
+}

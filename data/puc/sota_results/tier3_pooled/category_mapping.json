@@ -1,0 +1,44 @@
+{
+  "shared_bins": [
+    "files",
+    "assignments",
+    "quizzes",
+    "discussions",
+    "pages",
+    "modules",
+    "grades",
+    "announcements",
+    "navigation",
+    "other"
+  ],
+  "puc_category_to_bin": {
+    "files": "files",
+    "assignments": "assignments",
+    "quizzes": "quizzes",
+    "discussions": "discussions",
+    "pages": "pages",
+    "modules": "modules",
+    "grades": "grades",
+    "announcements": "announcements",
+    "navigation": "navigation",
+    "other": "other",
+    "external_tools": "other"
+  },
+  "ua_resource_type_to_bin": {
+    "files": "files",
+    "assignments": "assignments",
+    "quizzes": "quizzes",
+    "discussions": "discussions",
+    "pages": "pages",
+    "modules": "modules",
+    "grades": "grades",
+    "announcements": "announcements",
+    "home": "navigation",
+    "other": "other",
+    "navigation": "navigation"
+  },
+  "unmapped_share": {
+    "PUC": 0.0,
+    "UA": 0.0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cutoff": 8,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "n_new_features": 28,
+  "new_features": [
+    "mobile_pct",
+    "part_rate",
+    "post_rate",
+    "resource_diversity",
+    "repetition",
+    "resource_coverage",
+    "category_diversity",
+    "grades_check_per_week",
+    "activity_bin_1",
+    "activity_bin_2",
+    "activity_bin_3",
+    "activity_bin_4",
+    "activity_bin_5",
+    "first_access_pct",
+    "last_access_pct",
+    "median_access_pct",
+    "files_mean_pct",
+    "files_access_rate",
+    "assignments_mean_pct",
+    "assignments_access_rate",
+    "quizzes_mean_pct",
+    "quizzes_access_rate",
+    "discussions_mean_pct",
+    "discussions_access_rate",
+    "pages_mean_pct",
+    "pages_access_rate",
+    "modules_mean_pct",
+    "modules_access_rate"
+  ],
+  "results": {
+    "PUC_only": {
+      "baseline_62": 0.7953,
+      "augmented": 0.7839,
+      "delta": -0.0114,
+      "n_feat_aug": 90
+    },
+    "R2_UA_only": {
+      "baseline_62": 0.727,
+      "augmented": 0.7324,
+      "delta": 0.0054
+    },
+    "R2_pooled": {
+      "baseline_23invariant": 0.6676,
+      "augmented": 0.6598,
+      "delta": -0.0078,
+      "n_feat_aug_after_probe": 90,
+      "probe_auc_after": 0.3411,
+      "n_dropped_leakers": 0
+    }
+  },
+  "verdict": "marginal \u2014 reassess"
+}

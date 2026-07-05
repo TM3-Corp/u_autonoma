@@ -1,0 +1,377 @@
+{
+  "universe": {
+    "puc_pairs": 560,
+    "puc_fails": 41,
+    "ua_pairs": 322,
+    "ua_fails": 98,
+    "ua_drop_a_meta": {
+      "n_active_zero": 51,
+      "n_clean": 322,
+      "fails": 98,
+      "prevalence": 0.3043
+    },
+    "total_pairs": 882
+  },
+  "unmapped_share": {
+    "PUC": 0.0,
+    "UA": 0.0
+  },
+  "n_base_features": 62,
+  "n_znorm_features": 62,
+  "weeks": {
+    "2": {
+      "n_rows": 882,
+      "n_rows_puc": 560,
+      "n_rows_ua": 322,
+      "n_fails": 139,
+      "leak_spotcheck": [
+        {
+          "inst": "PUC",
+          "course_id": 54581,
+          "sid": 8457,
+          "feat_total_events": 2288,
+          "raw_recount": 2288,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 55183,
+          "sid": 73227,
+          "feat_total_events": 1384,
+          "raw_recount": 1384,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 54503,
+          "sid": 109198,
+          "feat_total_events": 1336,
+          "raw_recount": 1336,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86020,
+          "sid": 113271,
+          "feat_total_events": 610,
+          "raw_recount": 610,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 106792,
+          "feat_total_events": 477,
+          "raw_recount": 477,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86020,
+          "sid": 118190,
+          "feat_total_events": 465,
+          "raw_recount": 465,
+          "match": true
+        }
+      ],
+      "leak_spotcheck_all_match": true,
+      "n_cols": 128,
+      "institution_probe_auc_allznorm": 0.9815,
+      "institution_probe_auc_model": 0.6112,
+      "probe_pass": true
+    },
+    "4": {
+      "n_rows": 882,
+      "n_rows_puc": 560,
+      "n_rows_ua": 322,
+      "n_fails": 139,
+      "leak_spotcheck": [
+        {
+          "inst": "PUC",
+          "course_id": 54581,
+          "sid": 8457,
+          "feat_total_events": 3665,
+          "raw_recount": 3665,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 54503,
+          "sid": 110130,
+          "feat_total_events": 2115,
+          "raw_recount": 2115,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 55183,
+          "sid": 73227,
+          "feat_total_events": 2095,
+          "raw_recount": 2095,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 106792,
+          "feat_total_events": 881,
+          "raw_recount": 881,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86020,
+          "sid": 113271,
+          "feat_total_events": 712,
+          "raw_recount": 712,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 89099,
+          "sid": 106792,
+          "feat_total_events": 533,
+          "raw_recount": 533,
+          "match": true
+        }
+      ],
+      "leak_spotcheck_all_match": true,
+      "n_cols": 128,
+      "institution_probe_auc_allznorm": 0.9969,
+      "institution_probe_auc_model": 0.6423,
+      "probe_pass": true
+    },
+    "6": {
+      "n_rows": 882,
+      "n_rows_puc": 560,
+      "n_rows_ua": 322,
+      "n_fails": 139,
+      "leak_spotcheck": [
+        {
+          "inst": "PUC",
+          "course_id": 54581,
+          "sid": 8457,
+          "feat_total_events": 5834,
+          "raw_recount": 5834,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 55183,
+          "sid": 73227,
+          "feat_total_events": 3455,
+          "raw_recount": 3455,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 54503,
+          "sid": 110443,
+          "feat_total_events": 3449,
+          "raw_recount": 3449,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 106792,
+          "feat_total_events": 995,
+          "raw_recount": 995,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86020,
+          "sid": 113271,
+          "feat_total_events": 865,
+          "raw_recount": 865,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 91168,
+          "feat_total_events": 778,
+          "raw_recount": 778,
+          "match": true
+        }
+      ],
+      "leak_spotcheck_all_match": true,
+      "n_cols": 128,
+      "institution_probe_auc_allznorm": 0.8631,
+      "institution_probe_auc_model": 0.6338,
+      "probe_pass": true
+    },
+    "8": {
+      "n_rows": 882,
+      "n_rows_puc": 560,
+      "n_rows_ua": 322,
+      "n_fails": 139,
+      "leak_spotcheck": [
+        {
+          "inst": "PUC",
+          "course_id": 54581,
+          "sid": 8457,
+          "feat_total_events": 6303,
+          "raw_recount": 6303,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 54503,
+          "sid": 110443,
+          "feat_total_events": 4653,
+          "raw_recount": 4653,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 55183,
+          "sid": 73227,
+          "feat_total_events": 4217,
+          "raw_recount": 4217,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 106792,
+          "feat_total_events": 1190,
+          "raw_recount": 1190,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86020,
+          "sid": 113271,
+          "feat_total_events": 1024,
+          "raw_recount": 1024,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 91168,
+          "feat_total_events": 908,
+          "raw_recount": 908,
+          "match": true
+        }
+      ],
+      "leak_spotcheck_all_match": true,
+      "n_cols": 128,
+      "institution_probe_auc_allznorm": 0.8237,
+      "institution_probe_auc_model": 0.6203,
+      "probe_pass": true
+    },
+    "full": {
+      "n_rows": 882,
+      "n_rows_puc": 560,
+      "n_rows_ua": 322,
+      "n_fails": 139,
+      "leak_spotcheck": [
+        {
+          "inst": "PUC",
+          "course_id": 54581,
+          "sid": 8457,
+          "feat_total_events": 14846,
+          "raw_recount": 14846,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 55183,
+          "sid": 73303,
+          "feat_total_events": 8351,
+          "raw_recount": 8351,
+          "match": true
+        },
+        {
+          "inst": "PUC",
+          "course_id": 54570,
+          "sid": 8393,
+          "feat_total_events": 8326,
+          "raw_recount": 8326,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 79913,
+          "sid": 106792,
+          "feat_total_events": 1473,
+          "raw_recount": 1473,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86020,
+          "sid": 113271,
+          "feat_total_events": 1445,
+          "raw_recount": 1445,
+          "match": true
+        },
+        {
+          "inst": "UA",
+          "course_id": 86676,
+          "sid": 113271,
+          "feat_total_events": 1222,
+          "raw_recount": 1222,
+          "match": true
+        }
+      ],
+      "leak_spotcheck_all_match": true,
+      "n_cols": 128,
+      "institution_probe_auc_allznorm": 0.8313,
+      "institution_probe_auc_model": 0.5868,
+      "probe_pass": true
+    }
+  },
+  "institution_invariance": {
+    "dropped_leaking_features": [
+      "days_to_first_quiz_znorm",
+      "cnt_pages_znorm",
+      "share_pages_znorm",
+      "active_week_ratio_znorm",
+      "inactive_weeks_znorm",
+      "n_active_weeks_znorm",
+      "session_regularity_znorm",
+      "distinct_dows_znorm",
+      "first_event_day_znorm",
+      "median_intergap_hours_znorm",
+      "share_quizzes_znorm",
+      "cnt_quizzes_znorm",
+      "days_to_first_assignment_znorm",
+      "share_night_znorm",
+      "cnt_discussions_znorm",
+      "first_week_events_znorm",
+      "mean_intergap_hours_znorm",
+      "share_files_znorm",
+      "first_event_hour_local_znorm",
+      "cnt_other_znorm",
+      "share_other_znorm",
+      "cnt_modules_znorm",
+      "share_discussions_znorm",
+      "share_announcements_znorm",
+      "share_grades_znorm",
+      "median_session_minutes_znorm",
+      "cnt_grades_znorm",
+      "dwell_per_event_znorm",
+      "share_assignments_znorm",
+      "share_modules_znorm",
+      "last_event_day_znorm",
+      "max_inactivity_gap_days_znorm",
+      "share_morning_znorm",
+      "share_navigation_znorm",
+      "hour_entropy_znorm",
+      "weekend_share_znorm",
+      "cnt_files_znorm",
+      "cnt_navigation_znorm",
+      "last_week_deviation_znorm"
+    ],
+    "n_dropped": 39,
+    "n_model_features": 23,
+    "probe_auc_before_max": 0.9969,
+    "probe_auc_after_max": 0.6423,
+    "all_weeks_probe_pass": true,
+    "note": "Guardrail 2: per-course z-norm leaves residual institution signal (distribution-shape). Greedy backward elimination by RandomForest institution-importance drops leakers until every week's HGB grouped probe \u22640.75. Dropped features stay in the parquet for audit; model uses model_feature_cols only."
+  }
+}

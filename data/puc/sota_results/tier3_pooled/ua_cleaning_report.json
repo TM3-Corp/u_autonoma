@@ -1,0 +1,56 @@
+{
+  "rows_input": 116436,
+  "model_courses": [
+    79875,
+    79913,
+    84936,
+    84941,
+    84944,
+    86020,
+    86676,
+    88381,
+    89099,
+    89390
+  ],
+  "L2_probe": {
+    "api_v1_url_hits": 57651,
+    "applicable": true
+  },
+  "L1_exact_duplicates": {
+    "removed": 272,
+    "remaining": 116164
+  },
+  "L2_html_api_twin": {
+    "removed": 8017,
+    "remaining": 108147
+  },
+  "L3_rapid_repeats": {
+    "removed": 2541,
+    "remaining": 105606
+  },
+  "timezone": {
+    "per_row_offset_hours_counts": {
+      "3": 63386,
+      "4": 42220
+    },
+    "all_rows_offset_3_or_4": true,
+    "night_share_utc": 0.2508,
+    "night_share_local": 0.051
+  },
+  "rows_output": 105606,
+  "total_removed": 10830,
+  "monotone_non_increasing": true,
+  "per_course_rows_output": {
+    "86020": 25739,
+    "86676": 17299,
+    "79913": 14126,
+    "79875": 10046,
+    "89099": 9907,
+    "84936": 7560,
+    "84944": 6042,
+    "88381": 5576,
+    "84941": 4707,
+    "89390": 4604
+  },
+  "n_users_output": 208
+}

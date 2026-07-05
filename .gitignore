@@ -61,3 +61,18 @@ Thumbs.db
 
 # API test notebook (contains sensitive exploration)
 API test.ipynb
+
+# --- large data & binaries (regenerable from scripts; never commit) ---
+*.zip
+*.parquet
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*:Zone.Identifier
+.venv-tier1/
+data/models/
+data/enriched_features/
+data/dashboard_export/
+data/page_views/
+courses_page_views.parquet

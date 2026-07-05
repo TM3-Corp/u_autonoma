@@ -1,0 +1,200 @@
+{
+  "note": "Per-institution feature analysis on the 62 per-course z-norm features. PUC (7 courses) and UA (10 courses) analyzed separately; no invariance drop.",
+  "features_used": 62,
+  "n_specs": [
+    2,
+    5,
+    10,
+    20,
+    30,
+    40,
+    60
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "weeks": {
+    "8": {
+      "PUC": {
+        "top15": [
+          "span_days_znorm",
+          "last_event_day_znorm",
+          "share_announcements_znorm",
+          "active_days_znorm",
+          "first_event_day_znorm",
+          "median_intergap_hours_znorm",
+          "n_active_weeks_znorm",
+          "days_to_first_quiz_znorm",
+          "first_week_events_znorm",
+          "mean_intergap_hours_znorm",
+          "distinct_dows_znorm",
+          "dow_entropy_znorm",
+          "median_session_minutes_znorm",
+          "cnt_quizzes_znorm",
+          "short_session_share_znorm"
+        ],
+        "topn_auc": {
+          "2": 0.696,
+          "5": 0.7183,
+          "10": 0.7664,
+          "20": 0.7647,
+          "30": 0.7817,
+          "40": 0.7953,
+          "60": 0.7933
+        },
+        "optimal_N": 40,
+        "optimal_auc": 0.7953
+      },
+      "UA": {
+        "top15": [
+          "last_event_day_znorm",
+          "cnt_grades_znorm",
+          "hour_entropy_znorm",
+          "distinct_hours_local_znorm",
+          "share_grades_znorm",
+          "distinct_dows_znorm",
+          "active_days_znorm",
+          "front_load_share_znorm",
+          "max_session_minutes_znorm",
+          "n_active_weeks_znorm",
+          "mean_weekly_sessions_znorm",
+          "dow_entropy_znorm",
+          "std_weekly_views_znorm",
+          "n_sessions_znorm",
+          "days_to_first_assignment_znorm"
+        ],
+        "topn_auc": {
+          "2": 0.6107,
+          "5": 0.6447,
+          "10": 0.6502,
+          "20": 0.6712,
+          "30": 0.6771,
+          "40": 0.6754,
+          "60": 0.6816
+        },
+        "optimal_N": 60,
+        "optimal_auc": 0.6816
+      },
+      "overlap_jaccard": {
+        "top5": 0.111,
+        "top10": 0.176,
+        "top20": 0.29
+      },
+      "shared_top10": [
+        "active_days_znorm",
+        "last_event_day_znorm",
+        "n_active_weeks_znorm"
+      ],
+      "puc_only_top10": [
+        "span_days_znorm",
+        "share_announcements_znorm",
+        "first_event_day_znorm",
+        "median_intergap_hours_znorm",
+        "days_to_first_quiz_znorm",
+        "first_week_events_znorm",
+        "mean_intergap_hours_znorm"
+      ],
+      "ua_only_top10": [
+        "cnt_grades_znorm",
+        "hour_entropy_znorm",
+        "distinct_hours_local_znorm",
+        "share_grades_znorm",
+        "distinct_dows_znorm",
+        "front_load_share_znorm",
+        "max_session_minutes_znorm"
+      ]
+    },
+    "full": {
+      "PUC": {
+        "top15": [
+          "last_event_day_znorm",
+          "span_days_znorm",
+          "n_active_weeks_znorm",
+          "active_days_znorm",
+          "first_event_day_znorm",
+          "share_files_znorm",
+          "mean_intergap_hours_znorm",
+          "cnt_quizzes_znorm",
+          "median_intergap_hours_znorm",
+          "front_load_share_znorm",
+          "n_sessions_znorm",
+          "first_week_events_znorm",
+          "share_modules_znorm",
+          "share_night_znorm",
+          "median_session_minutes_znorm"
+        ],
+        "topn_auc": {
+          "2": 0.7303,
+          "5": 0.7245,
+          "10": 0.7588,
+          "20": 0.7885,
+          "30": 0.8015,
+          "40": 0.8056,
+          "60": 0.7949
+        },
+        "optimal_N": 40,
+        "optimal_auc": 0.8056
+      },
+      "UA": {
+        "top15": [
+          "hour_entropy_znorm",
+          "cnt_grades_znorm",
+          "cnt_assignments_znorm",
+          "n_sessions_znorm",
+          "mean_weekly_sessions_znorm",
+          "distinct_hours_local_znorm",
+          "last_event_day_znorm",
+          "dow_entropy_znorm",
+          "n_active_weeks_znorm",
+          "active_days_znorm",
+          "distinct_dows_znorm",
+          "total_session_minutes_znorm",
+          "share_grades_znorm",
+          "active_week_ratio_znorm",
+          "share_other_znorm"
+        ],
+        "topn_auc": {
+          "2": 0.6643,
+          "5": 0.739,
+          "10": 0.7574,
+          "20": 0.747,
+          "30": 0.7276,
+          "40": 0.717,
+          "60": 0.7137
+        },
+        "optimal_N": 10,
+        "optimal_auc": 0.7574
+      },
+      "overlap_jaccard": {
+        "top5": 0.0,
+        "top10": 0.176,
+        "top20": 0.143
+      },
+      "shared_top10": [
+        "active_days_znorm",
+        "last_event_day_znorm",
+        "n_active_weeks_znorm"
+      ],
+      "puc_only_top10": [
+        "span_days_znorm",
+        "first_event_day_znorm",
+        "share_files_znorm",
+        "mean_intergap_hours_znorm",
+        "cnt_quizzes_znorm",
+        "median_intergap_hours_znorm",
+        "front_load_share_znorm"
+      ],
+      "ua_only_top10": [
+        "hour_entropy_znorm",
+        "cnt_grades_znorm",
+        "cnt_assignments_znorm",
+        "n_sessions_znorm",
+        "mean_weekly_sessions_znorm",
+        "distinct_hours_local_znorm",
+        "dow_entropy_znorm"
+      ]
+    }
+  }
+}

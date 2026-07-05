@@ -1,0 +1,789 @@
+{
+  "week": "full",
+  "note": "importance descriptive (fit on full cohort); PUC/UA on 62 znorm, pooled on 23 invariant",
+  "cohorts": {
+    "PUC_only": {
+      "cohort": "PUC_only",
+      "n": 560,
+      "fails": 41,
+      "n_features": 62,
+      "top_by_shap": [
+        {
+          "feature": "span_days",
+          "value": 0.477,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_quizzes",
+          "value": 0.4687,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "first_week_events",
+          "value": 0.3457,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 0.2564,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 0.2158,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "median_session_minutes",
+          "value": 0.1996,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "first_event_day",
+          "value": 0.1736,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "share_night",
+          "value": 0.161,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "distinct_dows",
+          "value": 0.1536,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_quizzes",
+          "value": 0.1489,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_modules",
+          "value": 0.1436,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 0.1198,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_gain": [
+        {
+          "feature": "span_days",
+          "value": 6.3122,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_quizzes",
+          "value": 5.7654,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "first_week_events",
+          "value": 3.8175,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 3.7185,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 3.0732,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_night",
+          "value": 2.7514,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "first_event_day",
+          "value": 2.7494,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "share_quizzes",
+          "value": 2.7008,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "median_session_minutes",
+          "value": 2.6204,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "distinct_dows",
+          "value": 2.2165,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "days_to_first_assignment",
+          "value": 2.1988,
+          "dir": "mixed"
+        },
+        {
+          "feature": "share_navigation",
+          "value": 2.0894,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_permutation": [
+        {
+          "feature": "total_events",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "events_per_active_day",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "first_event_day",
+          "value": 0.0,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "span_days",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "first_event_hour_local",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_intergap_hours",
+          "value": 0.0,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "median_intergap_hours",
+          "value": 0.0,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "max_inactivity_gap_days",
+          "value": 0.0,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_session_minutes",
+          "value": 0.0,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_extratrees": [
+        {
+          "feature": "span_days",
+          "value": 0.0374,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 0.0365,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_active_weeks",
+          "value": 0.0297,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 0.0286,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "first_event_day",
+          "value": 0.0265,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "share_files",
+          "value": 0.024,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "median_intergap_hours",
+          "value": 0.0239,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "mean_intergap_hours",
+          "value": 0.0231,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "cnt_quizzes",
+          "value": 0.0217,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "front_load_share",
+          "value": 0.0214,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "first_week_events",
+          "value": 0.0204,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_night",
+          "value": 0.0201,
+          "dir": "higher\u2192more risk"
+        }
+      ],
+      "agreement": {
+        "shap_vs_gain_spearman": 0.892,
+        "shap_vs_permutation_spearman": NaN,
+        "gain_vs_extratrees_spearman": 0.495,
+        "shap_vs_gain_top10_jaccard": 1.0,
+        "shap_vs_permutation_top10_jaccard": 0.25
+      }
+    },
+    "UA_only": {
+      "cohort": "UA_only",
+      "n": 322,
+      "fails": 98,
+      "n_features": 62,
+      "top_by_shap": [
+        {
+          "feature": "cnt_grades",
+          "value": 0.3122,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 0.2147,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_other",
+          "value": 0.1908,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_session_minutes",
+          "value": 0.1561,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_grades",
+          "value": 0.1548,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_assignments",
+          "value": 0.1278,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_sessions",
+          "value": 0.1234,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "hour_entropy",
+          "value": 0.1198,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 0.1043,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_other",
+          "value": 0.0982,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "distinct_dows",
+          "value": 0.0939,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "max_session_minutes",
+          "value": 0.0748,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_gain": [
+        {
+          "feature": "cnt_grades",
+          "value": 6.0493,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_other",
+          "value": 5.3839,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 4.2936,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_grades",
+          "value": 3.4663,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_assignments",
+          "value": 2.9457,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_sessions",
+          "value": 2.8576,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_session_minutes",
+          "value": 2.7265,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "hour_entropy",
+          "value": 2.4802,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_other",
+          "value": 2.3453,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 2.1901,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "distinct_dows",
+          "value": 2.1477,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 1.8335,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_permutation": [
+        {
+          "feature": "share_other",
+          "value": 0.0009,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_grades",
+          "value": 0.0009,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 0.0005,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "last_week_deviation",
+          "value": 0.0004,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "share_grades",
+          "value": 0.0004,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_discussions",
+          "value": 0.0004,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "share_assignments",
+          "value": 0.0003,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "days_to_first_assignment",
+          "value": 0.0003,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "cnt_modules",
+          "value": 0.0003,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_navigation",
+          "value": 0.0002,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 0.0002,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_intergap_hours",
+          "value": 0.0002,
+          "dir": "higher\u2192more risk"
+        }
+      ],
+      "top_by_extratrees": [
+        {
+          "feature": "hour_entropy",
+          "value": 0.0302,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_grades",
+          "value": 0.0268,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 0.0251,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 0.0241,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_sessions",
+          "value": 0.0236,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "last_event_day",
+          "value": 0.023,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "dow_entropy",
+          "value": 0.0226,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_active_weeks",
+          "value": 0.0226,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "distinct_hours_local",
+          "value": 0.0222,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "distinct_dows",
+          "value": 0.0214,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 0.021,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_session_minutes",
+          "value": 0.0198,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "agreement": {
+        "shap_vs_gain_spearman": 0.871,
+        "shap_vs_permutation_spearman": -0.005,
+        "gain_vs_extratrees_spearman": 0.547,
+        "shap_vs_gain_top10_jaccard": 1.0,
+        "shap_vs_permutation_top10_jaccard": 0.33
+      }
+    },
+    "R2_pooled": {
+      "cohort": "R2_pooled",
+      "n": 400,
+      "fails": 91,
+      "n_features": 23,
+      "top_by_shap": [
+        {
+          "feature": "span_days",
+          "value": 0.296,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 0.2894,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_sessions",
+          "value": 0.258,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "max_session_minutes",
+          "value": 0.2223,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 0.1939,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_events",
+          "value": 0.1931,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 0.1872,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_views",
+          "value": 0.1492,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "short_session_share",
+          "value": 0.1468,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "prep_evening_night_share",
+          "value": 0.1383,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "momentum",
+          "value": 0.1246,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "total_session_minutes",
+          "value": 0.1224,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_gain": [
+        {
+          "feature": "span_days",
+          "value": 9.6357,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 7.7787,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "max_session_minutes",
+          "value": 5.501,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 5.0659,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "trend_slope",
+          "value": 4.9499,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "mean_weekly_sessions",
+          "value": 4.9377,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "prep_evening_night_share",
+          "value": 4.7698,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "distinct_hours_local",
+          "value": 4.4263,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "momentum",
+          "value": 4.3441,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "short_session_share",
+          "value": 4.3124,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "total_events",
+          "value": 4.2608,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 4.1474,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_permutation": [
+        {
+          "feature": "cnt_assignments",
+          "value": 0.0021,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "short_session_share",
+          "value": 0.0017,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "span_days",
+          "value": 0.0016,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "share_afternoon",
+          "value": 0.0013,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "trend_slope",
+          "value": 0.001,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "prep_evening_night_share",
+          "value": 0.0009,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "momentum",
+          "value": 0.0008,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "distinct_hours_local",
+          "value": 0.0008,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "max_session_minutes",
+          "value": 0.0007,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "active_days",
+          "value": 0.0005,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "front_load_share",
+          "value": 0.0005,
+          "dir": "mixed"
+        },
+        {
+          "feature": "events_per_active_day",
+          "value": 0.0003,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "top_by_extratrees": [
+        {
+          "feature": "active_days",
+          "value": 0.063,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "span_days",
+          "value": 0.0605,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "n_sessions",
+          "value": 0.0586,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_sessions",
+          "value": 0.053,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "mean_weekly_views",
+          "value": 0.0528,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_events",
+          "value": 0.0522,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "max_session_minutes",
+          "value": 0.0455,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "total_session_minutes",
+          "value": 0.0449,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "distinct_hours_local",
+          "value": 0.0433,
+          "dir": "higher\u2192more risk"
+        },
+        {
+          "feature": "dow_entropy",
+          "value": 0.0427,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "cnt_assignments",
+          "value": 0.0414,
+          "dir": "higher\u2192less risk"
+        },
+        {
+          "feature": "events_per_active_day",
+          "value": 0.0412,
+          "dir": "higher\u2192less risk"
+        }
+      ],
+      "agreement": {
+        "shap_vs_gain_spearman": 0.743,
+        "shap_vs_permutation_spearman": 0.268,
+        "gain_vs_extratrees_spearman": 0.377,
+        "shap_vs_gain_top10_jaccard": 0.54,
+        "shap_vs_permutation_top10_jaccard": 0.43
+      }
+    }
+  }
+}

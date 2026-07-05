@@ -1,0 +1,59 @@
+{
+  "config": "PUC clean, LOCO CatBoost Bal top-40, seeds{42,43,44}; risk=OOF calibrated (course-out)",
+  "weeks": {
+    "4": {
+      "priors_fed": [
+        2
+      ],
+      "baseline_auc": 0.7763,
+      "cascade_auc": 0.7815,
+      "delta": 0.0052,
+      "risk_selected_pct": {
+        "risk_w2": 1.0
+      },
+      "risk_mean_importance_rank": {
+        "risk_w2": 2.5
+      },
+      "n_feature_pool": 285
+    },
+    "6": {
+      "priors_fed": [
+        2,
+        4
+      ],
+      "baseline_auc": 0.8168,
+      "cascade_auc": 0.8168,
+      "delta": 0.0,
+      "risk_selected_pct": {
+        "risk_w2": 1.0,
+        "risk_w4": 1.0
+      },
+      "risk_mean_importance_rank": {
+        "risk_w2": 2.8,
+        "risk_w4": 2.3
+      },
+      "n_feature_pool": 286
+    },
+    "8": {
+      "priors_fed": [
+        2,
+        4,
+        6
+      ],
+      "baseline_auc": 0.829,
+      "cascade_auc": 0.8344,
+      "delta": 0.0054,
+      "risk_selected_pct": {
+        "risk_w2": 1.0,
+        "risk_w4": 1.0,
+        "risk_w6": 0.93
+      },
+      "risk_mean_importance_rank": {
+        "risk_w2": 3.3,
+        "risk_w4": 2.3,
+        "risk_w6": 10.8
+      },
+      "n_feature_pool": 287
+    }
+  }
+}

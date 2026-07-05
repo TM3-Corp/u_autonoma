@@ -1,0 +1,144 @@
+{
+  "note": "Per-course percentile-rank (distribution-free) vs the shipped per-course z-norm, on the same base features. Tests Paul's Q3: does rank-context beat z-norm context given the ~9x PUC/UA activity gap.",
+  "activity_gap": {
+    "PUC_events_per_student_median": 2275,
+    "UA_events_per_student_median": 246
+  },
+  "probe_pctrank_all_features": {
+    "2": 0.9781,
+    "4": 0.9742,
+    "6": 0.8333,
+    "8": 0.702,
+    "full": 0.9937
+  },
+  "probe_znorm_all_features_before_drop": {
+    "2": 0.9815,
+    "4": 0.9969,
+    "6": 0.8631,
+    "8": 0.8237,
+    "full": 0.8313
+  },
+  "pctrank_invariant": {
+    "n_kept": 54,
+    "n_dropped": 8,
+    "probe_after": {
+      "2": 0.7418,
+      "4": 0.7402,
+      "6": 0.6022,
+      "8": 0.5712,
+      "full": 0.6455
+    },
+    "kept": [
+      "total_events_pct",
+      "active_days_pct",
+      "events_per_active_day_pct",
+      "first_event_day_pct",
+      "last_event_day_pct",
+      "span_days_pct",
+      "first_event_hour_local_pct",
+      "mean_intergap_hours_pct",
+      "median_intergap_hours_pct",
+      "max_inactivity_gap_days_pct",
+      "n_sessions_pct",
+      "total_session_minutes_pct",
+      "mean_session_minutes_pct",
+      "median_session_minutes_pct",
+      "max_session_minutes_pct",
+      "mean_events_per_session_pct",
+      "short_session_share_pct",
+      "dwell_per_event_pct",
+      "session_regularity_pct",
+      "cnt_files_pct",
+      "share_files_pct",
+      "cnt_assignments_pct",
+      "share_assignments_pct",
+      "cnt_discussions_pct",
+      "share_discussions_pct",
+      "cnt_modules_pct",
+      "share_modules_pct",
+      "cnt_grades_pct",
+      "share_grades_pct",
+      "cnt_announcements_pct",
+      "share_announcements_pct",
+      "cnt_navigation_pct",
+      "share_navigation_pct",
+      "cnt_other_pct",
+      "share_other_pct",
+      "share_night_pct",
+      "share_morning_pct",
+      "share_afternoon_pct",
+      "share_evening_pct",
+      "weekend_share_pct",
+      "prep_evening_night_share_pct",
+      "distinct_hours_local_pct",
+      "hour_entropy_pct",
+      "dow_entropy_pct",
+      "mean_weekly_views_pct",
+      "std_weekly_views_pct",
+      "mean_weekly_sessions_pct",
+      "trend_slope_pct",
+      "momentum_pct",
+      "last_week_deviation_pct",
+      "first_week_events_pct",
+      "front_load_share_pct",
+      "days_to_first_assignment_pct",
+      "days_to_first_quiz_pct"
+    ],
+    "dropped": [
+      "active_week_ratio_pct",
+      "inactive_weeks_pct",
+      "cnt_pages_pct",
+      "share_pages_pct",
+      "n_active_weeks_pct",
+      "distinct_dows_pct",
+      "share_quizzes_pct",
+      "cnt_quizzes_pct"
+    ]
+  },
+  "pooled_R2": {
+    "2": {
+      "znorm_23feat": {
+        "pooled_auc": 0.6435,
+        "mean_pc_auc": 0.6906
+      },
+      "pctrank_invariant": {
+        "n_feat": 54,
+        "pooled_auc": 0.6178,
+        "mean_pc_auc": 0.6714
+      }
+    },
+    "4": {
+      "znorm_23feat": {
+        "pooled_auc": 0.6002,
+        "mean_pc_auc": 0.6635
+      },
+      "pctrank_invariant": {
+        "n_feat": 54,
+        "pooled_auc": 0.6215,
+        "mean_pc_auc": 0.6931
+      }
+    },
+    "8": {
+      "znorm_23feat": {
+        "pooled_auc": 0.6587,
+        "mean_pc_auc": 0.7295
+      },
+      "pctrank_invariant": {
+        "n_feat": 54,
+        "pooled_auc": 0.6737,
+        "mean_pc_auc": 0.7401
+      }
+    },
+    "full": {
+      "znorm_23feat": {
+        "pooled_auc": 0.6764,
+        "mean_pc_auc": 0.7268
+      },
+      "pctrank_invariant": {
+        "n_feat": 54,
+        "pooled_auc": 0.7138,
+        "mean_pc_auc": 0.772
+      }
+    }
+  }
+}

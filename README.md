@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED / STALE NUMBERS — do not quote.** This document predates the nested-CV correction; its headline AUCs are optimistic (non-nested) and/or contaminated (UA KEEP-arm active-zeros) and/or label-leaky. Current defensible metrics: **`RESULTS_LEDGER.md`**; start at **`PROJECT_SSOT.md`**. Kept for history only.
+
 # Early Warning System - Universidad Autónoma de Chile
 
 A predictive analytics system to identify at-risk students using Canvas LMS activity data, enabling early intervention before academic failure.

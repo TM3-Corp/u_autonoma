@@ -1,0 +1,56 @@
+{
+  "method": "mRMR (MI relevance \u2212 mean|corr| redundancy), per-fold leak-free",
+  "NS": [
+    10,
+    20,
+    30,
+    40,
+    60
+  ],
+  "sets": {
+    "PUC_only": {
+      "mrmr_curve": {
+        "10": 0.5407,
+        "20": 0.6768,
+        "30": 0.6992,
+        "40": 0.706,
+        "60": 0.746
+      },
+      "mrmr_best": 0.746,
+      "mrmr_bestN": 60,
+      "extratrees_best": 0.8056,
+      "delta_vs_extratrees": -0.0596
+    },
+    "R2_UA_only": {
+      "mrmr_curve": {
+        "10": 0.6772,
+        "20": 0.7086,
+        "30": 0.7276,
+        "40": 0.7377,
+        "60": 0.7326
+      },
+      "mrmr_best": 0.7377,
+      "mrmr_bestN": 40,
+      "extratrees_best": 0.7588,
+      "delta_vs_extratrees": -0.0211
+    },
+    "R2_pooled": {
+      "mrmr_curve": {
+        "10": 0.6603,
+        "20": 0.6607,
+        "30": 0.6716,
+        "40": 0.675,
+        "60": 0.6833
+      },
+      "mrmr_best": 0.6833,
+      "mrmr_bestN": 60,
+      "extratrees_best": 0.7034,
+      "delta_vs_extratrees": -0.0201
+    }
+  },
+  "baselines_extratrees": {
+    "PUC_only": 0.8056,
+    "R2_UA_only": 0.7588,
+    "R2_pooled": 0.7034
+  }
+}

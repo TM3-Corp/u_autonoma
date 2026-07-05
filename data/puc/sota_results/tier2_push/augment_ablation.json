@@ -1,0 +1,141 @@
+{
+  "winner": "C2 CatBoost Balanced 40 clean",
+  "aug_courses": [
+    53493,
+    54947,
+    56867
+  ],
+  "note": "per-fold FS + F2-Optuna params computed on NON-aug train, reused for both arms; only training rows differ; test=identical P3 560 folds; 5-seed bag both arms",
+  "weeks": {
+    "2": {
+      "n_test": 560,
+      "aug_train_sizes": [
+        606,
+        603,
+        596,
+        660,
+        610
+      ],
+      "n_aug_negatives": 167,
+      "non_augmented": {
+        "roc_auc": 0.7794,
+        "pr_auc": 0.2967,
+        "capacity_curve": {
+          "0.05": 0.2683,
+          "0.1": 0.3902,
+          "0.15": 0.5122,
+          "0.2": 0.6098,
+          "0.25": 0.6829
+        }
+      },
+      "augmented": {
+        "roc_auc": 0.7906,
+        "pr_auc": 0.3031,
+        "capacity_curve": {
+          "0.05": 0.2439,
+          "0.1": 0.439,
+          "0.15": 0.5366,
+          "0.2": 0.6098,
+          "0.25": 0.6585
+        }
+      },
+      "delta_auc_aug_minus_base": 0.0112,
+      "delta_auc_ci95": [
+        0.0009,
+        0.023
+      ],
+      "delta_pr_aug_minus_base": 0.0065,
+      "delta_pr_ci95": [
+        -0.0187,
+        0.0327
+      ]
+    },
+    "4": {
+      "n_test": 560,
+      "aug_train_sizes": [
+        606,
+        603,
+        596,
+        660,
+        610
+      ],
+      "n_aug_negatives": 167,
+      "non_augmented": {
+        "roc_auc": 0.8058,
+        "pr_auc": 0.3158,
+        "capacity_curve": {
+          "0.05": 0.2683,
+          "0.1": 0.439,
+          "0.15": 0.5366,
+          "0.2": 0.6585,
+          "0.25": 0.6829
+        }
+      },
+      "augmented": {
+        "roc_auc": 0.8208,
+        "pr_auc": 0.3376,
+        "capacity_curve": {
+          "0.05": 0.2439,
+          "0.1": 0.439,
+          "0.15": 0.5122,
+          "0.2": 0.6585,
+          "0.25": 0.7317
+        }
+      },
+      "delta_auc_aug_minus_base": 0.015,
+      "delta_auc_ci95": [
+        -0.0006,
+        0.0318
+      ],
+      "delta_pr_aug_minus_base": 0.0218,
+      "delta_pr_ci95": [
+        -0.0035,
+        0.0532
+      ]
+    },
+    "8": {
+      "n_test": 560,
+      "aug_train_sizes": [
+        606,
+        603,
+        596,
+        660,
+        610
+      ],
+      "n_aug_negatives": 167,
+      "non_augmented": {
+        "roc_auc": 0.8357,
+        "pr_auc": 0.3727,
+        "capacity_curve": {
+          "0.05": 0.3415,
+          "0.1": 0.4878,
+          "0.15": 0.6341,
+          "0.2": 0.6585,
+          "0.25": 0.7073
+        }
+      },
+      "augmented": {
+        "roc_auc": 0.8127,
+        "pr_auc": 0.3244,
+        "capacity_curve": {
+          "0.05": 0.3171,
+          "0.1": 0.4634,
+          "0.15": 0.5854,
+          "0.2": 0.6098,
+          "0.25": 0.6585
+        }
+      },
+      "delta_auc_aug_minus_base": -0.023,
+      "delta_auc_ci95": [
+        -0.0396,
+        -0.0076
+      ],
+      "delta_pr_aug_minus_base": -0.0483,
+      "delta_pr_ci95": [
+        -0.0989,
+        -0.0023
+      ]
+    }
+  },
+  "verdict": "augmentation NEUTRAL (mean \u0394AUC=+0.0011, any-week CI>0: True)"
+}

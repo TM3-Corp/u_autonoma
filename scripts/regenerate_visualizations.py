@@ -15,23 +15,53 @@ from scipy import stats
 # Directories
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 VIZ_DIR = os.path.join(DATA_DIR, 'report', 'visualizations')
+DESIGN_DIR = os.path.join(DATA_DIR, 'report', 'analysis', 'course_design')
 
 # Short names mapping (keep names short for readability)
+# Only includes the 10 courses used in model training
 SHORT_NAMES = {
-    '86005': 'Comp.Dig.',
     '86676': 'Bus.Analytics',
     '84936': 'Microecon.',
     '84941': 'Microecon.',
     '84944': 'Macroecon.',
     '86020': 'Comp.Dig.',
-    '79804': 'Tributarios',
     '79875': 'Comp.Dig.',
     '79913': 'Bus.Analytics',
     '88381': 'Mat.Negocios',
     '89099': 'Comp.Dig.',
     '89390': 'Gest.Talento',
-    '89736': 'Macroecon.',
 }
+
+# Unique short codes for scatter plots (to avoid label overlap)
+SHORT_CODES = {
+    '86676': 'BA1',   # Bus.Analytics
+    '79913': 'BA2',   # Bus.Analytics
+    '84936': 'ME1',   # Microecon.
+    '84941': 'ME2',   # Microecon.
+    '84944': 'MA',    # Macroecon.
+    '86020': 'CD1',   # Comp.Dig.
+    '79875': 'CD2',   # Comp.Dig.
+    '89099': 'CD3',   # Comp.Dig.
+    '88381': 'MN',    # Mat.Negocios
+    '89390': 'GT',    # Gest.Talento
+}
+
+# Legend mapping: code -> full name with ID
+SHORT_CODE_LEGEND = {
+    'BA1': 'Bus.Analytics (86676)',
+    'BA2': 'Bus.Analytics (79913)',
+    'ME1': 'Microecon. (84936)',
+    'ME2': 'Microecon. (84941)',
+    'MA': 'Macroecon. (84944)',
+    'CD1': 'Comp.Dig. (86020)',
+    'CD2': 'Comp.Dig. (79875)',
+    'CD3': 'Comp.Dig. (89099)',
+    'MN': 'Mat.Negocios (88381)',
+    'GT': 'Gest.Talento (89390)',
+}
+
+# Model courses (for filtering)
+MODEL_COURSES = [int(k) for k in SHORT_NAMES.keys()]
 
 
 def get_label(course_id, include_name=True):
@@ -100,26 +130,26 @@ def create_course_design_stacked(data):
 
     y = np.arange(len(labels))
 
-    # Stacked bars
+    # Stacked bars (labels in Spanish for consistency)
     ax.barh(y, modules, label='Módulos', color='#1f77b4')
-    ax.barh(y, assignments, left=modules, label='Assignments', color='#ff7f0e')
-    ax.barh(y, quizzes, left=np.array(modules)+np.array(assignments), label='Quizzes', color='#2ca02c')
-    ax.barh(y, files, left=np.array(modules)+np.array(assignments)+np.array(quizzes), label='Files', color='#d62728')
-    ax.barh(y, discussions, left=np.array(modules)+np.array(assignments)+np.array(quizzes)+np.array(files), label='Discussions', color='#9467bd')
-    ax.barh(y, pages, left=np.array(modules)+np.array(assignments)+np.array(quizzes)+np.array(files)+np.array(discussions), label='Pages', color='#8c564b')
+    ax.barh(y, assignments, left=modules, label='Tareas', color='#ff7f0e')
+    ax.barh(y, quizzes, left=np.array(modules)+np.array(assignments), label='Evaluaciones', color='#2ca02c')
+    ax.barh(y, files, left=np.array(modules)+np.array(assignments)+np.array(quizzes), label='Archivos', color='#d62728')
+    ax.barh(y, discussions, left=np.array(modules)+np.array(assignments)+np.array(quizzes)+np.array(files), label='Foros', color='#9467bd')
+    ax.barh(y, pages, left=np.array(modules)+np.array(assignments)+np.array(quizzes)+np.array(files)+np.array(discussions), label='Páginas', color='#8c564b')
 
     ax.set_yticks(y)
     ax.set_yticklabels(labels, fontsize=9)
     ax.set_xlabel('Número de Recursos')
     ax.set_title('Composición del Diseño Instruccional por Curso')
-    ax.legend(loc='lower right')
+    ax.legend(loc='upper right', bbox_to_anchor=(1.0, 1.0))
 
     # Add total count at end of each bar
     for i, total in enumerate([c['total'] for c in courses]):
         ax.text(total + 10, i, str(total), va='center', fontsize=8)
 
     plt.tight_layout()
-    plt.savefig(os.path.join(VIZ_DIR, 'course_design_stacked.png'), dpi=150, bbox_inches='tight')
+    plt.savefig(os.path.join(DESIGN_DIR, 'course_design_stacked.png'), dpi=150, bbox_inches='tight')
     plt.close()
 
 
@@ -129,7 +159,7 @@ def create_resources_by_category(data):
 
     courses = data['activity_design']
 
-    categories = ['Módulos', 'Assignments', 'Quizzes', 'Files', 'Discussions', 'Pages']
+    categories = ['Módulos', 'Tareas', 'Evaluaciones', 'Archivos', 'Foros', 'Páginas']
     totals = [
         sum(c['modules'] for c in courses),
         sum(c['assignments'] for c in courses),
@@ -145,7 +175,7 @@ def create_resources_by_category(data):
     bars = ax.bar(categories, totals, color=colors)
 
     ax.set_ylabel('Total de Recursos')
-    ax.set_title('Distribución Total de Recursos por Categoría (13 cursos)')
+    ax.set_title('Distribución Total de Recursos por Categoría (10 cursos)')
 
     # Add value labels
     for bar, total in zip(bars, totals):
@@ -204,20 +234,40 @@ def create_design_vs_engagement(data):
 
     fig, ax = plt.subplots(figsize=(12, 8))
 
+    # Define distinct colors for each course
+    color_palette = plt.cm.tab10(np.linspace(0, 1, 10))
+    course_colors = {}
+
+    # Sort courses for consistent color assignment
+    sorted_course_ids = sorted([str(c['course_id']) for c in courses])
+    for i, cid in enumerate(sorted_course_ids):
+        course_colors[cid] = color_palette[i % len(color_palette)]
+
+    # Plot each course with its color (uniform size for all points)
     for c in courses:
         total_resources = c['modules'] + c['assignments'] + c['quizzes'] + c['files'] + c['discussions'] + c['pages']
         avg_views = c['avg_views_per_student']
+        cid = str(c['course_id'])
+        code = SHORT_CODES.get(cid, cid)
 
-        ax.scatter(total_resources, avg_views, s=c['students']*5, alpha=0.6)
-        ax.annotate(get_label(c['course_id']), (total_resources, avg_views),
-                   fontsize=8, ha='left', va='bottom')
+        ax.scatter(total_resources, avg_views,
+                   s=150,  # Fixed size for all points
+                   alpha=0.7,
+                   color=course_colors[cid],
+                   label=f"{code}: {SHORT_NAMES.get(cid, 'Curso')} ({cid})",
+                   edgecolors='white',
+                   linewidths=1)
 
-    ax.set_xlabel('Total de Recursos (Complejidad del Diseño)')
-    ax.set_ylabel('Visualizaciones Promedio por Estudiante (Engagement)')
-    ax.set_title('Relación entre Diseño Instruccional y Engagement Estudiantil\n(tamaño del punto = número de estudiantes)')
+    ax.set_xlabel('Total de Recursos')
+    ax.set_ylabel('Visualizaciones Promedio por Estudiante')
+    ax.set_title('Relación entre Diseño Instruccional y Engagement Estudiantil')
+
+    # Add legend on the right side, outside the plot
+    ax.legend(loc='center left', bbox_to_anchor=(1.02, 0.5),
+              fontsize=9, framealpha=0.95, edgecolor='gray')
 
     plt.tight_layout()
-    plt.savefig(os.path.join(VIZ_DIR, 'design_vs_engagement.png'), dpi=150, bbox_inches='tight')
+    plt.savefig(os.path.join(DESIGN_DIR, 'design_vs_engagement.png'), dpi=150, bbox_inches='tight')
     plt.close()
 
 
@@ -324,6 +374,9 @@ def create_correlation_heatmap(data):
 
     df = data['student_features']
 
+    # Filter to model courses only
+    df = df[df['course_id'].isin(MODEL_COURSES)]
+
     # Get courses with valid grades
     good_courses = df.groupby('course_id').agg({
         'final_score': ['count', 'std']
@@ -417,6 +470,9 @@ def create_grade_boxplot(data):
 
     df = data['student_features']
 
+    # Filter to model courses only
+    df = df[df['course_id'].isin(MODEL_COURSES)]
+
     # Get courses with grades
     courses_with_grades = df[df['final_score'].notna()]['course_id'].unique()
 
@@ -463,6 +519,9 @@ def create_pass_rate_bars(data):
         return
 
     df = data['student_features']
+
+    # Filter to model courses only
+    df = df[df['course_id'].isin(MODEL_COURSES)]
 
     # Calculate pass rates
     pass_rates = []

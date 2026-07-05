@@ -1,0 +1,510 @@
+{
+  "scope": "R2-pooled only (pre-committed primary)",
+  "weeks": [
+    "4",
+    "8"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "models": [
+    "cat",
+    "xgb"
+  ],
+  "n_specs": [
+    "N20",
+    "N30",
+    "N40",
+    "full"
+  ],
+  "aggregate": {
+    "cat_N20": {
+      "mean_auc": 0.6292,
+      "mean_recall20": 0.3527,
+      "n_feat": 20
+    },
+    "cat_N30": {
+      "mean_auc": 0.6294,
+      "mean_recall20": 0.3593,
+      "n_feat": 30
+    },
+    "cat_N40": {
+      "mean_auc": 0.6294,
+      "mean_recall20": 0.3593,
+      "n_feat": 40
+    },
+    "cat_full": {
+      "mean_auc": 0.6331,
+      "mean_recall20": 0.3626,
+      "n_feat": 21
+    },
+    "xgb_N20": {
+      "mean_auc": 0.6077,
+      "mean_recall20": 0.3363,
+      "n_feat": 20
+    },
+    "xgb_N30": {
+      "mean_auc": 0.6069,
+      "mean_recall20": 0.3395,
+      "n_feat": 30
+    },
+    "xgb_N40": {
+      "mean_auc": 0.6069,
+      "mean_recall20": 0.3395,
+      "n_feat": 40
+    },
+    "xgb_full": {
+      "mean_auc": 0.6098,
+      "mean_recall20": 0.3418,
+      "n_feat": 21
+    }
+  },
+  "ranking_by_mean_auc": [
+    "cat_full",
+    "cat_N30",
+    "cat_N40",
+    "cat_N20",
+    "xgb_full",
+    "xgb_N20",
+    "xgb_N30",
+    "xgb_N40"
+  ],
+  "tie_threshold": 0.003,
+  "tied_within_threshold": [
+    "cat_full"
+  ],
+  "winner": "cat_full",
+  "winner_desc": "cat_full ({'mean_auc': 0.6331, 'mean_recall20': 0.3626, 'n_feat': 21})",
+  "selection_rule": "highest mean AUC over weeks\u00d7seeds; tie<0.003 \u2192 higher recall@20% \u2192 fewer feats",
+  "cells": {
+    "4": {
+      "42": {
+        "cat_N20": {
+          "pooled_auc": 0.5971585049254953,
+          "recall20": 0.3736,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.5995767986059248,
+          "recall20": 0.3956,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.5995767986059248,
+          "recall20": 0.3956,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.5953803478075322,
+          "recall20": 0.3736,
+          "n_feat": 23
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.5651872399445216,
+          "recall20": 0.3187,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.5763185035029695,
+          "recall20": 0.3516,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.5763185035029695,
+          "recall20": 0.3516,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.5819019168533732,
+          "recall20": 0.3407,
+          "n_feat": 23
+        }
+      },
+      "43": {
+        "cat_N20": {
+          "pooled_auc": 0.5813329065756251,
+          "recall20": 0.2967,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.5911838970091396,
+          "recall20": 0.3407,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.5911838970091396,
+          "recall20": 0.3407,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.5914684021480138,
+          "recall20": 0.3516,
+          "n_feat": 23
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.5852804153775029,
+          "recall20": 0.3297,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.5819019168533731,
+          "recall20": 0.2967,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.5819019168533731,
+          "recall20": 0.2967,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.5795903126000214,
+          "recall20": 0.3297,
+          "n_feat": 23
+        }
+      },
+      "44": {
+        "cat_N20": {
+          "pooled_auc": 0.5940289483978805,
+          "recall20": 0.3516,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.6021373448557914,
+          "recall20": 0.3516,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.6021373448557914,
+          "recall20": 0.3516,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6076851950638358,
+          "recall20": 0.3407,
+          "n_feat": 22
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.5702372061595362,
+          "recall20": 0.3187,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.5673921547707955,
+          "recall20": 0.3187,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.5673921547707955,
+          "recall20": 0.3187,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.5799103808812547,
+          "recall20": 0.3077,
+          "n_feat": 22
+        }
+      },
+      "45": {
+        "cat_N20": {
+          "pooled_auc": 0.6039510651161136,
+          "recall20": 0.2857,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.5974785732067285,
+          "recall20": 0.3297,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.5974785732067285,
+          "recall20": 0.3297,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6056936590917174,
+          "recall20": 0.3187,
+          "n_feat": 22
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.5747892883815213,
+          "recall20": 0.2747,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.5756072406557844,
+          "recall20": 0.2747,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.5756072406557844,
+          "recall20": 0.2747,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.5867740673565915,
+          "recall20": 0.2857,
+          "n_feat": 22
+        }
+      },
+      "46": {
+        "cat_N20": {
+          "pooled_auc": 0.6136598029801914,
+          "recall20": 0.4066,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.6106369358796544,
+          "recall20": 0.3956,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.6106369358796544,
+          "recall20": 0.3956,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6105658095949359,
+          "recall20": 0.3846,
+          "n_feat": 22
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.6097122941783135,
+          "recall20": 0.3956,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.6043066965397063,
+          "recall20": 0.4066,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.6043066965397063,
+          "recall20": 0.4066,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.5979053309150396,
+          "recall20": 0.3846,
+          "n_feat": 22
+        }
+      }
+    },
+    "8": {
+      "42": {
+        "cat_N20": {
+          "pooled_auc": 0.6805362921867776,
+          "recall20": 0.3846,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.678935950780611,
+          "recall20": 0.3736,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.678935950780611,
+          "recall20": 0.3736,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.687328852377396,
+          "recall20": 0.3956,
+          "n_feat": 21
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.6679469397915999,
+          "recall20": 0.3516,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.648707279775241,
+          "recall20": 0.3956,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.648707279775241,
+          "recall20": 0.3956,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.6572779970838224,
+          "recall20": 0.4066,
+          "n_feat": 21
+        }
+      },
+      "43": {
+        "cat_N20": {
+          "pooled_auc": 0.6539706248444113,
+          "recall20": 0.3626,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.6611543796009816,
+          "recall20": 0.3736,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.6611543796009816,
+          "recall20": 0.3736,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6610476901739037,
+          "recall20": 0.3736,
+          "n_feat": 21
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.6280806572068708,
+          "recall20": 0.3516,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.628258472918667,
+          "recall20": 0.3516,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.628258472918667,
+          "recall20": 0.3516,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.6174828407838118,
+          "recall20": 0.3407,
+          "n_feat": 21
+        }
+      },
+      "44": {
+        "cat_N20": {
+          "pooled_auc": 0.6685870763540666,
+          "recall20": 0.4176,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.6626480315800705,
+          "recall20": 0.3956,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.6626480315800705,
+          "recall20": 0.3956,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6673779295138519,
+          "recall20": 0.4066,
+          "n_feat": 21
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.6462889860948112,
+          "recall20": 0.3956,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.6423770404352929,
+          "recall20": 0.3846,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.6423770404352929,
+          "recall20": 0.3846,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.6463956755218891,
+          "recall20": 0.4066,
+          "n_feat": 21
+        }
+      },
+      "45": {
+        "cat_N20": {
+          "pooled_auc": 0.6410967673103596,
+          "recall20": 0.3077,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.6352288488210819,
+          "recall20": 0.2967,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.6352288488210819,
+          "recall20": 0.2967,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6400654361819411,
+          "recall20": 0.3187,
+          "n_feat": 21
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.6012660478679895,
+          "recall20": 0.2857,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.6024396315658451,
+          "recall20": 0.2857,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.6024396315658451,
+          "recall20": 0.2857,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.6099078914612895,
+          "recall20": 0.2857,
+          "n_feat": 21
+        }
+      },
+      "46": {
+        "cat_N20": {
+          "pooled_auc": 0.6573491233685409,
+          "recall20": 0.3407,
+          "n_feat": 20
+        },
+        "cat_N30": {
+          "pooled_auc": 0.6553575873964224,
+          "recall20": 0.3407,
+          "n_feat": 30
+        },
+        "cat_N40": {
+          "pooled_auc": 0.6553575873964224,
+          "recall20": 0.3407,
+          "n_feat": 40
+        },
+        "cat_full": {
+          "pooled_auc": 0.6648529464063444,
+          "recall20": 0.3626,
+          "n_feat": 21
+        },
+        "xgb_N20": {
+          "pooled_auc": 0.6286141043422597,
+          "recall20": 0.3407,
+          "n_feat": 20
+        },
+        "xgb_N30": {
+          "pooled_auc": 0.6419858458693409,
+          "recall20": 0.3297,
+          "n_feat": 30
+        },
+        "xgb_N40": {
+          "pooled_auc": 0.6419858458693409,
+          "recall20": 0.3297,
+          "n_feat": 40
+        },
+        "xgb_full": {
+          "pooled_auc": 0.640741135886767,
+          "recall20": 0.3297,
+          "n_feat": 21
+        }
+      }
+    }
+  },
+  "note_n_collapse": "Model uses 23 institution-invariant features (guardrail 2); N\u2208{30,40,full} therefore \u2248 all features \u2014 the N grid partially collapses (only N20 truly subsets). Logged honestly."
+}

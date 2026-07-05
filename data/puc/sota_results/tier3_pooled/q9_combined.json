@@ -1,0 +1,48 @@
+{
+  "scope": "basics + real historical, combined, full horizon",
+  "NS": [
+    40,
+    60,
+    80,
+    100,
+    120
+  ],
+  "sets": {
+    "PUC_only": {
+      "combined_curve": {
+        "2": 0.6487,
+        "5": 0.7143,
+        "10": 0.7603,
+        "20": 0.7503,
+        "40": 0.7747,
+        "60": 0.7882,
+        "80": 0.7991,
+        "100": 0.8056
+      },
+      "combined_best": 0.8056,
+      "combined_bestN": 100,
+      "basics_alone_best": 0.8056,
+      "n_feat": 305,
+      "delta_vs_basics": 0.0
+    },
+    "R2_pooled": {
+      "combined_curve": {
+        "2": 0.6025,
+        "5": 0.6615,
+        "10": 0.6875,
+        "20": 0.7046,
+        "40": 0.6997,
+        "60": 0.7001,
+        "80": 0.6975,
+        "100": 0.6908
+      },
+      "combined_best": 0.7046,
+      "combined_bestN": 20,
+      "basics_alone_best": 0.7034,
+      "n_feat": 178,
+      "n_invariant": 170,
+      "probe": 0.3713,
+      "delta_vs_basics": 0.0012
+    }
+  }
+}

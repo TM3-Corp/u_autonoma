@@ -1,0 +1,513 @@
+{
+  "winners_per_arm": {
+    "KEEP": "U3",
+    "DROP_A": "U3"
+  },
+  "label_caveat_KEEP": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external",
+  "protocol": "nested (strat + loco) outer, inner Optuna30 on CatBoost, 5-seed bag, Platt sigmoid; seed 42",
+  "arms": {
+    "KEEP": {
+      "winner": "U3",
+      "members": [
+        "cat"
+      ],
+      "weeks": {
+        "2": {
+          "strat": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.6505,
+            "roc_auc_raw_ci95": [
+              0.5916,
+              0.7091
+            ],
+            "pr_auc_raw": 0.5716,
+            "roc_auc_calibrated": 0.6524,
+            "brier_calibrated": 0.2221,
+            "ece_calibrated": 0.0509,
+            "capacity_curve": {
+              "0.1": 0.1745,
+              "0.15": 0.255,
+              "0.2": 0.3154,
+              "0.25": 0.3758
+            },
+            "bakeoff_seed_mean_auc": 0.6806,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.5628,
+            "roc_auc_raw_ci95": [
+              0.5044,
+              0.6198
+            ],
+            "pr_auc_raw": 0.4739,
+            "roc_auc_calibrated": 0.5604,
+            "brier_calibrated": 0.2499,
+            "ece_calibrated": 0.0961,
+            "capacity_curve": {
+              "0.1": 0.1611,
+              "0.15": 0.2148,
+              "0.2": 0.255,
+              "0.25": 0.2752
+            },
+            "bakeoff_seed_mean_auc": 0.5802,
+            "leak_flag": false
+          }
+        },
+        "4": {
+          "strat": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.6582,
+            "roc_auc_raw_ci95": [
+              0.5997,
+              0.7125
+            ],
+            "pr_auc_raw": 0.5516,
+            "roc_auc_calibrated": 0.667,
+            "brier_calibrated": 0.2237,
+            "ece_calibrated": 0.0394,
+            "capacity_curve": {
+              "0.1": 0.1745,
+              "0.15": 0.2282,
+              "0.2": 0.2886,
+              "0.25": 0.3826
+            },
+            "bakeoff_seed_mean_auc": 0.6843,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.542,
+            "roc_auc_raw_ci95": [
+              0.4838,
+              0.6033
+            ],
+            "pr_auc_raw": 0.4308,
+            "roc_auc_calibrated": 0.56,
+            "brier_calibrated": 0.2517,
+            "ece_calibrated": 0.1149,
+            "capacity_curve": {
+              "0.1": 0.1141,
+              "0.15": 0.1544,
+              "0.2": 0.2081,
+              "0.25": 0.2752
+            },
+            "bakeoff_seed_mean_auc": 0.5758,
+            "leak_flag": false
+          }
+        },
+        "8": {
+          "strat": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.8062,
+            "roc_auc_raw_ci95": [
+              0.7631,
+              0.8506
+            ],
+            "pr_auc_raw": 0.7174,
+            "roc_auc_calibrated": 0.8031,
+            "brier_calibrated": 0.1767,
+            "ece_calibrated": 0.0308,
+            "capacity_curve": {
+              "0.1": 0.2081,
+              "0.15": 0.2819,
+              "0.2": 0.3691,
+              "0.25": 0.4631
+            },
+            "bakeoff_seed_mean_auc": 0.8147,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.7427,
+            "roc_auc_raw_ci95": [
+              0.6899,
+              0.7911
+            ],
+            "pr_auc_raw": 0.6591,
+            "roc_auc_calibrated": 0.7274,
+            "brier_calibrated": 0.2077,
+            "ece_calibrated": 0.0777,
+            "capacity_curve": {
+              "0.1": 0.1946,
+              "0.15": 0.255,
+              "0.2": 0.349,
+              "0.25": 0.4295
+            },
+            "bakeoff_seed_mean_auc": 0.7295,
+            "leak_flag": false
+          }
+        },
+        "full": {
+          "strat": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.8722,
+            "roc_auc_raw_ci95": [
+              0.8328,
+              0.9078
+            ],
+            "pr_auc_raw": 0.827,
+            "roc_auc_calibrated": 0.8653,
+            "brier_calibrated": 0.1471,
+            "ece_calibrated": 0.0449,
+            "capacity_curve": {
+              "0.1": 0.2349,
+              "0.15": 0.3423,
+              "0.2": 0.443,
+              "0.25": 0.5503
+            },
+            "bakeoff_seed_mean_auc": 0.8684,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 373,
+            "prevalence": 0.3995,
+            "roc_auc_raw_bagged": 0.6874,
+            "roc_auc_raw_ci95": [
+              0.6328,
+              0.7409
+            ],
+            "pr_auc_raw": 0.5867,
+            "roc_auc_calibrated": 0.7267,
+            "brier_calibrated": 0.2166,
+            "ece_calibrated": 0.1234,
+            "capacity_curve": {
+              "0.1": 0.1611,
+              "0.15": 0.255,
+              "0.2": 0.3289,
+              "0.25": 0.3893
+            },
+            "bakeoff_seed_mean_auc": 0.7365,
+            "leak_flag": false
+          }
+        }
+      }
+    },
+    "DROP_A": {
+      "winner": "U3",
+      "members": [
+        "cat"
+      ],
+      "weeks": {
+        "2": {
+          "strat": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.6794,
+            "roc_auc_raw_ci95": [
+              0.6147,
+              0.7418
+            ],
+            "pr_auc_raw": 0.4651,
+            "roc_auc_calibrated": 0.665,
+            "brier_calibrated": 0.1974,
+            "ece_calibrated": 0.0322,
+            "capacity_curve": {
+              "0.1": 0.1939,
+              "0.15": 0.2755,
+              "0.2": 0.3163,
+              "0.25": 0.4082
+            },
+            "bakeoff_seed_mean_auc": 0.6645,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.4761,
+            "roc_auc_raw_ci95": [
+              0.4106,
+              0.5418
+            ],
+            "pr_auc_raw": 0.2949,
+            "roc_auc_calibrated": 0.4295,
+            "brier_calibrated": 0.2403,
+            "ece_calibrated": 0.139,
+            "capacity_curve": {
+              "0.1": 0.0714,
+              "0.15": 0.1224,
+              "0.2": 0.1633,
+              "0.25": 0.2041
+            },
+            "bakeoff_seed_mean_auc": 0.4651,
+            "leak_flag": false
+          }
+        },
+        "4": {
+          "strat": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.6584,
+            "roc_auc_raw_ci95": [
+              0.5917,
+              0.7244
+            ],
+            "pr_auc_raw": 0.4468,
+            "roc_auc_calibrated": 0.6926,
+            "brier_calibrated": 0.1943,
+            "ece_calibrated": 0.0695,
+            "capacity_curve": {
+              "0.1": 0.1429,
+              "0.15": 0.2449,
+              "0.2": 0.3367,
+              "0.25": 0.398
+            },
+            "bakeoff_seed_mean_auc": 0.7126,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.5256,
+            "roc_auc_raw_ci95": [
+              0.4502,
+              0.5958
+            ],
+            "pr_auc_raw": 0.3277,
+            "roc_auc_calibrated": 0.4854,
+            "brier_calibrated": 0.2334,
+            "ece_calibrated": 0.1407,
+            "capacity_curve": {
+              "0.1": 0.0918,
+              "0.15": 0.1735,
+              "0.2": 0.2245,
+              "0.25": 0.3061
+            },
+            "bakeoff_seed_mean_auc": 0.4995,
+            "leak_flag": true
+          }
+        },
+        "8": {
+          "strat": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.7559,
+            "roc_auc_raw_ci95": [
+              0.6927,
+              0.8168
+            ],
+            "pr_auc_raw": 0.5867,
+            "roc_auc_calibrated": 0.7902,
+            "brier_calibrated": 0.1661,
+            "ece_calibrated": 0.0776,
+            "capacity_curve": {
+              "0.1": 0.2143,
+              "0.15": 0.3265,
+              "0.2": 0.4592,
+              "0.25": 0.551
+            },
+            "bakeoff_seed_mean_auc": 0.7916,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.6277,
+            "roc_auc_raw_ci95": [
+              0.5577,
+              0.6958
+            ],
+            "pr_auc_raw": 0.4292,
+            "roc_auc_calibrated": 0.6146,
+            "brier_calibrated": 0.2146,
+            "ece_calibrated": 0.0911,
+            "capacity_curve": {
+              "0.1": 0.1735,
+              "0.15": 0.2245,
+              "0.2": 0.3265,
+              "0.25": 0.3878
+            },
+            "bakeoff_seed_mean_auc": 0.631,
+            "leak_flag": false
+          }
+        },
+        "full": {
+          "strat": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.8091,
+            "roc_auc_raw_ci95": [
+              0.7585,
+              0.8569
+            ],
+            "pr_auc_raw": 0.6146,
+            "roc_auc_calibrated": 0.8045,
+            "brier_calibrated": 0.1627,
+            "ece_calibrated": 0.0475,
+            "capacity_curve": {
+              "0.1": 0.2143,
+              "0.15": 0.3367,
+              "0.2": 0.449,
+              "0.25": 0.5408
+            },
+            "bakeoff_seed_mean_auc": 0.8132,
+            "leak_flag": false
+          },
+          "loco": {
+            "n_eval": 322,
+            "prevalence": 0.3043,
+            "roc_auc_raw_bagged": 0.6048,
+            "roc_auc_raw_ci95": [
+              0.5328,
+              0.673
+            ],
+            "pr_auc_raw": 0.405,
+            "roc_auc_calibrated": 0.6352,
+            "brier_calibrated": 0.2137,
+            "ece_calibrated": 0.1023,
+            "capacity_curve": {
+              "0.1": 0.1531,
+              "0.15": 0.2449,
+              "0.2": 0.3265,
+              "0.25": 0.3776
+            },
+            "bakeoff_seed_mean_auc": 0.6284,
+            "leak_flag": false
+          }
+        }
+      }
+    }
+  },
+  "honest_range": {
+    "2": {
+      "strat": {
+        "range_auc": [
+          0.6505,
+          0.6794
+        ],
+        "DROP_A_quotable": 0.6794,
+        "KEEP_with_caveat": {
+          "auc": 0.6505,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wk2 strat AUC = 0.6794 (DROP-A, quotable) \u2013 0.6505 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      },
+      "loco": {
+        "range_auc": [
+          0.4761,
+          0.5628
+        ],
+        "DROP_A_quotable": 0.4761,
+        "KEEP_with_caveat": {
+          "auc": 0.5628,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wk2 loco AUC = 0.4761 (DROP-A, quotable) \u2013 0.5628 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      }
+    },
+    "4": {
+      "strat": {
+        "range_auc": [
+          0.6582,
+          0.6584
+        ],
+        "DROP_A_quotable": 0.6584,
+        "KEEP_with_caveat": {
+          "auc": 0.6582,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wk4 strat AUC = 0.6584 (DROP-A, quotable) \u2013 0.6582 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      },
+      "loco": {
+        "range_auc": [
+          0.5256,
+          0.542
+        ],
+        "DROP_A_quotable": 0.5256,
+        "KEEP_with_caveat": {
+          "auc": 0.542,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wk4 loco AUC = 0.5256 (DROP-A, quotable) \u2013 0.542 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      }
+    },
+    "8": {
+      "strat": {
+        "range_auc": [
+          0.7559,
+          0.8062
+        ],
+        "DROP_A_quotable": 0.7559,
+        "KEEP_with_caveat": {
+          "auc": 0.8062,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wk8 strat AUC = 0.7559 (DROP-A, quotable) \u2013 0.8062 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      },
+      "loco": {
+        "range_auc": [
+          0.6277,
+          0.7427
+        ],
+        "DROP_A_quotable": 0.6277,
+        "KEEP_with_caveat": {
+          "auc": 0.7427,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wk8 loco AUC = 0.6277 (DROP-A, quotable) \u2013 0.7427 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      }
+    },
+    "full": {
+      "strat": {
+        "range_auc": [
+          0.8091,
+          0.8722
+        ],
+        "DROP_A_quotable": 0.8091,
+        "KEEP_with_caveat": {
+          "auc": 0.8722,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wkfull strat AUC = 0.8091 (DROP-A, quotable) \u2013 0.8722 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      },
+      "loco": {
+        "range_auc": [
+          0.6048,
+          0.6874
+        ],
+        "DROP_A_quotable": 0.6048,
+        "KEEP_with_caveat": {
+          "auc": 0.6874,
+          "caveat": "target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external"
+        },
+        "statement": "wkfull loco AUC = 0.6048 (DROP-A, quotable) \u2013 0.6874 (KEEP; target = recorded Canvas outcome; includes 51 active-zero enrollments whose true grades are external)"
+      }
+    }
+  },
+  "leak_flags": [
+    "DROP_A/4/loco"
+  ],
+  "sensitivity_Aplus": {
+    "2": {
+      "n": 286,
+      "winner": "U3",
+      "roc_auc_strat_seed42": 0.6003,
+      "prevalence": 0.2552
+    },
+    "4": {
+      "n": 286,
+      "winner": "U3",
+      "roc_auc_strat_seed42": 0.6383,
+      "prevalence": 0.2552
+    },
+    "8": {
+      "n": 286,
+      "winner": "U3",
+      "roc_auc_strat_seed42": 0.7614,
+      "prevalence": 0.2552
+    },
+    "full": {
+      "n": 286,
+      "winner": "U3",
+      "roc_auc_strat_seed42": 0.7779,
+      "prevalence": 0.2552
+    }
+  }
+}

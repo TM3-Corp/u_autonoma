@@ -1,0 +1,805 @@
+{
+  "cutoffs": {
+    "2": {
+      "n_rows": 560,
+      "n_base_cols": 284,
+      "n_new_base": 27,
+      "n_new_znorm": 27,
+      "n_total_cols": 342,
+      "nan_rate_new_pre_fill": 0.0,
+      "nan_ok_le_5pct": true,
+      "stats": {
+        "xc_total_views": {
+          "mean": 450.4357,
+          "std": 386.1381,
+          "nan_pre": 0.0
+        },
+        "xc_total_sessions": {
+          "mean": 32.4179,
+          "std": 18.2963,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_views": {
+          "mean": 0.8942,
+          "std": 0.2237,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_sessions": {
+          "mean": 0.904,
+          "std": 0.2022,
+          "nan_pre": 0.0
+        },
+        "xc_n_active_other_courses": {
+          "mean": 0.2446,
+          "std": 0.485,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_mean": {
+          "mean": 0.251,
+          "std": 0.6423,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_max": {
+          "mean": 1.3625,
+          "std": 3.3146,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_total": {
+          "mean": 5.5214,
+          "std": 13.0804,
+          "nan_pre": 0.0
+        },
+        "xc_relative_neglect": {
+          "mean": 0.0082,
+          "std": 0.1006,
+          "nan_pre": 0.0
+        },
+        "xc_max_other_course_share": {
+          "mean": 0.1005,
+          "std": 0.2139,
+          "nan_pre": 0.0
+        },
+        "intensity_max_dev": {
+          "mean": 0.3741,
+          "std": 0.2144,
+          "nan_pre": 0.0
+        },
+        "intensity_min_dev": {
+          "mean": -0.3741,
+          "std": 0.2144,
+          "nan_pre": 0.0
+        },
+        "intensity_std_dev": {
+          "mean": 0.3741,
+          "std": 0.2144,
+          "nan_pre": 0.0
+        },
+        "intensity_last_week_dev": {
+          "mean": -0.3219,
+          "std": 0.287,
+          "nan_pre": 0.0
+        },
+        "slope_pos_sum": {
+          "mean": 5.85,
+          "std": 24.6429,
+          "nan_pre": 0.0
+        },
+        "slope_neg_sum": {
+          "mean": -129.7286,
+          "std": 129.6851,
+          "nan_pre": 0.0
+        },
+        "slope_pos_count": {
+          "mean": 0.1107,
+          "std": 0.3141,
+          "nan_pre": 0.0
+        },
+        "slope_neg_count": {
+          "mean": 0.875,
+          "std": 0.331,
+          "nan_pre": 0.0
+        },
+        "slope_ratio": {
+          "mean": 5850000000.0,
+          "std": 24642902217.3908,
+          "nan_pre": 0.0
+        },
+        "n_local_peaks": {
+          "mean": 0.0,
+          "std": 0.0,
+          "nan_pre": 0.0
+        },
+        "weeks_above_25pct": {
+          "mean": 1.95,
+          "std": 0.2181,
+          "nan_pre": 0.0
+        },
+        "weeks_above_50pct": {
+          "mean": 1.7214,
+          "std": 0.4487,
+          "nan_pre": 0.0
+        },
+        "weeks_above_100pct": {
+          "mean": 0.9857,
+          "std": 0.1188,
+          "nan_pre": 0.0
+        },
+        "weeks_above_150pct": {
+          "mean": 0.2732,
+          "std": 0.446,
+          "nan_pre": 0.0
+        },
+        "procrastination_x_regularity": {
+          "mean": 0.0179,
+          "std": 0.0517,
+          "nan_pre": 0.0
+        },
+        "pdh_entropy": {
+          "mean": 2.924,
+          "std": 0.5595,
+          "nan_pre": 0.0
+        },
+        "pwd_entropy": {
+          "mean": 2.1359,
+          "std": 0.4126,
+          "nan_pre": 0.0
+        }
+      }
+    },
+    "4": {
+      "n_rows": 560,
+      "n_base_cols": 284,
+      "n_new_base": 27,
+      "n_new_znorm": 27,
+      "n_total_cols": 342,
+      "nan_rate_new_pre_fill": 0.0,
+      "nan_ok_le_5pct": true,
+      "stats": {
+        "xc_total_views": {
+          "mean": 713.8696,
+          "std": 627.8245,
+          "nan_pre": 0.0
+        },
+        "xc_total_sessions": {
+          "mean": 51.3143,
+          "std": 28.757,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_views": {
+          "mean": 0.8916,
+          "std": 0.223,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_sessions": {
+          "mean": 0.9037,
+          "std": 0.1964,
+          "nan_pre": 0.0
+        },
+        "xc_n_active_other_courses": {
+          "mean": 0.2482,
+          "std": 0.4869,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_mean": {
+          "mean": 0.2558,
+          "std": 0.6056,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_max": {
+          "mean": 1.6911,
+          "std": 3.8713,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_total": {
+          "mean": 9.4893,
+          "std": 22.0087,
+          "nan_pre": 0.0
+        },
+        "xc_relative_neglect": {
+          "mean": 0.0073,
+          "std": 0.0912,
+          "nan_pre": 0.0
+        },
+        "xc_max_other_course_share": {
+          "mean": 0.1031,
+          "std": 0.2125,
+          "nan_pre": 0.0
+        },
+        "intensity_max_dev": {
+          "mean": 0.8218,
+          "std": 0.3987,
+          "nan_pre": 0.0
+        },
+        "intensity_min_dev": {
+          "mean": -0.5914,
+          "std": 0.1982,
+          "nan_pre": 0.0
+        },
+        "intensity_std_dev": {
+          "mean": 0.5545,
+          "std": 0.2143,
+          "nan_pre": 0.0
+        },
+        "intensity_last_week_dev": {
+          "mean": -0.2574,
+          "std": 0.4276,
+          "nan_pre": 0.0
+        },
+        "slope_pos_sum": {
+          "mean": 63.5929,
+          "std": 78.6773,
+          "nan_pre": 0.0
+        },
+        "slope_neg_sum": {
+          "mean": -203.7554,
+          "std": 166.5822,
+          "nan_pre": 0.0
+        },
+        "slope_pos_count": {
+          "mean": 1.0214,
+          "std": 0.6184,
+          "nan_pre": 0.0
+        },
+        "slope_neg_count": {
+          "mean": 1.9464,
+          "std": 0.625,
+          "nan_pre": 0.0
+        },
+        "slope_ratio": {
+          "mean": 850000000.4668,
+          "std": 9714106445.8929,
+          "nan_pre": 0.0
+        },
+        "n_local_peaks": {
+          "mean": 0.3696,
+          "std": 0.4831,
+          "nan_pre": 0.0
+        },
+        "weeks_above_25pct": {
+          "mean": 3.7357,
+          "std": 0.4912,
+          "nan_pre": 0.0
+        },
+        "weeks_above_50pct": {
+          "mean": 3.1536,
+          "std": 0.6908,
+          "nan_pre": 0.0
+        },
+        "weeks_above_100pct": {
+          "mean": 1.6571,
+          "std": 0.619,
+          "nan_pre": 0.0
+        },
+        "weeks_above_150pct": {
+          "mean": 0.8018,
+          "std": 0.4878,
+          "nan_pre": 0.0
+        },
+        "procrastination_x_regularity": {
+          "mean": 0.0081,
+          "std": 0.0324,
+          "nan_pre": 0.0
+        },
+        "pdh_entropy": {
+          "mean": 3.1541,
+          "std": 0.4479,
+          "nan_pre": 0.0
+        },
+        "pwd_entropy": {
+          "mean": 2.2457,
+          "std": 0.3372,
+          "nan_pre": 0.0
+        }
+      }
+    },
+    "6": {
+      "n_rows": 560,
+      "n_base_cols": 284,
+      "n_new_base": 27,
+      "n_new_znorm": 27,
+      "n_total_cols": 342,
+      "nan_rate_new_pre_fill": 0.0,
+      "nan_ok_le_5pct": true,
+      "stats": {
+        "xc_total_views": {
+          "mean": 1028.7321,
+          "std": 908.8244,
+          "nan_pre": 0.0
+        },
+        "xc_total_sessions": {
+          "mean": 69.2554,
+          "std": 39.2319,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_views": {
+          "mean": 0.89,
+          "std": 0.2219,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_sessions": {
+          "mean": 0.9021,
+          "std": 0.1959,
+          "nan_pre": 0.0
+        },
+        "xc_n_active_other_courses": {
+          "mean": 0.2482,
+          "std": 0.4869,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_mean": {
+          "mean": 0.2434,
+          "std": 0.554,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_max": {
+          "mean": 1.8804,
+          "std": 4.2635,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_total": {
+          "mean": 12.9464,
+          "std": 29.7226,
+          "nan_pre": 0.0
+        },
+        "xc_relative_neglect": {
+          "mean": 0.0058,
+          "std": 0.0816,
+          "nan_pre": 0.0
+        },
+        "xc_max_other_course_share": {
+          "mean": 0.1045,
+          "std": 0.2113,
+          "nan_pre": 0.0
+        },
+        "intensity_max_dev": {
+          "mean": 1.0271,
+          "std": 0.4693,
+          "nan_pre": 0.0
+        },
+        "intensity_min_dev": {
+          "mean": -0.6885,
+          "std": 0.1868,
+          "nan_pre": 0.0
+        },
+        "intensity_std_dev": {
+          "mean": 0.5901,
+          "std": 0.1977,
+          "nan_pre": 0.0
+        },
+        "intensity_last_week_dev": {
+          "mean": -0.0926,
+          "std": 0.5197,
+          "nan_pre": 0.0
+        },
+        "slope_pos_sum": {
+          "mean": 161.6643,
+          "std": 153.1703,
+          "nan_pre": 0.0
+        },
+        "slope_neg_sum": {
+          "mean": -278.9982,
+          "std": 217.5519,
+          "nan_pre": 0.0
+        },
+        "slope_pos_count": {
+          "mean": 2.0411,
+          "std": 0.7128,
+          "nan_pre": 0.0
+        },
+        "slope_neg_count": {
+          "mean": 2.8786,
+          "std": 0.7274,
+          "nan_pre": 0.0
+        },
+        "slope_ratio": {
+          "mean": 0.6637,
+          "std": 0.6118,
+          "nan_pre": 0.0
+        },
+        "n_local_peaks": {
+          "mean": 1.0464,
+          "std": 0.617,
+          "nan_pre": 0.0
+        },
+        "weeks_above_25pct": {
+          "mean": 5.4875,
+          "std": 0.6713,
+          "nan_pre": 0.0
+        },
+        "weeks_above_50pct": {
+          "mean": 4.6804,
+          "std": 0.897,
+          "nan_pre": 0.0
+        },
+        "weeks_above_100pct": {
+          "mean": 2.5018,
+          "std": 0.798,
+          "nan_pre": 0.0
+        },
+        "weeks_above_150pct": {
+          "mean": 1.1036,
+          "std": 0.5611,
+          "nan_pre": 0.0
+        },
+        "procrastination_x_regularity": {
+          "mean": 0.004,
+          "std": 0.0163,
+          "nan_pre": 0.0
+        },
+        "pdh_entropy": {
+          "mean": 3.255,
+          "std": 0.4092,
+          "nan_pre": 0.0
+        },
+        "pwd_entropy": {
+          "mean": 2.2496,
+          "std": 0.3072,
+          "nan_pre": 0.0
+        }
+      }
+    },
+    "8": {
+      "n_rows": 560,
+      "n_base_cols": 284,
+      "n_new_base": 27,
+      "n_new_znorm": 27,
+      "n_total_cols": 342,
+      "nan_rate_new_pre_fill": 0.0,
+      "nan_ok_le_5pct": true,
+      "stats": {
+        "xc_total_views": {
+          "mean": 1236.9339,
+          "std": 1068.6508,
+          "nan_pre": 0.0
+        },
+        "xc_total_sessions": {
+          "mean": 80.3054,
+          "std": 44.8957,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_views": {
+          "mean": 0.8914,
+          "std": 0.2192,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_sessions": {
+          "mean": 0.9026,
+          "std": 0.1943,
+          "nan_pre": 0.0
+        },
+        "xc_n_active_other_courses": {
+          "mean": 0.2482,
+          "std": 0.4869,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_mean": {
+          "mean": 0.2497,
+          "std": 0.5537,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_max": {
+          "mean": 2.0661,
+          "std": 4.5164,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_total": {
+          "mean": 15.5161,
+          "std": 35.1681,
+          "nan_pre": 0.0
+        },
+        "xc_relative_neglect": {
+          "mean": 0.0072,
+          "std": 0.081,
+          "nan_pre": 0.0
+        },
+        "xc_max_other_course_share": {
+          "mean": 0.1032,
+          "std": 0.2085,
+          "nan_pre": 0.0
+        },
+        "intensity_max_dev": {
+          "mean": 1.264,
+          "std": 0.5347,
+          "nan_pre": 0.0
+        },
+        "intensity_min_dev": {
+          "mean": -0.8184,
+          "std": 0.1662,
+          "nan_pre": 0.0
+        },
+        "intensity_std_dev": {
+          "mean": 0.6632,
+          "std": 0.1889,
+          "nan_pre": 0.0
+        },
+        "intensity_last_week_dev": {
+          "mean": -0.284,
+          "std": 0.5744,
+          "nan_pre": 0.0
+        },
+        "slope_pos_sum": {
+          "mean": 222.6929,
+          "std": 193.459,
+          "nan_pre": 0.0
+        },
+        "slope_neg_sum": {
+          "mean": -389.25,
+          "std": 300.4872,
+          "nan_pre": 0.0
+        },
+        "slope_pos_count": {
+          "mean": 2.8554,
+          "std": 0.8302,
+          "nan_pre": 0.0
+        },
+        "slope_neg_count": {
+          "mean": 3.9571,
+          "std": 0.8657,
+          "nan_pre": 0.0
+        },
+        "slope_ratio": {
+          "mean": 0.6317,
+          "std": 0.3883,
+          "nan_pre": 0.0
+        },
+        "n_local_peaks": {
+          "mean": 1.6554,
+          "std": 0.6449,
+          "nan_pre": 0.0
+        },
+        "weeks_above_25pct": {
+          "mean": 6.9,
+          "std": 0.8916,
+          "nan_pre": 0.0
+        },
+        "weeks_above_50pct": {
+          "mean": 5.9143,
+          "std": 1.0307,
+          "nan_pre": 0.0
+        },
+        "weeks_above_100pct": {
+          "mean": 3.4196,
+          "std": 0.9366,
+          "nan_pre": 0.0
+        },
+        "weeks_above_150pct": {
+          "mean": 1.6196,
+          "std": 0.6767,
+          "nan_pre": 0.0
+        },
+        "procrastination_x_regularity": {
+          "mean": 0.0022,
+          "std": 0.0107,
+          "nan_pre": 0.0
+        },
+        "pdh_entropy": {
+          "mean": 3.2743,
+          "std": 0.3921,
+          "nan_pre": 0.0
+        },
+        "pwd_entropy": {
+          "mean": 2.2786,
+          "std": 0.262,
+          "nan_pre": 0.0
+        }
+      }
+    },
+    "full": {
+      "n_rows": 560,
+      "n_base_cols": 284,
+      "n_new_base": 27,
+      "n_new_znorm": 27,
+      "n_total_cols": 342,
+      "nan_rate_new_pre_fill": 0.0,
+      "nan_ok_le_5pct": true,
+      "stats": {
+        "xc_total_views": {
+          "mean": 2432.5446,
+          "std": 2285.032,
+          "nan_pre": 0.0
+        },
+        "xc_total_sessions": {
+          "mean": 150.0446,
+          "std": 90.8436,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_views": {
+          "mean": 0.8911,
+          "std": 0.2164,
+          "nan_pre": 0.0
+        },
+        "xc_course_share_sessions": {
+          "mean": 0.9006,
+          "std": 0.1955,
+          "nan_pre": 0.0
+        },
+        "xc_n_active_other_courses": {
+          "mean": 0.2482,
+          "std": 0.4869,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_mean": {
+          "mean": 0.2536,
+          "std": 0.5473,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_max": {
+          "mean": 2.9536,
+          "std": 7.0061,
+          "nan_pre": 0.0
+        },
+        "xc_sessions_between_total": {
+          "mean": 31.4911,
+          "std": 71.9741,
+          "nan_pre": 0.0
+        },
+        "xc_relative_neglect": {
+          "mean": 0.0068,
+          "std": 0.0705,
+          "nan_pre": 0.0
+        },
+        "xc_max_other_course_share": {
+          "mean": 0.1033,
+          "std": 0.2048,
+          "nan_pre": 0.0
+        },
+        "intensity_max_dev": {
+          "mean": 1.9988,
+          "std": 0.7748,
+          "nan_pre": 0.0
+        },
+        "intensity_min_dev": {
+          "mean": -0.9705,
+          "std": 0.0599,
+          "nan_pre": 0.0
+        },
+        "intensity_std_dev": {
+          "mean": 0.7998,
+          "std": 0.1781,
+          "nan_pre": 0.0
+        },
+        "intensity_last_week_dev": {
+          "mean": -0.5623,
+          "std": 0.5709,
+          "nan_pre": 0.0
+        },
+        "slope_pos_sum": {
+          "mean": 605.7946,
+          "std": 526.4481,
+          "nan_pre": 0.0
+        },
+        "slope_neg_sum": {
+          "mean": -807.8964,
+          "std": 639.6316,
+          "nan_pre": 0.0
+        },
+        "slope_pos_count": {
+          "mean": 7.5554,
+          "std": 1.3337,
+          "nan_pre": 0.0
+        },
+        "slope_neg_count": {
+          "mean": 8.8786,
+          "std": 1.4699,
+          "nan_pre": 0.0
+        },
+        "slope_ratio": {
+          "mean": 0.7415,
+          "std": 0.1621,
+          "nan_pre": 0.0
+        },
+        "n_local_peaks": {
+          "mean": 4.8018,
+          "std": 1.0808,
+          "nan_pre": 0.0
+        },
+        "weeks_above_25pct": {
+          "mean": 14.3768,
+          "std": 1.7457,
+          "nan_pre": 0.0
+        },
+        "weeks_above_50pct": {
+          "mean": 12.1929,
+          "std": 1.803,
+          "nan_pre": 0.0
+        },
+        "weeks_above_100pct": {
+          "mean": 7.6,
+          "std": 1.5016,
+          "nan_pre": 0.0
+        },
+        "weeks_above_150pct": {
+          "mean": 3.9643,
+          "std": 1.1185,
+          "nan_pre": 0.0
+        },
+        "procrastination_x_regularity": {
+          "mean": 0.0002,
+          "std": 0.0023,
+          "nan_pre": 0.0
+        },
+        "pdh_entropy": {
+          "mean": 3.4831,
+          "std": 0.3882,
+          "nan_pre": 0.0
+        },
+        "pwd_entropy": {
+          "mean": 2.3487,
+          "std": 0.233,
+          "nan_pre": 0.0
+        }
+      }
+    }
+  },
+  "new_raw_columns": [
+    "xc_total_views",
+    "xc_total_sessions",
+    "xc_course_share_views",
+    "xc_course_share_sessions",
+    "xc_n_active_other_courses",
+    "xc_sessions_between_mean",
+    "xc_sessions_between_max",
+    "xc_sessions_between_total",
+    "xc_relative_neglect",
+    "xc_max_other_course_share",
+    "intensity_max_dev",
+    "intensity_min_dev",
+    "intensity_std_dev",
+    "intensity_last_week_dev",
+    "slope_pos_sum",
+    "slope_neg_sum",
+    "slope_pos_count",
+    "slope_neg_count",
+    "slope_ratio",
+    "n_local_peaks",
+    "weeks_above_25pct",
+    "weeks_above_50pct",
+    "weeks_above_100pct",
+    "weeks_above_150pct",
+    "procrastination_x_regularity",
+    "pdh_entropy",
+    "pwd_entropy"
+  ],
+  "n_new_base_features": 27,
+  "families": {
+    "A_cross_course": [
+      "xc_total_views",
+      "xc_total_sessions",
+      "xc_course_share_views",
+      "xc_course_share_sessions",
+      "xc_n_active_other_courses",
+      "xc_sessions_between_mean",
+      "xc_sessions_between_max",
+      "xc_sessions_between_total",
+      "xc_relative_neglect",
+      "xc_max_other_course_share"
+    ],
+    "B_intensity": [
+      "intensity_max_dev",
+      "intensity_min_dev",
+      "intensity_std_dev",
+      "intensity_last_week_dev"
+    ],
+    "C_slope": [
+      "slope_pos_sum",
+      "slope_neg_sum",
+      "slope_pos_count",
+      "slope_neg_count",
+      "slope_ratio"
+    ],
+    "D_peaks": [
+      "n_local_peaks",
+      "weeks_above_25pct",
+      "weeks_above_50pct",
+      "weeks_above_100pct",
+      "weeks_above_150pct"
+    ],
+    "E_composite": [
+      "procrastination_x_regularity",
+      "pdh_entropy",
+      "pwd_entropy"
+    ]
+  },
+  "nan_policy": "fill 0 after znorm; composite=quizzes_proact_mean_pct*session_regularity",
+  "leak_note": "cutoff clock = target course start(0.05q); created_at<=start+cutoff for all families; full=target course last event"
+}

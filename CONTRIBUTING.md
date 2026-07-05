@@ -76,25 +76,22 @@ Then you can ask Claude to:
 
 ## Understanding Claude Code Hooks
 
-This project uses **Claude Code hooks** to enforce branch discipline. These are different from traditional Git hooks!
+This project uses **Claude Code hooks** to enforce branch discipline and code quality. These are different from traditional Git hooks!
 
 ### What Are Claude Code Hooks?
 
-Claude Code hooks are scripts that run **before Claude executes commands**. They can:
-- Inspect what Claude is about to do
-- Allow or block the action
-- Provide helpful feedback
+Claude Code hooks are scripts that run at specific events during a Claude session. They receive JSON via stdin with context about the tool call and can allow, block, or provide feedback.
 
-### Our Hook: Branch Protection
+### Our Hooks
 
-Located in `.claude/hooks/check-git-branch.sh`
+| Hook | Event | Matcher | Purpose |
+|------|-------|---------|---------|
+| `protect-main.sh` | `PreToolUse` | `Bash` | Blocks `git commit` on `main` branch |
+| `lint-check.sh` | `PostToolUse` | `Write\|Edit` | Runs ESLint (TS/JS) or ruff (Python) after file changes |
 
-**When it runs:** Before any `git commit` or `git push` command
+**protect-main.sh** — Reads the Bash command from JSON stdin. If it's a `git commit` and the current branch is `main`, it exits with code 2 (blocked). Otherwise passes through.
 
-**What it checks:**
-1. Are you on a protected branch (main, develop)? → **BLOCKED**
-2. Are you on someone else's branch? → **BLOCKED**
-3. Are you on your assigned branch? → **ALLOWED**
+**lint-check.sh** — Reads the file path from JSON stdin after a Write or Edit. Runs the appropriate linter (ESLint for .ts/.tsx/.js/.jsx, ruff for .py). Reports issues but doesn't block.
 
 ### Example: What Happens When Blocked
 
@@ -106,12 +103,7 @@ You: "commit my changes"
 Claude: I'll commit your changes.
 [Runs: git commit -m "..."]
 
-BLOCKED: Cannot commit/push directly to 'main'
-
-This branch is protected. Please use your feature branch:
-  git checkout feature/eda-vicente
-
-Then create a Pull Request on GitHub to merge your changes.
+BLOCKED: Direct commits to 'main' are not allowed. Switch to 'dev' or a feature branch.
 ```
 
 ### How Hooks Are Configured
@@ -124,25 +116,33 @@ The hook configuration lives in `.claude/settings.json`:
     "PreToolUse": [
       {
         "matcher": "Bash",
-        "hooks": ["bash .claude/hooks/check-git-branch.sh"]
+        "hooks": [{"type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/protect-main.sh"}]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [{"type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/lint-check.sh"}]
       }
     ]
   }
 }
 ```
 
-This tells Claude Code: "Before running any Bash command, run the check-git-branch.sh script first."
+Valid hook events: `PreToolUse` (before a tool runs), `PostToolUse` (after a tool runs). The `matcher` filters which tool triggers the hook.
 
-### Why Claude Hooks Instead of Git Hooks?
+### Agents (`.claude/agents/`)
 
-| Aspect | Git Hooks | Claude Code Hooks |
-|--------|-----------|-------------------|
-| **When** | After you type `git commit` | Before Claude runs anything |
-| **Bypass** | `--no-verify` flag | Cannot be bypassed |
-| **Feedback** | Terminal message | Integrated in Claude's response |
-| **Learning** | You see an error | Claude explains what to do |
+Specialized read-only reviewers you can delegate to:
 
-Since you're working through Claude Code, these hooks ensure you learn the proper workflow with helpful explanations.
+| Agent | Reviews |
+|-------|---------|
+| `schema-reviewer` | Drizzle schema, migrations, TimescaleDB |
+| `api-reviewer` | NestJS endpoints, auth, Swagger, DTOs |
+| `ml-reviewer` | Python ML code, reproducibility, feature registry |
+| `pr-reviewer` | General PR review, delegates to domain agents |
+
+All agents are read-only — they can read and search code but cannot write, edit, or execute commands.
 
 ---
 
@@ -175,8 +175,12 @@ git merge origin/develop
 u_autonoma/
 ├── .claude/                 # Claude Code configuration
 │   ├── settings.json        # Hook configuration
-│   └── hooks/               # Hook scripts
-│       └── check-git-branch.sh
+│   ├── hooks/               # Hook scripts
+│   │   ├── protect-main.sh  # Branch protection
+│   │   └── lint-check.sh    # Post-write linting
+│   ├── agents/              # Specialized reviewers
+│   ├── rules/               # Contextual rules by file glob
+│   └── skills/              # Task-oriented workflows
 ├── data/                    # Data files
 │   ├── early_warning/       # Processed features
 │   └── baseline/            # Model results
